@@ -5,14 +5,14 @@
 
 using namespace std;
 
-class Utility {
+class Utility : Card{
   public:
-    string name;
+    //string name;
     int multiplier;
-    int mortgage;
-    int price;
+    //int mortgage;
+    //int price;
 
-    Utility(string name);
+    Utility(string);
 };
 
 #endif

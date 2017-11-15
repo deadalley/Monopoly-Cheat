@@ -7,6 +7,13 @@ EventCard::EventCard(string description, bool type) {
   //this->tile = NULL;
 }
 
-//void EventCard::effect(Player *player, Board *board) {
-
-//}
+/*void EventCard::effect(Player *player) {
+  switch(effectType) {
+    case Collect:
+      //player->receive(value);
+      break;
+    case Pay:
+      //player->payBank(value);
+      break;
+  }
+}*/

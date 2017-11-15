@@ -2,6 +2,7 @@
 #define H_EVENTCARD
 
 #include <string>
+//#include "player.h"
 //#include "board.h"
 
 using namespace std;
@@ -33,8 +34,8 @@ class EventCard {
 
     size_t tile;                // Destination tile
 
-    EventCard(string description, bool type);
-    //void effect(Player *player, Board *board);
+    EventCard(string, bool);
+
 };
 
 #endif

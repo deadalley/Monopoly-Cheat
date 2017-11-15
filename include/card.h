@@ -5,12 +5,11 @@
 
 using namespace std;
 
-
 class Card {
   public:
     string name;
     int price;
-    int mortgage;  
+    int mortgage;
 };
 
 #endif

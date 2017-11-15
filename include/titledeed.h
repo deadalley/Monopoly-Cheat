@@ -5,14 +5,14 @@
 
 using namespace std;
 
-class TitleDeed {
+class TitleDeed : Card {
   public:
-    string name;
+    //string name;
     string color;
 
-    int price;
+    //int price;
     int rent[6];
-    int mortgage;
+    //int mortgage;
     int house_cost;
     int hotel_cost;
 

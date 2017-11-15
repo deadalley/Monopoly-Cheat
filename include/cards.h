@@ -6,8 +6,7 @@
 #include <fstream>
 #include <string>
 
-#include "board.h"
-
+#include "utils.h"
 #include "titledeed.h"
 #include "railroad.h"
 #include "utility.h"
@@ -23,11 +22,11 @@ class Cards {
     static EventCard *chest;
     static EventCard *chance;
 
-    static void inputTitleDeeds(string file_name);
+    static void inputTitleDeeds(string);
     static void initRailroads();
     static void initUtilities();
-    static void inputChanceCards(string file_name);
-    static void inputChestCards(string file_name);
+    static void inputChanceCards(string);
+    static void inputChestCards(string);
 };
 
 #endif

@@ -5,14 +5,14 @@
 
 using namespace std;
 
-class Railroad {
+class Railroad : Card {
   public:
-    string name;
+    //string name;
     int rent[4];
-    int mortgage;
-    int price;
+    //int mortgage;
+    //int price;
 
-    Railroad(string name);
+    Railroad(string);
 };
 
 #endif

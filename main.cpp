@@ -19,14 +19,6 @@ vector<Board::Tile> Board::map;
 stack<EventCard*> Board::chanceCards;
 stack<EventCard*> Board::chestCards;
 
-
-
-static Cards cards;
-
-int rollDice(int d) {
-  return rand() % (d*6) + 1;
-}
-
 void init() {
   //srand(time(NULL));
 
