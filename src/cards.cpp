@@ -125,7 +125,7 @@ void Cards::inputChanceCards(string file_name) {
       newCard.effectType = GoToUtility;
     }
 
-    if(5 < i < 8) {
+    if(5 < i  && i < 8) {
       newCard.effectType = GoToRailroad;
     }
 
@@ -138,7 +138,7 @@ void Cards::inputChanceCards(string file_name) {
       newCard.tile = JAIL;
     }
 
-    if(9 < i < 13) {
+    if(9 < i  && i < 13) {
       newCard.effectType = Collect;
       switch(i) {
         case 10:
@@ -204,7 +204,7 @@ void Cards::inputChestCards(string file_name) {
       newCard.tile = JAIL;
     }
 
-    if(1 < i < 11) {
+    if(1 < i && i < 11) {
       newCard.effectType = Collect;
       switch(i) {
         case 2:
@@ -242,7 +242,7 @@ void Cards::inputChestCards(string file_name) {
       newCard.value = 50;
     }
 
-    if(11 < i < 15) {
+    if(11 < i && i < 15) {
       newCard.effectType = Pay;
       switch(i) {
         case 12:

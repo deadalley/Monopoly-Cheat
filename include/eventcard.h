@@ -1,5 +1,5 @@
 #ifndef H_EVENTCARD
-#define H_EVENTCARDS
+#define H_EVENTCARD
 
 #include <string>
 //#include "board.h"
