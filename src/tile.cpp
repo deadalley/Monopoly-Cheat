@@ -10,11 +10,15 @@ Card* Board::Tile::getCard() {
 
 EventCard* Board::Tile::getEventCard () {
   if (this->type == ChanceTile) {
-    return chanceCards.top();
+    EventCard* chance = Board::chanceCards.top();
+    Board::chanceCards.pop();
+    return chance;
   }
 
   if (this->type == ChestTile) {
-    return chestCards.top();
+    EventCard* chest = Board::chestCards.top();
+    Board::chestCards.pop();
+    return chest;
   }
 
   return NULL;
