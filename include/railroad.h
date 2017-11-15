@@ -10,6 +10,7 @@ class Railroad {
     string name;
     int rent[4];
     int mortgage;
+    int price;
 
     Railroad(string name);
 };

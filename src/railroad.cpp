@@ -7,4 +7,5 @@ Railroad::Railroad(string name) {
   rent[2] = 100;
   rent[3] = 200;
   mortgage = 100;
+  price = 200;
 }
