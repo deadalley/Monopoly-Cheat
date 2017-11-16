@@ -3,6 +3,7 @@
 #include <time.h>
 #include <stack>
 
+#include "player.h"
 #include "cards.h"
 #include "eventcard.h"
 #include "board.h"
@@ -20,7 +21,8 @@ stack<EventCard*> Board::chanceCards;
 stack<EventCard*> Board::chestCards;
 
 void init() {
-  //srand(time(NULL));
+  srand(time(NULL));
+  Bank::initBank();
 
   Cards::inputTitleDeeds("titledeeds.cards");
   Cards::inputChanceCards("chance.cards");
@@ -32,8 +34,20 @@ void init() {
 int main() {
   init();
 
-  cout << Cards::chance[12].description << endl;
-  //cout << Cards::deeds[7].name << ", " << Cards::deeds[7].rent[0];
+  // Debug
+  /*Bank::_currentBalance();
+  Player p1("Player 1");
+  Bank::_currentBalance();
+
+  Bills b = Bank::convert(999);
+  cout << "Ones: " << b.ones << endl;
+  cout << "Fives: " << b.fives << endl;
+  cout << "Tens: " << b.tens << endl;
+  cout << "Twenties: " << b.twenties << endl;
+  cout << "Fifties: " << b.fifties << endl;
+  cout << "One hundreds: " << b.one_hundreds << endl;
+  cout << "Five hundreds: " << b.five_hundreds << endl;*/
+
 
   return 0;
 }

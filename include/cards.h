@@ -22,11 +22,11 @@ class Cards {
     static EventCard *chest;
     static EventCard *chance;
 
-    static void inputTitleDeeds(string);
-    static void initRailroads();
-    static void initUtilities();
+    static void inputTitleDeeds(string);    
     static void inputChanceCards(string);
     static void inputChestCards(string);
+    static void initRailroads();
+    static void initUtilities();
 };
 
 #endif

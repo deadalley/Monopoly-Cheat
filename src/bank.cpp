@@ -1,16 +1,37 @@
 #include "bank.h"
 
-Bank::Bank() {
-  bills.ones = 30;
-  bills.fives = 30;
-  bills.tens = 30;
-  bills.twenties = 30;
-  bills.fifties = 30;
-  bills.one_hundreds = 30;
-  bills.five_hundreds = 30;
+Bills Bank::balance;
+
+void Bank::initBank() {
+  balance.ones = 30;
+  balance.fives = 30;
+  balance.tens = 30;
+  balance.twenties = 30;
+  balance.fifties = 30;
+  balance.one_hundreds = 30;
+  balance.five_hundreds = 30;
+}
+
+bool Bank::deduct(int value) {
+  return deduct(convert(value));
+}
+
+bool Bank::deduct(Bills bills) {
+  // Check if there are enough bills to deduct
+  if(bills > balance) {
+    cerr << "Cannot deduct from bank: not enough bills" << endl;
+    return false;
+  }
+
+  balance -= bills;
+  return true;
 }
 
 Bills Bank::convert(int value) {
+  if(value < 0) {
+    cerr << "Cannot convert negative value" << endl;
+    return {0, 0, 0, 0, 0, 0, 0};
+  }
   Bills newBills;
 
   newBills.five_hundreds = value / 500;
@@ -32,4 +53,17 @@ Bills Bank::convert(int value) {
   value -= newBills.fives * 5;
 
   newBills.ones = value;
+
+  return newBills;
+}
+
+void Bank::_currentBalance() {
+  cout << "Bank's current balance:" << endl;
+  cout << "Ones: " << balance.ones << endl;
+  cout << "Fives: " << balance.fives << endl;
+  cout << "Tens: " << balance.tens << endl;
+  cout << "Twenties: " << balance.twenties << endl;
+  cout << "Fifties: " << balance.fifties << endl;
+  cout << "One hundreds: " << balance.one_hundreds << endl;
+  cout << "Five hundreds: " << balance.five_hundreds << endl;
 }

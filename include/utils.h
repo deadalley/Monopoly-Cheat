@@ -1,3 +1,6 @@
+#ifndef H_UTILS
+#define H_UTILS
+
 #define GO 0
 #define MEDITERRANEAN_AV 1
 #define CHEST_1 2
@@ -39,7 +42,7 @@
 #define LUXURY_TAX 38
 #define BOARDWALK 39
 
-typedef struct Bills{
+typedef struct Bills {
   int ones;
   int fives;
   int tens;
@@ -47,4 +50,46 @@ typedef struct Bills{
   int fifties;
   int one_hundreds;
   int five_hundreds;
+
+  void operator += (const Bills &b) {
+    ones += b.ones;
+    fives += b.fives;
+    tens += b.tens;
+    twenties += b.twenties;
+    fifties += b.fifties;
+    one_hundreds += b.one_hundreds;
+    five_hundreds += b.five_hundreds;
+  }
+
+  void operator -= (const Bills &b) {
+    ones -= b.ones;
+    fives -= b.fives;
+    tens -= b.tens;
+    twenties -= b.twenties;
+    fifties -= b.fifties;
+    one_hundreds -= b.one_hundreds;
+    five_hundreds -= b.five_hundreds;
+  }
+
+  bool operator > (const Bills &b) {
+    return ones > b.ones && \
+           fives > b.fives && \
+           tens > b.tens && \
+           twenties > b.twenties && \
+           fifties > b.fifties && \
+           one_hundreds > b.one_hundreds && \
+           five_hundreds > b.five_hundreds;
+  }
+
+  bool operator < (const Bills &b) {
+    return ones < b.ones && \
+           fives < b.fives && \
+           tens < b.tens && \
+           twenties < b.twenties && \
+           fifties < b.fifties && \
+           one_hundreds < b.one_hundreds && \
+           five_hundreds < b.five_hundreds;
+  }
 } Bills;
+
+#endif

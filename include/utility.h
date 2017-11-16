@@ -2,10 +2,11 @@
 #define H_UTILITY
 
 #include <string>
+#include "card.h"
 
 using namespace std;
 
-class Utility : Card{
+class Utility : public Card{
   public:
     //string name;
     int multiplier;

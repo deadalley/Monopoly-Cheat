@@ -2,10 +2,11 @@
 #define H_RAILROAD
 
 #include <string>
+#include "card.h"
 
 using namespace std;
 
-class Railroad : Card {
+class Railroad : public Card {
   public:
     //string name;
     int rent[4];

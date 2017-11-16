@@ -2,10 +2,11 @@
 #define H_TITLE_DEED
 
 #include <string>
+#include "card.h"
 
 using namespace std;
 
-class TitleDeed : Card {
+class TitleDeed : public Card {
   public:
     //string name;
     string color;

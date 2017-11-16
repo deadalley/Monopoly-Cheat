@@ -6,6 +6,7 @@
 #include <stack>
 #include <vector>
 
+#include "bank.h"
 #include "card.h"
 #include "cards.h"
 #include "eventcard.h"
@@ -36,6 +37,7 @@ class Board {
     static stack<EventCard*> chanceCards;
     static stack<EventCard*> chestCards;
     static Tile* getTile(int);
+    static int rollDice(int);
 };
 
 class Board::Tile {
@@ -47,8 +49,6 @@ class Board::Tile {
     TileType getType();
     Card* getCard();
     EventCard* getEventCard();  // Draws a chance or chest card
-    int rollDice(int);
-
 };
 
 #endif

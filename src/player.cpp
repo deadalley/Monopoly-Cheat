@@ -4,6 +4,7 @@ Player::Player(string name) {
   this->name = name;
   this->position = GO;
 
+  // Set player's initial balance
   Bills initialBalance;
   initialBalance.ones = 5;
   initialBalance.fives = 1;
@@ -13,6 +14,7 @@ Player::Player(string name) {
   initialBalance.one_hundreds = 4;
   initialBalance.five_hundreds = 2;
 
+  // Add initial balance to player
   this->receive(initialBalance);
 }
 
@@ -56,8 +58,10 @@ void Player::payAll (int value) {
 
 }
 
-void Player::receive (Bills transaction) {
-
+void Player::receive (Bills bills) {
+  // Remove from bank, if possible
+  if(Bank::deduct(bills));
+    this->wallet += bills;
 }
 
 void Player::payBank (int value) {
@@ -65,5 +69,5 @@ void Player::payBank (int value) {
 }
 
 void Player::goToJail() {
-  
+
 }
