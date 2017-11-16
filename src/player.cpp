@@ -18,21 +18,33 @@ Player::Player(string name) {
   this->receive(initialBalance);
 }
 
+void Player::processEventCard(EventCard *card) {
+  switch(card->effectType) {
+    case Collect:
+      receive(card->value);
+      break;
+    case Pay:
+      payBank(card->value);
+      break;
+  }
+}
+
 void Player::stepOnTile(Board::Tile tile) {
   switch (tile.getType()){
     case PropertyTile:
       // Implement PropertyTile behavior
       break;
-    case ChestTile: {
-      EventCard* chest = tile.getEventCard();
+    case ChestTile || ChanceTile: //{
+      //EventCard* chest = tile.getEventCard();
+      processEventCard(tile.getEventCard());
       // Implement Chest Event Card
       break;
-    }
-    case ChanceTile: {
+    //}
+    /*case ChanceTile: {
       EventCard* chance = tile.getEventCard();
       // Implement Chance Event Card
       break;
-    }
+    }*/
     case JailTile:
       // nothing to do here
       break;
@@ -65,7 +77,7 @@ void Player::receive (Bills bills) {
 }
 
 void Player::payBank (int value) {
-
+  
 }
 
 void Player::goToJail() {

@@ -5,6 +5,8 @@
 #include <string>
 #include <stack>
 #include <vector>
+#include <algorithm>
+#include <random>
 
 #include "bank.h"
 #include "card.h"
@@ -34,6 +36,7 @@ class Board {
     static vector<Tile> map;
 
   public:
+    static void initBoard();
     static stack<EventCard*> chanceCards;
     static stack<EventCard*> chestCards;
     static Tile* getTile(int);

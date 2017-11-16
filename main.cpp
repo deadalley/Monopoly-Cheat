@@ -22,13 +22,13 @@ stack<EventCard*> Board::chestCards;
 
 void init() {
   srand(time(NULL));
-  Bank::initBank();
-
   Cards::inputTitleDeeds("titledeeds.cards");
   Cards::inputChanceCards("chance.cards");
   Cards::inputChestCards("chest.cards");
   Cards::initRailroads();
   Cards::initUtilities();
+  Board::initBoard();
+  Bank::initBank();
 }
 
 int main() {

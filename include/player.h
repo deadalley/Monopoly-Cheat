@@ -15,6 +15,8 @@ class Player {
     int position;
     Bills wallet;
 
+    void processEventCard(EventCard *card);
+
   public:
     string getName();
 
