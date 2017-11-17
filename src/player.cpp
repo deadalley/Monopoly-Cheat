@@ -1,8 +1,11 @@
 #include "player.h"
+#include "gamecontroller.h"
 
 Player::Player(string name) {
   this->name = name;
   this->position = GO;
+
+  //this->wallet = 0;
 
   // Set player's initial balance
   Bills initialBalance;
@@ -14,37 +17,71 @@ Player::Player(string name) {
   initialBalance.one_hundreds = 4;
   initialBalance.five_hundreds = 2;
 
-  // Add initial balance to player
-  this->receive(initialBalance);
+  if(Bank::Balance.deduct(initialBalance))
+    this->wallet.setBalance(initialBalance);
+}
+
+string Player::getName() {
+  return this->name;
 }
 
 void Player::processEventCard(EventCard *card) {
   switch(card->effectType) {
     case Collect:
-      receive(card->value);
+      this->wallet.receiveFrom(&Bank::Balance, card->value);
       break;
     case Pay:
-      payBank(card->value);
+      this->wallet.payTo(&Bank::Balance, card->value);
+      break;
+    case GoToTile:
+      goTo(card->tile);
+      break;
+    case GoToUtility:
+      //TO DO
+      break;
+    case GoToRailroad:
+      switch(position) {
+        case CHANCE_1:
+          goTo(PENNSYLVANIA_RR);
+          break;
+        case CHANCE_2:
+          goTo(BO_RR);
+          break;
+        case CHANCE_3:
+          goTo(READING_RR);
+          break;
+      }
+      break;
+    case GoBack3:
+      goTo(this->position - 3);
+      break;
+    case GoToJail:
+      goToJail();
+      break;
+    case PayForEach:
+      //TO DO
+      break;
+    case PayToAll:
+      GameController::payAll(this, card->value);
+      break;
+    case ReceiveFromAll:
+      GameController::receiveFromAll(this, card->value);
       break;
   }
 }
 
 void Player::stepOnTile(Board::Tile tile) {
+  cout << "Tile Type: " << tile.getType() << endl;
   switch (tile.getType()){
     case PropertyTile:
       // Implement PropertyTile behavior
       break;
-    case ChestTile || ChanceTile: //{
-      //EventCard* chest = tile.getEventCard();
+    case ChestTile:
       processEventCard(tile.getEventCard());
-      // Implement Chest Event Card
       break;
-    //}
-    /*case ChanceTile: {
-      EventCard* chance = tile.getEventCard();
-      // Implement Chance Event Card
+    case ChanceTile:
+      processEventCard(tile.getEventCard());
       break;
-    }*/
     case JailTile:
       // nothing to do here
       break;
@@ -58,26 +95,18 @@ void Player::stepOnTile(Board::Tile tile) {
       // nothing to do here
       break;
     case IncomeTaxTile:
-      this->payBank(200);
+      //this->payBank(200);
+      this->wallet.payTo(&Bank::Balance, 200);
       break;
     case LuxuryTaxTile:
-      this->payBank(100);
+      //this->payBank(100);
+      this->wallet.payTo(&Bank::Balance, 100);
       break;
   }
 }
 
-void Player::payAll (int value) {
+void Player::goTo(int position) {
 
-}
-
-void Player::receive (Bills bills) {
-  // Remove from bank, if possible
-  if(Bank::deduct(bills));
-    this->wallet += bills;
-}
-
-void Player::payBank (int value) {
-  
 }
 
 void Player::goToJail() {

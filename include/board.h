@@ -47,11 +47,14 @@ class Board::Tile {
   private:
     TileType type;
     Card* card;                 // Stores card if the tile is a PropertyTile
+    int position;
 
   public:
+    Tile(TileType, int);
     TileType getType();
     Card* getCard();
     EventCard* getEventCard();  // Draws a chance or chest card
+    int getPos();
 };
 
 #endif

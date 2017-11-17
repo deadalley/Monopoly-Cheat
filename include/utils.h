@@ -42,6 +42,10 @@
 #define LUXURY_TAX 38
 #define BOARDWALK 39
 
+#include <iostream>
+
+using namespace std;
+
 typedef struct Bills {
   int ones;
   int fives;
@@ -50,6 +54,16 @@ typedef struct Bills {
   int fifties;
   int one_hundreds;
   int five_hundreds;
+
+  void operator= (const int &v) {
+    ones = v;
+    fives = v;
+    tens = v;
+    twenties = v;
+    fifties = v;
+    one_hundreds = v;
+    five_hundreds = v;
+  }
 
   void operator += (const Bills &b) {
     ones += b.ones;
@@ -89,6 +103,16 @@ typedef struct Bills {
            fifties < b.fifties && \
            one_hundreds < b.one_hundreds && \
            five_hundreds < b.five_hundreds;
+  }
+
+  friend ostream& operator<< (ostream &os, const Bills &b) {
+    os << "Ones: " << b.ones << endl;
+    os << "Fives: " << b.fives << endl;
+    os << "Tens: " << b.tens << endl;
+    os << "Twenties: " << b.twenties << endl;
+    os << "Fifties: " << b.fifties << endl;
+    os << "One hundreds: " << b.one_hundreds << endl;
+    os << "Five hundreds: " << b.five_hundreds << endl;
   }
 } Bills;
 

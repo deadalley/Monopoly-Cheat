@@ -2,7 +2,6 @@
 #define H_CARDS
 
 #include <stdlib.h>
-#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -22,7 +21,7 @@ class Cards {
     static EventCard *chest;
     static EventCard *chance;
 
-    static void inputTitleDeeds(string);    
+    static void inputTitleDeeds(string);
     static void inputChanceCards(string);
     static void inputChestCards(string);
     static void initRailroads();

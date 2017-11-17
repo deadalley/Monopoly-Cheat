@@ -3,9 +3,9 @@
 
 #include <string>
 
-#include "board.h"
-#include "card.h"
 #include "utils.h"
+#include "board.h"
+#include "wallet.h"
 
 using namespace std;
 
@@ -13,36 +13,17 @@ class Player {
   private:
     string name;
     int position;
-    Bills wallet;
 
     void processEventCard(EventCard *card);
 
   public:
-    string getName();
+    Wallet wallet;
 
-    /* Player constructor */
-    Player (string);
+    Player(string);
+    string getName();
 
     /* Trigger the action of the tile stepped on */
     void stepOnTile(Board::Tile);
-
-    /* Pay all players */
-    void payAll(int);
-
-    /* Receive money from all players */
-    void receiveFromAll(int);
-
-    /* Pay rent */
-    void payRent(Card);
-
-    /* Pay bank */
-    void payBank(int);
-
-    /* Receive money from bank */
-    void receive(int);
-
-    /* Receive money from bank with specific bills*/
-    void receive(Bills);
 
     /* Moves player to designated tile */
     void goTo(int);

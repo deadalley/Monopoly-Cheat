@@ -2,9 +2,6 @@
 #define H_EVENTCARD
 
 #include <string>
-//#include "player.h"
-//#include "board.h"
-
 using namespace std;
 
 enum EventCardEffect {

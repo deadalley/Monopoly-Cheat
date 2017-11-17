@@ -1,5 +1,10 @@
 #include "board.h"
 
+Board::Tile::Tile(TileType type, int position) {
+  this->type = type;
+  this->position = position;
+}
+
 TileType Board::Tile::getType() {
   return this->type;
 }
@@ -22,4 +27,8 @@ EventCard* Board::Tile::getEventCard() {
   }
 
   return NULL;
+}
+
+int Board::Tile::getPos() {
+  return this->position;
 }

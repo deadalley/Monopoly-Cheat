@@ -1,15 +1,22 @@
 #include "bank.h"
 
-Bills Bank::balance;
+Wallet Bank::Balance;
 
 void Bank::initBank() {
-  balance.ones = 30;
-  balance.fives = 30;
-  balance.tens = 30;
-  balance.twenties = 30;
-  balance.fifties = 30;
-  balance.one_hundreds = 30;
-  balance.five_hundreds = 30;
+  Bills initBalance;
+  initBalance.ones = 30;
+  initBalance.fives = 30;
+  initBalance.tens = 30;
+  initBalance.twenties = 30;
+  initBalance.fifties = 30;
+  initBalance.one_hundreds = 30;
+  initBalance.five_hundreds = 30;
+
+  Balance.setBalance(initBalance);
+}
+/*
+void Bank::deposit(Bills bills) {
+  balance += bills;
 }
 
 bool Bank::deduct(int value) {
@@ -56,14 +63,8 @@ Bills Bank::convert(int value) {
 
   return newBills;
 }
-
+*/
 void Bank::_currentBalance() {
   cout << "Bank's current balance:" << endl;
-  cout << "Ones: " << balance.ones << endl;
-  cout << "Fives: " << balance.fives << endl;
-  cout << "Tens: " << balance.tens << endl;
-  cout << "Twenties: " << balance.twenties << endl;
-  cout << "Fifties: " << balance.fifties << endl;
-  cout << "One hundreds: " << balance.one_hundreds << endl;
-  cout << "Five hundreds: " << balance.five_hundreds << endl;
+  Balance.printBalance();
 }

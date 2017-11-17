@@ -7,6 +7,7 @@
 #include "cards.h"
 #include "eventcard.h"
 #include "board.h"
+#include "gamecontroller.h"
 
 using namespace std;
 
@@ -27,27 +28,28 @@ void init() {
   Cards::inputChestCards("chest.cards");
   Cards::initRailroads();
   Cards::initUtilities();
+
   Board::initBoard();
+
   Bank::initBank();
+
+  GameController::initGame(4);
 }
 
 int main() {
   init();
 
-  // Debug
-  /*Bank::_currentBalance();
-  Player p1("Player 1");
-  Bank::_currentBalance();
+  Board::Tile newTile(ChanceTile, CHANCE_1);
 
-  Bills b = Bank::convert(999);
-  cout << "Ones: " << b.ones << endl;
-  cout << "Fives: " << b.fives << endl;
-  cout << "Tens: " << b.tens << endl;
-  cout << "Twenties: " << b.twenties << endl;
-  cout << "Fifties: " << b.fifties << endl;
-  cout << "One hundreds: " << b.one_hundreds << endl;
-  cout << "Five hundreds: " << b.five_hundreds << endl;*/
+  Player *p1 = GameController::getPlayer(0);
+  cout << p1->getName() << endl;
 
+  p1->stepOnTile(newTile);
+  p1->stepOnTile(newTile);
+  p1->stepOnTile(newTile);
+  p1->stepOnTile(newTile);
+  p1->stepOnTile(newTile);
+  p1->stepOnTile(newTile);
 
   return 0;
 }
