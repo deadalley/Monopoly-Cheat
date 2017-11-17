@@ -13,6 +13,7 @@ class Player {
   private:
     string name;
     int position;
+    vector<Card *> cards;
 
     void processEventCard(EventCard *card);
 

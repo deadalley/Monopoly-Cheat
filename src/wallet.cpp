@@ -1,7 +1,13 @@
 #include "wallet.h"
 
 Wallet::Wallet() {
-  
+  balance.ones = 0;
+  balance.fives = 0;
+  balance.tens = 0;
+  balance.twenties = 0;
+  balance.fifties = 0;
+  balance.one_hundreds = 0;
+  balance.five_hundreds = 0;
 }
 
 Wallet::Wallet(Bills bills) {
@@ -76,6 +82,11 @@ bool Wallet::deduct(int value) {
 void Wallet::payTo(Wallet *entity, int value) {
   if(deduct(value))
     entity->deposit(value);
+}
+
+void Wallet::receiveFrom(Wallet *entity, Bills bills) {
+  if(entity->deduct(bills))
+    deposit(bills);
 }
 
 void Wallet::receiveFrom(Wallet *entity, int value) {

@@ -1,6 +1,7 @@
 #include "railroad.h"
 
 Railroad::Railroad(string name) {
+  this->type = RailroadCard;
   this->name = name;
   rent[0] = 25;
   rent[1] = 50;

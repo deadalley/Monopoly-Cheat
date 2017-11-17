@@ -5,8 +5,6 @@ Player::Player(string name) {
   this->name = name;
   this->position = GO;
 
-  //this->wallet = 0;
-
   // Set player's initial balance
   Bills initialBalance;
   initialBalance.ones = 5;
@@ -17,8 +15,7 @@ Player::Player(string name) {
   initialBalance.one_hundreds = 4;
   initialBalance.five_hundreds = 2;
 
-  if(Bank::Balance.deduct(initialBalance))
-    this->wallet.setBalance(initialBalance);
+  this->wallet.receiveFrom(&Bank::Balance, initialBalance);
 }
 
 string Player::getName() {
@@ -37,7 +34,17 @@ void Player::processEventCard(EventCard *card) {
       goTo(card->tile);
       break;
     case GoToUtility:
-      //TO DO
+      switch(position) {
+        case CHANCE_1:
+          goTo(ELECTRIC_CO);
+          break;
+        case CHANCE_2:
+          goTo(WATER_WORKS);
+          break;
+        case CHANCE_3:
+          goTo(ELECTRIC_CO);
+          break;
+      }
       break;
     case GoToRailroad:
       switch(position) {
@@ -58,9 +65,30 @@ void Player::processEventCard(EventCard *card) {
     case GoToJail:
       goToJail();
       break;
-    case PayForEach:
-      //TO DO
+    case GeneralRepairs: {
+      int i;
+      for(i = 0; i < this->cards.size(); i++) {
+        Card *card = this->cards.at(i);
+        if(card->getType() == PropertyCard) {
+          TitleDeed *property = (TitleDeed*) card;
+          this->wallet.payTo(&Bank::Balance, 25*property->n_houses);
+          this->wallet.payTo(&Bank::Balance, 100*property->n_hotels);
+        }
+      }
       break;
+    }
+    case StreetRepairs: {
+      int i;
+      for(i = 0; i < this->cards.size(); i++) {
+        Card *card = this->cards.at(i);
+        if(card->getType() == PropertyCard) {
+          TitleDeed *property = (TitleDeed*) card;
+          this->wallet.payTo(&Bank::Balance, 40*property->n_houses);
+          this->wallet.payTo(&Bank::Balance, 115*property->n_hotels);
+        }
+      }
+      break;
+    }
     case PayToAll:
       GameController::payAll(this, card->value);
       break;
@@ -106,7 +134,10 @@ void Player::stepOnTile(Board::Tile tile) {
 }
 
 void Player::goTo(int position) {
+  if(position < this->position)
+    this->wallet.receiveFrom(&Bank::Balance, 200);
 
+  this->position = position;
 }
 
 void Player::goToJail() {

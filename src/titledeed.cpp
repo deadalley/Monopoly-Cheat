@@ -1,7 +1,7 @@
 #include "titledeed.h"
 
 TitleDeed::TitleDeed() {
-
+  this->type = PropertyCard;
 }
 
 TitleDeed::TitleDeed(
@@ -13,6 +13,7 @@ TitleDeed::TitleDeed(
   int house_cost,
   int hotel_cost
 ) {
+  this->type = PropertyCard;
   this->name = name;
   this->color = color;
 

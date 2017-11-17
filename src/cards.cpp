@@ -159,7 +159,7 @@ void Cards::inputChanceCards(string file_name) {
     }
 
     if(i == 14) {
-      newCard.effectType = PayForEach;
+      newCard.effectType = GeneralRepairs;
     }
 
     if(i == 15) {
@@ -258,7 +258,7 @@ void Cards::inputChestCards(string file_name) {
     }
 
     if(i == 15) {
-      newCard.effectType = PayForEach;
+      newCard.effectType = StreetRepairs;
     }
 
     if(i == 16) {

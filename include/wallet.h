@@ -8,6 +8,12 @@ class Wallet {
   private:
     Bills balance;
 
+    void deposit(Bills);
+    void deposit(int);
+
+    bool deduct(Bills);
+    bool deduct(int);
+
   public:
     Wallet();
     Wallet(Bills);
@@ -18,13 +24,8 @@ class Wallet {
     void setBalance(Bills);
     Bills getBalance();
 
-    void deposit(Bills);
-    void deposit(int);
-
-    bool deduct(Bills);
-    bool deduct(int);
-
     void payTo(Wallet*, int);
+    void receiveFrom(Wallet*, Bills);
     void receiveFrom(Wallet*, int);
     void printBalance();
 };

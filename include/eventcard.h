@@ -13,7 +13,8 @@ enum EventCardEffect {
   GoBack3,
   GoToJail,
   GetOutJail,
-  PayForEach,
+  StreetRepairs,
+  GeneralRepairs,
   PayToAll,
   ReceiveFromAll
 };
