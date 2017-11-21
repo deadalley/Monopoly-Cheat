@@ -3,6 +3,7 @@
 Board::Tile::Tile(TileType type, int position) {
   this->type = type;
   this->position = position;
+  this->card = NULL;
 }
 
 TileType Board::Tile::getType() {
@@ -11,6 +12,10 @@ TileType Board::Tile::getType() {
 
 Card* Board::Tile::getCard() {
   return this->card;
+}
+
+void Board::Tile::setCard(Card *card) {
+  this->card = card;
 }
 
 EventCard* Board::Tile::getEventCard() {

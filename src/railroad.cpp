@@ -9,4 +9,5 @@ Railroad::Railroad(string name) {
   rent[3] = 200;
   mortgage = 100;
   price = 200;
+  this->owner = -1;
 }

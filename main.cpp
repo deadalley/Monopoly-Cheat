@@ -9,6 +9,8 @@
 #include "board.h"
 #include "gamecontroller.h"
 
+#define N_TURNS 50
+
 using namespace std;
 
 TitleDeed* Cards::deeds = (TitleDeed*) malloc(sizeof(TitleDeed)*22);
@@ -39,17 +41,11 @@ void init() {
 int main() {
   init();
 
-  Board::Tile newTile(ChanceTile, CHANCE_1);
-
-  Player *p1 = GameController::getPlayer(0);
-  cout << p1->getName() << endl;
-
-  p1->stepOnTile(newTile);
-  p1->stepOnTile(newTile);
-  p1->stepOnTile(newTile);
-  p1->stepOnTile(newTile);
-  p1->stepOnTile(newTile);
-  p1->stepOnTile(newTile);
+  int k = 0;
+  while(k < N_TURNS) {
+    GameController::processTurn();
+    k++;
+  }
 
   return 0;
 }

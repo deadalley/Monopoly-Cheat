@@ -6,4 +6,5 @@ Utility::Utility(string name) {
   multiplier = 4;
   mortgage = 10;
   price = 150;
+  this->owner = -1;
 }

@@ -24,7 +24,7 @@ class Wallet {
     void setBalance(Bills);
     Bills getBalance();
 
-    void payTo(Wallet*, int);
+    bool payTo(Wallet*, int);
     void receiveFrom(Wallet*, Bills);
     void receiveFrom(Wallet*, int);
     void printBalance();

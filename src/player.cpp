@@ -1,7 +1,8 @@
 #include "player.h"
 #include "gamecontroller.h"
 
-Player::Player(string name) {
+Player::Player(int id, string name) {
+  this->id = id;
   this->name = name;
   this->position = GO;
 
@@ -16,6 +17,9 @@ Player::Player(string name) {
   initialBalance.five_hundreds = 2;
 
   this->wallet.receiveFrom(&Bank::Balance, initialBalance);
+  this->inJail = false;
+
+  this->buyingChance = 100;
 }
 
 string Player::getName() {
@@ -23,12 +27,15 @@ string Player::getName() {
 }
 
 void Player::processEventCard(EventCard *card) {
+  cout << "\t" << name << " drew " << card->description << endl;
   switch(card->effectType) {
     case Collect:
       this->wallet.receiveFrom(&Bank::Balance, card->value);
+      cout << "\t" << name << " collected " << card->value << endl;
       break;
     case Pay:
-      this->wallet.payTo(&Bank::Balance, card->value);
+      if(this->wallet.payTo(&Bank::Balance, card->value))
+        cout << "\t" << name << " paid " << card->value << endl;
       break;
     case GoToTile:
       goTo(card->tile);
@@ -98,37 +105,65 @@ void Player::processEventCard(EventCard *card) {
   }
 }
 
-void Player::stepOnTile(Board::Tile tile) {
-  cout << "Tile Type: " << tile.getType() << endl;
-  switch (tile.getType()){
-    case PropertyTile:
-      // Implement PropertyTile behavior
+void Player::buy(Card *card) {
+  if(wallet.payTo(&Bank::Balance, card->price)) {
+    cards.push_back(card);
+    card->owner = this->id;
+    cout << "\t" << name << " bought " << card->name << endl;
+  }
+
+  else cout << "\t" << name << " does not have enough credit to buy " << card->name << endl;
+}
+
+void Player::stepOnTile(Board::Tile *tile) {
+  //cout << "Tile Type: " << tile->getType() << endl;
+  switch (tile->getType()){
+    case PropertyTile: {
+      Card *card = tile->getCard();
+      if(id == card->owner)
+        cout << "\t" << name << " already owns " << card->name << endl;
+      else {
+        if(card->owner != -1)
+          cout << "\t" << "Player " << (card->owner+1) << " owns " << card->name << endl;
+
+        else {
+          cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << card->name << endl;
+          int chance = rand() % 100;
+          if(chance <= buyingChance)
+            buy(card);
+        }
+      }
       break;
+    }
     case ChestTile:
-      processEventCard(tile.getEventCard());
+      processEventCard(tile->getEventCard());
       break;
     case ChanceTile:
-      processEventCard(tile.getEventCard());
+      processEventCard(tile->getEventCard());
       break;
     case JailTile:
       // nothing to do here
+      cout << "\t" << name << " landed on Jail (no worries!)" << endl;
       break;
     case GoToJailTile:
+      cout << "\t" << name << " landed on Go To Jail (oh no!)" << endl;
       this->goToJail();
       break;
     case GoTile:
       // nothing to do here
+      cout << "\t" << name << " landed on GO" << endl;
       break;
     case FreeParkingTile:
       // nothing to do here
+      cout << "\t" << name << " landed on Free Parking" << endl;
       break;
     case IncomeTaxTile:
-      //this->payBank(200);
-      this->wallet.payTo(&Bank::Balance, 200);
+      if(this->wallet.payTo(&Bank::Balance, 200))
+        cout << "\t" << name << " paid 200 in Income Tax" << endl;
       break;
     case LuxuryTaxTile:
-      //this->payBank(100);
-      this->wallet.payTo(&Bank::Balance, 100);
+      if(this->wallet.payTo(&Bank::Balance, 100))
+        cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
       break;
   }
 }
@@ -142,4 +177,12 @@ void Player::goTo(int position) {
 
 void Player::goToJail() {
 
+}
+
+int Player::getPosition() {
+  return this->position;
+}
+
+bool Player::isInJail() {
+  return inJail;
 }

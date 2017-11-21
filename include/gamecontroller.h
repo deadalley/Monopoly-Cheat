@@ -6,6 +6,7 @@
 class GameController {
   private:
     static vector<Player*> players;
+    static int activePlayer;
 
   public:
     static void initGame(int);
@@ -14,6 +15,7 @@ class GameController {
 
     static void payAll(Player*, int);
     static void receiveFromAll(Player*, int);
+    static void processTurn();
 };
 
 #endif

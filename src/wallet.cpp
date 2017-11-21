@@ -35,21 +35,27 @@ Bills Wallet::convert(int value) {
 
   newBills.five_hundreds = value / 500;
   value -= newBills.five_hundreds * 500;
+  //cout << value << endl;
 
   newBills.one_hundreds = value / 100;
   value -= newBills.one_hundreds * 100;
+  //cout << value << endl;
 
   newBills.fifties = value / 50;
-  value -= newBills.five_hundreds * 50;
+  value -= newBills.fifties * 50;
+  //cout << value << endl;
 
   newBills.twenties = value / 20;
   value -= newBills.twenties * 20;
+  //cout << value << endl;
 
   newBills.tens = value / 10;
   value -= newBills.tens * 10;
+  //cout << value << endl;
 
   newBills.fives = value / 5;
   value -= newBills.fives * 5;
+  //cout << value << endl;
 
   newBills.ones = value;
 
@@ -79,9 +85,12 @@ bool Wallet::deduct(int value) {
   deduct(convert(value));
 }
 
-void Wallet::payTo(Wallet *entity, int value) {
-  if(deduct(value))
+bool Wallet::payTo(Wallet *entity, int value) {
+  bool hasCredit = deduct(value);
+  if(hasCredit)
     entity->deposit(value);
+
+  return hasCredit;
 }
 
 void Wallet::receiveFrom(Wallet *entity, Bills bills) {

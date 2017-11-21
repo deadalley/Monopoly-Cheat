@@ -64,13 +64,13 @@ void Cards::inputTitleDeeds(string file_name) {
 }
 
 void Cards::initRailroads() {
-  Railroad r1("B & O Railroad");
+  Railroad r1("Reading Railroad");
   railroads[0] = r1;
 
   Railroad r2("Pennsylvania Railroad");
   railroads[1] = r2;
 
-  Railroad r3("Reading Railroad");
+  Railroad r3("B & O Railroad");
   railroads[2] = r3;
 
   Railroad r4("Short Line Railroad");

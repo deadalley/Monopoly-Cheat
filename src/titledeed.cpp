@@ -2,6 +2,7 @@
 
 TitleDeed::TitleDeed() {
   this->type = PropertyCard;
+  this->owner = -1;
 }
 
 TitleDeed::TitleDeed(
@@ -26,4 +27,5 @@ TitleDeed::TitleDeed(
   this->hotel_cost = hotel_cost;
 
   this->n_houses = this->n_hotels = 0;
+  this->owner = -1;
 }

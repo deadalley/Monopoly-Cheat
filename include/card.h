@@ -19,7 +19,9 @@ class Card {
     string name;
     int price;
     int mortgage;
-    
+    int position;
+    int owner;
+
     CardType getType() {
       return type;
     }

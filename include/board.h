@@ -34,11 +34,11 @@ class Board {
 
   private:
     static vector<Tile> map;
+    static stack<EventCard*> chanceCards;
+    static stack<EventCard*> chestCards;
 
   public:
     static void initBoard();
-    static stack<EventCard*> chanceCards;
-    static stack<EventCard*> chestCards;
     static Tile* getTile(int);
     static int rollDice(int);
 };
@@ -53,6 +53,7 @@ class Board::Tile {
     Tile(TileType, int);
     TileType getType();
     Card* getCard();
+    void setCard(Card*);
     EventCard* getEventCard();  // Draws a chance or chest card
     int getPos();
 };
