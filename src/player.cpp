@@ -38,6 +38,9 @@ void Player::processEventCard(EventCard *card) {
         cout << "\t" << name << " paid " << card->value << endl;
       break;
     case GoToTile:
+      cout << "\t" << name << " advanced to Go and collected 200" << endl;
+      if(card->tile == GO)
+        wallet.receiveFrom(&Bank::Balance, 200);
       goTo(card->tile);
       break;
     case GoToUtility:
@@ -79,7 +82,8 @@ void Player::processEventCard(EventCard *card) {
         if(card->getType() == PropertyCard) {
           TitleDeed *property = (TitleDeed*) card;
           this->wallet.payTo(&Bank::Balance, 25*property->n_houses);
-          this->wallet.payTo(&Bank::Balance, 100*property->n_hotels);
+          if(property->hasHotel)
+            this->wallet.payTo(&Bank::Balance, 100);
         }
       }
       break;
@@ -91,7 +95,8 @@ void Player::processEventCard(EventCard *card) {
         if(card->getType() == PropertyCard) {
           TitleDeed *property = (TitleDeed*) card;
           this->wallet.payTo(&Bank::Balance, 40*property->n_houses);
-          this->wallet.payTo(&Bank::Balance, 115*property->n_hotels);
+          if(property->hasHotel)
+            this->wallet.payTo(&Bank::Balance, 115);
         }
       }
       break;
@@ -116,16 +121,32 @@ void Player::buy(Card *card) {
 }
 
 void Player::stepOnTile(Board::Tile *tile) {
-  //cout << "Tile Type: " << tile->getType() << endl;
   switch (tile->getType()){
     case PropertyTile: {
       Card *card = tile->getCard();
+      // Player already owns card
       if(id == card->owner)
         cout << "\t" << name << " already owns " << card->name << endl;
       else {
-        if(card->owner != -1)
+        // Card is owned by another player
+        if(card->owner != -1) {
           cout << "\t" << "Player " << (card->owner+1) << " owns " << card->name << endl;
+          if(card->isMortgaged)
+            break;
 
+          // Pay rent
+          Player *otherPlayer = GameController::getPlayer(card->owner);
+          TitleDeed *property = (TitleDeed*) card;
+          int rent = 0;
+          if(property->hasHotel)
+            rent = property->rent[5];
+          else rent = property->rent[property->n_houses];
+
+          if(wallet.payTo(&otherPlayer->wallet, rent))
+            cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+        }
+
+        // Nobody owns card. Player may buy it
         else {
           cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << card->name << endl;
           int chance = rand() % 100;

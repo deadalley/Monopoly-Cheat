@@ -6,7 +6,8 @@
 class GameController {
   private:
     static vector<Player*> players;
-    static int activePlayer;
+    static int sequenceOfTurns;     // Counts how many times the same player has been the active player
+    static int activePlayer;        // Player id of current turn
 
   public:
     static void initGame(int);

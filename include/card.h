@@ -21,10 +21,11 @@ class Card {
     int mortgage;
     int position;
     int owner;
+    bool isMortgaged;
 
-    CardType getType() {
-      return type;
-    }
+    Card();
+    Card(string, int, int);
+    CardType getType();
 };
 
 #endif

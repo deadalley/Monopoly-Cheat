@@ -18,7 +18,7 @@ class TitleDeed : public Card {
     int hotel_cost;
 
     int n_houses;
-    int n_hotels;
+    bool hasHotel;
 
     TitleDeed();
     TitleDeed(

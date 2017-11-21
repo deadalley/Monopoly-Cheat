@@ -9,7 +9,7 @@
 #include "board.h"
 #include "gamecontroller.h"
 
-#define N_TURNS 50
+#define N_TURNS 25
 
 using namespace std;
 

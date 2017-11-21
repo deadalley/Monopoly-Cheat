@@ -1,8 +1,9 @@
 #include "titledeed.h"
 
-TitleDeed::TitleDeed() {
+TitleDeed::TitleDeed() : Card() {
   this->type = PropertyCard;
-  this->owner = -1;
+  this->n_houses = 0;
+  this->hasHotel = false;
 }
 
 TitleDeed::TitleDeed(
@@ -15,17 +16,16 @@ TitleDeed::TitleDeed(
   int hotel_cost
 ) {
   this->type = PropertyCard;
-  this->name = name;
   this->color = color;
 
-  this->price = price;
+  Card(name, price, mortgage);
+
   int i;
   for(i = 0; i < 6; i++)
     this->rent[i] = rent[i];
-  this->mortgage = mortgage;
   this->house_cost = house_cost;
   this->hotel_cost = hotel_cost;
 
-  this->n_houses = this->n_hotels = 0;
-  this->owner = -1;
+  this->n_houses = 0;
+  this->hasHotel = false;
 }
