@@ -18,8 +18,14 @@ Player::Player(int id, string name) {
 
   this->wallet.receiveFrom(&Bank::Balance, initialBalance);
   this->inJail = false;
+  this->hasJailCard = false;
+  this->roundsInJail = 0;
 
   this->buyingChance = 100;
+  this->buildingChance = 100;
+  this->payingJailChance = 80;
+  this->mortgageChance = 30;
+  this->minimumBalance = 100;
 }
 
 string Player::getName() {
@@ -38,9 +44,10 @@ void Player::processEventCard(EventCard *card) {
         cout << "\t" << name << " paid " << card->value << endl;
       break;
     case GoToTile:
-      cout << "\t" << name << " advanced to Go and collected 200" << endl;
-      if(card->tile == GO)
+      if(card->tile == GO) {
+        cout << "\t" << name << " advanced to Go and collected 200" << endl;
         wallet.receiveFrom(&Bank::Balance, 200);
+      }
       goTo(card->tile);
       break;
     case GoToUtility:
@@ -69,9 +76,14 @@ void Player::processEventCard(EventCard *card) {
           break;
       }
       break;
-    case GoBack3:
-      goTo(this->position - 3);
+    case GoBack3: {
+      int newPosition = this->position - 3;
+      if(newPosition < 0)
+        newPosition = 40 + newPosition;
+      this->position = newPosition;
+      //goTo(newPosition);
       break;
+    }
     case GoToJail:
       goToJail();
       break;
@@ -115,6 +127,11 @@ void Player::buy(Card *card) {
     cards.push_back(card);
     card->owner = this->id;
     cout << "\t" << name << " bought " << card->name << endl;
+    if(card->getType() == PropertyCard) {
+      TitleDeed *deed = (TitleDeed*) card;
+      colorSets[deed->color]++;
+      //cout << "\t\t" << deed->color << ": " << colorSets[deed->color] << endl;
+    }
   }
 
   else cout << "\t" << name << " does not have enough credit to buy " << card->name << endl;
@@ -135,23 +152,30 @@ void Player::stepOnTile(Board::Tile *tile) {
             break;
 
           // Pay rent
-          Player *otherPlayer = GameController::getPlayer(card->owner);
-          TitleDeed *property = (TitleDeed*) card;
-          int rent = 0;
-          if(property->hasHotel)
-            rent = property->rent[5];
-          else rent = property->rent[property->n_houses];
+          if(card->getType() == PropertyCard) {
+            Player *otherPlayer = GameController::getPlayer(card->owner);
+            TitleDeed *property = (TitleDeed*) card;
+            int rent = 0;
+            if(property->hasHotel)
+              rent = property->rent[5];
+            else rent = property->rent[property->n_houses];
 
-          if(wallet.payTo(&otherPlayer->wallet, rent))
-            cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+            if(wallet.payTo(&otherPlayer->wallet, rent))
+              cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+          }
         }
 
         // Nobody owns card. Player may buy it
         else {
-          cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << card->name << endl;
-          int chance = rand() % 100;
-          if(chance <= buyingChance)
-            buy(card);
+          if((this->wallet.getBalanceValue() - card->price) < this->minimumBalance) {
+            cout << "\t" << name << " is at minimum balance" << endl;
+          }
+          else {
+            cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << card->name << endl;
+            int chance = rand() % 100;
+            if(chance <= buyingChance)
+              buy(card);
+          }
         }
       }
       break;
@@ -197,13 +221,81 @@ void Player::goTo(int position) {
 }
 
 void Player::goToJail() {
-
+  this->inJail = true;
+  this->position = JAIL;
 }
 
 int Player::getPosition() {
   return this->position;
 }
 
-bool Player::isInJail() {
-  return inJail;
+void Player::build(TitleDeed *deed) {
+  if(deed->hasHotel)
+    return;
+
+  if(deed->n_houses == 4) {
+    if(this->wallet.payTo(&Bank::Balance, deed->hotel_cost)) {
+      deed->n_houses = 0;
+      deed->hasHotel = true;
+      cout << "\t" << name << " built a hotel on " << deed->name << endl;
+      return;
+    }
+  }
+
+  if(this->wallet.payTo(&Bank::Balance, deed->house_cost)) {
+    deed->n_houses++;
+    cout << "\t" << name << " built a house on " << deed->name << endl;
+  }
+
+  else cout << "\t" << name << " could not build on " << deed->name << endl;
+}
+
+void Player::tryToBuild() {
+  if((this->wallet.getBalanceValue()) <= this->minimumBalance) {
+    cout << "\t" << name << " is at minimum balance" << endl;
+    return;
+  }
+
+  cout << "\t" << name << " has " << buildingChance << "\% chance of building" << endl;
+  int chance = rand() % 100;
+
+  // Check if player has all cards of same color for building
+  string colors[8] = {"purple", "cyan", "pink", "orange", "red", "yellow", "green", "blue"};
+  if(chance <= buildingChance) {
+    cout << "\t" << name << " owns " << endl;
+    int i;
+    for(i = 0; i < 8; i++) {
+      cout << "\t\t" << colors[i] << ": " << colorSets[colors[i]] << endl;
+      // If purple or cyan and has two OR has three of any other color
+      if( ((i == 0 || i == 7) && colorSets[colors[i]] == 2) ||
+           colorSets[colors[i]] == 3) {
+        // Find first card of that color for building
+        TitleDeed *property;
+        int j;
+        for(j = 0; j < cards.size(); j++) {
+          property = (TitleDeed*) cards[j];
+          if(property->color == colors[i])
+            this->build(property);
+        }
+      }
+    }
+  }
+  else {
+    cout << "\t" << name << " did not build anything this round" << endl;
+  }
+}
+
+bool Player::paidToGetOutOfJail() {
+  if((this->wallet.getBalanceValue() - 50) < this->minimumBalance) {
+    cout << "\t" << name << " is at minimum balance" << endl;
+  }
+
+  cout << "\t" << name << " has " << payingJailChance << "\% chance of paying to leave jail" << endl;
+  int chance = rand() % 100;
+
+  if(chance <= payingJailChance) {
+    return wallet.payTo(&Bank::Balance, 50);
+  }
+
+  return false;
 }

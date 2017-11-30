@@ -1,9 +1,10 @@
 #include "board.h"
 
-Board::Tile::Tile(TileType type, int position) {
+Board::Tile::Tile(TileType type, int position, Card *card) {
   this->type = type;
   this->position = position;
-  this->card = NULL;
+  this->card = card;
+  //this->card = NULL;
 }
 
 TileType Board::Tile::getType() {

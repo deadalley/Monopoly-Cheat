@@ -9,7 +9,7 @@
 #include "board.h"
 #include "gamecontroller.h"
 
-#define N_TURNS 25
+#define N_TURNS 45
 
 using namespace std;
 
@@ -23,6 +23,8 @@ vector<Board::Tile> Board::map;
 stack<EventCard*> Board::chanceCards;
 stack<EventCard*> Board::chestCards;
 
+int INIT_BALANCE;
+
 void init() {
   srand(time(NULL));
   Cards::inputTitleDeeds("titledeeds.cards");
@@ -34,6 +36,8 @@ void init() {
   Board::initBoard();
 
   Bank::initBank();
+  INIT_BALANCE = Bank::Balance.getBalanceValue();
+  cout << INIT_BALANCE << endl;
 
   GameController::initGame(4);
 }
@@ -45,6 +49,15 @@ int main() {
   while(k < N_TURNS) {
     GameController::processTurn();
     k++;
+
+    int i, v = 0;
+    for(i = 0; i < 4; i++) {
+      v += GameController::getPlayer(i)->wallet.getBalanceValue();
+    }
+    v += Bank::Balance.getBalanceValue();
+    //cout << "\t\t\t\t\t" << v << endl;
+    if(v != INIT_BALANCE)
+      cerr << "OH NO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
   }
 
   return 0;

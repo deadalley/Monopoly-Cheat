@@ -105,6 +105,18 @@ typedef struct Bills {
            five_hundreds < b.five_hundreds;
   }
 
+  int& operator [] (int i) {
+    switch(i) {
+      case 0: return ones;
+      case 1: return fives;
+      case 2: return tens;
+      case 3: return twenties;
+      case 4: return fifties;
+      case 5: return one_hundreds;
+      case 6: return five_hundreds;
+    }
+  }
+
   friend ostream& operator<< (ostream &os, const Bills &b) {
     os << "Ones: " << b.ones << endl;
     os << "Fives: " << b.fives << endl;

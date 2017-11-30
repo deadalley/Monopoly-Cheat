@@ -50,7 +50,7 @@ class Board::Tile {
     int position;
 
   public:
-    Tile(TileType, int);
+    Tile(TileType, int, Card*);
     TileType getType();
     Card* getCard();
     void setCard(Card*);

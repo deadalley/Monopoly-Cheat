@@ -64,25 +64,37 @@ void Cards::inputTitleDeeds(string file_name) {
 }
 
 void Cards::initRailroads() {
-  Railroad r1("Reading Railroad");
-  railroads[0] = r1;
+  Railroad *r = new Railroad("Reading Railroad");
+  //Railroad r1("Reading Railroad");
+  //railroads[0] = r1;
+  railroads[0] = *r;
 
-  Railroad r2("Pennsylvania Railroad");
-  railroads[1] = r2;
+  r = new Railroad("Pennsylvania Railroad");
+  //Railroad r2("Pennsylvania Railroad");
+  //railroads[1] = r2;
+  railroads[1] = *r;
 
-  Railroad r3("B & O Railroad");
-  railroads[2] = r3;
+  r = new Railroad("B & O Railroad");
+  //Railroad r3("B & O Railroad");
+  //railroads[2] = r3;
+  railroads[2] = *r;
 
-  Railroad r4("Short Line Railroad");
-  railroads[3] = r4;
+  r = new Railroad("Short Line Railroad");
+  //Railroad r4("Short Line Railroad");
+  //railroads[3] = r4;
+  railroads[3] = *r;
 }
 
 void Cards::initUtilities() {
-  Utility u1("Electric Company");
-  utilities[0] = u1;
+  Utility *u = new Utility("Electric Company");
+  //Utility u1("Electric Company");
+  //utilities[0] = u1;
+  utilities[0] = *u;
 
-  Utility u2("Water Works");
-  utilities[1] = u2;
+  u = new Utility("Water Works");
+  //Utility u2("Water Works");
+  //utilities[1] = u2;
+  utilities[1] = *u;
 }
 
 void Cards::inputChanceCards(string file_name) {

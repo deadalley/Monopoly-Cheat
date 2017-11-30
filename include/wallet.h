@@ -3,16 +3,15 @@
 
 //#include "bank"
 #include "utils.h"
+#include <algorithm>
 
 class Wallet {
   private:
     Bills balance;
 
     void deposit(Bills);
-    void deposit(int);
 
     bool deduct(Bills);
-    bool deduct(int);
 
   public:
     Wallet();
@@ -20,14 +19,17 @@ class Wallet {
     Wallet(int);
 
     static Bills convert(int);
+    static int convert(Bills);
 
     void setBalance(Bills);
     Bills getBalance();
+    int getBalanceValue();
 
     bool payTo(Wallet*, int);
     void receiveFrom(Wallet*, Bills);
     void receiveFrom(Wallet*, int);
     void printBalance();
+    Bills exchange(int, int);
 };
 
 #endif

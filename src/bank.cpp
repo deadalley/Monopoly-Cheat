@@ -11,7 +11,6 @@ void Bank::initBank() {
   initBalance.fifties = 30;
   initBalance.one_hundreds = 30;
   initBalance.five_hundreds = 30;
-
   Balance.setBalance(initBalance);
 }
 

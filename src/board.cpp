@@ -21,7 +21,7 @@ void Board::initBoard() {
 
   // Initialize tiles
   int i_deed = 0, i_railroad = 0, i_utility = 0;
-  for(i = GO; i < BOARDWALK; i++) {
+  for(i = GO; i < 40; i++) {
     Board::Tile *tile;
     Card *card = NULL;
 
@@ -72,8 +72,14 @@ void Board::initBoard() {
       card->position = i;
     }
 
-    tile = new Board::Tile(type, i);
-    tile->setCard(card);
+    tile = new Board::Tile(type, i, card);
+    //tile->setCard(card);
+    /*cout << type << ", ";
+    if(type == PropertyTile) {
+      cout << card->name << ", ";
+      cout << tile->getCard()->name << endl;
+    }*/
+
     //if(card != NULL)
       //cout << "Created card " << card->name << ", " << card->owner << endl;
 
