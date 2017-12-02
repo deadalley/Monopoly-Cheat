@@ -1,5 +1,35 @@
 #include "cards.h"
 
+Color parseColor(string name) {
+  transform(name.begin(), name.end(), name.begin(), ::tolower);
+  if(name.compare("purple") == 0)
+    return Purple;
+  if(name.compare("cyan") == 0)
+    return Cyan;
+  if(name.compare("pink") == 0)
+    return Pink;
+  if(name.compare("orange") == 0)
+    return Orange;
+  if(name.compare("red") == 0)
+    return Red;
+  if(name.compare("yellow") == 0)
+    return Yellow;
+  if(name.compare("green") == 0)
+    return Green;
+  if(name.compare("blue") == 0)
+    return Blue;
+
+  throw ANY_ERROR;
+}
+
+void Cards::initCards() {
+  Cards::inputTitleDeeds("titledeeds.cards");
+  Cards::inputChanceCards("chance.cards");
+  Cards::inputChestCards("chest.cards");
+  Cards::initRailroads();
+  Cards::initUtilities();
+}
+
 void Cards::inputTitleDeeds(string file_name) {
   // Open file
   ifstream file;
@@ -17,9 +47,11 @@ void Cards::inputTitleDeeds(string file_name) {
     size_t k = 0;
     size_t pos = 0;
     string value;
-
+    
     // Parse value
-    while((pos = line.find(", ")) != string::npos) {
+    //while((pos = line.find(", ")) != string::npos) {
+    while(k < 12) {
+      pos = line.find(", ");
       value = line.substr(0, pos);
 
       switch(k) {
@@ -27,14 +59,13 @@ void Cards::inputTitleDeeds(string file_name) {
           newDeed.name = value;
           break;
         case 1:
-          //TO DO: Fix
-          newDeed.color = value;
+          newDeed.color = parseColor(value);
           break;
         case 2:
           newDeed.price = stoi(value);
           break;
         case 3:
-          while (k < 10) {
+          while (k < 9) {
             pos = line.find(", ");
             newDeed.rent[k-3] = stoi(line.substr(0, pos));
             line.erase(0, pos + 2);
@@ -42,21 +73,31 @@ void Cards::inputTitleDeeds(string file_name) {
           }
           k--;
           break;
-        case 10:
+        case 9:
           newDeed.mortgage = stoi(value);
           break;
-        case 11:
+        case 10:
           newDeed.house_cost = stoi(value);
           break;
-        case 12:
+        case 11:
           newDeed.hotel_cost = stoi(value);
           break;
       }
 
-      line.erase(0, pos + 2);
+      if(k != 8)
+        line.erase(0, pos + 2);
       k++;
     }
     deeds[i] = newDeed;
+    /*int j;
+    cout << ">> " << deeds[i].name << endl;
+    cout << "\tPrice: " << deeds[i].price << endl;
+    cout << "\tRent: " << endl;
+    cout << "\t";
+    for(j = 0; j < 6; j++)
+      cout << deeds[i].rent[j] << ", ";
+    cout << endl << "\tCost: " << deeds[i].house_cost << ", " << deeds[i].hotel_cost << endl;
+    cout << "\tMortgage: " << deeds[i].mortgage << endl;*/
     i++;
   }
 
@@ -65,35 +106,23 @@ void Cards::inputTitleDeeds(string file_name) {
 
 void Cards::initRailroads() {
   Railroad *r = new Railroad("Reading Railroad");
-  //Railroad r1("Reading Railroad");
-  //railroads[0] = r1;
   railroads[0] = *r;
 
   r = new Railroad("Pennsylvania Railroad");
-  //Railroad r2("Pennsylvania Railroad");
-  //railroads[1] = r2;
   railroads[1] = *r;
 
   r = new Railroad("B & O Railroad");
-  //Railroad r3("B & O Railroad");
-  //railroads[2] = r3;
   railroads[2] = *r;
 
   r = new Railroad("Short Line Railroad");
-  //Railroad r4("Short Line Railroad");
-  //railroads[3] = r4;
   railroads[3] = *r;
 }
 
 void Cards::initUtilities() {
   Utility *u = new Utility("Electric Company");
-  //Utility u1("Electric Company");
-  //utilities[0] = u1;
   utilities[0] = *u;
 
   u = new Utility("Water Works");
-  //Utility u2("Water Works");
-  //utilities[1] = u2;
   utilities[1] = *u;
 }
 

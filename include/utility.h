@@ -9,7 +9,7 @@ using namespace std;
 class Utility : public Card{
   public:
     //string name;
-    int multiplier;
+    //int multiplier;
     //int mortgage;
     //int price;
 

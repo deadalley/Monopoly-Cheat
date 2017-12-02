@@ -4,16 +4,25 @@
 #include <stdlib.h>
 #include <fstream>
 #include <string>
+#include <algorithm>
 
 #include "utils.h"
 #include "titledeed.h"
 #include "railroad.h"
 #include "utility.h"
 #include "eventcard.h"
+#include "colorset.h"
 
 using namespace std;
 
 class Cards {
+  private:
+    static void inputTitleDeeds(string);
+    static void inputChanceCards(string);
+    static void inputChestCards(string);
+    static void initRailroads();
+    static void initUtilities();
+
   public:
     static Utility *utilities;
     static Railroad *railroads;
@@ -21,11 +30,7 @@ class Cards {
     static EventCard *chest;
     static EventCard *chance;
 
-    static void inputTitleDeeds(string);
-    static void inputChanceCards(string);
-    static void inputChestCards(string);
-    static void initRailroads();
-    static void initUtilities();
+    static void initCards();
 };
 
 #endif

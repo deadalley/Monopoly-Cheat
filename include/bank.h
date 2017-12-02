@@ -7,14 +7,11 @@
 using namespace std;
 
 class Bank {
-  private:
-    //static Bills balance;
-
   public:
     static Wallet Balance;
 
     static void initBank();
-    static void _currentBalance();
+    static Bills tryToExchangeBills(int, int);
 };
 
 #endif

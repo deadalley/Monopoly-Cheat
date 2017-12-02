@@ -13,13 +13,12 @@ class Wallet {
 
     bool deduct(Bills);
 
-  public:
-    Wallet();
-    Wallet(Bills);
-    Wallet(int);
+    Bills convert(int);
+    int convert(Bills);
 
-    static Bills convert(int);
-    static int convert(Bills);
+  public:
+    //int totalAmount;
+    Wallet();
 
     void setBalance(Bills);
     Bills getBalance();
@@ -27,7 +26,6 @@ class Wallet {
 
     bool payTo(Wallet*, int);
     void receiveFrom(Wallet*, Bills);
-    void receiveFrom(Wallet*, int);
     void printBalance();
     Bills exchange(int, int);
 };

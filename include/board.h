@@ -36,11 +36,14 @@ class Board {
     static vector<Tile> map;
     static stack<EventCard*> chanceCards;
     static stack<EventCard*> chestCards;
+    static int dice[2];
 
   public:
     static void initBoard();
     static Tile* getTile(int);
-    static int rollDice(int);
+    static void rollDice();
+    static int getDie(int);
+    static EventCard* getEventCard(TileType);  // Draws a chance or chest card
 };
 
 class Board::Tile {
@@ -54,7 +57,6 @@ class Board::Tile {
     TileType getType();
     Card* getCard();
     void setCard(Card*);
-    EventCard* getEventCard();  // Draws a chance or chest card
     int getPos();
 };
 
