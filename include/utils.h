@@ -42,6 +42,12 @@
 #define LUXURY_TAX 38
 #define BOARDWALK 39
 
+#define ANY_ERROR 0
+#define NEGATIVE_BILLS -1
+#define TOTAL_AMOUNT_CHANGED -2
+#define PAY_FAILED -3
+#define PAY_VALUE_ERROR -4
+
 #include <iostream>
 
 using namespace std;

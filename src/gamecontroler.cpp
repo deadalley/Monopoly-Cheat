@@ -16,6 +16,10 @@ void GameController::initGame(int n_players) {
   GameController::sequenceOfTurns = 0;
 }
 
+int GameController::getPlayerSize() {
+  return players.size();
+}
+
 Player* GameController::getPlayer(int pos) {
   return players.at(pos);
 }
@@ -23,14 +27,21 @@ Player* GameController::getPlayer(int pos) {
 void GameController::payAll(Player *player, int value) {
   int i;
   for(i = 0; i < players.size(); i++) {
-    player->wallet.payTo(&players.at(i)->wallet, value);
+    if(i == player->getId())
+      continue;
+    if(!player->wallet.payTo(&players.at(i)->wallet, value))
+      throw PAY_FAILED;
   }
 }
 
 void GameController::receiveFromAll(Player *player, int value) {
   int i;
   for(i = 0; i < players.size(); i++) {
-    player->wallet.receiveFrom(&players.at(i)->wallet, value);
+    if(i == player->getId())
+      continue;
+    if(!players.at(i)->wallet.payTo(&player->wallet, value))
+      throw PAY_FAILED;
+    //player->wallet.receiveFrom(&players.at(i)->wallet, value);
   }
 }
 
@@ -42,8 +53,9 @@ void GameController::processTurn() {
   cout << "\tIs at position " << player->getPosition() << endl;
 
   // Dice roll
-  int die1 = Board::rollDice(1);
-  int die2 = Board::rollDice(1);
+  Board::rollDice();
+  int die1 = Board::getDie(0);
+  int die2 = Board::getDie(1);
   cout << "\t" << player->getName() << " rolled " << die1 << "," << die2 << endl;
 
   // Check if player is in jail
@@ -73,11 +85,15 @@ void GameController::processTurn() {
 
     // Leave if has been in jail three rounds
     else if(player->roundsInJail == 3) {
-      if(player->wallet.payTo(&Bank::Balance, 50)) {
+      if(player->wallet.getBalanceValue() < 50) {
+        // TODO: Mortgage
+      }
+      else if(player->wallet.payTo(&Bank::Balance, 50)) {
         cout << "\t" << player->getName() << " paid 50 and got out of jail" << endl;
         player->inJail = false;
         player->roundsInJail = 0;
       }
+      else throw PAY_FAILED;
     }
 
     else {
@@ -90,20 +106,20 @@ void GameController::processTurn() {
     }
   }
 
-  // Collect 200 if pass go
-  if(player->getPosition() + die1 + die2 >= 40)
-    player->wallet.receiveFrom(&Bank::Balance, 200);
-
   // Move to position
   int newPosition = (player->getPosition() + die1 + die2) % 40;
   player->goTo(newPosition);
   cout << "\tLanded on position " << player->getPosition() << endl;
 
+  // Process tile
   Board::Tile *tile = Board::getTile(player->getPosition());
   cout << "\tStepped on tile of type " << tile->getType() << endl;
   player->stepOnTile(tile);
 
+  // Try to build after turn is processed
   player->tryToBuild();
+
+  cout << player->getName() << " has $" << player->wallet.getBalanceValue() << endl;
 
   if(die1 == die2) {
     GameController::sequenceOfTurns++;
@@ -112,14 +128,11 @@ void GameController::processTurn() {
       cout << "\t" << player->getName() << " has rolled doubles three times and has gone to jail" << endl;
       player->goToJail();
     }
+    else return;
   }
-
-  else {
-    // Update new active player
-    GameController::activePlayer++;
-    GameController::sequenceOfTurns = 0;
-    if (GameController::activePlayer >= GameController::players.size())
-      GameController::activePlayer = 0;
-  }
-
+  // Update new active player
+  GameController::activePlayer++;
+  GameController::sequenceOfTurns = 0;
+  if (GameController::activePlayer >= GameController::players.size())
+    GameController::activePlayer = 0;
 }

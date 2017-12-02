@@ -7,6 +7,7 @@
 #include "utils.h"
 #include "board.h"
 #include "wallet.h"
+#include "colorset.h"
 
 using namespace std;
 
@@ -15,8 +16,11 @@ class Player {
     string name;
     int id;
     int position;
-    vector<Card *> cards;
-    map<string, int> colorSets;
+    vector<Card*> cards;
+    vector<ColorSet*> colorsets;
+    //map<string, int> colorSets;
+    int ownedUtilities;
+    int ownedRailroads;
 
     void processEventCard(EventCard*);
     void buy(Card*);
@@ -37,21 +41,19 @@ class Player {
     int roundsInJail;
 
     Player(int, string);
+
+    int getId();
     string getName();
+    int getPosition();
+    int getOwnedUtilities();
+    int getOwnedRailroads();
 
-    /* Trigger the action of the tile stepped on */
-    void stepOnTile(Board::Tile*);
-
-    /* Moves player to designated tile */
     void goTo(int);
-
-    /* Sends player to jail */
     void goToJail();
 
-    int getPosition();
-
-    /* Player decides to build houses or hotels */
+    void stepOnTile(Board::Tile*);
     void tryToBuild();
+    void tryToMortgage(int);
 
     bool paidToGetOutOfJail();
 };

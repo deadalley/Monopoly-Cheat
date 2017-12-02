@@ -9,7 +9,8 @@
 #include "board.h"
 #include "gamecontroller.h"
 
-#define N_TURNS 45
+#define N_TURNS 200
+#define N_PLAYERS 4
 
 using namespace std;
 
@@ -25,21 +26,53 @@ stack<EventCard*> Board::chestCards;
 
 int INIT_BALANCE;
 
+void checkIntegrity(int k) {
+  int i, j, v = 0;
+
+  Bills bills;
+
+  // Check bank integrity
+  bills = Bank::Balance.getBalance();
+  for(j = 0; j < 7; j++) {
+    if(bills[j] < 0) {
+      cerr << "ERROR (Bank): Negative bills! (" << k << ")" << endl;
+      throw NEGATIVE_BILLS;
+    }
+  }
+  // Check player integrity
+  for(i = 0; i < N_PLAYERS; i++) {
+    bills = GameController::getPlayer(i)->wallet.getBalance();
+    for(j = 0; j < 7; j++) {
+      if(bills[j] < 0) {
+        cerr << "ERROR: Negative bills! (" << k << ")" << endl;
+        throw NEGATIVE_BILLS;
+      }
+    }
+    v += GameController::getPlayer(i)->wallet.getBalanceValue();
+  }
+
+  v += Bank::Balance.getBalanceValue();
+  if(v != INIT_BALANCE) {
+    cerr << "ERROR: Amount of money has changed! (" << k << ")" << endl;
+    throw TOTAL_AMOUNT_CHANGED;
+  }
+
+}
+
 void init() {
   srand(time(NULL));
-  Cards::inputTitleDeeds("titledeeds.cards");
-  Cards::inputChanceCards("chance.cards");
-  Cards::inputChestCards("chest.cards");
-  Cards::initRailroads();
-  Cards::initUtilities();
+  Cards::initCards();
 
   Board::initBoard();
 
   Bank::initBank();
+
   INIT_BALANCE = Bank::Balance.getBalanceValue();
   cout << INIT_BALANCE << endl;
 
-  GameController::initGame(4);
+  GameController::initGame(N_PLAYERS);
+
+  checkIntegrity(-1);
 }
 
 int main() {
@@ -47,18 +80,18 @@ int main() {
 
   int k = 0;
   while(k < N_TURNS) {
-    GameController::processTurn();
-    k++;
+    try {
+      GameController::processTurn();
 
-    int i, v = 0;
-    for(i = 0; i < 4; i++) {
-      v += GameController::getPlayer(i)->wallet.getBalanceValue();
+      checkIntegrity(k);
     }
-    v += Bank::Balance.getBalanceValue();
-    //cout << "\t\t\t\t\t" << v << endl;
-    if(v != INIT_BALANCE)
-      cerr << "OH NO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
-  }
 
+    catch(int e) {
+      cout << "ERROR: " << e << " (" << k << ")" <<endl;
+      abort();
+    }
+
+    k++;
+  }
   return 0;
 }

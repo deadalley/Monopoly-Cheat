@@ -12,6 +12,7 @@ class GameController {
   public:
     static void initGame(int);
 
+    static int getPlayerSize();
     static Player* getPlayer(int);
 
     static void payAll(Player*, int);

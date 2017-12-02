@@ -1,14 +1,17 @@
 #include "board.h"
 
+int Board::dice[2];
+
 void Board::initBoard() {
   // Initialize chance and chest cards
   int i;
-  vector<EventCard*> chance, chest;
+  vector<EventCard*> chance, chest;     // Aux vectors for shuffling
   for(i = 0; i < 17; i++) {
     chance.push_back(&Cards::chance[i]);
     chest.push_back(&Cards::chest[i]);
   }
 
+  // TODO: True random???
   auto rng = default_random_engine {};
 
   shuffle(chance.begin(), chance.end(), rng);
@@ -91,6 +94,59 @@ Board::Tile* Board::getTile(int index) {
   return &Board::map[index];
 }
 
-int Board::rollDice(int d) {
-  return rand() % (d*6) + 1;
+void Board::rollDice() {
+  int d = 1;
+  Board::dice[0] = rand() % (d*6) + 1;
+  Board::dice[1] = rand() % (d*6) + 1;
+}
+
+int Board::getDie(int i) {
+  return dice[i];
+}
+
+EventCard* Board::getEventCard(TileType type) {
+  EventCard *card = NULL;
+  if(type == ChanceTile) {
+    card = chanceCards.top();
+    chanceCards.pop();
+  }
+
+  if(type == ChestTile) {
+    card = chestCards.top();
+    chestCards.pop();
+  }
+
+  bool s;
+  if(chestCards.size() == 0)
+    s = true;
+  else if(chanceCards.size() == 0)
+    s = false;
+  else return card;
+
+  int i;
+  vector<EventCard*> aux_v;     // Aux vectors for shuffling
+  for(i = 0; i < 17; i++) {
+
+    if(s) {
+      aux_v.push_back(&Cards::chest[i]);
+    }
+
+    else if(!s) {
+      aux_v.push_back(&Cards::chance[i]);
+    }
+  }
+
+  // TODO: True random???
+  auto rng = default_random_engine {};
+
+  shuffle(aux_v.begin(), aux_v.end(), rng);
+
+  for(i = 0; i < 17; i++) {
+    if(s)
+      chestCards.push(aux_v[i]);
+    else if(!s)
+      chanceCards.push(aux_v[i]);
+  }
+
+  return card;
 }
