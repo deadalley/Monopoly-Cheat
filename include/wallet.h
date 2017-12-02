@@ -7,27 +7,18 @@
 
 class Wallet {
   private:
-    Bills balance;
+    int balance;
+    void deposit(int);
+    bool deduct(int);
 
-    void deposit(Bills);
-
-    bool deduct(Bills);
-
-    Bills convert(int);
-    int convert(Bills);
 
   public:
-    //int totalAmount;
     Wallet();
 
-    void setBalance(Bills);
-    Bills getBalance();
-    int getBalanceValue();
+    void setBalance(int);
+    int getBalance();
 
     bool payTo(Wallet*, int);
-    void receiveFrom(Wallet*, Bills);
-    void printBalance();
-    Bills exchange(int, int);
 };
 
 #endif

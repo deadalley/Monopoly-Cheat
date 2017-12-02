@@ -36,6 +36,7 @@ class Player {
   public:
     Wallet wallet;
 
+    bool isBroke;
     bool inJail;
     bool hasJailCard;
     int roundsInJail;
@@ -53,9 +54,10 @@ class Player {
 
     void stepOnTile(Board::Tile*);
     void tryToBuild();
-    void tryToMortgage(int);
+    bool tryToMortgage(int);
 
     bool paidToGetOutOfJail();
+    void goBroke();
 };
 
 #endif

@@ -29,8 +29,19 @@ void GameController::payAll(Player *player, int value) {
   for(i = 0; i < players.size(); i++) {
     if(i == player->getId())
       continue;
-    if(!player->wallet.payTo(&players.at(i)->wallet, value))
-      throw PAY_FAILED;
+    if(!player->wallet.payTo(&players.at(i)->wallet, value)) {
+      if(player->tryToMortgage(value)) {
+        if(!player->wallet.payTo(&players.at(i)->wallet, value)) {
+          cout << "\t" << player->getName() << " could not pay " << value << " to " << players[i]->getName() << endl;
+          player->goBroke();
+        }
+      }
+      else {
+        cout << "\t" << player->getName() << " could not pay " << value << " to " << players[i]->getName() << endl;
+        player->goBroke();
+      }
+    }
+      //throw PAY_FAILED;
   }
 }
 
@@ -39,8 +50,19 @@ void GameController::receiveFromAll(Player *player, int value) {
   for(i = 0; i < players.size(); i++) {
     if(i == player->getId())
       continue;
-    if(!players.at(i)->wallet.payTo(&player->wallet, value))
-      throw PAY_FAILED;
+    if(!players.at(i)->wallet.payTo(&player->wallet, value)) {
+      if(players.at(i)->tryToMortgage(value)) {
+        if(!players.at(i)->wallet.payTo(&player->wallet, value)) {
+          cout << "\t" << players.at(i)->getName() << " could not pay " << value << " to " << player->getName() << endl;
+          players[i]->goBroke();
+        }
+      }
+      else {
+        cout << "\t" << players.at(i)->getName() << " could not pay " << value << " to " << player->getName() << endl;
+        players[i]->goBroke();
+      }
+    }
+      //throw PAY_FAILED;
     //player->wallet.receiveFrom(&players.at(i)->wallet, value);
   }
 }
@@ -49,6 +71,14 @@ void GameController::processTurn() {
   Player *player = players.at(activePlayer);
 
   cout << "=== Started turn for " << player->getName() << endl;
+  if(player->isBroke) {
+    cout << "\t" << player->getName() << " is broke! " << endl;
+    GameController::activePlayer++;
+    GameController::sequenceOfTurns = 0;
+    if (GameController::activePlayer >= GameController::players.size())
+      GameController::activePlayer = 0;
+    return;
+  }
 
   cout << "\tIs at position " << player->getPosition() << endl;
 
@@ -85,7 +115,7 @@ void GameController::processTurn() {
 
     // Leave if has been in jail three rounds
     else if(player->roundsInJail == 3) {
-      if(player->wallet.getBalanceValue() < 50) {
+      if(player->wallet.getBalance() < 50) {
         // TODO: Mortgage
       }
       else if(player->wallet.payTo(&Bank::Balance, 50)) {
@@ -119,7 +149,7 @@ void GameController::processTurn() {
   // Try to build after turn is processed
   player->tryToBuild();
 
-  cout << player->getName() << " has $" << player->wallet.getBalanceValue() << endl;
+  cout << player->getName() << " has $" << player->wallet.getBalance() << endl;
 
   if(die1 == die2) {
     GameController::sequenceOfTurns++;

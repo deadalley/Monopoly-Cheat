@@ -29,29 +29,12 @@ int INIT_BALANCE;
 void checkIntegrity(int k) {
   int i, j, v = 0;
 
-  Bills bills;
-
-  // Check bank integrity
-  bills = Bank::Balance.getBalance();
-  for(j = 0; j < 7; j++) {
-    if(bills[j] < 0) {
-      cerr << "ERROR (Bank): Negative bills! (" << k << ")" << endl;
-      throw NEGATIVE_BILLS;
-    }
-  }
   // Check player integrity
   for(i = 0; i < N_PLAYERS; i++) {
-    bills = GameController::getPlayer(i)->wallet.getBalance();
-    for(j = 0; j < 7; j++) {
-      if(bills[j] < 0) {
-        cerr << "ERROR: Negative bills! (" << k << ")" << endl;
-        throw NEGATIVE_BILLS;
-      }
-    }
-    v += GameController::getPlayer(i)->wallet.getBalanceValue();
+    v += GameController::getPlayer(i)->wallet.getBalance();
   }
 
-  v += Bank::Balance.getBalanceValue();
+  v += Bank::Balance.getBalance();
   if(v != INIT_BALANCE) {
     cerr << "ERROR: Amount of money has changed! (" << k << ")" << endl;
     throw TOTAL_AMOUNT_CHANGED;
@@ -67,7 +50,7 @@ void init() {
 
   Bank::initBank();
 
-  INIT_BALANCE = Bank::Balance.getBalanceValue();
+  INIT_BALANCE = Bank::Balance.getBalance();
   cout << INIT_BALANCE << endl;
 
   GameController::initGame(N_PLAYERS);

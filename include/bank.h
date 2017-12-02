@@ -11,7 +11,6 @@ class Bank {
     static Wallet Balance;
 
     static void initBank();
-    static Bills tryToExchangeBills(int, int);
 };
 
 #endif
