@@ -10,7 +10,8 @@ void GameController::initGame(int n_players) {
   int i;
   for(i = 0; i < n_players; i++) {
     Player *p = new Player(i, "Player " + to_string(i + 1));
-    AGManager::initPlayer(p);
+    //AGManager::initPlayer(p);
+    AGManager::addPlayer(p);
     players.push_back(p);
   }
 
@@ -29,8 +30,13 @@ Player* GameController::getPlayer(int pos) {
 void GameController::payAll(Player *player, int value) {
   int i;
   for(i = 0; i < players.size(); i++) {
+
     if(i == player->getId())
       continue;
+
+    if(players[i]->isBroke)
+      continue;
+
     if(!player->wallet.payTo(&players.at(i)->wallet, value)) {
       if(player->tryToMortgage(value)) {
         if(!player->wallet.payTo(&players.at(i)->wallet, value)) {
@@ -49,8 +55,13 @@ void GameController::payAll(Player *player, int value) {
 void GameController::receiveFromAll(Player *player, int value) {
   int i;
   for(i = 0; i < players.size(); i++) {
+
     if(i == player->getId())
       continue;
+
+    if(players[i]->isBroke)
+      continue;
+
     if(!players.at(i)->wallet.payTo(&player->wallet, value)) {
       if(players.at(i)->tryToMortgage(value)) {
         if(!players.at(i)->wallet.payTo(&player->wallet, value)) {

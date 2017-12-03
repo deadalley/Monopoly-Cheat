@@ -48,8 +48,12 @@
 #define PAY_FAILED -3
 #define PAY_VALUE_ERROR -4
 #define PROPERTY_MISMATCH -5
+#define WRONG_SET_SIZE -6
 
-#include <iostream>
+#define N_DEEDS 22
+#define N_RAILROADS 4
+#define N_UTILITIES 2
+#define N_EVENT_CARDS 17
 
 using namespace std;
 

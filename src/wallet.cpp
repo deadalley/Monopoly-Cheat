@@ -1,6 +1,5 @@
 #include "wallet.h"
 #include "bank.h"
-//#include "gamecontroller.h"
 
 Wallet::Wallet() {
   balance = 0;
@@ -31,6 +30,7 @@ bool Wallet::deduct(int value) {
 
 bool Wallet::payTo(Wallet *entity, int value) {
   //cout << "\tCurrent balance: " << balance << endl;
+  // Cannot pay 0 or less
   if(value <= 0)
     throw PAY_VALUE_ERROR;
 

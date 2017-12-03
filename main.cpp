@@ -8,17 +8,17 @@
 #include "eventcard.h"
 #include "board.h"
 #include "gamecontroller.h"
+#include "agmanager.h"
 
-#define N_TURNS 300
-#define N_PLAYERS 6
+#define N_PLAYERS 3
 
 using namespace std;
 
-TitleDeed* Cards::deeds = (TitleDeed*) malloc(sizeof(TitleDeed)*22);
-Railroad* Cards::railroads = (Railroad*) malloc(sizeof(Railroad)*4);
-Utility* Cards::utilities = (Utility*) malloc(sizeof(Utility)*2);
-EventCard* Cards::chance = (EventCard*) malloc(sizeof(EventCard)*17);
-EventCard* Cards::chest = (EventCard*) malloc(sizeof(EventCard)*17);
+TitleDeed* Cards::deeds = (TitleDeed*) malloc(sizeof(TitleDeed)*N_DEEDS);
+Railroad* Cards::railroads = (Railroad*) malloc(sizeof(Railroad)*N_RAILROADS);
+Utility* Cards::utilities = (Utility*) malloc(sizeof(Utility)*N_UTILITIES);
+EventCard* Cards::chance = (EventCard*) malloc(sizeof(EventCard)*N_EVENT_CARDS);
+EventCard* Cards::chest = (EventCard*) malloc(sizeof(EventCard)*N_EVENT_CARDS);
 
 vector<Board::Tile> Board::map;
 stack<EventCard*> Board::chanceCards;
@@ -43,7 +43,7 @@ void checkIntegrity(int k) {
   }
 
   // Check railroad integrity
-  for(i = 0; i < 4; i++) {
+  for(i = 0; i < N_RAILROADS; i++) {
     if(Cards::railroads[i].owner != -1)
       players[Cards::railroads[i].owner]++;
   }
@@ -55,7 +55,7 @@ void checkIntegrity(int k) {
   }
 
   // Check utility integrity
-  for(i = 0; i < 2; i++) {
+  for(i = 0; i < N_UTILITIES; i++) {
     if(Cards::utilities[i].owner != -1)
       players[Cards::utilities[i].owner]++;
   }
@@ -75,7 +75,7 @@ void init() {
   Bank::initBank();
 
   INIT_BALANCE = Bank::Balance.getBalance();
-  cout << INIT_BALANCE << endl;
+  //cout << INIT_BALANCE << endl;
 
   GameController::initGame(N_PLAYERS);
 
@@ -92,12 +92,44 @@ bool checkWinner() {
   return b == 1;
 }
 
+void checkGameStage(int k) {
+  int ownedProperties = 0;
+  int totalProperties = N_DEEDS + N_RAILROADS + N_UTILITIES;
+
+  int i;
+  for(i = 0; i < N_DEEDS; i++) {
+    if(Cards::deeds[i].owner != -1)
+      ownedProperties++;
+  }
+  for(i = 0; i < N_RAILROADS; i++) {
+    if(Cards::railroads[i].owner != -1)
+      ownedProperties++;
+  }
+  for(i = 0; i < N_UTILITIES; i++) {
+    if(Cards::utilities[i].owner != -1)
+      ownedProperties++;
+  }
+
+  // Define LATE GAME: more than 50 rounds
+  if(k > 50) {
+    AGManager::setGameStage(LATE_GAME);
+    return;
+  }
+
+  // Define EARLY GAME: less than 80% of properties are owned
+  if(ownedProperties < 0.8 * totalProperties)
+    AGManager::setGameStage(EARLY_GAME);
+  else AGManager::setGameStage(MID_GAME);
+}
+
 int main() {
   init();
 
   int k = 0;
   while(k < N_TURNS) {
     try {
+      checkGameStage(k);
+
       GameController::processTurn();
 
       checkIntegrity(k);

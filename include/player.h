@@ -16,7 +16,6 @@ class Player : public AGPlayer {
     string name;
     int id;
     int position;
-    //vector<Card*> cards;
     vector<ColorSet*> colorsets;
     int ownedUtilities;
     int ownedRailroads;
@@ -53,11 +52,11 @@ class Player : public AGPlayer {
     void goToJail();
     void goBroke();
 
-    void tryToBuild();
-    bool tryToMortgage(int);
-    void tryToTrade();
+    void tryToBuild();          // Check conditions and chances for building
+    bool tryToMortgage(int);    // Find minimum mortgage to cover for value
+    void tryToTrade();          // Try to trade cards
 
-    vector<Color> matchTrade(Player*);
+    vector<Color> matchTrade(Player*);  // Return colors that another player has to offer that match colors of interest
 
     bool paidToGetOutOfJail();
 };
