@@ -11,8 +11,7 @@ void Board::initBoard() {
     chest.push_back(&Cards::chest[i]);
   }
 
-  // TODO: True random???
-  auto rng = default_random_engine {};
+  auto rng = default_random_engine(rand());
 
   shuffle(chance.begin(), chance.end(), rng);
   shuffle(chest.begin(), chest.end(), rng);
@@ -76,16 +75,6 @@ void Board::initBoard() {
     }
 
     tile = new Board::Tile(type, i, card);
-    //tile->setCard(card);
-    /*cout << type << ", ";
-    if(type == PropertyTile) {
-      cout << card->name << ", ";
-      cout << tile->getCard()->name << endl;
-    }*/
-
-    //if(card != NULL)
-      //cout << "Created card " << card->name << ", " << card->owner << endl;
-
     map.push_back(*tile);
   }
 }
@@ -116,6 +105,7 @@ EventCard* Board::getEventCard(TileType type) {
     chestCards.pop();
   }
 
+  // If all cards have been popped from stack, reshuffle cards
   bool s;
   if(chestCards.size() == 0)
     s = true;
@@ -136,8 +126,7 @@ EventCard* Board::getEventCard(TileType type) {
     }
   }
 
-  // TODO: True random???
-  auto rng = default_random_engine {};
+  auto rng = default_random_engine(rand());
 
   shuffle(aux_v.begin(), aux_v.end(), rng);
 

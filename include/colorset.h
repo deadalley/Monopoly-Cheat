@@ -22,8 +22,10 @@ class ColorSet {
     string getName();
     TitleDeed* getCard(int);
     int getSize();
+    int getMinHouse();
 
     void addCard(TitleDeed*);
+    void removeCard(TitleDeed*);
     bool hasMortgage();
     bool hasImprovement();
     bool hasAllCards();

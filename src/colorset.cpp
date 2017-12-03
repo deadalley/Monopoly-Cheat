@@ -46,8 +46,28 @@ int ColorSet::getSize() {
   return cards.size();
 }
 
+int ColorSet::getMinHouse() {
+  int i, m = 200;
+  for(i = 0; i < cards.size(); i++) {
+    m = min(cards[i]->n_houses, m);
+  }
+  return m;
+}
+
 void ColorSet::addCard(TitleDeed *card) {
   cards.push_back(card);
+}
+
+void ColorSet::removeCard(TitleDeed *card) {
+  vector<TitleDeed*>::iterator it;
+  for(it = cards.begin(); it != cards.end(); it++) {
+    cout << "Card: " << (*it)->name << endl;
+    if(*it == card) {
+      break;
+    }
+  }
+  cout << "Removing (colorset): " << (*it)->name << endl;
+  cards.erase(it);
 }
 
 bool ColorSet::hasMortgage() {

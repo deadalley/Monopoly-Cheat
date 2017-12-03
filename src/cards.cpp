@@ -18,8 +18,6 @@ Color parseColor(string name) {
     return Green;
   if(name.compare("blue") == 0)
     return Blue;
-
-  throw ANY_ERROR;
 }
 
 void Cards::initCards() {
@@ -47,7 +45,7 @@ void Cards::inputTitleDeeds(string file_name) {
     size_t k = 0;
     size_t pos = 0;
     string value;
-    
+
     // Parse value
     //while((pos = line.find(", ")) != string::npos) {
     while(k < 12) {

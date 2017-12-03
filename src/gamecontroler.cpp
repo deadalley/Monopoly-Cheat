@@ -1,5 +1,6 @@
 #include "gamecontroller.h"
 #include "player.h"
+#include "agmanager.h"
 
 vector<Player*> GameController::players;
 int GameController::activePlayer;
@@ -9,6 +10,7 @@ void GameController::initGame(int n_players) {
   int i;
   for(i = 0; i < n_players; i++) {
     Player *p = new Player(i, "Player " + to_string(i + 1));
+    AGManager::initPlayer(p);
     players.push_back(p);
   }
 
@@ -41,7 +43,6 @@ void GameController::payAll(Player *player, int value) {
         player->goBroke();
       }
     }
-      //throw PAY_FAILED;
   }
 }
 
@@ -62,8 +63,6 @@ void GameController::receiveFromAll(Player *player, int value) {
         players[i]->goBroke();
       }
     }
-      //throw PAY_FAILED;
-    //player->wallet.receiveFrom(&players.at(i)->wallet, value);
   }
 }
 
@@ -80,6 +79,7 @@ void GameController::processTurn() {
     return;
   }
 
+  cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
   cout << "\tIs at position " << player->getPosition() << endl;
 
   // Dice roll
@@ -146,10 +146,22 @@ void GameController::processTurn() {
   cout << "\tStepped on tile of type " << tile->getType() << endl;
   player->stepOnTile(tile);
 
+  if(player->isBroke) {
+    cout << "\t" << player->getName() << " is broke! " << endl;
+    GameController::activePlayer++;
+    GameController::sequenceOfTurns = 0;
+    if (GameController::activePlayer >= GameController::players.size())
+      GameController::activePlayer = 0;
+    return;
+  }
+
+  // Try to trade
+  player->tryToTrade();
+
   // Try to build after turn is processed
   player->tryToBuild();
 
-  cout << player->getName() << " has $" << player->wallet.getBalance() << endl;
+  cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
 
   if(die1 == die2) {
     GameController::sequenceOfTurns++;

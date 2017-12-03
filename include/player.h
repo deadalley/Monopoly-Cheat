@@ -4,34 +4,27 @@
 #include <string>
 #include <map>
 
-#include "utils.h"
+#include "agplayer.h"
 #include "board.h"
 #include "wallet.h"
 #include "colorset.h"
 
 using namespace std;
 
-class Player {
+class Player : public AGPlayer {
   private:
     string name;
     int id;
     int position;
-    vector<Card*> cards;
+    //vector<Card*> cards;
     vector<ColorSet*> colorsets;
-    //map<string, int> colorSets;
     int ownedUtilities;
     int ownedRailroads;
 
     void processEventCard(EventCard*);
     void buy(Card*);
     void build(TitleDeed*);
-
-    /* AG */
-    int buyingChance;       // Chance of buying property, 0 < b < 100
-    int buildingChance;     // Chance of building house/hotel
-    int payingJailChance;   // Chance to pay to leave jail
-    int mortgageChance;     // Chance to mortgage something
-    int minimumBalance;     // Minium balance the player withholds
+    void trade(Player*, TitleDeed*, int);
 
   public:
     Wallet wallet;
@@ -48,16 +41,25 @@ class Player {
     int getPosition();
     int getOwnedUtilities();
     int getOwnedRailroads();
+    ColorSet* getColorSet(Color);
+    int getOffer(TitleDeed*);
+
+    vector<Color> colorsToAcquire();
+    vector<Color> colorsToTrade();
+
+    void stepOnTile(Board::Tile*);
 
     void goTo(int);
     void goToJail();
+    void goBroke();
 
-    void stepOnTile(Board::Tile*);
     void tryToBuild();
     bool tryToMortgage(int);
+    void tryToTrade();
+
+    vector<Color> matchTrade(Player*);
 
     bool paidToGetOutOfJail();
-    void goBroke();
 };
 
 #endif

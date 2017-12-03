@@ -21,7 +21,7 @@ void Wallet::deposit(int value) {
 bool Wallet::deduct(int value) {
   // Check if there are enough bills to deduct
   if(value > balance) {
-    cout << "Cannot deduct. Not enoug credit." << endl;
+    //cout << "Cannot deduct. Not enough credit." << endl;
     return false;
   }
 
@@ -30,14 +30,14 @@ bool Wallet::deduct(int value) {
 }
 
 bool Wallet::payTo(Wallet *entity, int value) {
-  cout << "\tCurrent balance: " << balance << endl;
+  //cout << "\tCurrent balance: " << balance << endl;
   if(value <= 0)
     throw PAY_VALUE_ERROR;
 
   // Check if has credit to pay
   if(deduct(value)) {
     entity->deposit(value);
-    cout << "Paid " << value << endl;
+    //cout << "Paid " << value << endl;
     return true;
   }
 

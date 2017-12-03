@@ -1,4 +1,5 @@
 #include "player.h"
+#include "utils.h"
 #include "gamecontroller.h"
 
 Player::Player(int id, string name) {
@@ -6,22 +7,22 @@ Player::Player(int id, string name) {
   this->name = name;
   this->position = GO;
 
-  //Bills initialBalance = {5, 1, 2, 1, 1, 4, 2};
-  //this->wallet.receiveFrom(&Bank::Balance, 1500);
-  Bank::Balance.payTo(&this->wallet, 1500);
-
   this->inJail = false;
   this->isBroke = false;
   this->hasJailCard = false;
   this->roundsInJail = 0;
   this->ownedRailroads = 0;
   this->ownedUtilities = 0;
-
+/*
   this->buyingChance = 100;
   this->buildingChance = 100;
   this->payingJailChance = 100;
   this->mortgageChance = 100;
   this->minimumBalance = 50;
+  this->tradingChance = 100;
+  this->minimumCards = 3;
+*/
+  Bank::Balance.payTo(&this->wallet, 1500);
 }
 
 int Player::getId() {
@@ -44,16 +45,23 @@ int Player::getOwnedRailroads() {
   return ownedRailroads;
 }
 
+ColorSet* Player::getColorSet(Color color) {
+  int i;
+  for(i = 0; i < colorsets.size(); i++) {
+    if(colorsets[i]->getColor() == color)
+      return colorsets[i];
+  }
+  return NULL;
+}
+
 void Player::goTo(int position) {
   if(position < this->position) {
-    //cout << "\tPAYING 200 TO PLAYER!!" << endl;
     if(Bank::Balance.payTo(&this->wallet, 200)) {
       cout << "\t" << name << " passed GO and received 200 from Bank" << endl;
     }
 
     else {
       cout << "\t Bank cannot pay $200 to player. Not enough credit in bank." << endl;
-      //throw PAY_FAILED;
     }
   }
 
@@ -99,8 +107,6 @@ void Player::stepOnTile(Board::Tile *tile) {
 
             else if(otherPlayer->getOwnedUtilities() == 2)
               rent = 10 * (Board::getDie(0) + Board::getDie(1));
-
-            else throw ANY_ERROR;
             break;
           }
           case RailroadCard: {
@@ -116,23 +122,18 @@ void Player::stepOnTile(Board::Tile *tile) {
         if(wallet.payTo(&otherPlayer->wallet, rent))
           cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
         else {
-          if(this->tryToMortgage(rent)) {
-            if(this->wallet.payTo(&otherPlayer->wallet, rent))
-              cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
-          }
-          else {
-            cout << "\t" << name << " could not pay." << endl;
+          tryToMortgage(rent);
+          if(!this->wallet.payTo(&otherPlayer->wallet, rent)) {
+            cout << "\t" << name << " could not pay $" << rent << " to " << otherPlayer->getName() << endl;
             goBroke();
           }
-          //throw PAY_FAILED;
-          //mortgage(rent);
         }
       }
       // Nobody owns card. Player may buy it
       else {
-        if((this->wallet.getBalance() - card->price) < this->minimumBalance) {
+        if((this->wallet.getBalance() - card->price) < this->minimumBalance)
           cout << "\t" << name << " is at minimum balance. Property not bought." << endl;
-        }
+
         else {
           cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << card->name << endl;
           int chance = rand() % 100;
@@ -168,13 +169,13 @@ void Player::stepOnTile(Board::Tile *tile) {
       // OBLIGATORY PAY
       if(this->wallet.payTo(&Bank::Balance, 200))
         cout << "\t" << name << " paid 200 in Income Tax" << endl;
-      else if(tryToMortgage(200)) {
+      else {
+        tryToMortgage(200);
         if(this->wallet.payTo(&Bank::Balance, 200))
           cout << "\t" << name << " paid 200 in Income Tax" << endl;
         else {
           cout << "\t" << name << " could not pay 200 as Income Tax" << endl;
           goBroke();
-          //throw PAY_FAILED;
         }
       }
 
@@ -183,7 +184,8 @@ void Player::stepOnTile(Board::Tile *tile) {
       // OBLIGATORY PAY
       if(this->wallet.payTo(&Bank::Balance, 100))
         cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
-      else if(tryToMortgage(100)) {
+      else {
+        tryToMortgage(100);
         if(this->wallet.payTo(&Bank::Balance, 100))
           cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
         else {
@@ -350,10 +352,11 @@ void Player::processEventCard(EventCard *card) {
     // Pay for each house and hotel
     case GeneralRepairs: {
       int i;
-      for(i = 0; i < this->cards.size(); i++) {
-        Card *card = this->cards.at(i);
-        if(card->getType() == PropertyCard) {
-          TitleDeed *property = (TitleDeed*) card;
+      for(i = 0; i < colorsets.size(); i++) {
+        int j;
+        ColorSet *set = colorsets[i];
+        for(j = 0; j < set->getSize(); j++) {
+          TitleDeed *property = set->getCard(j);
           // Pay for hotel
           if(property->hasHotel) {
             // OBLIGATORY PAY
@@ -387,10 +390,11 @@ void Player::processEventCard(EventCard *card) {
     // Pay for each house and hotel
     case StreetRepairs: {
       int i;
-      for(i = 0; i < this->cards.size(); i++) {
-        Card *card = this->cards.at(i);
-        if(card->getType() == PropertyCard) {
-          TitleDeed *property = (TitleDeed*) card;
+      for(i = 0; i < colorsets.size(); i++) {
+        int j;
+        ColorSet *set = colorsets[i];
+        for(j = 0; j < set->getSize(); j++) {
+          TitleDeed *property = set->getCard(j);
           // Pay for hotel
           if(property->hasHotel) {
             if(!this->wallet.payTo(&Bank::Balance, 115)) {
@@ -428,7 +432,7 @@ void Player::processEventCard(EventCard *card) {
 
 void Player::buy(Card *card) {
   if(wallet.payTo(&Bank::Balance, card->price)) {
-    cards.push_back(card);
+    //cards.push_back(card);
     card->owner = this->id;
 
     cout << "\t" << name << " bought " << card->name << endl;
@@ -489,7 +493,6 @@ void Player::build(TitleDeed *deed) {
     else {
       cout << "\t" << name << " could build a hotel on " << deed->name << endl;
       return;
-      //throw PAY_FAILED;
     }
   }
 
@@ -506,6 +509,18 @@ void Player::build(TitleDeed *deed) {
   }
 }
 
+void Player::trade(Player *otherPlayer, TitleDeed *deed, int offeredPrice) {
+  if(!this->wallet.payTo(&otherPlayer->wallet, offeredPrice))
+    throw PAY_FAILED;
+
+  //cards.push_back(deed);
+  deed->owner = this->id;
+
+  getColorSet(deed->color)->addCard(deed);
+
+  otherPlayer->getColorSet(deed->color)->removeCard(deed);
+}
+
 void Player::tryToBuild() {
   cout << "\t" << name << " is deciding to build" << endl;
   if(this->wallet.getBalance() <= this->minimumBalance) {
@@ -519,12 +534,12 @@ void Player::tryToBuild() {
   // Check if player has all cards of same color for building
   if(chance <= buildingChance) {
     cout << "\t" << name << " owns:" << endl;
-    //string colors[8] = {"purple", "cyan", "pink", "orange", "red", "yellow", "green", "blue"};
     int i;
+    // Iterate color sets
     for(i = 0; i < colorsets.size(); i++) {
       ColorSet *colorset = colorsets[i];
       cout << "\t\t" << colorset->getName() << "(" << colorset->getSize() << "):" << endl;
-
+      // Iterate owned cards of color set
       int j;
       for(j = 0; j < colorset->getSize(); j++) {
         cout << "\t\t\t" << colorset->getCard(j)->name;
@@ -535,17 +550,20 @@ void Player::tryToBuild() {
       if(colorset->hasMortgage())
         continue;
 
+      // If has all cards, build
       if(colorset->hasAllCards()) {
-        build(colorset->getCard(0));
+        for(j = 0; j < colorset->getSize(); j++) {
+          if(colorset->getCard(j)->n_houses == colorset->getMinHouse())
+            build(colorset->getCard(j));
+        }
       }
     }
   }
-  else {
-    cout << "\t" << name << " did not build anything this round" << endl;
-  }
+  else cout << "\t" << name << " did not build anything this round" << endl;
 }
 
 bool Player::tryToMortgage(int value) {
+  cout << "\t" << name << " is trying to mortgage" << endl;
   int i, m = 5000, minIndexI = -1, minIndexJ = -1;
   // Find the minimum mortgage to cover for debt
   for(i = 0; i < colorsets.size(); i++) {
@@ -585,6 +603,159 @@ bool Player::tryToMortgage(int value) {
   return false;
 }
 
+void Player::tryToTrade() {
+  cout << "\t" << name << " is trying to trade cards" << endl;
+  cout << "\t" << name << " has " << tradingChance << "\% chance of trading" << endl;
+  int chance = rand() % 100;
+
+  if(colorsToAcquire().size() == 0) {
+    cout << "\t" << name << " has no cards and did not trade this round" << endl;
+    return;
+  }
+
+  if(chance <= tradingChance) {
+    int i;
+    for(i = 0; i < GameController::getPlayerSize(); i++) {
+      Player *otherPlayer = GameController::getPlayer(i);
+
+      if(otherPlayer->getId() == this->id)
+        continue;
+
+      if(otherPlayer->isBroke)
+        continue;
+
+      // Find colors that players can trade/sell/buy
+      vector<Color> colors = matchTrade(otherPlayer);
+      vector<Color>::iterator it;
+      for(it = colors.begin(); it != colors.end(); it++) {
+        ColorSet *set = otherPlayer->getColorSet(*it);
+
+        if(set->getSize() != 1) {
+          cout << "\tSet " << set->getColor() << " has size " << set->getSize() << endl;
+          throw ANY_ERROR;
+        }
+
+        TitleDeed *deed = set->getCard(0);
+        cout << "\t" << name << " is trying to trade " << deed->name << " with " << otherPlayer->getName() << endl;
+        if(wallet.getBalance() - deed->price < minimumBalance) {
+          cout << "\t" << name << " does not have enough money to trade" << endl;
+          continue;
+        }
+
+        int price = getOffer(deed);
+        if(wallet.getBalance() - price < minimumBalance) {
+          cout << "\t" << name << " does not have enough money to trade" << endl;
+          price = wallet.getBalance() - minimumBalance;
+          //continue;
+        }
+
+        int otherTradingChance = otherPlayer->getTradingChance();
+        chance = rand() % 100;
+        if(chance <= otherTradingChance) {
+          trade(otherPlayer, deed, price);
+        }
+      }
+    }
+  }
+  else {
+    cout << "\t" << name << " did not trade this round" << endl;
+  }
+}
+
+int Player::getOffer(TitleDeed *deed) {
+  int increase = rand() % 100;
+
+  float offerPrice = (1 + (float)increase/100) * deed->price;
+
+  cout << "\t" << deed->name << " costs $" << deed->price << endl;
+  cout << "\t" << name << " is offering $" << (int)offerPrice << endl;
+
+  return offerPrice;
+}
+
+vector<Color> Player::matchTrade(Player *otherPlayer) {
+  vector<Color>::iterator it;
+  vector<Color> toAcquire = colorsToAcquire();
+  //vector<Color> toTrade = colorsToTrade();
+
+  //vector<Color> otherToAcquire = otherPlayer->colorsToAcquire();
+  vector<Color> otherToTrade = otherPlayer->colorsToTrade();
+
+  vector<Color> matchToAcquire(min(toAcquire.size(), otherToTrade.size()));
+  //vector<Color> matchToTrade(min(toTrade.size(), otherToAcquire.size()));
+
+  it = set_intersection(toAcquire.begin(), toAcquire.end(),
+                        otherToTrade.begin(), otherToTrade.end(),
+                        matchToAcquire.begin());
+
+  matchToAcquire.resize(it-matchToAcquire.begin());
+
+  /*it = set_intersection(toTrade.begin(), toTrade.end(),
+                        otherToAcquire.begin(), otherToAcquire.end(),
+                        matchToTrade.begin());
+
+  matchToTrade.resize(it-matchToTrade.begin());
+*/
+  cout << "\t" << name << " needs: ";
+  for(it = toAcquire.begin(); it != toAcquire.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;
+  cout << "\t" << otherPlayer->getName() << " has: ";
+  for(it = otherToTrade.begin(); it != otherToTrade.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;
+  cout << "\t" << name << " and " << otherPlayer->getName() << " can trade: ";
+  for(it = matchToAcquire.begin(); it != matchToAcquire.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;
+  /*cout << "\t" << name << " has: ";
+  for(it = toTrade.begin(); it != toTrade.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;
+  cout << "\t" << otherPlayer->getName() << " needs: ";
+  for(it = otherToAcquire.begin(); it != otherToAcquire.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;
+  cout << "\t" << name << " and " << otherPlayer->getName() << " can trade: ";
+  for(it = matchToTrade.begin(); it != matchToTrade.end(); it++) {
+    cout << *it << ", ";
+  }
+  cout << endl;*/
+
+  return matchToAcquire;
+  //return matchToAcquire.size() != 0 && matchToTrade.size() != 0;
+}
+
+vector<Color> Player::colorsToAcquire() {
+  int i;
+  vector<Color> colorsToAcquire;
+  for(i = 0; i < colorsets.size(); i++) {
+    ColorSet *set = colorsets[i];
+    if(set->getSize() > 0 && !set->hasAllCards())
+      colorsToAcquire.push_back(set->getColor());
+  }
+  return colorsToAcquire;
+}
+
+vector<Color> Player::colorsToTrade() {
+  int i, c = 0;
+  vector<Color> colorsToTrade;
+  for(i = 0; i < colorsets.size(); i++) {
+    ColorSet *set = colorsets[i];
+    c += set->getSize();
+    if(set->getSize() == 1 && !set->hasImprovement())
+      colorsToTrade.push_back(set->getColor());
+  }
+  if(c <= minimumCards)
+    colorsToTrade.clear();
+  return colorsToTrade;
+}
+
 bool Player::paidToGetOutOfJail() {
   cout << "\t" << name << " is trying to pay to get out of jail" << endl;
   if((this->wallet.getBalance() - 50) < this->minimumBalance) {
@@ -597,9 +768,9 @@ bool Player::paidToGetOutOfJail() {
 
   if(chance <= payingJailChance) {
     if(!wallet.payTo(&Bank::Balance, 50)) {
-      //throw PAY_FAILED;
-      cout << "\t" << name << " did not pay to leave jail" << endl;
-      return false;
+      throw PAY_FAILED;
+      //cout << "\t" << name << " did not pay to leave jail" << endl;
+      //return false;
     }
     else return true;
   }
@@ -612,5 +783,28 @@ bool Player::paidToGetOutOfJail() {
 
 void Player::goBroke() {
   this->isBroke = true;
-
+  this->wallet.payTo(&Bank::Balance, this->wallet.getBalance());
+  int i;
+  for(i = 0; i < colorsets.size(); i++) {
+    int j;
+    for(j = 0; j < colorsets[i]->getSize(); j++) {
+      TitleDeed *deed = colorsets[i]->getCard(j);
+      deed->owner = -1;
+      deed->n_houses = 0;
+      deed->hasHotel = false;
+      deed->isMortgaged = false;
+    }
+    free(colorsets[i]);
+  }
+  for(i = 0; i < 2; i++) {
+    if(Cards::utilities[i].owner == this->id)
+      Cards::utilities[i].owner = -1;
+  }
+  for(i = 0; i < 4; i++) {
+    if(Cards::railroads[i].owner == this->id)
+      Cards::railroads[i].owner = -1;
+  }
+  ownedRailroads = 0;
+  ownedUtilities = 0;
+  cout << "\t" << name << " went broke! (oh no)" << endl;
 }

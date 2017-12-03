@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <fstream>
 #include <string>
-#include <algorithm>
 
 #include "utils.h"
 #include "titledeed.h"
