@@ -17,7 +17,7 @@ class Player : public AGPlayer {
     GameController *gameController;
 
     string name;
-    int id;
+    int localId;
     int position;
     vector<ColorSet*> colorsets;
     int ownedUtilities;
@@ -36,10 +36,10 @@ class Player : public AGPlayer {
     bool hasJailCard;
     int roundsInJail;
 
-    Player(int, string, GameController*);
+    Player(int, const AGPlayer&, GameController*);
 
-    int getId();
     string getName();
+    int getLocalId();
     int getPosition();
     int getOwnedUtilities();
     int getOwnedRailroads();

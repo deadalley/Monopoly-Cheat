@@ -7,19 +7,21 @@
 #include "bank.h"
 
 class Game {
-  private:
+  public:
+    int N_PLAYERS;
     AGController agController;
     GameController gameController;
     Bank bank;
     Board board;
 
-  public:
     void initGame();
     void runGame();
     void checkGameStage(int);
     void checkIntegrity(int);
     bool checkWinner();
     Player* getWinner();
+
+    ~Game();
 };
 
 #endif

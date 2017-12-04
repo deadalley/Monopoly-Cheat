@@ -7,7 +7,6 @@
 
 using namespace std;
 
-#define N_PLAYERS 2
 #define N_TURNS 300
 #define EARLY_GAME 0
 #define MID_GAME 1
@@ -16,13 +15,15 @@ using namespace std;
 class AGController {
   private:
     int gameStage;
-    vector<AGPlayer*> players;
+    vector<AGPlayer*> *players;
 
     void setPlayerAttributes(AGPlayer*);
 
   public:
     void setGameStage(int);
+    void setPlayers(vector<AGPlayer*>*);
     void addPlayer(AGPlayer*);
+    AGPlayer* getPlayer(int);
 };
 
 #endif

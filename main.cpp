@@ -9,6 +9,7 @@ int main() {
   srand(time(NULL));
   Cards::initCards();
 
+  AGManager::initPlayers();
   AGManager::simulateGeneration();
   return 0;
 }

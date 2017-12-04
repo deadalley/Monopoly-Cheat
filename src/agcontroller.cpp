@@ -9,9 +9,13 @@ void AGController::setGameStage(int stage) {
   cout << "-----> GAME STAGE: " << gameStage << " <-----" << endl;
 
   vector<AGPlayer*>::iterator it;
-  for(it = players.begin(); it != players.end(); it++) {
+  for(it = players->begin(); it != players->end(); it++) {
     setPlayerAttributes(*it);
   }
+}
+
+void AGController::setPlayers(vector<AGPlayer*> *players) {
+  this->players = players;
 }
 
 void AGController::setPlayerAttributes(AGPlayer *player) {
@@ -36,5 +40,9 @@ void AGController::setPlayerAttributes(AGPlayer *player) {
 }
 
 void AGController::addPlayer(AGPlayer *player) {
-  players.push_back(player);
+  players->push_back(player);
+}
+
+AGPlayer* AGController::getPlayer(int i) {
+  return players->at(i);
 }

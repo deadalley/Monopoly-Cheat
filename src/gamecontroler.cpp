@@ -7,8 +7,8 @@ void GameController::initGameController(AGController *agController, int n_player
   players.clear();
 
   for(i = 0; i < n_players; i++) {
-    Player *p = new Player(i, "Player " + to_string(i + 1), this);
-    agController->addPlayer(p);
+    Player *p = new Player(i, *agController->getPlayer(i), this);
+    //agController->addPlayer(p);
     players.push_back(p);
   }
 
@@ -44,7 +44,7 @@ void GameController::payAll(Player *player, int value) {
   int i;
   for(i = 0; i < players.size(); i++) {
 
-    if(i == player->getId())
+    if(i == player->getLocalId())
       continue;
 
     if(players[i]->isBroke)
@@ -67,9 +67,10 @@ void GameController::payAll(Player *player, int value) {
 
 void GameController::receiveFromAll(Player *player, int value) {
   int i;
+  cout << players.size() << endl;
   for(i = 0; i < players.size(); i++) {
 
-    if(i == player->getId())
+    if(i == player->getLocalId())
       continue;
 
     if(players[i]->isBroke)

@@ -1,6 +1,25 @@
 #include "agplayer.h"
 #include "utils.h"
 
+AGPlayer::AGPlayer(int id) {
+  this->id = id;
+}
+
+AGPlayer::AGPlayer(const AGPlayer &p) {
+  this->id = p.id;
+  this->buyingChance = p.buyingChance;
+  this->buildingChance = p.buildingChance;
+  this->payingJailChance = p.payingJailChance;
+  this->mortgageChance = p.mortgageChance;
+  this->minimumBalance = p.minimumBalance;
+  this->tradingChance = p.tradingChance;
+  this->minimumCards = p.minimumCards;
+}
+
+void AGPlayer::setId(int id) {
+  this->id = id;
+}
+
 void AGPlayer::setBuyingChance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
@@ -35,6 +54,16 @@ void AGPlayer::setTradingChance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
   tradingChance = c;
+}
+
+void AGPlayer::setMinimumCards(int c) {
+  if(c < 0)
+    throw NEGATIVE_VALUE;
+  minimumCards = c;
+}
+
+int AGPlayer::getId() {
+  return id;
 }
 
 int AGPlayer::getTradingChance() {

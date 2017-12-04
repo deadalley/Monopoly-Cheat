@@ -1,13 +1,12 @@
 #include "player.h"
 #include "utils.h"
 #include "gamecontroller.h"
-//#include "game.h"
 
 #include <map>
 
-Player::Player(int id, string name, GameController *controller) {
-  this->id = id;
-  this->name = name;
+Player::Player(int localId, const AGPlayer &agPlayer, GameController *controller) : AGPlayer(agPlayer){
+  this->localId = localId;
+  this->name = "Player " + to_string(id + 1);
   this->position = GO;
 
   this->gameController = controller;
@@ -22,12 +21,12 @@ Player::Player(int id, string name, GameController *controller) {
   gameController->getBank()->Balance.payTo(&this->wallet, 1500);
 }
 
-int Player::getId() {
-  return id;
-}
-
 string Player::getName() {
   return this->name;
+}
+
+int Player::getLocalId() {
+  return this->localId;
 }
 
 int Player::getPosition() {
@@ -429,9 +428,9 @@ void Player::processEventCard(EventCard *card) {
 
 void Player::buy(Card *card) {
   if(wallet.payTo(&gameController->getBank()->Balance, card->price)) {
-    card->owner = this->id;
+    card->owner = this->localId;
 
-    cout << "\t" << name << " bought " << card->name << endl;
+    cout << "\t" << name << " bought " << card->name << ", " << card->owner << endl;
 
     switch(card->getType()) {
       // Increase owned of color
@@ -509,7 +508,7 @@ void Player::trade(Player *otherPlayer, TitleDeed *deed, int offeredPrice) {
     throw PAY_FAILED;
   }
 
-  deed->owner = this->id;
+  deed->owner = this->localId;
 
   getColorSet(deed->color)->addCard(deed);
 
@@ -620,7 +619,7 @@ void Player::tryToTrade() {
       Player *otherPlayer = gameController->getPlayer(i);
 
       // Skip if it's this player
-      if(otherPlayer->getId() == this->id)
+      if(otherPlayer->getLocalId() == this->localId)
         continue;
 
       // Skip if player is broke
@@ -812,12 +811,12 @@ void Player::goBroke() {
   }
   // Return utilities to bank
   for(i = 0; i < N_UTILITIES; i++) {
-    if(Cards::utilities[i].owner == this->id)
+    if(Cards::utilities[i].owner == this->localId)
       Cards::utilities[i].owner = -1;
   }
   // Return railroads to bank
   for(i = 0; i < N_RAILROADS; i++) {
-    if(Cards::railroads[i].owner == this->id)
+    if(Cards::railroads[i].owner == this->localId)
       Cards::railroads[i].owner = -1;
   }
   ownedRailroads = 0;

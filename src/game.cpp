@@ -9,11 +9,25 @@
 #include "cards.h"
 #include "eventcard.h"
 
+Game::~Game() {
+  int i;
+  for(i = 0; i < N_UTILITIES; i++)
+    Cards::utilities[i].owner = -1;
+
+  for(i = 0; i < N_RAILROADS; i++)
+    Cards::railroads[i].owner = -1;
+
+  for(i = 0; i < N_DEEDS; i++)
+    Cards::deeds[i].owner = -1;
+}
+
 void Game::checkIntegrity(int k) {
   int i, j, v = 0;
   int players[N_PLAYERS];
 
   // Check player integrity
+  if(bank.Balance.getBalance() < 0)
+    throw NEGATIVE_VALUE;
   for(i = 0; i < N_PLAYERS; i++) {
     v += gameController.getPlayer(i)->wallet.getBalance();
     players[i] = 0;
@@ -111,8 +125,6 @@ Player* Game::getWinner() {
 }
 
 void Game::runGame() {
-  initGame();
-
   int k = 0;
   while(k < N_TURNS) {
     try {

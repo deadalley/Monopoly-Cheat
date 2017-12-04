@@ -1,9 +1,11 @@
 #ifndef H_WALLET
 #define H_WALLET
 
-//#include "bank"
-#include "utils.h"
 #include <algorithm>
+#include <iostream>
+#include "utils.h"
+
+using namespace std;
 
 class Wallet {
   private:
