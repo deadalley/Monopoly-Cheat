@@ -8,7 +8,6 @@ void GameController::initGameController(AGController *agController, int n_player
 
   for(i = 0; i < n_players; i++) {
     Player *p = new Player(i, *agController->getPlayer(i), this);
-    //agController->addPlayer(p);
     players.push_back(p);
   }
 

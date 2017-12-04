@@ -3,29 +3,35 @@
 vector<AGPlayer*> AGManager::players;
 
 void AGManager::initPlayers() {
-  int i, chance;
+  int i;
   for(i = 0; i < MAX_PLAYERS; i++) {
     AGPlayer *p = new AGPlayer(i);
-    //p->id = i;  DEBUG
-
-    chance = rand() % 101;
-    p->setBuyingChance(chance);
-    chance = rand() % 101;
-    p->setBuildingChance(chance);
-    chance = rand() % 101;
-    p->setPayingJailChance(chance);
-    chance = rand() % 101;
-    p->setMortgageChance(chance);
-    chance = rand() % 101;
-    p->setTradingChance(chance);
-
-    chance = rand() % 501;
-    p->setMinimumBalance(chance);
-
-    chance = rand() % 6;
-    p->setMinimumCards(chance);
-
     players.push_back(p);
+  }
+
+  int stage, chance;
+  for(stage = 0; stage < 3; stage++) {
+    for(i = 0; i < MAX_PLAYERS; i++) {
+      AGPlayer *p = players[i];
+      p->setStage(stage);
+
+      chance = rand() % 101;
+      p->setBuyingChance(chance);
+      chance = rand() % 101;
+      p->setBuildingChance(chance);
+      chance = rand() % 101;
+      p->setPayingJailChance(chance);
+      chance = rand() % 101;
+      p->setMortgageChance(chance);
+      chance = rand() % 101;
+      p->setTradingChance(chance);
+
+      chance = rand() % 501;
+      p->setMinimumBalance(chance);
+
+      chance = rand() % 6;
+      p->setMinimumCards(chance);
+    }
   }
 }
 

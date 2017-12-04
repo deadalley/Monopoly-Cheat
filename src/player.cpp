@@ -127,13 +127,13 @@ void Player::stepOnTile(Board::Tile *tile) {
       }
       // Nobody owns card. Player may buy it
       else {
-        if((this->wallet.getBalance() - card->price) < this->minimumBalance)
+        if((this->wallet.getBalance() - card->price) < this->getMinimumBalance())
           cout << "\t" << name << " is at minimum balance. Property not bought." << endl;
 
         else {
-          cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << card->name << endl;
+          cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << card->name << endl;
           int chance = rand() % 100;
-          if(chance <= buyingChance)
+          if(chance <= getBuyingChance())
             buy(card);
         }
       }
@@ -238,13 +238,13 @@ void Player::processEventCard(EventCard *card) {
       Utility *utility = (Utility*) gameController->getBoard()->getTile(destination)->getCard();
       // Unowned. Player may buy it
       if(utility->owner == -1) {
-        if((this->wallet.getBalance() - utility->price) < this->minimumBalance) {
+        if((this->wallet.getBalance() - utility->price) < this->getMinimumBalance()) {
           cout << "\t" << name << " is at minimum balance. Utility not bought." << endl;
         }
         else {
-          cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << utility->name << endl;
+          cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << utility->name << endl;
           int chance = rand() % 100;
-          if(chance <= buyingChance)
+          if(chance <= getBuyingChance())
             buy(utility);
         }
       }
@@ -294,13 +294,13 @@ void Player::processEventCard(EventCard *card) {
 
       // Unowned. Player may buy it
       if(railroad->owner == -1) {
-        if((this->wallet.getBalance() - railroad->price) < this->minimumBalance) {
+        if((this->wallet.getBalance() - railroad->price) < this->getMinimumBalance()) {
           cout << "\t" << name << " is at minimum balance. Railroad not bought." << endl;
         }
         else {
-          cout << "\t" << name << " has " << buyingChance << "\% chance of buying " << railroad->name << endl;
+          cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << railroad->name << endl;
           int chance = rand() % 100;
-          if(chance <= buyingChance)
+          if(chance <= getBuyingChance())
             buy(railroad);
         }
       }
@@ -345,6 +345,11 @@ void Player::processEventCard(EventCard *card) {
       goToJail();
       break;
 
+    // Receive get out of jail for free card
+    case GetOutJail:
+      this->hasJailCard = true;
+      break;
+      
     // Pay for each house and hotel
     case GeneralRepairs: {
       int i;
@@ -517,16 +522,16 @@ void Player::trade(Player *otherPlayer, TitleDeed *deed, int offeredPrice) {
 
 void Player::tryToBuild() {
   cout << "\t" << name << " is deciding to build" << endl;
-  if(this->wallet.getBalance() <= this->minimumBalance) {
+  if(this->wallet.getBalance() <= this->getMinimumBalance()) {
     cout << "\t" << name << " is at minimum balance. Nothing was built." << endl;
     return;
   }
 
-  cout << "\t" << name << " has " << buildingChance << "\% chance of building" << endl;
+  cout << "\t" << name << " has " << getBuildingChance() << "\% chance of building" << endl;
   int chance = rand() % 100;
 
   // Check if player has all cards of same color for building
-  if(chance <= buildingChance) {
+  if(chance <= getBuildingChance()) {
     cout << "\t" << name << " owns:" << endl;
     int i;
     // Iterate color sets
@@ -610,9 +615,9 @@ void Player::tryToTrade() {
   }
 
   int chance = rand() % 100;
-  cout << "\t" << name << " has " << tradingChance << "\% chance of trading" << endl;
+  cout << "\t" << name << " has " << getTradingChance() << "\% chance of trading" << endl;
 
-  if(chance <= tradingChance) {
+  if(chance <= getTradingChance()) {
     int i;
     // Find player to trade
     for(i = 0; i < gameController->getPlayerSize(); i++) {
@@ -643,7 +648,7 @@ void Player::tryToTrade() {
         TitleDeed *deed = set->getCard(0);
         cout << "\t" << name << " is trying to trade " << deed->name << " with " << otherPlayer->getName() << endl;
         // Check if player has minimum balance to pay for card
-        if(wallet.getBalance() - deed->price < minimumBalance) {
+        if(wallet.getBalance() - deed->price < getMinimumBalance()) {
           cout << "\t" << name << " does not have enough money to trade" << endl;
           continue;
         }
@@ -652,9 +657,9 @@ void Player::tryToTrade() {
         int price = getOffer(deed);
         // If player can't cover offer, offer maximum to keep minimum balance
         // TODO: Rethink this strategy
-        if(wallet.getBalance() - price < minimumBalance) {
+        if(wallet.getBalance() - price < getMinimumBalance()) {
           cout << "\t" << name << " does not have enough money to trade" << endl;
-          price = wallet.getBalance() - minimumBalance;
+          price = wallet.getBalance() - getMinimumBalance();
         }
 
         // Get the chance of other player trading this card
@@ -760,7 +765,7 @@ vector<Color> Player::colorsToTrade() {
     if(set->getSize() == 1 && !set->hasImprovement())
       colorsToTrade.push_back(set->getColor());
   }
-  if(c <= minimumCards)
+  if(c <= getMinimumCards())
     colorsToTrade.clear();
   return colorsToTrade;
 }
@@ -768,15 +773,15 @@ vector<Color> Player::colorsToTrade() {
 bool Player::paidToGetOutOfJail() {
   cout << "\t" << name << " is trying to pay to get out of jail" << endl;
   // If at minimum balance, do not pay
-  if((this->wallet.getBalance() - 50) < this->minimumBalance) {
+  if((this->wallet.getBalance() - 50) < this->getMinimumBalance()) {
     cout << "\t" << name << " is at minimum balance. Will not pay to exit jail." << endl;
     return false;
   }
 
-  cout << "\t" << name << " has " << payingJailChance << "\% chance of paying to leave jail" << endl;
+  cout << "\t" << name << " has " << getPayingJailChance() << "\% chance of paying to leave jail" << endl;
   int chance = rand() % 100;
 
-  if(chance <= payingJailChance) {
+  if(chance <= getPayingJailChance()) {
     if(!wallet.payTo(&gameController->getBank()->Balance, 50)) {
       throw PAY_FAILED;
       //cout << "\t" << name << " did not pay to leave jail" << endl;

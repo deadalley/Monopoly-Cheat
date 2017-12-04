@@ -1,5 +1,8 @@
 #include "agplayer.h"
 #include "utils.h"
+#include <cstring>
+
+using namespace std;
 
 AGPlayer::AGPlayer(int id) {
   this->id = id;
@@ -7,13 +10,22 @@ AGPlayer::AGPlayer(int id) {
 
 AGPlayer::AGPlayer(const AGPlayer &p) {
   this->id = p.id;
-  this->buyingChance = p.buyingChance;
-  this->buildingChance = p.buildingChance;
-  this->payingJailChance = p.payingJailChance;
-  this->mortgageChance = p.mortgageChance;
-  this->minimumBalance = p.minimumBalance;
-  this->tradingChance = p.tradingChance;
-  this->minimumCards = p.minimumCards;
+  this->stage = p.stage;
+  memcpy(this->buyingChance, p.buyingChance, sizeof(this->buyingChance));
+  memcpy(this->buildingChance, p.buildingChance, sizeof(this->buildingChance));
+  memcpy(this->payingJailChance, p.payingJailChance, sizeof(this->payingJailChance));
+  memcpy(this->mortgageChance, p.mortgageChance, sizeof(this->mortgageChance));
+  memcpy(this->minimumBalance, p.minimumBalance, sizeof(this->minimumBalance));
+  memcpy(this->tradingChance, p.tradingChance, sizeof(this->tradingChance));
+  memcpy(this->minimumCards, p.minimumCards, sizeof(this->minimumCards));
+}
+
+int AGPlayer::getId() {
+  return id;
+}
+
+void AGPlayer::setStage(int stage) {
+  this->stage = stage;
 }
 
 void AGPlayer::setId(int id) {
@@ -23,49 +35,69 @@ void AGPlayer::setId(int id) {
 void AGPlayer::setBuyingChance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  buyingChance = c;
+  buyingChance[stage] = c;
 }
 
 void AGPlayer::setBuildingChance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  buildingChance = c;
+  buildingChance[stage] = c;
 }
 
 void AGPlayer::setPayingJailChance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  payingJailChance = c;
+  payingJailChance[stage] = c;
 }
 
 void AGPlayer::setMortgageChance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  mortgageChance = c;
+  mortgageChance[stage] = c;
 }
 
 void AGPlayer::setMinimumBalance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  minimumBalance = c;
+  minimumBalance[stage] = c;
 }
 
 void AGPlayer::setTradingChance(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  tradingChance = c;
+  tradingChance[stage] = c;
 }
 
 void AGPlayer::setMinimumCards(int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  minimumCards = c;
+  minimumCards[stage] = c;
 }
 
-int AGPlayer::getId() {
-  return id;
+int AGPlayer::getBuyingChance() {
+  return buyingChance[stage];
+}
+
+int AGPlayer::getBuildingChance() {
+  return buildingChance[stage];
+}
+
+int AGPlayer::getPayingJailChance() {
+  return payingJailChance[stage];
+}
+
+int AGPlayer::getMortgageChance() {
+  return mortgageChance[stage];
+}
+
+int AGPlayer::getMinimumBalance() {
+  return minimumBalance[stage];
 }
 
 int AGPlayer::getTradingChance() {
-  return tradingChance;
+  return tradingChance[stage];
+}
+
+int AGPlayer::getMinimumCards() {
+  return minimumCards[stage];
 }

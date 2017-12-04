@@ -17,12 +17,9 @@ class AGController {
     int gameStage;
     vector<AGPlayer*> *players;
 
-    void setPlayerAttributes(AGPlayer*);
-
   public:
     void setGameStage(int);
     void setPlayers(vector<AGPlayer*>*);
-    void addPlayer(AGPlayer*);
     AGPlayer* getPlayer(int);
 };
 

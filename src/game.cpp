@@ -73,6 +73,8 @@ void Game::initGame() {
   gameController.initGameController(&agController, N_PLAYERS);
 
   checkIntegrity(-1);
+
+  agController.setGameStage(EARLY_GAME);
 }
 
 bool Game::checkWinner() {
@@ -86,8 +88,9 @@ bool Game::checkWinner() {
 }
 
 void Game::checkGameStage(int k) {
-  int ownedProperties = 0;
+  /*int ownedProperties = 0;
   int totalProperties = N_DEEDS + N_RAILROADS + N_UTILITIES;
+  int playersBroke = 0;
 
   int i;
   for(i = 0; i < N_DEEDS; i++) {
@@ -101,18 +104,15 @@ void Game::checkGameStage(int k) {
   for(i = 0; i < N_UTILITIES; i++) {
     if(Cards::utilities[i].owner != -1)
       ownedProperties++;
-  }
+  }*/
 
-  // Define LATE GAME: more than 50 rounds
-  if(k > 50) {
-    agController.setGameStage(LATE_GAME);
-    return;
-  }
-
-  // Define EARLY GAME: less than 80% of properties are owned
-  if(ownedProperties < 0.8 * totalProperties)
+  if(k <= N_PLAYERS * 3)
     agController.setGameStage(EARLY_GAME);
-  else agController.setGameStage(MID_GAME);
+
+  else if(k <= N_PLAYERS * 10)
+    agController.setGameStage(MID_GAME);
+
+  else agController.setGameStage(LATE_GAME);
 }
 
 Player* Game::getWinner() {
