@@ -2,7 +2,7 @@
 #define H_AGPLAYER
 
 class AGPlayer {
-  friend class AGManager;
+  friend class AGController;
   protected:
     int buyingChance;       // Chance of buying property, 0 < b < 100
     int buildingChance;     // Chance of building house/hotel

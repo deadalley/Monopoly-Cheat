@@ -1,6 +1,8 @@
 #ifndef H_UTILS
 #define H_UTILS
 
+#define INIT_BALANCE 20580
+
 #define GO 0
 #define MEDITERRANEAN_AV 1
 #define CHEST_1 2

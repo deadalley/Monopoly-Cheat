@@ -33,17 +33,17 @@ class Board {
     class Tile;
 
   private:
-    static vector<Tile> map;
-    static stack<EventCard*> chanceCards;
-    static stack<EventCard*> chestCards;
-    static int dice[2];
+    vector<Tile> map;
+    stack<EventCard*> chanceCards;
+    stack<EventCard*> chestCards;
+    int dice[2];
 
   public:
-    static void initBoard();
-    static Tile* getTile(int);
-    static void rollDice();
-    static int getDie(int);
-    static EventCard* getEventCard(TileType);  // Draws a chance or chest card
+    void initBoard();
+    Tile* getTile(int);
+    void rollDice();
+    int getDie(int);
+    EventCard* getEventCard(TileType);  // Draws a chance or chest card
 };
 
 class Board::Tile {

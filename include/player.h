@@ -2,7 +2,6 @@
 #define H_PLAYER
 
 #include <string>
-#include <map>
 
 #include "agplayer.h"
 #include "board.h"
@@ -11,8 +10,12 @@
 
 using namespace std;
 
+class GameController;
+
 class Player : public AGPlayer {
   private:
+    GameController *gameController;
+
     string name;
     int id;
     int position;
@@ -33,7 +36,7 @@ class Player : public AGPlayer {
     bool hasJailCard;
     int roundsInJail;
 
-    Player(int, string);
+    Player(int, string, GameController*);
 
     int getId();
     string getName();

@@ -8,9 +8,9 @@ using namespace std;
 
 class Bank {
   public:
-    static Wallet Balance;
+    Wallet Balance;
 
-    static void initBank();
+    void initBank();
 };
 
 #endif

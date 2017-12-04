@@ -1,11 +1,16 @@
 #include "player.h"
 #include "utils.h"
 #include "gamecontroller.h"
+//#include "game.h"
 
-Player::Player(int id, string name) {
+#include <map>
+
+Player::Player(int id, string name, GameController *controller) {
   this->id = id;
   this->name = name;
   this->position = GO;
+
+  this->gameController = controller;
 
   this->inJail = false;
   this->isBroke = false;
@@ -14,7 +19,7 @@ Player::Player(int id, string name) {
   this->ownedRailroads = 0;
   this->ownedUtilities = 0;
 
-  Bank::Balance.payTo(&this->wallet, 1500);
+  gameController->getBank()->Balance.payTo(&this->wallet, 1500);
 }
 
 int Player::getId() {
@@ -48,7 +53,7 @@ ColorSet* Player::getColorSet(Color color) {
 
 void Player::goTo(int position) {
   if(position < this->position) {
-    if(Bank::Balance.payTo(&this->wallet, 200)) {
+    if(gameController->getBank()->Balance.payTo(&this->wallet, 200)) {
       cout << "\t" << name << " passed GO and received 200 from Bank" << endl;
     }
 
@@ -80,7 +85,7 @@ void Player::stepOnTile(Board::Tile *tile) {
         if(card->isMortgaged)
           break;
 
-        Player *otherPlayer = GameController::getPlayer(card->owner);
+        Player *otherPlayer = gameController->getPlayer(card->owner);
         int rent = 0;
 
         // Calculate rent
@@ -95,10 +100,10 @@ void Player::stepOnTile(Board::Tile *tile) {
           }
           case UtilityCard: {
             if(otherPlayer->getOwnedUtilities() == 1)
-              rent = 4 * (Board::getDie(0) + Board::getDie(1));
+              rent = 4 * (gameController->getBoard()->getDie(0) + gameController->getBoard()->getDie(1));
 
             else if(otherPlayer->getOwnedUtilities() == 2)
-              rent = 10 * (Board::getDie(0) + Board::getDie(1));
+              rent = 10 * (gameController->getBoard()->getDie(0) + gameController->getBoard()->getDie(1));
             break;
           }
           case RailroadCard: {
@@ -136,10 +141,10 @@ void Player::stepOnTile(Board::Tile *tile) {
       break;
     }
     case ChestTile:
-      processEventCard(Board::getEventCard(tile->getType()));
+      processEventCard(gameController->getBoard()->getEventCard(tile->getType()));
       break;
     case ChanceTile:
-      processEventCard(Board::getEventCard(tile->getType()));
+      processEventCard(gameController->getBoard()->getEventCard(tile->getType()));
       break;
     case JailTile:
       // nothing to do here
@@ -159,11 +164,11 @@ void Player::stepOnTile(Board::Tile *tile) {
       break;
     case IncomeTaxTile:
       // OBLIGATORY PAY
-      if(this->wallet.payTo(&Bank::Balance, 200))
+      if(this->wallet.payTo(&gameController->getBank()->Balance, 200))
         cout << "\t" << name << " paid 200 in Income Tax" << endl;
       else {
         tryToMortgage(200);
-        if(this->wallet.payTo(&Bank::Balance, 200))
+        if(this->wallet.payTo(&gameController->getBank()->Balance, 200))
           cout << "\t" << name << " paid 200 in Income Tax" << endl;
         else {
           cout << "\t" << name << " could not pay 200 as Income Tax" << endl;
@@ -174,11 +179,11 @@ void Player::stepOnTile(Board::Tile *tile) {
       break;
     case LuxuryTaxTile:
       // OBLIGATORY PAY
-      if(this->wallet.payTo(&Bank::Balance, 100))
+      if(this->wallet.payTo(&gameController->getBank()->Balance, 100))
         cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
       else {
         tryToMortgage(100);
-        if(this->wallet.payTo(&Bank::Balance, 100))
+        if(this->wallet.payTo(&gameController->getBank()->Balance, 100))
           cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
         else {
           cout << "\t" << name << " could not pay 100 as Luxury Tax" << endl;
@@ -195,14 +200,14 @@ void Player::processEventCard(EventCard *card) {
   switch(card->effectType) {
     // Receive amount from Bank
     case Collect:
-      //this->wallet.receiveFrom(&Bank::Balance, card->value);
-      Bank::Balance.payTo(&this->wallet, card->value);
+      //this->wallet.receiveFrom(&gameController->getBank()->Balance, card->value);
+      gameController->getBank()->Balance.payTo(&this->wallet, card->value);
       cout << "\t" << name << " collected " << card->value << endl;
       break;
 
     // Pay amount to bank
     case Pay:
-      if(this->wallet.payTo(&Bank::Balance, card->value))
+      if(this->wallet.payTo(&gameController->getBank()->Balance, card->value))
         cout << "\t" << name << " paid " << card->value << endl;
       break;
 
@@ -231,7 +236,7 @@ void Player::processEventCard(EventCard *card) {
 
       goTo(destination);
 
-      Utility *utility = (Utility*) Board::getTile(destination)->getCard();
+      Utility *utility = (Utility*) gameController->getBoard()->getTile(destination)->getCard();
       // Unowned. Player may buy it
       if(utility->owner == -1) {
         if((this->wallet.getBalance() - utility->price) < this->minimumBalance) {
@@ -249,10 +254,10 @@ void Player::processEventCard(EventCard *card) {
       else if(utility->owner != id) {
         cout << "\t" << "Player " << (utility->owner+1) << " owns " << utility->name << endl;
 
-        Player *otherPlayer = GameController::getPlayer(utility->owner);
+        Player *otherPlayer = gameController->getPlayer(utility->owner);
 
-        Board::rollDice();
-        int rent = 10 * (Board::getDie(0) + Board::getDie(1));
+        gameController->getBoard()->rollDice();
+        int rent = 10 * (gameController->getBoard()->getDie(0) + gameController->getBoard()->getDie(1));
         if(wallet.payTo(&otherPlayer->wallet, rent))
           cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
         else if(tryToMortgage(rent)) {
@@ -286,7 +291,7 @@ void Player::processEventCard(EventCard *card) {
       }
 
       goTo(destination);
-      Railroad *railroad = (Railroad*) Board::getTile(destination)->getCard();
+      Railroad *railroad = (Railroad*) gameController->getBoard()->getTile(destination)->getCard();
 
       // Unowned. Player may buy it
       if(railroad->owner == -1) {
@@ -305,7 +310,7 @@ void Player::processEventCard(EventCard *card) {
       else if(railroad->owner != id) {
         cout << "\t" << "Player " << (railroad->owner+1) << " owns " << railroad->name << endl;
 
-        Player *otherPlayer = GameController::getPlayer(railroad->owner);
+        Player *otherPlayer = gameController->getPlayer(railroad->owner);
 
         int rent = 2 * railroad->rent[otherPlayer->getOwnedRailroads() - 1];
 
@@ -352,9 +357,9 @@ void Player::processEventCard(EventCard *card) {
           // Pay for hotel
           if(property->hasHotel) {
             // OBLIGATORY PAY
-            if(!this->wallet.payTo(&Bank::Balance, 100)) {
+            if(!this->wallet.payTo(&gameController->getBank()->Balance, 100)) {
               if(tryToMortgage(100)){
-                if(!this->wallet.payTo(&Bank::Balance, 100))
+                if(!this->wallet.payTo(&gameController->getBank()->Balance, 100))
                   goBroke();
               }
               else {
@@ -365,9 +370,9 @@ void Player::processEventCard(EventCard *card) {
           }
           // Pay for houses
           else if(property->n_houses > 0) {
-            if(!this->wallet.payTo(&Bank::Balance, 25*property->n_houses)) {
+            if(!this->wallet.payTo(&gameController->getBank()->Balance, 25*property->n_houses)) {
               if(tryToMortgage(25*property->n_houses)) {
-                if(!this->wallet.payTo(&Bank::Balance, 25*property->n_houses))
+                if(!this->wallet.payTo(&gameController->getBank()->Balance, 25*property->n_houses))
                   goBroke();
               }
               else goBroke();
@@ -389,9 +394,9 @@ void Player::processEventCard(EventCard *card) {
           TitleDeed *property = set->getCard(j);
           // Pay for hotel
           if(property->hasHotel) {
-            if(!this->wallet.payTo(&Bank::Balance, 115)) {
+            if(!this->wallet.payTo(&gameController->getBank()->Balance, 115)) {
               if(tryToMortgage(115)) {
-                if(!this->wallet.payTo(&Bank::Balance, 115))
+                if(!this->wallet.payTo(&gameController->getBank()->Balance, 115))
                   goBroke();
               }
               else goBroke();
@@ -400,9 +405,9 @@ void Player::processEventCard(EventCard *card) {
           }
 
           else if(property->n_houses > 0) {
-            if(!this->wallet.payTo(&Bank::Balance, 40*property->n_houses)) {
+            if(!this->wallet.payTo(&gameController->getBank()->Balance, 40*property->n_houses)) {
               if(tryToMortgage(40*property->n_houses)) {
-                if(!this->wallet.payTo(&Bank::Balance, 40*property->n_houses))
+                if(!this->wallet.payTo(&gameController->getBank()->Balance, 40*property->n_houses))
                   goBroke();
               }
               else goBroke();
@@ -414,16 +419,16 @@ void Player::processEventCard(EventCard *card) {
       break;
     }
     case PayToAll:
-      GameController::payAll(this, card->value);
+      gameController->payAll(this, card->value);
       break;
     case ReceiveFromAll:
-      GameController::receiveFromAll(this, card->value);
+      gameController->receiveFromAll(this, card->value);
       break;
   }
 }
 
 void Player::buy(Card *card) {
-  if(wallet.payTo(&Bank::Balance, card->price)) {
+  if(wallet.payTo(&gameController->getBank()->Balance, card->price)) {
     card->owner = this->id;
 
     cout << "\t" << name << " bought " << card->name << endl;
@@ -474,7 +479,7 @@ void Player::build(TitleDeed *deed) {
 
   if(deed->n_houses == 4) {
     cout << "\tBuilding hotel on " << deed->name << " with cost " << deed->hotel_cost << endl;
-    if(this->wallet.payTo(&Bank::Balance, deed->hotel_cost)) {
+    if(this->wallet.payTo(&gameController->getBank()->Balance, deed->hotel_cost)) {
       deed->n_houses = 0;
       deed->hasHotel = true;
       cout << "\t" << name << " built a hotel on " << deed->name << endl;
@@ -487,7 +492,7 @@ void Player::build(TitleDeed *deed) {
   }
 
   cout << "\tBuilding house on " << deed->name << " with cost " << deed->house_cost << endl;
-  if(this->wallet.payTo(&Bank::Balance, deed->house_cost)) {
+  if(this->wallet.payTo(&gameController->getBank()->Balance, deed->house_cost)) {
     deed->n_houses++;
     cout << "\t" << name << " built a house on " << deed->name << endl;
     return;
@@ -589,7 +594,7 @@ bool Player::tryToMortgage(int value) {
   if(minIndexI != -1 && minIndexJ != -1) {
     TitleDeed *deed = colorsets[minIndexI]->getCard(minIndexJ);
     deed->isMortgaged = true;
-    Bank::Balance.payTo(&this->wallet, deed->mortgage);
+    gameController->getBank()->Balance.payTo(&this->wallet, deed->mortgage);
     cout << "\t" << name << " mortgaged " << deed->name << " to the bank" << endl;
     return true;
   }
@@ -611,8 +616,8 @@ void Player::tryToTrade() {
   if(chance <= tradingChance) {
     int i;
     // Find player to trade
-    for(i = 0; i < GameController::getPlayerSize(); i++) {
-      Player *otherPlayer = GameController::getPlayer(i);
+    for(i = 0; i < gameController->getPlayerSize(); i++) {
+      Player *otherPlayer = gameController->getPlayer(i);
 
       // Skip if it's this player
       if(otherPlayer->getId() == this->id)
@@ -773,7 +778,7 @@ bool Player::paidToGetOutOfJail() {
   int chance = rand() % 100;
 
   if(chance <= payingJailChance) {
-    if(!wallet.payTo(&Bank::Balance, 50)) {
+    if(!wallet.payTo(&gameController->getBank()->Balance, 50)) {
       throw PAY_FAILED;
       //cout << "\t" << name << " did not pay to leave jail" << endl;
       //return false;
@@ -790,7 +795,7 @@ bool Player::paidToGetOutOfJail() {
 void Player::goBroke() {
   this->isBroke = true;
   // Give funds to bank
-  this->wallet.payTo(&Bank::Balance, this->wallet.getBalance());
+  this->wallet.payTo(&gameController->getBank()->Balance, this->wallet.getBalance());
 
   int i;
   // Return deeds to bank

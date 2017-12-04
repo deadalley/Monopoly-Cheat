@@ -2,22 +2,34 @@
 #define H_GAMECONTROLLER
 
 #include "player.h"
+#include "agcontroller.h"
+
+class Board;
+class Bank;
 
 class GameController {
   private:
-    static vector<Player*> players;
-    static int sequenceOfTurns;     // Counts how many times the same player has been the active player
-    static int activePlayer;        // Player id of current turn
+    vector<Player*> players;
+    int sequenceOfTurns;     // Counts how many times the same player has been the active player
+    int activePlayer;        // Player id of current turn
+    Board *board;
+    Bank *bank;
 
   public:
-    static void initGame(int);
+    void initGameController(AGController*, int);
 
-    static int getPlayerSize();
-    static Player* getPlayer(int);
+    void setBoard(Board*);
+    void setBank(Bank*);
 
-    static void payAll(Player*, int);
-    static void receiveFromAll(Player*, int);
-    static void processTurn();
+    Board* getBoard();
+    Bank* getBank();
+
+    int getPlayerSize();
+    Player* getPlayer(int);
+
+    void payAll(Player*, int);
+    void receiveFromAll(Player*, int);
+    void processTurn();
 };
 
 #endif

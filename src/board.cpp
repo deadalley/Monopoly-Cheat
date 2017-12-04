@@ -1,7 +1,5 @@
 #include "board.h"
 
-int Board::dice[2];
-
 void Board::initBoard() {
   // Initialize chance and chest cards
   int i;
@@ -80,13 +78,13 @@ void Board::initBoard() {
 }
 
 Board::Tile* Board::getTile(int index) {
-  return &Board::map[index];
+  return &map[index];
 }
 
 void Board::rollDice() {
   int d = 1;
-  Board::dice[0] = rand() % (d*6) + 1;
-  Board::dice[1] = rand() % (d*6) + 1;
+  dice[0] = rand() % (d*6) + 1;
+  dice[1] = rand() % (d*6) + 1;
 }
 
 int Board::getDie(int i) {

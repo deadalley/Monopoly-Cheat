@@ -1,22 +1,35 @@
 #include "gamecontroller.h"
 #include "player.h"
-#include "agmanager.h"
+#include "agcontroller.h"
 
-vector<Player*> GameController::players;
-int GameController::activePlayer;
-int GameController::sequenceOfTurns;
-
-void GameController::initGame(int n_players) {
+void GameController::initGameController(AGController *agController, int n_players) {
   int i;
+  players.clear();
+
   for(i = 0; i < n_players; i++) {
-    Player *p = new Player(i, "Player " + to_string(i + 1));
-    //AGManager::initPlayer(p);
-    AGManager::addPlayer(p);
+    Player *p = new Player(i, "Player " + to_string(i + 1), this);
+    agController->addPlayer(p);
     players.push_back(p);
   }
 
-  GameController::activePlayer = 0;
-  GameController::sequenceOfTurns = 0;
+  activePlayer = 0;
+  sequenceOfTurns = 0;
+}
+
+void GameController::setBoard(Board *board) {
+  this->board = board;
+}
+
+void GameController::setBank(Bank *bank) {
+  this->bank = bank;
+}
+
+Board* GameController::getBoard() {
+  return this->board;
+}
+
+Bank* GameController::getBank() {
+  return this->bank;
 }
 
 int GameController::getPlayerSize() {
@@ -94,9 +107,9 @@ void GameController::processTurn() {
   cout << "\tIs at position " << player->getPosition() << endl;
 
   // Dice roll
-  Board::rollDice();
-  int die1 = Board::getDie(0);
-  int die2 = Board::getDie(1);
+  board->rollDice();
+  int die1 = board->getDie(0);
+  int die2 = board->getDie(1);
   cout << "\t" << player->getName() << " rolled " << die1 << "," << die2 << endl;
 
   // Check if player is in jail
@@ -129,7 +142,7 @@ void GameController::processTurn() {
       if(player->wallet.getBalance() < 50) {
         // TODO: Mortgage
       }
-      else if(player->wallet.payTo(&Bank::Balance, 50)) {
+      else if(player->wallet.payTo(&bank->Balance, 50)) {
         cout << "\t" << player->getName() << " paid 50 and got out of jail" << endl;
         player->inJail = false;
         player->roundsInJail = 0;
@@ -153,7 +166,7 @@ void GameController::processTurn() {
   cout << "\tLanded on position " << player->getPosition() << endl;
 
   // Process tile
-  Board::Tile *tile = Board::getTile(player->getPosition());
+  Board::Tile *tile = board->getTile(player->getPosition());
   cout << "\tStepped on tile of type " << tile->getType() << endl;
   player->stepOnTile(tile);
 

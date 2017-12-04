@@ -1,5 +1,11 @@
 #include "cards.h"
 
+TitleDeed* Cards::deeds = (TitleDeed*) malloc(sizeof(TitleDeed)*N_DEEDS);
+Railroad* Cards::railroads = (Railroad*) malloc(sizeof(Railroad)*N_RAILROADS);
+Utility* Cards::utilities = (Utility*) malloc(sizeof(Utility)*N_UTILITIES);
+EventCard* Cards::chance = (EventCard*) malloc(sizeof(EventCard)*N_EVENT_CARDS);
+EventCard* Cards::chest = (EventCard*) malloc(sizeof(EventCard)*N_EVENT_CARDS);
+
 Color parseColor(string name) {
   transform(name.begin(), name.end(), name.begin(), ::tolower);
   if(name.compare("purple") == 0)
@@ -86,7 +92,9 @@ void Cards::inputTitleDeeds(string file_name) {
         line.erase(0, pos + 2);
       k++;
     }
+
     deeds[i] = newDeed;
+
     /*int j;
     cout << ">> " << deeds[i].name << endl;
     cout << "\tPrice: " << deeds[i].price << endl;
