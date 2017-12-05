@@ -53,11 +53,13 @@ ColorSet* Player::getColorSet(Color color) {
 void Player::goTo(int position) {
   if(position < this->position) {
     if(gameController->getBank()->Balance.payTo(&this->wallet, 200)) {
-      cout << "\t" << name << " passed GO and received 200 from Bank" << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " passed GO and received 200 from Bank" << endl;
     }
 
     else {
-      cout << "\t Bank cannot pay $200 to player. Not enough credit in bank." << endl;
+      if(_VERBOSE)
+        cout << "\t Bank cannot pay $200 to player. Not enough credit in bank." << endl;
     }
   }
 
@@ -75,11 +77,14 @@ void Player::stepOnTile(Board::Tile *tile) {
       Card *card = tile->getCard();
 
       // Player already owns card
-      if(id == card->owner)
-        cout << "\t" << name << " already owns " << card->name << endl;
+      if(id == card->owner) {
+        if(_VERBOSE)
+          cout << "\t" << name << " already owns " << card->name << endl;
+      }
       // Card is owned by another player
       else if(card->owner != -1) {
-        cout << "\t" << "Player " << (card->owner+1) << " owns " << card->name << endl;
+        if(_VERBOSE)
+          cout << "\t" << "Player " << (card->owner+1) << " owns " << card->name << endl;
         // Don't pay rent if card is mortgaged
         if(card->isMortgaged)
           break;
@@ -114,24 +119,32 @@ void Player::stepOnTile(Board::Tile *tile) {
         }
 
         // Pay rent - OBLIGATORY PAY
-        cout << "\t" << name << " is paying " << rent << " to " << otherPlayer->getName() << endl;
-        if(wallet.payTo(&otherPlayer->wallet, rent))
-          cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+        if(_VERBOSE)
+          cout << "\t" << name << " is paying " << rent << " to " << otherPlayer->getName() << endl;
+        if(wallet.payTo(&otherPlayer->wallet, rent)) {
+          if(_VERBOSE)
+            cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+        }
+
         else {
           tryToMortgage(rent);
           if(!this->wallet.payTo(&otherPlayer->wallet, rent)) {
-            cout << "\t" << name << " could not pay $" << rent << " to " << otherPlayer->getName() << endl;
+            if(_VERBOSE)
+              cout << "\t" << name << " could not pay $" << rent << " to " << otherPlayer->getName() << endl;
             goBroke();
           }
         }
       }
       // Nobody owns card. Player may buy it
       else {
-        if((this->wallet.getBalance() - card->price) < this->getMinimumBalance())
-          cout << "\t" << name << " is at minimum balance. Property not bought." << endl;
+        if((this->wallet.getBalance() - card->price) < this->getMinimumBalance()) {
+          if(_VERBOSE)
+            cout << "\t" << name << " is at minimum balance. Property not bought." << endl;
+        }
 
         else {
-          cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << card->name << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << card->name << endl;
           int chance = rand() % 100;
           if(chance <= getBuyingChance())
             buy(card);
@@ -147,30 +160,39 @@ void Player::stepOnTile(Board::Tile *tile) {
       break;
     case JailTile:
       // nothing to do here
-      cout << "\t" << name << " landed on Jail (no worries!)" << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " landed on Jail (no worries!)" << endl;
       break;
     case GoToJailTile:
-      cout << "\t" << name << " landed on Go To Jail (oh no!)" << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " landed on Go To Jail (oh no!)" << endl;
       this->goToJail();
       break;
     case GoTile:
       // nothing to do here
-      cout << "\t" << name << " landed on GO" << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " landed on GO" << endl;
       break;
     case FreeParkingTile:
       // nothing to do here
-      cout << "\t" << name << " landed on Free Parking" << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " landed on Free Parking" << endl;
       break;
     case IncomeTaxTile:
       // OBLIGATORY PAY
-      if(this->wallet.payTo(&gameController->getBank()->Balance, 200))
-        cout << "\t" << name << " paid 200 in Income Tax" << endl;
+      if(this->wallet.payTo(&gameController->getBank()->Balance, 200)) {
+        if(_VERBOSE)
+          cout << "\t" << name << " paid 200 in Income Tax" << endl;
+      }
       else {
         tryToMortgage(200);
-        if(this->wallet.payTo(&gameController->getBank()->Balance, 200))
-          cout << "\t" << name << " paid 200 in Income Tax" << endl;
+        if(this->wallet.payTo(&gameController->getBank()->Balance, 200)) {
+          if(_VERBOSE)
+            cout << "\t" << name << " paid 200 in Income Tax" << endl;
+        }
         else {
-          cout << "\t" << name << " could not pay 200 as Income Tax" << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " could not pay 200 as Income Tax" << endl;
           goBroke();
         }
       }
@@ -178,14 +200,19 @@ void Player::stepOnTile(Board::Tile *tile) {
       break;
     case LuxuryTaxTile:
       // OBLIGATORY PAY
-      if(this->wallet.payTo(&gameController->getBank()->Balance, 100))
-        cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
+      if(this->wallet.payTo(&gameController->getBank()->Balance, 100)) {
+        if(_VERBOSE)
+          cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
+      }
       else {
         tryToMortgage(100);
-        if(this->wallet.payTo(&gameController->getBank()->Balance, 100))
-          cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
+        if(this->wallet.payTo(&gameController->getBank()->Balance, 100)) {
+          if(_VERBOSE)
+            cout << "\t" << name << " paid 100 in Luxury Tax" << endl;
+        }
         else {
-          cout << "\t" << name << " could not pay 100 as Luxury Tax" << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " could not pay 100 as Luxury Tax" << endl;
           goBroke();
         }
       }
@@ -194,20 +221,24 @@ void Player::stepOnTile(Board::Tile *tile) {
 }
 
 void Player::processEventCard(EventCard *card) {
-  cout << "\t" << name << " drew " << card->description << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " drew " << card->description << endl;
   // Switch type of drawn card
   switch(card->effectType) {
     // Receive amount from Bank
     case Collect:
       //this->wallet.receiveFrom(&gameController->getBank()->Balance, card->value);
       gameController->getBank()->Balance.payTo(&this->wallet, card->value);
-      cout << "\t" << name << " collected " << card->value << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " collected " << card->value << endl;
       break;
 
     // Pay amount to bank
     case Pay:
-      if(this->wallet.payTo(&gameController->getBank()->Balance, card->value))
-        cout << "\t" << name << " paid " << card->value << endl;
+      if(this->wallet.payTo(&gameController->getBank()->Balance, card->value)) {
+        if(_VERBOSE)
+          cout << "\t" << name << " paid " << card->value << endl;
+      }
       break;
 
     // Move to tile
@@ -239,10 +270,12 @@ void Player::processEventCard(EventCard *card) {
       // Unowned. Player may buy it
       if(utility->owner == -1) {
         if((this->wallet.getBalance() - utility->price) < this->getMinimumBalance()) {
-          cout << "\t" << name << " is at minimum balance. Utility not bought." << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " is at minimum balance. Utility not bought." << endl;
         }
         else {
-          cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << utility->name << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << utility->name << endl;
           int chance = rand() % 100;
           if(chance <= getBuyingChance())
             buy(utility);
@@ -251,19 +284,26 @@ void Player::processEventCard(EventCard *card) {
 
       // Card owned by another player
       else if(utility->owner != id) {
-        cout << "\t" << "Player " << (utility->owner+1) << " owns " << utility->name << endl;
+        if(_VERBOSE)
+          cout << "\t" << "Player " << (utility->owner+1) << " owns " << utility->name << endl;
 
         Player *otherPlayer = gameController->getPlayer(utility->owner);
 
         gameController->getBoard()->rollDice();
         int rent = 10 * (gameController->getBoard()->getDie(0) + gameController->getBoard()->getDie(1));
-        if(wallet.payTo(&otherPlayer->wallet, rent))
-          cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
-        else if(tryToMortgage(rent)) {
-          if(wallet.payTo(&otherPlayer->wallet, rent))
+        if(wallet.payTo(&otherPlayer->wallet, rent)) {
+          if(_VERBOSE)
             cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+        }
+        else if(tryToMortgage(rent)) {
+          if(wallet.payTo(&otherPlayer->wallet, rent)) {
+            if(_VERBOSE)
+              cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+          }
+
           else {
-            cout << "\t" << name << " could not pay " << rent << " to " << otherPlayer->getName() << endl;
+            if(_VERBOSE)
+              cout << "\t" << name << " could not pay " << rent << " to " << otherPlayer->getName() << endl;
             goBroke();
           }
         }
@@ -295,10 +335,12 @@ void Player::processEventCard(EventCard *card) {
       // Unowned. Player may buy it
       if(railroad->owner == -1) {
         if((this->wallet.getBalance() - railroad->price) < this->getMinimumBalance()) {
-          cout << "\t" << name << " is at minimum balance. Railroad not bought." << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " is at minimum balance. Railroad not bought." << endl;
         }
         else {
-          cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << railroad->name << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << railroad->name << endl;
           int chance = rand() % 100;
           if(chance <= getBuyingChance())
             buy(railroad);
@@ -307,20 +349,26 @@ void Player::processEventCard(EventCard *card) {
 
       // Card owned by another player
       else if(railroad->owner != id) {
-        cout << "\t" << "Player " << (railroad->owner+1) << " owns " << railroad->name << endl;
+        if(_VERBOSE)
+          cout << "\t" << "Player " << (railroad->owner+1) << " owns " << railroad->name << endl;
 
         Player *otherPlayer = gameController->getPlayer(railroad->owner);
 
         int rent = 2 * railroad->rent[otherPlayer->getOwnedRailroads() - 1];
 
         // OBLIGATORY PAY
-        if(wallet.payTo(&otherPlayer->wallet, rent))
-          cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
-        else if(tryToMortgage(rent)){
-          if(wallet.payTo(&otherPlayer->wallet, rent))
+        if(wallet.payTo(&otherPlayer->wallet, rent)) {
+          if(_VERBOSE)
             cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+        }
+        else if(tryToMortgage(rent)){
+          if(wallet.payTo(&otherPlayer->wallet, rent)) {
+            if(_VERBOSE)
+              cout << "\t" << name << " paid " << rent << " to " << otherPlayer->getName() << endl;
+          }
           else {
-            cout << "\t" << name << " coult not pay " << rent << " to " << otherPlayer->getName() << endl;
+            if(_VERBOSE)
+              cout << "\t" << name << " coult not pay " << rent << " to " << otherPlayer->getName() << endl;
             goBroke();
           }
           //throw PAY_FAILED;
@@ -349,7 +397,7 @@ void Player::processEventCard(EventCard *card) {
     case GetOutJail:
       this->hasJailCard = true;
       break;
-      
+
     // Pay for each house and hotel
     case GeneralRepairs: {
       int i;
@@ -362,26 +410,25 @@ void Player::processEventCard(EventCard *card) {
           if(property->hasHotel) {
             // OBLIGATORY PAY
             if(!this->wallet.payTo(&gameController->getBank()->Balance, 100)) {
-              if(tryToMortgage(100)){
-                if(!this->wallet.payTo(&gameController->getBank()->Balance, 100))
-                  goBroke();
-              }
-              else {
-                goBroke();
+              if(_VERBOSE) {
+                cout << "\t" << name << " paying for hotel on " << property->name << endl;
               }
             }
-              //throw PAY_FAILED;
+            else {
+              goBroke();
+              return;
+            }
           }
           // Pay for houses
           else if(property->n_houses > 0) {
-            if(!this->wallet.payTo(&gameController->getBank()->Balance, 25*property->n_houses)) {
-              if(tryToMortgage(25*property->n_houses)) {
-                if(!this->wallet.payTo(&gameController->getBank()->Balance, 25*property->n_houses))
-                  goBroke();
-              }
-              else goBroke();
+            if(this->wallet.payTo(&gameController->getBank()->Balance, 25*property->n_houses)) {
+              if(_VERBOSE)
+                cout << "\t" << name << " paying for "<< property->n_houses << " on " << property->name << endl;
             }
-              //throw PAY_FAILED;
+            else {
+              goBroke();
+              return;
+            }
           }
         }
       }
@@ -398,25 +445,26 @@ void Player::processEventCard(EventCard *card) {
           TitleDeed *property = set->getCard(j);
           // Pay for hotel
           if(property->hasHotel) {
-            if(!this->wallet.payTo(&gameController->getBank()->Balance, 115)) {
-              if(tryToMortgage(115)) {
-                if(!this->wallet.payTo(&gameController->getBank()->Balance, 115))
-                  goBroke();
+            if(this->wallet.payTo(&gameController->getBank()->Balance, 115)) {
+              if(_VERBOSE) {
+                cout << "\t" << name << " paying for hotel on " << property->name << endl;
               }
-              else goBroke();
             }
-              //throw PAY_FAILED;
+            else {
+              goBroke();
+              return;
+            }
           }
 
           else if(property->n_houses > 0) {
-            if(!this->wallet.payTo(&gameController->getBank()->Balance, 40*property->n_houses)) {
-              if(tryToMortgage(40*property->n_houses)) {
-                if(!this->wallet.payTo(&gameController->getBank()->Balance, 40*property->n_houses))
-                  goBroke();
-              }
-              else goBroke();
+            if(this->wallet.payTo(&gameController->getBank()->Balance, 40*property->n_houses)) {
+              if(_VERBOSE)
+                cout << "\t" << name << " paying for "<< property->n_houses << " on " << property->name << endl;
             }
-              //throw PAY_FAILED;
+            else {
+              goBroke();
+              return;
+            }
           }
         }
       }
@@ -435,7 +483,8 @@ void Player::buy(Card *card) {
   if(wallet.payTo(&gameController->getBank()->Balance, card->price)) {
     card->owner = this->localId;
 
-    cout << "\t" << name << " bought " << card->name << ", " << card->owner << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " bought " << card->name << ", " << card->owner << endl;
 
     switch(card->getType()) {
       // Increase owned of color
@@ -471,45 +520,54 @@ void Player::buy(Card *card) {
   }
 
   else {
-    cout << "\t" << name << " does not have enough credit to buy " << card->name << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " does not have enough credit to buy " << card->name << endl;
   }
 }
 
 void Player::build(TitleDeed *deed) {
   if(deed->hasHotel) {
-    cout << "\t" << deed->name << " has hotel. Cannot build anymore." << endl;
+    if(_VERBOSE)
+      cout << "\t" << deed->name << " has hotel. Cannot build anymore." << endl;
     return;
   }
 
   if(deed->n_houses == 4) {
-    cout << "\tBuilding hotel on " << deed->name << " with cost " << deed->hotel_cost << endl;
+    if(_VERBOSE)
+      cout << "\tBuilding hotel on " << deed->name << " with cost " << deed->hotel_cost << endl;
     if(this->wallet.payTo(&gameController->getBank()->Balance, deed->hotel_cost)) {
       deed->n_houses = 0;
       deed->hasHotel = true;
-      cout << "\t" << name << " built a hotel on " << deed->name << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " built a hotel on " << deed->name << endl;
       return;
     }
     else {
-      cout << "\t" << name << " could build a hotel on " << deed->name << endl;
+      if(_VERBOSE)
+        cout << "\t" << name << " could build a hotel on " << deed->name << endl;
       return;
     }
   }
 
-  cout << "\tBuilding house on " << deed->name << " with cost " << deed->house_cost << endl;
+  if(_VERBOSE)
+    cout << "\tBuilding house on " << deed->name << " with cost " << deed->house_cost << endl;
   if(this->wallet.payTo(&gameController->getBank()->Balance, deed->house_cost)) {
     deed->n_houses++;
-    cout << "\t" << name << " built a house on " << deed->name << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " built a house on " << deed->name << endl;
     return;
   }
   else {
-    cout << "\t" << name << " could not build a house on " << deed->name << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " could not build a house on " << deed->name << endl;
     return;
   }
 }
 
 void Player::trade(Player *otherPlayer, TitleDeed *deed, int offeredPrice) {
   if(!this->wallet.payTo(&otherPlayer->wallet, offeredPrice)) {
-    cout << "\t" << name << " does not have enough money to trade with " << otherPlayer->getName() << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " does not have enough money to trade with " << otherPlayer->getName() << endl;
     throw PAY_FAILED;
   }
 
@@ -521,28 +579,36 @@ void Player::trade(Player *otherPlayer, TitleDeed *deed, int offeredPrice) {
 }
 
 void Player::tryToBuild() {
-  cout << "\t" << name << " is deciding to build" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " is deciding to build" << endl;
   if(this->wallet.getBalance() <= this->getMinimumBalance()) {
-    cout << "\t" << name << " is at minimum balance. Nothing was built." << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " is at minimum balance. Nothing was built." << endl;
     return;
   }
 
-  cout << "\t" << name << " has " << getBuildingChance() << "\% chance of building" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " has " << getBuildingChance() << "\% chance of building" << endl;
   int chance = rand() % 100;
 
   // Check if player has all cards of same color for building
   if(chance <= getBuildingChance()) {
-    cout << "\t" << name << " owns:" << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " owns:" << endl;
     int i;
     // Iterate color sets
     for(i = 0; i < colorsets.size(); i++) {
       ColorSet *colorset = colorsets[i];
-      cout << "\t\t" << colorset->getName() << "(" << colorset->getSize() << "):" << endl;
-      // Iterate owned cards of color set
       int j;
-      for(j = 0; j < colorset->getSize(); j++) {
-        cout << "\t\t\t" << colorset->getCard(j)->name;
-        cout << "(" << colorset->getCard(j)->n_houses << "), " << colorset->getCard(j)->hasHotel << endl;
+
+      // Iterate owned cards of color set
+      if(_VERBOSE) {
+        cout << "\t\t" << colorset->getName() << "(" << colorset->getSize() << "):" << endl;
+
+        for(j = 0; j < colorset->getSize(); j++) {
+          cout << "\t\t\t" << colorset->getCard(j)->name;
+          cout << "(" << colorset->getCard(j)->n_houses << "), " << colorset->getCard(j)->hasHotel << endl;
+        }
       }
 
       // Can't build if a card is mortgaged
@@ -559,13 +625,17 @@ void Player::tryToBuild() {
       }
     }
   }
-  else cout << "\t" << name << " did not build anything this round" << endl;
+  else {
+    if(_VERBOSE)
+      cout << "\t" << name << " did not build anything this round" << endl;
+  }
 }
 
 bool Player::tryToMortgage(int value) {
   // TODO: FIX MORTGAGE
   return false;
-  cout << "\t" << name << " is trying to mortgage" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " is trying to mortgage" << endl;
   int i, m = 5000, minIndexI = -1, minIndexJ = -1;
   // Find the minimum mortgage to cover for debt
   for(i = 0; i < colorsets.size(); i++) {
@@ -599,23 +669,27 @@ bool Player::tryToMortgage(int value) {
     TitleDeed *deed = colorsets[minIndexI]->getCard(minIndexJ);
     deed->isMortgaged = true;
     gameController->getBank()->Balance.payTo(&this->wallet, deed->mortgage);
-    cout << "\t" << name << " mortgaged " << deed->name << " to the bank" << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " mortgaged " << deed->name << " to the bank" << endl;
     return true;
   }
   return false;
 }
 
 void Player::tryToTrade() {
-  cout << "\t" << name << " is trying to trade cards" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " is trying to trade cards" << endl;
 
   // Check if player needs to acquire any cards this round
   if(colorsToAcquire().size() == 0) {
-    cout << "\t" << name << " has no cards and did not trade this round" << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " has no cards and did not trade this round" << endl;
     return;
   }
 
   int chance = rand() % 100;
-  cout << "\t" << name << " has " << getTradingChance() << "\% chance of trading" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " has " << getTradingChance() << "\% chance of trading" << endl;
 
   if(chance <= getTradingChance()) {
     int i;
@@ -640,16 +714,19 @@ void Player::tryToTrade() {
         ColorSet *set = otherPlayer->getColorSet(*it);
 
         if(set->getSize() != 1) {
-          cout << "\tSet " << set->getColor() << " has size " << set->getSize() << endl;
+          if(_VERBOSE)
+            cout << "\tSet " << set->getColor() << " has size " << set->getSize() << endl;
           throw WRONG_SET_SIZE;
         }
 
         // Get first (and only) card from set
         TitleDeed *deed = set->getCard(0);
-        cout << "\t" << name << " is trying to trade " << deed->name << " with " << otherPlayer->getName() << endl;
+        if(_VERBOSE)
+          cout << "\t" << name << " is trying to trade " << deed->name << " with " << otherPlayer->getName() << endl;
         // Check if player has minimum balance to pay for card
         if(wallet.getBalance() - deed->price < getMinimumBalance()) {
-          cout << "\t" << name << " does not have enough money to trade" << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " does not have enough money to trade" << endl;
           continue;
         }
 
@@ -658,7 +735,8 @@ void Player::tryToTrade() {
         // If player can't cover offer, offer maximum to keep minimum balance
         // TODO: Rethink this strategy
         if(wallet.getBalance() - price < getMinimumBalance()) {
-          cout << "\t" << name << " does not have enough money to trade" << endl;
+          if(_VERBOSE)
+            cout << "\t" << name << " does not have enough money to trade" << endl;
           price = wallet.getBalance() - getMinimumBalance();
         }
 
@@ -672,7 +750,8 @@ void Player::tryToTrade() {
     }
   }
   else {
-    cout << "\t" << name << " did not trade this round" << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " did not trade this round" << endl;
   }
 }
 
@@ -681,8 +760,10 @@ int Player::getOffer(TitleDeed *deed) {
 
   float offerPrice = (1 + (float)increase/100) * deed->price;
 
-  cout << "\t" << deed->name << " costs $" << deed->price << endl;
-  cout << "\t" << name << " is offering $" << (int)offerPrice << endl;
+  if(_VERBOSE) {
+    cout << "\t" << deed->name << " costs $" << deed->price << endl;
+    cout << "\t" << name << " is offering $" << (int)offerPrice << endl;
+  }
 
   return offerPrice;
 }
@@ -771,14 +852,16 @@ vector<Color> Player::colorsToTrade() {
 }
 
 bool Player::paidToGetOutOfJail() {
-  cout << "\t" << name << " is trying to pay to get out of jail" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " is trying to pay to get out of jail" << endl;
   // If at minimum balance, do not pay
   if((this->wallet.getBalance() - 50) < this->getMinimumBalance()) {
-    cout << "\t" << name << " is at minimum balance. Will not pay to exit jail." << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " is at minimum balance. Will not pay to exit jail." << endl;
     return false;
   }
-
-  cout << "\t" << name << " has " << getPayingJailChance() << "\% chance of paying to leave jail" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " has " << getPayingJailChance() << "\% chance of paying to leave jail" << endl;
   int chance = rand() % 100;
 
   if(chance <= getPayingJailChance()) {
@@ -791,7 +874,8 @@ bool Player::paidToGetOutOfJail() {
   }
 
   else {
-    cout << "\t" << name << " did not pay to leave jail" << endl;
+    if(_VERBOSE)
+      cout << "\t" << name << " did not pay to leave jail" << endl;
     return false;
   }
 }
@@ -799,7 +883,10 @@ bool Player::paidToGetOutOfJail() {
 void Player::goBroke() {
   this->isBroke = true;
   // Give funds to bank
-  this->wallet.payTo(&gameController->getBank()->Balance, this->wallet.getBalance());
+  if(_VERBOSE)
+    cout << "\tCurrent balance: " << wallet.getBalance() << endl;
+  if(this->wallet.getBalance() > 0)
+    this->wallet.payTo(&gameController->getBank()->Balance, this->wallet.getBalance());
 
   int i;
   // Return deeds to bank
@@ -812,7 +899,7 @@ void Player::goBroke() {
       deed->hasHotel = false;
       deed->isMortgaged = false;
     }
-    free(colorsets[i]);
+    delete colorsets[i];
   }
   // Return utilities to bank
   for(i = 0; i < N_UTILITIES; i++) {
@@ -826,5 +913,6 @@ void Player::goBroke() {
   }
   ownedRailroads = 0;
   ownedUtilities = 0;
-  cout << "\t" << name << " went broke! (oh no)" << endl;
+  if(_VERBOSE)
+    cout << "\t" << name << " went broke! (oh no)" << endl;
 }

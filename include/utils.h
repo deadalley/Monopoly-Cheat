@@ -3,6 +3,8 @@
 
 #define INIT_BALANCE 20580
 
+#define _VERBOSE 0
+
 #define GO 0
 #define MEDITERRANEAN_AV 1
 #define CHEST_1 2

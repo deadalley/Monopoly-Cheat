@@ -4,6 +4,7 @@
 class AGPlayer {
   friend class AGController;
   private:
+    int winCount;
     int buyingChance[3];       // Chance of buying property, 0 < b < 100
     int buildingChance[3];     // Chance of building house/hotel
     int payingJailChance[3];   // Chance to pay to leave jail
@@ -29,8 +30,10 @@ class AGPlayer {
     void setMinimumBalance(int);
     void setTradingChance(int);
     void setMinimumCards(int);
+    void resetWinCount();
 
     int getId();
+    int getWinCount();
     int getBuyingChance();
     int getBuildingChance();
     int getPayingJailChance();
@@ -38,6 +41,8 @@ class AGPlayer {
     int getMinimumBalance();
     int getTradingChance();
     int getMinimumCards();
+
+    void increaseWinCount();
 };
 
 #endif

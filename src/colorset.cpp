@@ -61,12 +61,12 @@ void ColorSet::addCard(TitleDeed *card) {
 void ColorSet::removeCard(TitleDeed *card) {
   vector<TitleDeed*>::iterator it;
   for(it = cards.begin(); it != cards.end(); it++) {
-    cout << "Card: " << (*it)->name << endl;
+    //cout << "Card: " << (*it)->name << endl;
     if(*it == card) {
       break;
     }
   }
-  cout << "Removing (colorset): " << (*it)->name << endl;
+  //cout << "Removing (colorset): " << (*it)->name << endl;
   cards.erase(it);
 }
 

@@ -19,7 +19,7 @@ class Game {
     void checkGameStage(int);
     void checkIntegrity(int);
     bool checkWinner();
-    Player* getWinner();
+    AGPlayer* getWinner();
 
     ~Game();
 };

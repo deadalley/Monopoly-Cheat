@@ -1,15 +1,18 @@
 #include "agplayer.h"
 #include "utils.h"
 #include <cstring>
+#include <iostream>
 
 using namespace std;
 
 AGPlayer::AGPlayer(int id) {
+  this->winCount = 0;
   this->id = id;
 }
 
 AGPlayer::AGPlayer(const AGPlayer &p) {
   this->id = p.id;
+  this->winCount = p.winCount;
   this->stage = p.stage;
   memcpy(this->buyingChance, p.buyingChance, sizeof(this->buyingChance));
   memcpy(this->buildingChance, p.buildingChance, sizeof(this->buildingChance));
@@ -22,6 +25,10 @@ AGPlayer::AGPlayer(const AGPlayer &p) {
 
 int AGPlayer::getId() {
   return id;
+}
+
+int AGPlayer::getWinCount() {
+  return winCount;
 }
 
 void AGPlayer::setStage(int stage) {
@@ -100,4 +107,12 @@ int AGPlayer::getTradingChance() {
 
 int AGPlayer::getMinimumCards() {
   return minimumCards[stage];
+}
+
+void AGPlayer::increaseWinCount() {
+  winCount = winCount +1;
+}
+
+void AGPlayer::resetWinCount() {
+  winCount = 0;
 }

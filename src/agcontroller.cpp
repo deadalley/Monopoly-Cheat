@@ -1,4 +1,5 @@
 #include "agcontroller.h"
+#include "utils.h"
 
 void AGController::setGameStage(int stage) {
   // Stage didn't change, don't do anything
@@ -6,7 +7,8 @@ void AGController::setGameStage(int stage) {
     return;
 
   gameStage = stage;
-  cout << "-----> GAME STAGE: " << gameStage << " <-----" << endl;
+  if(_VERBOSE)
+    cout << "-----> GAME STAGE: " << gameStage << " <-----" << endl;
 
   vector<AGPlayer*>::iterator it;
   for(it = players->begin(); it != players->end(); it++) {

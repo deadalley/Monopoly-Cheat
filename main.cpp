@@ -6,10 +6,11 @@ using namespace std;
 #include "agmanager.h"
 
 int main() {
+  //_VERBOSE = false;
   srand(time(NULL));
   Cards::initCards();
 
   AGManager::initPlayers();
-  AGManager::simulateGeneration();
+  AGManager::runAG();
   return 0;
 }

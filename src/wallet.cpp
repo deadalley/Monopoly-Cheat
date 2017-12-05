@@ -20,7 +20,8 @@ void Wallet::deposit(int value) {
 bool Wallet::deduct(int value) {
   // Check if there are enough bills to deduct
   if(value > balance) {
-    //cout << "Cannot deduct. Not enough credit." << endl;
+    if(_VERBOSE)
+      cout << "Cannot deduct " << value << ". Not enough credit." << endl;
     return false;
   }
 
@@ -29,8 +30,10 @@ bool Wallet::deduct(int value) {
 }
 
 bool Wallet::payTo(Wallet *entity, int value) {
-  cout << "\tCurrent balance: " << balance << endl;
-  cout << "\tPaying: " << value << endl;
+  if(_VERBOSE) {
+    cout << "\tCurrent balance: " << balance << endl;
+    cout << "\tPaying: " << value << endl;
+  }
   // Cannot pay 0 or less
   if(value <= 0)
     throw PAY_VALUE_ERROR;
@@ -38,7 +41,7 @@ bool Wallet::payTo(Wallet *entity, int value) {
   // Check if has credit to pay
   if(deduct(value)) {
     entity->deposit(value);
-    cout << "Paid " << value << endl;
+    //cout << "Paid " << value << endl;
     return true;
   }
 

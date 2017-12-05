@@ -27,9 +27,9 @@ Color parseColor(string name) {
 }
 
 void Cards::initCards() {
-  Cards::inputTitleDeeds("titledeeds.cards");
-  Cards::inputChanceCards("chance.cards");
-  Cards::inputChestCards("chest.cards");
+  Cards::inputTitleDeeds("cards/titledeeds.cards");
+  Cards::inputChanceCards("cards/chance.cards");
+  Cards::inputChestCards("cards/chest.cards");
   Cards::initRailroads();
   Cards::initUtilities();
 }

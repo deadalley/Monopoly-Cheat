@@ -52,12 +52,14 @@ void GameController::payAll(Player *player, int value) {
     if(!player->wallet.payTo(&players.at(i)->wallet, value)) {
       if(player->tryToMortgage(value)) {
         if(!player->wallet.payTo(&players.at(i)->wallet, value)) {
-          cout << "\t" << player->getName() << " could not pay " << value << " to " << players[i]->getName() << endl;
+          if(_VERBOSE)
+            cout << "\t" << player->getName() << " could not pay " << value << " to " << players[i]->getName() << endl;
           player->goBroke();
         }
       }
       else {
-        cout << "\t" << player->getName() << " could not pay " << value << " to " << players[i]->getName() << endl;
+        if(_VERBOSE)
+          cout << "\t" << player->getName() << " could not pay " << value << " to " << players[i]->getName() << endl;
         player->goBroke();
       }
     }
@@ -66,7 +68,8 @@ void GameController::payAll(Player *player, int value) {
 
 void GameController::receiveFromAll(Player *player, int value) {
   int i;
-  cout << players.size() << endl;
+  if(_VERBOSE)
+    cout << players.size() << endl;
   for(i = 0; i < players.size(); i++) {
 
     if(i == player->getLocalId())
@@ -78,13 +81,17 @@ void GameController::receiveFromAll(Player *player, int value) {
     if(!players.at(i)->wallet.payTo(&player->wallet, value)) {
       if(players.at(i)->tryToMortgage(value)) {
         if(!players.at(i)->wallet.payTo(&player->wallet, value)) {
-          cout << "\t" << players.at(i)->getName() << " could not pay " << value << " to " << player->getName() << endl;
+          if(_VERBOSE)
+            cout << "\t" << players.at(i)->getName() << " could not pay " << value << " to " << player->getName() << endl;
           players[i]->goBroke();
+          break;
         }
       }
       else {
-        cout << "\t" << players.at(i)->getName() << " could not pay " << value << " to " << player->getName() << endl;
+        if(_VERBOSE)
+          cout << "\t" << players.at(i)->getName() << " could not pay " << value << " to " << player->getName() << endl;
         players[i]->goBroke();
+        break;
       }
     }
   }
@@ -93,7 +100,8 @@ void GameController::receiveFromAll(Player *player, int value) {
 void GameController::processTurn() {
   Player *player = players.at(activePlayer);
 
-  cout << "=== Started turn for " << player->getName() << endl;
+  if(_VERBOSE)
+    cout << "=== Started turn for " << player->getName() << endl;
   if(player->isBroke) {
     cout << "\t" << player->getName() << " is broke! " << endl;
     GameController::activePlayer++;
@@ -103,36 +111,43 @@ void GameController::processTurn() {
     return;
   }
 
-  cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
-  cout << "\tIs at position " << player->getPosition() << endl;
+  if(_VERBOSE) {
+    cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
+    cout << "\tIs at position " << player->getPosition() << endl;
+  }
 
   // Dice roll
   board->rollDice();
   int die1 = board->getDie(0);
   int die2 = board->getDie(1);
-  cout << "\t" << player->getName() << " rolled " << die1 << "," << die2 << endl;
+  if(_VERBOSE)
+    cout << "\t" << player->getName() << " rolled " << die1 << "," << die2 << endl;
 
   // Check if player is in jail
   if(player->inJail) {
     player->roundsInJail++;
-    cout << "\t" << player->getName() << " is " << player->roundsInJail << " rounds in Jail! (oh no)" << endl;
+    if(_VERBOSE)
+      cout << "\t" << player->getName() << " is " << player->roundsInJail << " rounds in Jail! (oh no)" << endl;
     // Leave if rolled doubles
     if (die1 == die2){
-      cout << "\t" << player->getName() << " rolled " << die1 << ", " << die2 << " and left jail" << endl;
+      if(_VERBOSE)
+        cout << "\t" << player->getName() << " rolled " << die1 << ", " << die2 << " and left jail" << endl;
       player->inJail = false;
       player->roundsInJail = 0;
     }
 
     // Leave if has jail card
     else if(player->hasJailCard) {
-      cout << "\t" << player->getName() << " has Jail Card and left jail" << endl;
+      if(_VERBOSE)
+        cout << "\t" << player->getName() << " has Jail Card and left jail" << endl;
       player->hasJailCard = false;
       player->inJail = false;
     }
 
     // Leave if paid before rolling doubles
     else if(player->paidToGetOutOfJail()) {
-      cout << "\t" << player->getName() << " paid 50 and got out of jail" << endl;
+      if(_VERBOSE)
+        cout << "\t" << player->getName() << " paid 50 and got out of jail" << endl;
       player->inJail = false;
       player->roundsInJail = 0;
     }
@@ -143,7 +158,8 @@ void GameController::processTurn() {
         // TODO: Mortgage
       }
       else if(player->wallet.payTo(&bank->Balance, 50)) {
-        cout << "\t" << player->getName() << " paid 50 and got out of jail" << endl;
+        if(_VERBOSE)
+          cout << "\t" << player->getName() << " paid 50 and got out of jail" << endl;
         player->inJail = false;
         player->roundsInJail = 0;
       }
@@ -163,15 +179,18 @@ void GameController::processTurn() {
   // Move to position
   int newPosition = (player->getPosition() + die1 + die2) % 40;
   player->goTo(newPosition);
-  cout << "\tLanded on position " << player->getPosition() << endl;
+  if(_VERBOSE)
+    cout << "\tLanded on position " << player->getPosition() << endl;
 
   // Process tile
   Board::Tile *tile = board->getTile(player->getPosition());
-  cout << "\tStepped on tile of type " << tile->getType() << endl;
+  if(_VERBOSE)
+    cout << "\tStepped on tile of type " << tile->getType() << endl;
   player->stepOnTile(tile);
 
   if(player->isBroke) {
-    cout << "\t" << player->getName() << " is broke! " << endl;
+    if(_VERBOSE)
+      cout << "\t" << player->getName() << " is broke! " << endl;
     GameController::activePlayer++;
     GameController::sequenceOfTurns = 0;
     if (GameController::activePlayer >= GameController::players.size())
@@ -185,13 +204,15 @@ void GameController::processTurn() {
   // Try to build after turn is processed
   player->tryToBuild();
 
-  cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
+  if(_VERBOSE)
+    cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
 
   if(die1 == die2) {
     GameController::sequenceOfTurns++;
     // Check if player has rolled doubles three times in a row
     if(GameController::sequenceOfTurns == 3) {
-      cout << "\t" << player->getName() << " has rolled doubles three times and has gone to jail" << endl;
+      if(_VERBOSE)
+        cout << "\t" << player->getName() << " has rolled doubles three times and has gone to jail" << endl;
       player->goToJail();
     }
     else return;

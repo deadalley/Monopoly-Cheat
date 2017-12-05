@@ -115,7 +115,7 @@ void Game::checkGameStage(int k) {
   else agController.setGameStage(LATE_GAME);
 }
 
-Player* Game::getWinner() {
+AGPlayer* Game::getWinner() {
   int i;
   for(i = 0; i < N_PLAYERS; i++) {
     Player *p = gameController.getPlayer(i);
@@ -135,7 +135,7 @@ void Game::runGame() {
       checkIntegrity(k);
 
       if(checkWinner()) {
-        cout << "GAME ENDED (" << k << ")" << endl;
+        cout << "\tGAME ENDED (" << k << ")" << endl;
         return;
       }
     }
