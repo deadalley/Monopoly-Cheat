@@ -482,6 +482,7 @@ void Player::processEventCard(EventCard *card) {
 void Player::buy(Card *card) {
   if(wallet.payTo(&gameController->getBank()->Balance, card->price)) {
     card->owner = this->localId;
+    ownedProperties.push_back(card);
 
     if(_VERBOSE)
       cout << "\t" << name << " bought " << card->name << ", " << card->owner << endl;
@@ -522,6 +523,13 @@ void Player::buy(Card *card) {
   else {
     if(_VERBOSE)
       cout << "\t" << name << " does not have enough credit to buy " << card->name << endl;
+  }
+  if(_VERBOSE) {
+    vector<Card*>::iterator it;
+    for(it = ownedProperties.begin(); it != ownedProperties.end(); it++) {
+      cout << (*it)->name << ",";
+    }
+    //cin.get();
   }
 }
 
@@ -572,10 +580,31 @@ void Player::trade(Player *otherPlayer, TitleDeed *deed, int offeredPrice) {
   }
 
   deed->owner = this->localId;
+  ownedProperties.push_back(deed);
 
   getColorSet(deed->color)->addCard(deed);
 
-  otherPlayer->getColorSet(deed->color)->removeCard(deed);
+  otherPlayer->removeCard(deed);
+  //otherPlayer->getColorSet(deed->color)->removeCard(deed);
+}
+
+void Player::removeCard(Card *card) {
+  if(card->getType() == PropertyCard) {
+    TitleDeed *deed = (TitleDeed*)card;
+    getColorSet(deed->color)->removeCard(deed);
+  }
+
+  int i;
+  for(i = 0; i < ownedProperties.size(); i++) {
+    if(ownedProperties[i] == card) {
+      if(_VERBOSE) {
+        cout << "Removing: " << card->name << endl;
+      }
+      ownedProperties.erase(ownedProperties.begin()+i);
+      return;
+    }
+  }
+  throw ANY_ERROR;
 }
 
 void Player::tryToBuild() {

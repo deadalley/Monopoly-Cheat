@@ -61,6 +61,8 @@ class Player : public AGPlayer {
 
     vector<Color> matchTrade(Player*);  // Return colors that another player has to offer that match colors of interest
 
+    void removeCard(Card*);
+
     bool paidToGetOutOfJail();
 };
 

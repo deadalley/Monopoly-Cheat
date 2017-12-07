@@ -34,6 +34,39 @@ void AGManager::initPlayers() {
       p->setMinimumCards(chance);
     }
   }
+  logInitPlayers();
+}
+
+void AGManager::logInitPlayers() {
+  ofstream file;
+  file.open("results/init_values.log", ios::app);
+  if(!file)
+    cerr << "Unable to open file init_values.log" << endl;
+
+  if(generation == 1) {
+    file << N_GENERATIONS << endl;
+    file << MAX_PLAYERS << endl;
+  }
+
+  int i, stage;
+  for(i = 0; i < MAX_PLAYERS; i++) {
+    AGPlayer *p = players[i];
+    file << "P" << p->getId()+1 << endl;
+
+    for(stage = 0; stage < 3; stage++) {
+      p->setStage(stage);
+
+      file << p->getBuyingChance() << ",";
+      file << p->getBuildingChance() << ",";
+      file << p->getPayingJailChance() << ",";
+      //file << p->getMortgageChance() << ",";
+      file << p->getTradingChance() << ",";
+      file << p->getMinimumBalance() << ",";
+      file << p->getMinimumCards() << ",";
+    }
+    file << endl;
+  }
+  file.close();
 }
 
 void AGManager::runAG() {
@@ -60,25 +93,36 @@ void AGManager::logBestFeatures(AGPlayer *best) {
     file << MAX_PLAYERS << endl;
   }
 
-  if(best != NULL) {
-    //b << "Generation: " << generation << endl;
-    file << "Best: P" << best->getId()+1 << endl;
-    int stage;
-    for(stage = 0; stage < 3; stage++) {
-      best->setStage(stage);
+  if(best == NULL)
+    return;
 
-      file << best->getBuyingChance() << ",";
-      file << best->getBuildingChance() << ",";
-      file << best->getPayingJailChance() << ",";
-      //file << best->getMortgageChance() << ",";
-      file << best->getTradingChance() << ",";
-      file << best->getMinimumBalance() << ",";
-      file << best->getMinimumCards() << ",";
-    }
-    file << endl;
+  //b << "Generation: " << generation << endl;
+  file << "Best: P" << best->getId()+1 << endl;
+  file << best->getWinCount() << endl;
+  vector<Card*>* ownedProperties = best->getOwnedProperties();
+  vector<Card*>::iterator it;
+  for(it = ownedProperties->begin(); it != ownedProperties->end(); it++) {
+    file << (*it)->name << ",";
   }
+  //cin.get();
+  file << endl;
+
+  int stage;
+  for(stage = 0; stage < 3; stage++) {
+    best->setStage(stage);
+
+    file << best->getBuyingChance() << ",";
+    file << best->getBuildingChance() << ",";
+    file << best->getPayingJailChance() << ",";
+    //file << best->getMortgageChance() << ",";
+    file << best->getTradingChance() << ",";
+    file << best->getMinimumBalance() << ",";
+    file << best->getMinimumCards() << ",";
+  }
+  file << endl;
   file.close();
 }
+
 
 void AGManager::logResults() {
   ofstream file;
@@ -182,6 +226,7 @@ AGPlayer* AGManager::simulateGeneration() {
       AGPlayer *winner = newGame->getWinner();
       cout << "\tWINNER: Player " << winner->getId() + 1 << endl;
       players[winner->getId()]->increaseWinCount();
+      players[winner->getId()]->setOwnedProperties(winner->getOwnedProperties());
 
       delete newGame;
     }
@@ -213,12 +258,12 @@ void AGManager::crossover(AGPlayer *best) {
       (*it)->setStage(stage);
       best->setStage(stage);
 
-      newPlayer->setBuyingChance(crossFeature((*it)->getBuyingChance(), best->getBuyingChance()));
-      newPlayer->setBuildingChance(crossFeature((*it)->getBuildingChance(), best->getBuildingChance()));
-      newPlayer->setPayingJailChance(crossFeature((*it)->getPayingJailChance(), best->getPayingJailChance()));
-      newPlayer->setMortgageChance(crossFeature((*it)->getMortgageChance(), best->getMortgageChance()));
+      newPlayer->setBuyingChance(min(100,crossFeature((*it)->getBuyingChance(), best->getBuyingChance())));
+      newPlayer->setBuildingChance(min(100,crossFeature((*it)->getBuildingChance(), best->getBuildingChance())));
+      newPlayer->setPayingJailChance(min(100,crossFeature((*it)->getPayingJailChance(), best->getPayingJailChance())));
+      newPlayer->setMortgageChance(min(100,crossFeature((*it)->getMortgageChance(), best->getMortgageChance())));
       newPlayer->setMinimumBalance(crossFeature((*it)->getMinimumBalance(), best->getMinimumBalance()));
-      newPlayer->setTradingChance(crossFeature((*it)->getTradingChance(), best->getTradingChance()));
+      newPlayer->setTradingChance(min(100,crossFeature((*it)->getTradingChance(), best->getTradingChance())));
       newPlayer->setMinimumCards(crossFeature((*it)->getMinimumCards(), best->getMinimumCards()));
     }
 
@@ -232,36 +277,36 @@ int AGManager::crossFeature(int v1, int v2) {
 }
 
 void AGManager::mutate() {
-  int i, stage, chance;
+  int i, stage, chance, sig;
   float mutatedValue;
   for(stage = 0; stage < 3; stage++) {
     for(i = 0; i < MAX_PLAYERS; i++) {
       AGPlayer *p = players[i];
       p->setStage(stage);
 
-      chance = rand() % MUTATION;
-      mutatedValue = p->getBuyingChance() * (1 + (float)chance/100);
+      chance = rand() % (2*MUTATION+1) - MUTATION;
+      mutatedValue = max(0.0f,min(100.0f,p->getBuyingChance() * (1 + (float)chance/100)));
       p->setBuyingChance(round(mutatedValue));
-      chance = rand() % MUTATION;
-      mutatedValue = p->getBuildingChance() * (1 + (float)chance/100);
-      p->setBuildingChance(chance);
-      chance = rand() % MUTATION;
-      mutatedValue = p->getPayingJailChance() * (1 + (float)chance/100);
-      p->setPayingJailChance(chance);
-      chance = rand() % MUTATION;
-      mutatedValue = p->getMortgageChance() * (1 + (float)chance/100);
-      p->setMortgageChance(chance);
-      chance = rand() % MUTATION;
-      mutatedValue = p->getTradingChance() * (1 + (float)chance/100);
-      p->setTradingChance(chance);
+      chance = rand() % (2*MUTATION+1) - MUTATION;
+      mutatedValue = max(0.0f,min(100.0f,p->getBuildingChance() * (1 + (float)chance/100)));
+      p->setBuildingChance(mutatedValue);
+      chance = rand() % (2*MUTATION+1) - MUTATION;
+      mutatedValue = max(0.0f,min(100.0f,p->getPayingJailChance() * (1 + (float)chance/100)));
+      p->setPayingJailChance(mutatedValue);
+      chance = rand() % (2*MUTATION+1) - MUTATION;
+      mutatedValue = max(0.0f,min(100.0f,p->getMortgageChance() * (1 + (float)chance/100)));
+      p->setMortgageChance(mutatedValue);
+      chance = rand() % (2*MUTATION+1) - MUTATION;
+      mutatedValue = max(0.0f,min(100.0f,p->getTradingChance() * (1 + (float)chance/100)));
+      p->setTradingChance(mutatedValue);
 
-      chance = rand() % MUTATION;
-      mutatedValue = p->getMinimumBalance() * (1 + (float)chance/100);
-      p->setMinimumBalance(chance);
+      chance = rand() % (2*MUTATION+1) - MUTATION;
+      mutatedValue = max(0.0f,p->getMinimumBalance() * (1 + (float)chance/100));
+      p->setMinimumBalance(mutatedValue);
 
-      chance = rand() % MUTATION;
-      mutatedValue = p->getMinimumCards() * (1 + (float)chance/100);
-      p->setMinimumCards(chance);
+      chance = rand() % (2*MUTATION+1) - MUTATION;
+      mutatedValue = max(0.0f,p->getMinimumCards() * (1 + (float)chance/100));
+      p->setMinimumCards(mutatedValue);
     }
   }
 }

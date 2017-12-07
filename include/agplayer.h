@@ -1,6 +1,9 @@
 #ifndef H_AGPLAYER
 #define H_AGPLAYER
 
+#include <vector>
+#include "card.h"
+
 class AGPlayer {
   friend class AGController;
   private:
@@ -16,6 +19,7 @@ class AGPlayer {
   protected:
     int id;
     int stage;
+    vector<Card*> ownedProperties;
 
   public:
     AGPlayer(int);
@@ -31,6 +35,7 @@ class AGPlayer {
     void setTradingChance(int);
     void setMinimumCards(int);
     void resetWinCount();
+    void setOwnedProperties(vector<Card*>*);
 
     int getId();
     int getWinCount();
@@ -41,6 +46,7 @@ class AGPlayer {
     int getMinimumBalance();
     int getTradingChance();
     int getMinimumCards();
+    vector<Card*>* getOwnedProperties();
 
     void increaseWinCount();
 };

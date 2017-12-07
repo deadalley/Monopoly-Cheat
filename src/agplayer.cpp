@@ -116,3 +116,11 @@ void AGPlayer::increaseWinCount() {
 void AGPlayer::resetWinCount() {
   winCount = 0;
 }
+
+vector<Card*>* AGPlayer::getOwnedProperties() {
+  return &ownedProperties;
+}
+
+void AGPlayer::setOwnedProperties(vector<Card*> *v) {
+  this->ownedProperties = *v;
+}
