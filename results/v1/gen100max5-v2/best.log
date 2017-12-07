@@ -1,0 +1,402 @@
+100
+5
+Best: P1
+4
+Vermont Avenue,Atlantic Avenue,Park Place,St. Charles Place,Tennessee Avenue,B & O Railroad,Boardwalk,Ventnor Avenue,Oriental Avenue,Connecticut Avenue,Electric Company,New York Avenue,Mediterranean Avenue,Pennsylvania Railroad,Kentucky Avenue,
+60,27,99,69,271,3,35,8,63,29,54,4,93,14,6,56,348,5,
+Best: P2
+4
+Ventnor Avenue,B & O Railroad,North Carolina Avenue,Pacific Avenue,Marvin Gardens,Oriental Avenue,Connecticut Avenue,Illinois Avenue,Virginia Avenue,Kentucky Avenue,Pennsylvania Avenue,
+40,39,85,73,184,3,53,23,55,46,94,1,60,36,29,39,439,3,
+Best: P1
+4
+States Avenue,Atlantic Avenue,Marvin Gardens,Pennsylvania Avenue,Oriental Avenue,Indiana Avenue,St. Charles Place,Kentucky Avenue,Virginia Avenue,Baltic Avenue,
+48,34,92,73,236,3,43,15,57,37,74,1,78,24,16,49,381,4,
+Best: P1
+4
+Connecticut Avenue,States Avenue,Atlantic Avenue,Park Place,Baltic Avenue,Electric Company,Vermont Avenue,Pacific Avenue,Water Works,Marvin Gardens,Virginia Avenue,Boardwalk,Pennsylvania Railroad,
+48,34,92,73,236,3,43,15,57,37,74,1,78,24,16,49,381,4,
+Best: P1
+3
+Vermont Avenue,Virginia Avenue,Tennessee Avenue,Connecticut Avenue,Water Works,North Carolina Avenue,Oriental Avenue,St. Charles Place,Kentucky Avenue,Ventnor Avenue,
+48,34,92,73,236,3,43,15,57,37,74,1,78,24,16,49,381,4,
+Best: P1
+3
+St. James Place,B & O Railroad,Park Place,Electric Company,Atlantic Avenue,Mediterranean Avenue,Pennsylvania Railroad,Vermont Avenue,Kentucky Avenue,
+48,34,92,73,236,3,43,15,57,37,74,1,78,24,16,49,381,4,
+Best: P1
+3
+North Carolina Avenue,Boardwalk,Connecticut Avenue,Pennsylvania Avenue,Baltic Avenue,Vermont Avenue,B & O Railroad,Pacific Avenue,
+48,34,92,73,236,3,43,15,57,37,74,1,78,24,16,49,381,4,
+Best: P3
+3
+Mediterranean Avenue,Vermont Avenue,St. James Place,Oriental Avenue,B & O Railroad,Pennsylvania Avenue,Tennessee Avenue,New York Avenue,Illinois Avenue,Pacific Avenue,
+51,33,91,71,244,3,41,14,57,35,73,0,76,22,15,48,360,3,
+Best: P1
+3
+Reading Railroad,Connecticut Avenue,Pacific Avenue,Mediterranean Avenue,Pennsylvania Railroad,Atlantic Avenue,Baltic Avenue,B & O Railroad,St. Charles Place,Ventnor Avenue,States Avenue,Oriental Avenue,Vermont Avenue,Marvin Gardens,Indiana Avenue,
+49,31,93,68,232,3,43,13,58,34,72,0,81,23,15,49,373,3,
+Best: P1
+3
+St. James Place,Atlantic Avenue,Short Line Railroad,Mediterranean Avenue,Electric Company,New York Avenue,Virginia Avenue,B & O Railroad,Baltic Avenue,
+49,31,93,68,232,3,43,13,58,34,72,0,81,23,15,49,373,3,
+Best: P1
+4
+Oriental Avenue,States Avenue,Illinois Avenue,Short Line Railroad,Connecticut Avenue,Kentucky Avenue,Water Works,St. Charles Place,St. James Place,Mediterranean Avenue,Vermont Avenue,Virginia Avenue,
+49,31,93,68,232,3,43,13,58,34,72,0,81,23,15,49,373,3,
+Best: P1
+3
+St. Charles Place,Kentucky Avenue,Marvin Gardens,Mediterranean Avenue,Electric Company,New York Avenue,Oriental Avenue,Pennsylvania Railroad,
+49,31,93,68,232,3,43,13,58,34,72,0,81,23,15,49,373,3,
+Best: P1
+4
+Reading Railroad,Pennsylvania Railroad,Indiana Avenue,Illinois Avenue,Connecticut Avenue,Short Line Railroad,Ventnor Avenue,St. James Place,
+49,31,93,68,232,3,43,13,58,34,72,0,81,23,15,49,373,3,
+Best: P2
+3
+Water Works,Pennsylvania Avenue,Baltic Avenue,St. James Place,Pacific Avenue,New York Avenue,Connecticut Avenue,North Carolina Avenue,Electric Company,Tennessee Avenue,
+48,31,89,68,242,1,42,11,55,31,71,0,83,22,13,45,358,1,
+Best: P2
+3
+Connecticut Avenue,Virginia Avenue,Oriental Avenue,Kentucky Avenue,Indiana Avenue,Water Works,Park Place,Mediterranean Avenue,States Avenue,New York Avenue,
+48,31,89,68,242,1,42,11,55,31,71,0,83,22,13,45,358,1,
+Best: P1
+4
+Pennsylvania Railroad,B & O Railroad,North Carolina Avenue,Tennessee Avenue,Pacific Avenue,Electric Company,Mediterranean Avenue,New York Avenue,Pennsylvania Avenue,St. James Place,Connecticut Avenue,Oriental Avenue,Baltic Avenue,Ventnor Avenue,
+46,32,89,66,239,0,42,11,54,29,71,0,79,21,13,47,369,1,
+Best: P1
+4
+Vermont Avenue,Pennsylvania Railroad,Illinois Avenue,Mediterranean Avenue,Connecticut Avenue,St. James Place,Baltic Avenue,Virginia Avenue,Indiana Avenue,Water Works,B & O Railroad,Kentucky Avenue,
+46,32,89,66,239,0,42,11,54,29,71,0,79,21,13,47,369,1,
+Best: P1
+3
+Connecticut Avenue,Mediterranean Avenue,St. Charles Place,Ventnor Avenue,Oriental Avenue,Pennsylvania Railroad,Atlantic Avenue,Reading Railroad,New York Avenue,Short Line Railroad,Baltic Avenue,
+46,32,89,66,239,0,42,11,54,29,71,0,79,21,13,47,369,1,
+Best: P5
+3
+Tennessee Avenue,North Carolina Avenue,Virginia Avenue,Pennsylvania Railroad,Baltic Avenue,
+46,30,93,61,237,0,44,9,56,26,71,0,79,20,12,47,374,0,
+Best: P1
+3
+Oriental Avenue,Vermont Avenue,New York Avenue,Pennsylvania Avenue,St. Charles Place,Kentucky Avenue,Tennessee Avenue,Water Works,Pacific Avenue,Park Place,Mediterranean Avenue,
+45,32,87,63,235,0,42,10,55,27,70,0,83,19,11,45,367,0,
+Best: P5
+3
+Electric Company,B & O Railroad,Short Line Railroad,Tennessee Avenue,Pennsylvania Avenue,Mediterranean Avenue,Kentucky Avenue,Illinois Avenue,Pennsylvania Railroad,
+45,29,93,63,226,0,43,9,52,27,66,0,77,19,10,45,362,0,
+Best: P1
+4
+Oriental Avenue,Marvin Gardens,Pennsylvania Railroad,North Carolina Avenue,Ventnor Avenue,B & O Railroad,Baltic Avenue,St. Charles Place,Connecticut Avenue,Vermont Avenue,States Avenue,Pacific Avenue,
+45,28,93,63,230,0,42,8,52,26,65,0,79,18,10,43,382,0,
+Best: P2
+4
+Tennessee Avenue,Marvin Gardens,Park Place,Oriental Avenue,Atlantic Avenue,Virginia Avenue,Ventnor Avenue,St. James Place,
+46,28,86,61,223,0,40,8,52,27,65,0,79,17,10,43,362,0,
+Best: P1
+4
+St. James Place,North Carolina Avenue,Pacific Avenue,Vermont Avenue,Pennsylvania Avenue,
+45,27,84,63,221,0,42,7,51,25,64,0,78,16,9,45,383,0,
+Best: P3
+3
+Pennsylvania Railroad,Indiana Avenue,Marvin Gardens,St. Charles Place,Reading Railroad,Pennsylvania Avenue,Oriental Avenue,
+46,27,84,59,215,0,38,7,51,23,66,0,77,15,9,44,387,0,
+Best: P2
+4
+Oriental Avenue,Indiana Avenue,Ventnor Avenue,North Carolina Avenue,Reading Railroad,Electric Company,Virginia Avenue,Atlantic Avenue,B & O Railroad,Water Works,Connecticut Avenue,St. James Place,
+47,25,85,59,212,0,39,6,52,23,64,0,79,15,8,43,375,0,
+Best: P1
+3
+St. Charles Place,B & O Railroad,Short Line Railroad,Baltic Avenue,Indiana Avenue,Marvin Gardens,Park Place,Electric Company,
+47,26,85,60,226,0,39,5,49,24,67,0,80,14,7,43,387,0,
+Best: P1
+2
+Vermont Avenue,St. James Place,New York Avenue,Connecticut Avenue,Mediterranean Avenue,Virginia Avenue,Oriental Avenue,Tennessee Avenue,Baltic Avenue,States Avenue,
+47,26,85,60,226,0,39,5,49,24,67,0,80,14,7,43,387,0,
+Best: P4
+4
+Connecticut Avenue,New York Avenue,Illinois Avenue,Water Works,Tennessee Avenue,Baltic Avenue,B & O Railroad,
+43,25,87,56,218,0,39,3,52,21,67,0,82,12,7,42,400,0,
+Best: P2
+4
+Baltic Avenue,Oriental Avenue,St. Charles Place,Illinois Avenue,Atlantic Avenue,Vermont Avenue,Kentucky Avenue,B & O Railroad,Ventnor Avenue,Mediterranean Avenue,Pennsylvania Railroad,Pennsylvania Avenue,Indiana Avenue,Marvin Gardens,Connecticut Avenue,St. James Place,
+46,24,81,55,213,0,38,2,50,20,66,0,77,11,5,43,385,0,
+Best: P2
+4
+St. Charles Place,St. James Place,Connecticut Avenue,Indiana Avenue,Electric Company,Pacific Avenue,Vermont Avenue,Tennessee Avenue,Baltic Avenue,States Avenue,Illinois Avenue,Pennsylvania Avenue,New York Avenue,
+46,24,81,55,213,0,38,2,50,20,66,0,77,11,5,43,385,0,
+Best: P2
+4
+St. Charles Place,Mediterranean Avenue,St. James Place,Connecticut Avenue,
+46,24,81,55,213,0,38,2,50,20,66,0,77,11,5,43,385,0,
+Best: P2
+4
+Connecticut Avenue,Pennsylvania Railroad,Marvin Gardens,Vermont Avenue,Water Works,Oriental Avenue,Tennessee Avenue,St. James Place,Park Place,Electric Company,Baltic Avenue,
+46,24,81,55,213,0,38,2,50,20,66,0,77,11,5,43,385,0,
+Best: P1
+3
+Pennsylvania Railroad,Electric Company,B & O Railroad,Pennsylvania Avenue,St. Charles Place,Tennessee Avenue,Atlantic Avenue,Pacific Avenue,Marvin Gardens,
+44,22,85,56,222,0,37,2,49,19,65,0,72,9,4,40,415,0,
+Best: P4
+3
+New York Avenue,Water Works,Pennsylvania Avenue,Tennessee Avenue,Mediterranean Avenue,Reading Railroad,B & O Railroad,North Carolina Avenue,St. James Place,States Avenue,
+44,20,82,57,222,0,36,0,45,17,64,0,78,8,4,41,423,0,
+Best: P4
+4
+B & O Railroad,Vermont Avenue,Connecticut Avenue,Ventnor Avenue,New York Avenue,Atlantic Avenue,Boardwalk,Pennsylvania Railroad,St. James Place,Oriental Avenue,Water Works,Mediterranean Avenue,Electric Company,Illinois Avenue,
+44,20,82,57,222,0,36,0,45,17,64,0,78,8,4,41,423,0,
+Best: P2
+4
+Virginia Avenue,North Carolina Avenue,Tennessee Avenue,Atlantic Avenue,Marvin Gardens,Park Place,Electric Company,New York Avenue,Short Line Railroad,Indiana Avenue,Vermont Avenue,Pennsylvania Railroad,Ventnor Avenue,
+45,21,86,55,208,0,35,0,46,17,64,0,82,8,2,39,399,0,
+Best: P1
+3
+Vermont Avenue,St. James Place,Virginia Avenue,Water Works,Tennessee Avenue,Baltic Avenue,Electric Company,Mediterranean Avenue,
+43,20,83,55,218,0,34,0,47,16,65,0,82,7,1,39,428,0,
+Best: P2
+4
+States Avenue,Tennessee Avenue,Water Works,St. James Place,Electric Company,New York Avenue,Baltic Avenue,Pennsylvania Railroad,
+46,21,82,54,221,0,35,0,44,15,62,0,86,7,1,38,413,0,
+Best: P3
+3
+Pennsylvania Railroad,Illinois Avenue,Short Line Railroad,Virginia Avenue,Atlantic Avenue,B & O Railroad,St. James Place,Water Works,Park Place,Reading Railroad,Mediterranean Avenue,Tennessee Avenue,Connecticut Avenue,Pacific Avenue,Electric Company,Indiana Avenue,Marvin Gardens,Pennsylvania Avenue,St. Charles Place,
+46,19,84,50,220,0,37,0,44,14,63,0,85,5,1,36,439,0,
+Best: P5
+3
+Connecticut Avenue,St. James Place,Vermont Avenue,Tennessee Avenue,Reading Railroad,States Avenue,Pennsylvania Railroad,Water Works,New York Avenue,Pennsylvania Avenue,
+45,18,83,50,230,0,36,0,44,14,63,0,88,4,0,39,429,0,
+Best: P2
+3
+Oriental Avenue,Tennessee Avenue,Ventnor Avenue,Mediterranean Avenue,States Avenue,New York Avenue,Water Works,Park Place,Vermont Avenue,B & O Railroad,St. Charles Place,Atlantic Avenue,Kentucky Avenue,Marvin Gardens,Short Line Railroad,St. James Place,Virginia Avenue,
+45,17,81,48,229,0,37,0,41,13,62,0,83,4,0,39,420,0,
+Best: P1
+3
+Electric Company,Ventnor Avenue,Kentucky Avenue,Illinois Avenue,Water Works,St. Charles Place,Reading Railroad,
+45,17,78,46,230,0,37,0,40,13,62,0,81,3,0,37,419,0,
+Best: P2
+4
+Electric Company,St. James Place,Marvin Gardens,Short Line Railroad,Oriental Avenue,Pennsylvania Railroad,Kentucky Avenue,Water Works,
+47,17,75,47,224,0,36,0,40,12,63,0,79,3,0,38,435,0,
+Best: P2
+4
+Tennessee Avenue,B & O Railroad,Illinois Avenue,Short Line Railroad,North Carolina Avenue,New York Avenue,St. Charles Place,Kentucky Avenue,Park Place,Boardwalk,St. James Place,Reading Railroad,Atlantic Avenue,Indiana Avenue,
+47,17,75,47,224,0,36,0,40,12,63,0,79,3,0,38,435,0,
+Best: P1
+3
+Vermont Avenue,Virginia Avenue,B & O Railroad,St. James Place,New York Avenue,Pennsylvania Railroad,Mediterranean Avenue,Water Works,Tennessee Avenue,North Carolina Avenue,Park Place,Connecticut Avenue,Short Line Railroad,Reading Railroad,
+44,17,76,48,217,0,36,0,38,11,66,0,81,3,0,38,443,0,
+Best: P2
+3
+St. Charles Place,Pacific Avenue,Park Place,St. James Place,Pennsylvania Avenue,Mediterranean Avenue,States Avenue,Tennessee Avenue,Electric Company,North Carolina Avenue,Oriental Avenue,Indiana Avenue,
+46,17,73,46,228,0,36,0,39,10,65,0,79,2,0,38,456,0,
+Best: P2
+4
+Oriental Avenue,Pennsylvania Railroad,Tennessee Avenue,Indiana Avenue,Virginia Avenue,Illinois Avenue,States Avenue,Vermont Avenue,Ventnor Avenue,
+46,17,73,46,228,0,36,0,39,10,65,0,79,2,0,38,456,0,
+Best: P2
+4
+Connecticut Avenue,St. James Place,B & O Railroad,Short Line Railroad,Vermont Avenue,Pennsylvania Railroad,Kentucky Avenue,Water Works,Reading Railroad,Electric Company,Indiana Avenue,Pennsylvania Avenue,Mediterranean Avenue,States Avenue,Pacific Avenue,Park Place,Boardwalk,Virginia Avenue,Illinois Avenue,Oriental Avenue,North Carolina Avenue,Ventnor Avenue,
+46,17,73,46,228,0,36,0,39,10,65,0,79,2,0,38,456,0,
+Best: P3
+3
+Reading Railroad,St. Charles Place,Pennsylvania Railroad,B & O Railroad,Mediterranean Avenue,States Avenue,Illinois Avenue,Electric Company,Indiana Avenue,Virginia Avenue,St. James Place,Kentucky Avenue,Short Line Railroad,Tennessee Avenue,Baltic Avenue,Oriental Avenue,
+46,15,73,40,240,0,34,0,38,8,58,0,79,0,0,37,449,0,
+Best: P2
+3
+Connecticut Avenue,Tennessee Avenue,Baltic Avenue,States Avenue,Reading Railroad,Virginia Avenue,Park Place,New York Avenue,Vermont Avenue,Marvin Gardens,Oriental Avenue,
+46,16,75,45,231,0,34,0,36,8,62,0,77,1,0,37,447,0,
+Best: P1
+3
+Oriental Avenue,Electric Company,Ventnor Avenue,Tennessee Avenue,Marvin Gardens,Mediterranean Avenue,Vermont Avenue,St. James Place,Water Works,Virginia Avenue,Short Line Railroad,St. Charles Place,Atlantic Avenue,States Avenue,New York Avenue,Boardwalk,Connecticut Avenue,Park Place,
+47,15,72,44,239,0,32,0,33,7,62,0,77,0,0,36,448,0,
+Best: P2
+4
+Reading Railroad,Electric Company,Water Works,Park Place,Oriental Avenue,Virginia Avenue,Atlantic Avenue,Indiana Avenue,Pacific Avenue,B & O Railroad,Short Line Railroad,
+44,14,76,45,223,0,33,0,34,7,61,0,78,0,0,36,424,0,
+Best: P5
+3
+St. Charles Place,Short Line Railroad,Connecticut Avenue,Kentucky Avenue,Pennsylvania Avenue,Reading Railroad,Virginia Avenue,Mediterranean Avenue,Pennsylvania Railroad,Water Works,Pacific Avenue,Boardwalk,Park Place,Indiana Avenue,Illinois Avenue,
+44,13,73,46,222,0,30,0,33,7,59,0,76,0,0,34,448,0,
+Best: P1
+3
+Baltic Avenue,Reading Railroad,B & O Railroad,North Carolina Avenue,Mediterranean Avenue,States Avenue,Pennsylvania Railroad,Marvin Gardens,Ventnor Avenue,Short Line Railroad,
+46,13,71,43,230,0,30,0,34,6,60,0,71,0,0,32,439,0,
+Best: P4
+4
+Oriental Avenue,Atlantic Avenue,Pacific Avenue,Reading Railroad,Illinois Avenue,Mediterranean Avenue,Short Line Railroad,North Carolina Avenue,Baltic Avenue,Kentucky Avenue,Pennsylvania Avenue,Park Place,Boardwalk,
+48,11,75,42,226,0,29,0,32,6,55,0,76,0,0,31,459,0,
+Best: P1
+3
+Pennsylvania Railroad,Atlantic Avenue,Baltic Avenue,Indiana Avenue,Reading Railroad,Connecticut Avenue,Pennsylvania Avenue,Kentucky Avenue,Electric Company,Pacific Avenue,
+48,11,73,44,237,0,30,0,31,6,57,0,77,0,0,31,457,0,
+Best: P1
+3
+Reading Railroad,Atlantic Avenue,Pacific Avenue,Short Line Railroad,Vermont Avenue,Pennsylvania Railroad,States Avenue,Indiana Avenue,Water Works,Kentucky Avenue,
+48,11,73,44,237,0,30,0,31,6,57,0,77,0,0,31,457,0,
+Best: P2
+3
+Pennsylvania Railroad,Baltic Avenue,Virginia Avenue,Illinois Avenue,St. James Place,
+47,9,69,43,234,0,30,0,30,5,54,0,77,0,0,32,461,0,
+Best: P1
+3
+St. Charles Place,St. James Place,Atlantic Avenue,
+47,10,68,45,242,0,29,0,29,4,52,0,80,0,0,31,436,0,
+Best: P4
+3
+Baltic Avenue,North Carolina Avenue,Mediterranean Avenue,Pacific Avenue,Pennsylvania Avenue,Virginia Avenue,New York Avenue,B & O Railroad,St. James Place,St. Charles Place,Boardwalk,States Avenue,Indiana Avenue,
+47,8,69,44,245,0,30,0,28,4,52,0,78,0,0,31,440,0,
+Best: P1
+3
+Virginia Avenue,Tennessee Avenue,Pennsylvania Railroad,Reading Railroad,Kentucky Avenue,Park Place,Marvin Gardens,St. Charles Place,
+45,8,68,41,252,0,30,0,26,4,50,0,81,0,0,31,429,0,
+Best: P1
+3
+Illinois Avenue,Reading Railroad,Mediterranean Avenue,Electric Company,Kentucky Avenue,Water Works,Short Line Railroad,Baltic Avenue,Pacific Avenue,Park Place,Pennsylvania Avenue,Pennsylvania Railroad,St. Charles Place,Ventnor Avenue,Boardwalk,Marvin Gardens,Atlantic Avenue,
+45,8,68,41,252,0,30,0,26,4,50,0,81,0,0,31,429,0,
+Best: P2
+3
+Reading Railroad,St. Charles Place,Atlantic Avenue,Park Place,Indiana Avenue,Baltic Avenue,Virginia Avenue,Electric Company,Pennsylvania Avenue,Pacific Avenue,Ventnor Avenue,Tennessee Avenue,Water Works,Boardwalk,Marvin Gardens,
+48,6,67,38,250,0,31,0,25,2,52,0,79,0,0,31,451,0,
+Best: P2
+4
+Oriental Avenue,Vermont Avenue,States Avenue,Indiana Avenue,Pacific Avenue,Connecticut Avenue,Water Works,Virginia Avenue,
+48,6,67,38,250,0,31,0,25,2,52,0,79,0,0,31,451,0,
+Best: P2
+4
+Oriental Avenue,States Avenue,New York Avenue,Water Works,St. James Place,Tennessee Avenue,B & O Railroad,Baltic Avenue,
+48,6,67,38,250,0,31,0,25,2,52,0,79,0,0,31,451,0,
+Best: P2
+4
+B & O Railroad,Vermont Avenue,St. Charles Place,Tennessee Avenue,Atlantic Avenue,Oriental Avenue,States Avenue,New York Avenue,Indiana Avenue,Pacific Avenue,
+48,6,67,38,250,0,31,0,25,2,52,0,79,0,0,31,451,0,
+Best: P1
+4
+Connecticut Avenue,States Avenue,Water Works,Pacific Avenue,Pennsylvania Avenue,Oriental Avenue,Pennsylvania Railroad,Park Place,North Carolina Avenue,
+47,5,65,39,252,0,29,0,26,1,49,0,75,0,0,30,454,0,
+Best: P1
+4
+States Avenue,Marvin Gardens,Virginia Avenue,Ventnor Avenue,Water Works,St. Charles Place,Short Line Railroad,Pennsylvania Railroad,Atlantic Avenue,B & O Railroad,Connecticut Avenue,Oriental Avenue,Vermont Avenue,Boardwalk,Park Place,
+47,5,65,39,252,0,29,0,26,1,49,0,75,0,0,30,454,0,
+Best: P1
+4
+Reading Railroad,St. Charles Place,B & O Railroad,Park Place,Short Line Railroad,Indiana Avenue,Ventnor Avenue,Oriental Avenue,States Avenue,Pennsylvania Avenue,Virginia Avenue,Vermont Avenue,
+47,5,65,39,252,0,29,0,26,1,49,0,75,0,0,30,454,0,
+Best: P1
+3
+Oriental Avenue,New York Avenue,Short Line Railroad,Connecticut Avenue,Pennsylvania Railroad,Pennsylvania Avenue,Baltic Avenue,States Avenue,St. James Place,Marvin Gardens,Mediterranean Avenue,Virginia Avenue,Atlantic Avenue,North Carolina Avenue,Boardwalk,Ventnor Avenue,Reading Railroad,Tennessee Avenue,Park Place,Pacific Avenue,St. Charles Place,Vermont Avenue,
+47,5,65,39,252,0,29,0,26,1,49,0,75,0,0,30,454,0,
+Best: P2
+3
+Marvin Gardens,Short Line Railroad,Mediterranean Avenue,Ventnor Avenue,North Carolina Avenue,Reading Railroad,St. Charles Place,Indiana Avenue,Pacific Avenue,Pennsylvania Avenue,
+49,4,67,36,251,0,30,0,25,0,45,0,74,0,0,27,424,0,
+Best: P1
+4
+Oriental Avenue,St. Charles Place,Pennsylvania Railroad,Kentucky Avenue,Water Works,Baltic Avenue,Electric Company,Reading Railroad,Vermont Avenue,Tennessee Avenue,Short Line Railroad,Boardwalk,New York Avenue,B & O Railroad,Pennsylvania Avenue,Connecticut Avenue,Marvin Gardens,Mediterranean Avenue,Virginia Avenue,North Carolina Avenue,
+49,3,65,38,263,0,28,0,26,0,44,0,77,0,0,27,452,0,
+Best: P2
+4
+Reading Railroad,St. Charles Place,
+49,2,67,37,262,0,30,0,25,0,43,0,76,0,0,27,446,0,
+Best: P2
+4
+Tennessee Avenue,Pacific Avenue,Baltic Avenue,Connecticut Avenue,New York Avenue,Illinois Avenue,States Avenue,Indiana Avenue,North Carolina Avenue,Park Place,St. Charles Place,Pennsylvania Avenue,Boardwalk,
+49,2,67,37,262,0,30,0,25,0,43,0,76,0,0,27,446,0,
+Best: P1
+3
+St. Charles Place,Atlantic Avenue,Short Line Railroad,Baltic Avenue,Vermont Avenue,States Avenue,Illinois Avenue,Connecticut Avenue,Virginia Avenue,New York Avenue,Pennsylvania Railroad,
+51,0,62,35,265,0,30,0,24,0,40,0,78,0,0,26,458,0,
+Best: P3
+4
+St. Charles Place,Tennessee Avenue,Indiana Avenue,Short Line Railroad,Reading Railroad,Illinois Avenue,Baltic Avenue,Pennsylvania Railroad,Water Works,Oriental Avenue,Mediterranean Avenue,North Carolina Avenue,Kentucky Avenue,Vermont Avenue,Connecticut Avenue,Electric Company,
+50,0,65,34,259,0,28,0,24,0,39,0,77,0,0,26,447,0,
+Best: P1
+4
+Electric Company,Water Works,Baltic Avenue,Boardwalk,Kentucky Avenue,Marvin Gardens,Indiana Avenue,
+52,0,61,35,256,0,29,0,23,0,38,0,81,0,0,27,474,0,
+Best: P1
+3
+Connecticut Avenue,Pennsylvania Railroad,B & O Railroad,Vermont Avenue,Park Place,Water Works,Marvin Gardens,
+52,0,61,35,256,0,29,0,23,0,38,0,81,0,0,27,474,0,
+Best: P2
+4
+Vermont Avenue,Illinois Avenue,Water Works,Baltic Avenue,Atlantic Avenue,Pacific Avenue,Park Place,Indiana Avenue,Reading Railroad,North Carolina Avenue,Mediterranean Avenue,Tennessee Avenue,Marvin Gardens,Boardwalk,New York Avenue,Ventnor Avenue,St. Charles Place,Kentucky Avenue,Pennsylvania Avenue,
+51,0,64,33,254,0,29,0,21,0,38,0,79,0,0,23,456,0,
+Best: P2
+3
+Vermont Avenue,Pacific Avenue,Pennsylvania Railroad,Water Works,Mediterranean Avenue,St. Charles Place,Oriental Avenue,Virginia Avenue,Pennsylvania Avenue,States Avenue,North Carolina Avenue,
+51,0,64,33,254,0,29,0,21,0,38,0,79,0,0,23,456,0,
+Best: P3
+3
+Vermont Avenue,States Avenue,Indiana Avenue,Pacific Avenue,St. Charles Place,Illinois Avenue,Water Works,B & O Railroad,North Carolina Avenue,Mediterranean Avenue,New York Avenue,Reading Railroad,Ventnor Avenue,Baltic Avenue,
+51,0,59,32,258,0,28,0,21,0,38,0,82,0,0,22,467,0,
+Best: P1
+3
+Kentucky Avenue,Water Works,North Carolina Avenue,Electric Company,St. Charles Place,B & O Railroad,New York Avenue,Indiana Avenue,Pacific Avenue,
+52,0,59,31,249,0,27,0,21,0,38,0,76,0,0,22,447,0,
+Best: P2
+4
+Reading Railroad,Illinois Avenue,Marvin Gardens,Short Line Railroad,St. James Place,Atlantic Avenue,
+49,0,57,32,257,0,27,0,20,0,35,0,76,0,0,22,460,0,
+Best: P2
+3
+Electric Company,Ventnor Avenue,Short Line Railroad,Pennsylvania Railroad,Pacific Avenue,States Avenue,Virginia Avenue,Reading Railroad,Marvin Gardens,Atlantic Avenue,Vermont Avenue,Indiana Avenue,
+49,0,57,32,257,0,27,0,20,0,35,0,76,0,0,22,460,0,
+Best: P1
+3
+Pennsylvania Railroad,Atlantic Avenue,Ventnor Avenue,St. Charles Place,New York Avenue,Illinois Avenue,
+49,0,57,31,268,0,27,0,19,0,36,0,74,0,0,21,439,0,
+Best: P1
+3
+Vermont Avenue,Virginia Avenue,Electric Company,Illinois Avenue,Atlantic Avenue,Park Place,St. James Place,Mediterranean Avenue,Connecticut Avenue,Baltic Avenue,Marvin Gardens,
+49,0,57,31,268,0,27,0,19,0,36,0,74,0,0,21,439,0,
+Best: P1
+3
+Baltic Avenue,Tennessee Avenue,Illinois Avenue,North Carolina Avenue,Reading Railroad,Kentucky Avenue,
+49,0,57,31,268,0,27,0,19,0,36,0,74,0,0,21,439,0,
+Best: P2
+4
+Reading Railroad,St. James Place,Illinois Avenue,Ventnor Avenue,Pennsylvania Avenue,Mediterranean Avenue,Electric Company,Indiana Avenue,Baltic Avenue,Connecticut Avenue,New York Avenue,Pacific Avenue,Kentucky Avenue,Oriental Avenue,Atlantic Avenue,Marvin Gardens,
+49,0,53,29,280,0,26,0,19,0,35,0,78,0,0,20,413,0,
+Best: P2
+4
+Connecticut Avenue,North Carolina Avenue,Mediterranean Avenue,Vermont Avenue,Illinois Avenue,Park Place,Baltic Avenue,Marvin Gardens,Short Line Railroad,Atlantic Avenue,Oriental Avenue,Pacific Avenue,Kentucky Avenue,Ventnor Avenue,Pennsylvania Avenue,
+49,0,53,29,280,0,26,0,19,0,35,0,78,0,0,20,413,0,
+Best: P1
+3
+States Avenue,Electric Company,B & O Railroad,North Carolina Avenue,Kentucky Avenue,Pacific Avenue,Short Line Railroad,Vermont Avenue,Ventnor Avenue,St. Charles Place,Reading Railroad,Tennessee Avenue,Indiana Avenue,
+49,0,55,29,266,0,25,0,18,0,34,0,74,0,0,21,429,0,
+Best: P2
+4
+States Avenue,Ventnor Avenue,Short Line Railroad,Connecticut Avenue,Pennsylvania Railroad,Baltic Avenue,Virginia Avenue,St. James Place,B & O Railroad,St. Charles Place,Oriental Avenue,Kentucky Avenue,Park Place,Pacific Avenue,Marvin Gardens,
+49,0,52,29,278,0,26,0,17,0,33,0,74,0,0,19,408,0,
+Best: P1
+4
+Illinois Avenue,Short Line Railroad,Oriental Avenue,Virginia Avenue,North Carolina Avenue,Connecticut Avenue,Kentucky Avenue,
+48,0,50,29,272,0,24,0,17,0,34,0,74,0,0,20,426,0,
+Best: P2
+4
+Tennessee Avenue,B & O Railroad,Pennsylvania Avenue,St. James Place,Atlantic Avenue,Reading Railroad,New York Avenue,Oriental Avenue,
+48,0,51,27,266,0,26,0,16,0,34,0,74,0,0,19,425,0,
+Best: P2
+4
+Pennsylvania Railroad,States Avenue,Pacific Avenue,Mediterranean Avenue,Kentucky Avenue,Water Works,Pennsylvania Avenue,St. Charles Place,New York Avenue,Baltic Avenue,Park Place,
+48,0,51,27,266,0,26,0,16,0,34,0,74,0,0,19,425,0,
+Best: P3
+3
+Connecticut Avenue,Pennsylvania Railroad,New York Avenue,Ventnor Avenue,Reading Railroad,St. James Place,Kentucky Avenue,Pennsylvania Avenue,Oriental Avenue,North Carolina Avenue,
+44,0,50,26,258,0,27,0,14,0,33,0,72,0,0,17,396,0,
+Best: P1
+4
+Electric Company,B & O Railroad,Ventnor Avenue,Reading Railroad,Atlantic Avenue,Park Place,Connecticut Avenue,Pennsylvania Railroad,Oriental Avenue,Illinois Avenue,Pennsylvania Avenue,St. James Place,Indiana Avenue,New York Avenue,Short Line Railroad,Boardwalk,
+44,0,51,24,255,0,27,0,14,0,32,0,76,0,0,17,419,0,
+Best: P1
+3
+Connecticut Avenue,Pennsylvania Railroad,Indiana Avenue,Pacific Avenue,North Carolina Avenue,Tennessee Avenue,Illinois Avenue,
+44,0,51,24,255,0,27,0,14,0,32,0,76,0,0,17,419,0,
+Best: P1
+4
+Oriental Avenue,Virginia Avenue,B & O Railroad,Marvin Gardens,Mediterranean Avenue,St. James Place,Pacific Avenue,Connecticut Avenue,Pennsylvania Railroad,States Avenue,St. Charles Place,
+44,0,51,24,255,0,27,0,14,0,32,0,76,0,0,17,419,0,
+Best: P1
+3
+Vermont Avenue,Tennessee Avenue,B & O Railroad,Boardwalk,Pennsylvania Avenue,Park Place,Oriental Avenue,St. James Place,Connecticut Avenue,Water Works,Mediterranean Avenue,Baltic Avenue,New York Avenue,Pacific Avenue,Reading Railroad,North Carolina Avenue,Electric Company,
+44,0,51,24,255,0,27,0,14,0,32,0,76,0,0,17,419,0,
