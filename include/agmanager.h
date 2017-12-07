@@ -6,10 +6,10 @@
 #include <fstream>
 #include "game.h"
 
-#define MAX_PLAYERS 5
+#define MAX_PLAYERS 10
 #define PLAYERS_PER_ROUND 2
-#define N_GENERATIONS 100
-#define MUTATION 5
+#define N_GENERATIONS 300
+#define MUTATION 50
 
 using namespace std;
 

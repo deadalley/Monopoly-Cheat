@@ -135,7 +135,8 @@ void Game::runGame() {
       checkIntegrity(k);
 
       if(checkWinner()) {
-        cout << "\tGAME ENDED (" << k << ")" << endl;
+        if(_VERBOSE)
+          cout << "\tGAME ENDED (" << k << ")" << endl;
         return;
       }
     }

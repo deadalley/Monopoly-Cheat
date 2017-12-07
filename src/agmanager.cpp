@@ -189,7 +189,8 @@ void AGManager::logResults() {
 }
 
 AGPlayer* AGManager::simulateGeneration() {
-  cout << "========= ****GENERATION**** =========" << endl;
+  if(_VERBOSE)
+    cout << "========= ****GENERATION**** =========" << endl;
   // Iterate players and create games
   vector<AGPlayer*>::iterator first_it;
   for(first_it = players.begin(); first_it != players.end()-PLAYERS_PER_ROUND+1; first_it++) {
@@ -205,11 +206,13 @@ AGPlayer* AGManager::simulateGeneration() {
       });
 
       int i;
-      cout << "========= STARTING ROUND FOR =========" << endl;
-      for(i = 0; i < roundPlayers.size(); i++){
-        cout << "\tPlayer " << roundPlayers[i]->getId() << endl;
+      if(_VERBOSE) {
+        cout << "========= STARTING ROUND FOR =========" << endl;
+        for(i = 0; i < roundPlayers.size(); i++){
+          cout << "\tPlayer " << roundPlayers[i]->getId() << endl;
+        }
+        cout << "======================================" << endl;
       }
-      cout << "======================================" << endl;
 
       Game *newGame = new Game();
       newGame->N_PLAYERS = PLAYERS_PER_ROUND;
@@ -218,13 +221,16 @@ AGPlayer* AGManager::simulateGeneration() {
       newGame->runGame();
 
       if(!newGame->checkWinner()) {
-        cout << "\tThere were no winners!" << endl;
-        cout << "======================================" << endl;
+        if(_VERBOSE) {
+          cout << "\tThere were no winners!" << endl;
+          cout << "======================================" << endl;
+        }
         newGame->runGame();
       }
 
       AGPlayer *winner = newGame->getWinner();
-      cout << "\tWINNER: Player " << winner->getId() + 1 << endl;
+      if(_VERBOSE)
+        cout << "\tWINNER: Player " << winner->getId() + 1 << endl;
       players[winner->getId()]->increaseWinCount();
       players[winner->getId()]->setOwnedProperties(winner->getOwnedProperties());
 
@@ -232,16 +238,18 @@ AGPlayer* AGManager::simulateGeneration() {
     }
   }
 
-  cout << "============= SCORE BOARD ============" << endl;
+  if(_VERBOSE)
+    cout << "============= SCORE BOARD ============" << endl;
   AGPlayer *best = players[0];
   for(first_it = players.begin(); first_it != players.end(); first_it++) {
-
-    cout << "\tPlayer " << (*first_it)->getId() + 1 << ": "<< (*first_it)->getWinCount() << endl;
+    if(_VERBOSE)
+      cout << "\tPlayer " << (*first_it)->getId() + 1 << ": "<< (*first_it)->getWinCount() << endl;
 
     if((*first_it)->getWinCount () > best->getWinCount())
       best = (*first_it);
   }
-  cout << "\tBest of #" << generation << ": Player " << best->getId() + 1 << endl;
+  if(_VERBOSE)
+    cout << "\tBest of #" << generation << ": Player " << best->getId() + 1 << endl;
   return best;
 }
 
