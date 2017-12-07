@@ -144,9 +144,9 @@ void Player::stepOnTile(Board::Tile *tile) {
 
         else {
           if(_VERBOSE)
-            cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << card->name << endl;
+            cout << "\t" << name << " has " << getBuyingChance(card->getId()) << "\% chance of buying " << card->name << endl;
           int chance = rand() % 100;
-          if(chance <= getBuyingChance())
+          if(chance <= getBuyingChance(card->getId()))
             buy(card);
         }
       }
@@ -275,9 +275,9 @@ void Player::processEventCard(EventCard *card) {
         }
         else {
           if(_VERBOSE)
-            cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << utility->name << endl;
+            cout << "\t" << name << " has " << getBuyingChance(utility->getId()) << "\% chance of buying " << utility->name << endl;
           int chance = rand() % 100;
-          if(chance <= getBuyingChance())
+          if(chance <= getBuyingChance(utility->getId()))
             buy(utility);
         }
       }
@@ -340,9 +340,9 @@ void Player::processEventCard(EventCard *card) {
         }
         else {
           if(_VERBOSE)
-            cout << "\t" << name << " has " << getBuyingChance() << "\% chance of buying " << railroad->name << endl;
+            cout << "\t" << name << " has " << getBuyingChance(railroad->getId()) << "\% chance of buying " << railroad->name << endl;
           int chance = rand() % 100;
-          if(chance <= getBuyingChance())
+          if(chance <= getBuyingChance(railroad->getId()))
             buy(railroad);
         }
       }

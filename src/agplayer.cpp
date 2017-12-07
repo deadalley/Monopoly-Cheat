@@ -39,10 +39,12 @@ void AGPlayer::setId(int id) {
   this->id = id;
 }
 
-void AGPlayer::setBuyingChance(int c) {
+void AGPlayer::setBuyingChance(int card, int c) {
   if(c < 0)
     throw NEGATIVE_VALUE;
-  buyingChance[stage] = c;
+  if(card < 0 || card > N_DEEDS+N_UTILITIES+N_RAILROADS)
+    throw ANY_ERROR;
+  buyingChance[card][stage] = c;
 }
 
 void AGPlayer::setBuildingChance(int c) {
@@ -81,8 +83,8 @@ void AGPlayer::setMinimumCards(int c) {
   minimumCards[stage] = c;
 }
 
-int AGPlayer::getBuyingChance() {
-  return buyingChance[stage];
+int AGPlayer::getBuyingChance(int card) {
+  return buyingChance[card][stage];
 }
 
 int AGPlayer::getBuildingChance() {

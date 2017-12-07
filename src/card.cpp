@@ -11,6 +11,14 @@ Card::Card(string name, int price, int mortgage) : Card() {
   this->mortgage = mortgage;
 }
 
+int Card::getId() {
+  return this->id;
+}
+
 CardType Card::getType() {
   return type;
+}
+
+void Card::setId(int id) {
+  this->id = id;
 }

@@ -10,14 +10,17 @@ void AGManager::initPlayers() {
     players.push_back(p);
   }
 
-  int stage, chance;
+  int stage, chance, j;
   for(stage = 0; stage < 3; stage++) {
     for(i = 0; i < MAX_PLAYERS; i++) {
       AGPlayer *p = players[i];
       p->setStage(stage);
 
-      chance = rand() % 101;
-      p->setBuyingChance(chance);
+      for(j = 0; j < N_DEEDS+N_UTILITIES+N_RAILROADS; j++) {
+        chance = rand() % 101;
+        p->setBuyingChance(j, chance);
+      }
+
       chance = rand() % 101;
       p->setBuildingChance(chance);
       chance = rand() % 101;
@@ -56,7 +59,10 @@ void AGManager::logInitPlayers() {
     for(stage = 0; stage < 3; stage++) {
       p->setStage(stage);
 
-      file << p->getBuyingChance() << ",";
+      int j;
+      for(j = 0; j < N_DEEDS+N_UTILITIES+N_RAILROADS; j++) {
+        file << p->getBuyingChance(j) << ",";
+      }
       file << p->getBuildingChance() << ",";
       file << p->getPayingJailChance() << ",";
       //file << p->getMortgageChance() << ",";
@@ -111,7 +117,10 @@ void AGManager::logBestFeatures(AGPlayer *best) {
   for(stage = 0; stage < 3; stage++) {
     best->setStage(stage);
 
-    file << best->getBuyingChance() << ",";
+    int j;
+    for(j = 0; j < N_DEEDS+N_UTILITIES+N_RAILROADS; j++) {
+      file << best->getBuyingChance(j) << ",";
+    }
     file << best->getBuildingChance() << ",";
     file << best->getPayingJailChance() << ",";
     //file << best->getMortgageChance() << ",";
@@ -164,7 +173,7 @@ void AGManager::logResults() {
       p->setStage(stage);
 
       //*files[0] << p->getBuyingChance() << ",";
-      file << p->getBuyingChance() << ",";
+      //file << p->getBuyingChance() << ",";
       //*files[1] << p->getBuildingChance() << ",";
       file << p->getBuildingChance() << ",";
       //*files[2] << p->getPayingJailChance() << ",";
@@ -266,7 +275,10 @@ void AGManager::crossover(AGPlayer *best) {
       (*it)->setStage(stage);
       best->setStage(stage);
 
-      newPlayer->setBuyingChance(min(100,crossFeature((*it)->getBuyingChance(), best->getBuyingChance())));
+      int j;
+      for(j = 0; j < N_DEEDS+N_UTILITIES+N_RAILROADS; j++) {
+        newPlayer->setBuyingChance(j,min(100,crossFeature((*it)->getBuyingChance(j), best->getBuyingChance(j))));
+      }
       newPlayer->setBuildingChance(min(100,crossFeature((*it)->getBuildingChance(), best->getBuildingChance())));
       newPlayer->setPayingJailChance(min(100,crossFeature((*it)->getPayingJailChance(), best->getPayingJailChance())));
       newPlayer->setMortgageChance(min(100,crossFeature((*it)->getMortgageChance(), best->getMortgageChance())));
@@ -294,9 +306,12 @@ void AGManager::mutate(AGPlayer *best) {
         continue;
       p->setStage(stage);
 
-      chance = rand() % (2*MUTATION+1) - MUTATION;
-      mutatedValue = max(0.0f,min(100.0f,p->getBuyingChance() * (1 + (float)chance/100)));
-      p->setBuyingChance(round(mutatedValue));
+      int j;
+      for(j = 0; j < N_DEEDS+N_UTILITIES+N_RAILROADS; j++) {
+        chance = rand() % (2*MUTATION+1) - MUTATION;
+        mutatedValue = max(0.0f,min(100.0f,p->getBuyingChance(j) * (1 + (float)chance/100)));
+        p->setBuyingChance(j, round(mutatedValue));
+      }
       chance = rand() % (2*MUTATION+1) - MUTATION;
       mutatedValue = max(0.0f,min(100.0f,p->getBuildingChance() * (1 + (float)chance/100)));
       p->setBuildingChance(mutatedValue);

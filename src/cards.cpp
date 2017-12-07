@@ -93,10 +93,11 @@ void Cards::inputTitleDeeds(string file_name) {
       k++;
     }
 
+    newDeed.setId(i);
     deeds[i] = newDeed;
 
-    /*int j;
-    cout << ">> " << deeds[i].name << endl;
+    int j;
+    /*cout << ">> " << deeds[i].getId() << ": " << deeds[i].name << endl;
     cout << "\tPrice: " << deeds[i].price << endl;
     cout << "\tRent: " << endl;
     cout << "\t";
@@ -106,29 +107,34 @@ void Cards::inputTitleDeeds(string file_name) {
     cout << "\tMortgage: " << deeds[i].mortgage << endl;*/
     i++;
   }
-
   file.close();
 }
 
 void Cards::initRailroads() {
   Railroad *r = new Railroad("Reading Railroad");
+  r->setId(22);
   railroads[0] = *r;
 
   r = new Railroad("Pennsylvania Railroad");
+  r->setId(23);
   railroads[1] = *r;
 
   r = new Railroad("B & O Railroad");
+  r->setId(24);
   railroads[2] = *r;
 
   r = new Railroad("Short Line Railroad");
+  r->setId(25);
   railroads[3] = *r;
 }
 
 void Cards::initUtilities() {
   Utility *u = new Utility("Electric Company");
+  u->setId(26);
   utilities[0] = *u;
 
   u = new Utility("Water Works");
+  u->setId(27);
   utilities[1] = *u;
 }
 

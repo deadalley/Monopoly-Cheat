@@ -13,6 +13,7 @@ enum CardType {
 
 class Card {
   protected:
+    int id;
     CardType type;
 
   public:
@@ -25,7 +26,10 @@ class Card {
 
     Card();
     Card(string, int, int);
+    int getId();
     CardType getType();
+
+    void setId(int);
 };
 
 #endif
