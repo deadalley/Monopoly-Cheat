@@ -6,8 +6,8 @@
 #include <fstream>
 #include "game.h"
 
-#define MAX_PLAYERS 15
-#define PLAYERS_PER_ROUND 2
+#define MAX_PLAYERS 50
+#define PLAYERS_PER_ROUND 3
 #define N_GENERATIONS 300
 #define MUTATION 50
 

@@ -97,6 +97,7 @@ def plotResult(feat, stage, opt):
 
     if feat == 'Buying Chance':
         for key, value in properties.items():
+            plt.clf()
             plt.plot(features[feat][value][stage])
             plt.title(key + " - " + feat + " (" + stages[stage] + ")" + "\n" +\
                       "(" + str(N_GENERATIONS) + " generations, " + str(N_PLAYERS) +" players)")

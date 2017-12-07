@@ -27,6 +27,8 @@ enum TileType {
   LuxuryTaxTile,
 };
 
+class Tile;
+
 class Board {
 
   public:
