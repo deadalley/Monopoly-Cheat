@@ -103,7 +103,8 @@ void GameController::processTurn() {
   if(_VERBOSE)
     cout << "=== Started turn for " << player->getName() << endl;
   if(player->isBroke) {
-    cout << "\t" << player->getName() << " is broke! " << endl;
+    if(_VERBOSE)
+      cout << "\t" << player->getName() << " is broke! " << endl;
     GameController::activePlayer++;
     GameController::sequenceOfTurns = 0;
     if (GameController::activePlayer >= GameController::players.size())

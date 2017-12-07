@@ -928,7 +928,7 @@ void Player::goBroke() {
       deed->hasHotel = false;
       deed->isMortgaged = false;
     }
-    delete colorsets[i];
+    //delete colorsets[i];
   }
   // Return utilities to bank
   for(i = 0; i < N_UTILITIES; i++) {

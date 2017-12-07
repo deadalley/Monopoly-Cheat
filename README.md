@@ -29,3 +29,7 @@ Plotting the results is handled by *plot_results.py*. Each defined plot function
 Uploaded results to the /results folder in this repo are coded as following:
 * **mutXXpprYY:** XX% mutation chance; YY players per round (each game contains YY players)
 * **genXXmaxYY-vZZ**: XX number of generations; YY number of players (individuals) generated; ZZ version
+
+## References
+* https://www.youtube.com/watch?v=ubQXz5RBBtU
+* https://www.dropbox.com/s/sme0ezqsb69yg7k/Hannah-monopoly-plots.pdf?dl=0

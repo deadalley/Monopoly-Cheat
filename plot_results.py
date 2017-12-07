@@ -144,7 +144,8 @@ for gen in range(0, N_GENERATIONS):
     # Get properties owned by player (for histogram)
     data = f.readline().rstrip()
     data = data.split(",")
-    data.remove('')
+    if '' in data:
+        data.remove('')
     #print(data)
     for k in data:
         ownedProperties[properties[k]] += 1
