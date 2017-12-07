@@ -78,7 +78,7 @@ void AGManager::runAG() {
     best->resetWinCount();
     //cin.get();
     crossover(best);
-    mutate();
+    mutate(best);
   }
 }
 
@@ -276,12 +276,14 @@ int AGManager::crossFeature(int v1, int v2) {
   return (v1+v2) / 2;
 }
 
-void AGManager::mutate() {
+void AGManager::mutate(AGPlayer *best) {
   int i, stage, chance, sig;
   float mutatedValue;
   for(stage = 0; stage < 3; stage++) {
     for(i = 0; i < MAX_PLAYERS; i++) {
       AGPlayer *p = players[i];
+      if(p->getId() == best->getId())
+        continue;
       p->setStage(stage);
 
       chance = rand() % (2*MUTATION+1) - MUTATION;

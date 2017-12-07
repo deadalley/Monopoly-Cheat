@@ -46,7 +46,7 @@ properties = {'Mediterranean Avenue' : 0,
 
 features = {'Buying Chance' : buyingChance,
             'Building Chance' : buildingChance,
-            'Paying Jail Chance' : payingJailChance,
+            'PayingJail Chance' : payingJailChance,
             'Trading Chance' : tradingChance,
             'Minimum Balance' : minimumBalance,
             'Minimum Cards' : minimumCards}
@@ -61,6 +61,7 @@ def plotWinCount(opt):
     plt.ylabel('# Wins')
     plt.xlabel('Generation')
     plt.title('# Wins by generation')
+
     if opt is 'show':
         plt.show()
     if opt is 'save':
@@ -74,6 +75,15 @@ def plotResult(feat, stage, opt):
     plt.xlabel('Generation')
     plt.title(feat + " (" + stages[stage] + ")" + "\n" +\
               "(" + str(N_GENERATIONS) + " generations, " + str(N_PLAYERS) +" players)")
+
+    if feat.split(" ")[1] == 'Chance':
+        plt.gca().set_ylim([0,100])
+    if feat == 'Minimum Balance':
+        plt.gca().set_ylim([0,500])
+    if feat == 'Minimum Cards':
+        plt.gca().set_ylim([0,5])
+
+
     if opt is 'show':
         plt.show()
     if opt is 'save':
@@ -81,6 +91,7 @@ def plotResult(feat, stage, opt):
     return
 
 def plotProperties(opt):
+    plt.clf()
     x = np.arange(28)
     plt.bar(x, ownedProperties)
     plt.xticks(x, properties, rotation='vertical')
@@ -115,11 +126,10 @@ for gen in range(0, N_GENERATIONS):
         minimumBalance[stage][gen] = data[4+(stage*6)]
         minimumCards[stage][gen] = data[5+(stage*6)]
 
-#for k in range(0, 3):
-    #for key in features:
-        #plotResult(key, k, 'save')
-#plotWinCount('save')
-plotProperties('show')
+for k in range(0, 3):
+    for key in features:
+        plotResult(key, k, 'save')
+plotWinCount('save')
 plotProperties('save')
 
 f.close()

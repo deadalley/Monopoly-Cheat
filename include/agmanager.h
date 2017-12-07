@@ -25,7 +25,7 @@ class AGManager {
     static void runAG();
     static AGPlayer* simulateGeneration();
     static void crossover(AGPlayer*);
-    static void mutate();
+    static void mutate(AGPlayer*);
     static void logBestFeatures(AGPlayer*);
     static void logResults();
     static void logInitPlayers();
