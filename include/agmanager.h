@@ -5,11 +5,12 @@
 #include <string>
 #include <fstream>
 #include "game.h"
+#include "color.h"
 
-#define MAX_PLAYERS 50
-#define PLAYERS_PER_ROUND 3
+#define MAX_PLAYERS 10
+#define PLAYERS_PER_ROUND 4
 #define N_GENERATIONS 300
-#define MUTATION 50
+#define MUTATION 15
 
 using namespace std;
 

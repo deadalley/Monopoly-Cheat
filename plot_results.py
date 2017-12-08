@@ -16,7 +16,12 @@ tradingChance = np.zeros((3,N_GENERATIONS))
 minimumBalance = np.zeros((3,N_GENERATIONS))
 minimumCards = np.zeros((3,N_GENERATIONS))
 winCount = np.zeros((N_GENERATIONS,1))
+builtProperties = np.zeros((N_GENERATIONS,1))
 ownedProperties = np.zeros((28,1))
+ownedColors = np.zeros((8,1))
+
+# Color mapping
+colors = ['Purple', 'Cyan', 'Pink', 'Orange', 'Red', 'Yellow', 'Green', 'Blue']
 
 # Property name mapping
 properties = {'Mediterranean Avenue' : 0,
@@ -117,6 +122,21 @@ def plotResult(feat, stage, opt):
         plt.savefig('results/'+feat.replace(' ','_')+'_'+stages[stage].replace(' ', '_')+'.png')
     return
 
+def plotBuiltProperties(opt):
+    plt.clf()
+    plt.xlabel('Generation')
+    plt.ylabel('Amount (#)')
+    #plt.gca().set_ylim([0,500])
+    plt.plot(builtProperties)
+    plt.title("Built properties per generation" + "\n" +\
+              "(" + str(N_GENERATIONS) + " generations, " + str(N_PLAYERS) +" players)")
+
+    if opt is 'show':
+        plt.show()
+    if opt is 'save':
+        plt.savefig('results/builtProperties.png')
+    return
+
 # Plot property histogram (how many times a property was owned by the winning player)
 # opt = 'save' or 'show' plot
 def plotProperties(opt):
@@ -134,6 +154,21 @@ def plotProperties(opt):
         plt.savefig('results/ownedProperties.png')
     return
 
+def plotColors(opt):
+    plt.clf()
+    x = np.arange(8)
+    plt.bar(x, ownedColors)
+    plt.xticks(x, colors, rotation='vertical')
+    plt.ylabel('Times bought')
+    plt.xlabel('Color')
+    plt.title('Colors owned by best player at end of the game')
+    plt.tight_layout()
+    if opt is 'show':
+        plt.show()
+    if opt is 'save':
+        plt.savefig('results/ownedColors.png')
+    return
+
 # Read file
 for gen in range(0, N_GENERATIONS):
     #f.readline()
@@ -141,6 +176,7 @@ for gen in range(0, N_GENERATIONS):
     p = f.readline().rstrip()
     # Get win count
     winCount[gen] = f.readline().rstrip()
+
     # Get properties owned by player (for histogram)
     data = f.readline().rstrip()
     data = data.split(",")
@@ -149,10 +185,22 @@ for gen in range(0, N_GENERATIONS):
     #print(data)
     for k in data:
         ownedProperties[properties[k]] += 1
+
+    # Get colors
+    data = f.readline().rstrip()
+    data = data.split(",")
+    data.remove('')
+    #print(data)
+    for k in range(0, 8):
+        ownedColors[k] += int(data[k])
+
+    # Get number of properties built
+    data = f.readline().rstrip()
+    builtProperties[gen] = data
+
     # Get feature value for each stage
     data = f.readline().rstrip()
     data = data.split(",")
-    #print(data)
     for stage in range(0, 3):
         for c in range(0, 28):
             buyingChance[c][stage][gen] = data[0+(stage*6)+c]
@@ -164,13 +212,17 @@ for gen in range(0, N_GENERATIONS):
 
 # Plotting or saving to file
 # Plot results
-for k in range(0, 3):
-    for key in features:
-        plotResult(key, k, 'save')
+#for k in range(0, 3):
+    #for key in features:
+        #plotResult(key, k, 'save')
 # Plot win count
 plotWinCount('save')
 # Plot properties histogram
 plotProperties('save')
+# Plot colors histogram
+plotColors('save')
+
+plotBuiltProperties('save')
 
 # Close file
 f.close()

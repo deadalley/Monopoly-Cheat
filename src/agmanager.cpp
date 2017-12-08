@@ -105,13 +105,32 @@ void AGManager::logBestFeatures(AGPlayer *best) {
   //b << "Generation: " << generation << endl;
   file << "Best: P" << best->getId()+1 << endl;
   file << best->getWinCount() << endl;
+
   vector<Card*>* ownedProperties = best->getOwnedProperties();
   vector<Card*>::iterator it;
+  int colors[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+  int builtProperties = 0;
   for(it = ownedProperties->begin(); it != ownedProperties->end(); it++) {
     file << (*it)->name << ",";
+
+    if((*it)->getType() == PropertyCard) {
+      TitleDeed *deed = (TitleDeed*) (*it);
+      colors[(int)deed->color]++;
+
+      builtProperties += deed->n_houses;
+      if(deed->hasHotel)
+        builtProperties++;
+    }
   }
-  //cin.get();
   file << endl;
+
+  int i;
+  for(i = 0; i < 8; i++) {
+    file << colors[i] << ",";
+  }
+  file << endl;
+
+  file << builtProperties << endl;
 
   int stage;
   for(stage = 0; stage < 3; stage++) {
