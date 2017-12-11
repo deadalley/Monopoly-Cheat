@@ -7,10 +7,10 @@
 #include "game.h"
 #include "color.h"
 
-#define MAX_PLAYERS 10
-#define PLAYERS_PER_ROUND 4
-#define N_GENERATIONS 300
-#define MUTATION 15
+#define MAX_PLAYERS 50
+#define PLAYERS_PER_ROUND 1
+#define N_GENERATIONS 250
+#define MUTATION 2
 
 using namespace std;
 

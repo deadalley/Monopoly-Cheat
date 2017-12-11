@@ -1,12 +1,10 @@
 CC = g++
 CFLAGS = -c -g -std=c++11
-IFLAGS = -Iinclude
+IFLAGS = -I. -I./include
 TFLAGS =
 MAIN = main.cpp
-DEPDIR = include
 SRCDIR = src
 OBJDIR = obj
-DEP = $(wildcard $(DEPDIR)/*.h)
 SRC = $(wildcard $(SRCDIR)/*.cpp)
 OBJ = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SRC)) $(patsubst %.cpp,$(OBJDIR)/%.o,$(MAIN))
 EXEC = monopoly
@@ -14,13 +12,12 @@ EXEC = monopoly
 all: obj $(EXEC)
 
 obj:
-	mkdir dependencies
 	mkdir obj
 
 $(EXEC): $(OBJ)
 	$(CC) -g $(IFLAGS) $^ -o $@ $(TFLAGS)
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.cpp $(DEP)
+$(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 	$(CC) $(CFLAGS) $(IFLAGS) $< -o $@
 
 $(OBJDIR)/%.o: %.cpp
@@ -30,7 +27,7 @@ log:
 	python3 plot_results.py
 
 clean:
-	rm -rf $(OBJDIR)/*.o $(EXEC)
+	rm -rf $(OBJDIR)/*.o $(EXEC) *.d
 	rm -rf $(OBJDIR)
 
 clr-log:

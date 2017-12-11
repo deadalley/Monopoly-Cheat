@@ -76,8 +76,9 @@ void AGManager::logInitPlayers() {
 }
 
 void AGManager::runAG() {
+  cout << MAX_PLAYERS << endl;
   //logResults(NULL);
-  for(generation = 1; generation <= N_GENERATIONS; generation++) {
+  /*for(generation = 1; generation <= N_GENERATIONS; generation++) {
     AGPlayer *best = simulateGeneration();
     //logResults();
     logBestFeatures(best);
@@ -85,7 +86,7 @@ void AGManager::runAG() {
     //cin.get();
     crossover(best);
     mutate(best);
-  }
+  }*/
 }
 
 void AGManager::logBestFeatures(AGPlayer *best) {

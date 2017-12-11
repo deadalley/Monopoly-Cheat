@@ -122,6 +122,8 @@ def plotResult(feat, stage, opt):
         plt.savefig('results/'+feat.replace(' ','_')+'_'+stages[stage].replace(' ', '_')+'.png')
     return
 
+# Plot amount of built properties per generation
+# opt = 'save' or 'show' plot
 def plotBuiltProperties(opt):
     plt.clf()
     plt.xlabel('Generation')
@@ -154,6 +156,8 @@ def plotProperties(opt):
         plt.savefig('results/ownedProperties.png')
     return
 
+# Plot color histogram
+# opt = 'save' or 'show' plot
 def plotColors(opt):
     plt.clf()
     x = np.arange(8)
@@ -174,6 +178,7 @@ for gen in range(0, N_GENERATIONS):
     #f.readline()
     # Get player
     p = f.readline().rstrip()
+
     # Get win count
     winCount[gen] = f.readline().rstrip()
 
@@ -212,16 +217,16 @@ for gen in range(0, N_GENERATIONS):
 
 # Plotting or saving to file
 # Plot results
-#for k in range(0, 3):
-    #for key in features:
-        #plotResult(key, k, 'save')
+for k in range(0, 3):
+    for key in features:
+        plotResult(key, k, 'save')
 # Plot win count
 plotWinCount('save')
 # Plot properties histogram
 plotProperties('save')
 # Plot colors histogram
 plotColors('save')
-
+# Plot amount of built properties
 plotBuiltProperties('save')
 
 # Close file
