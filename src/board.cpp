@@ -1,4 +1,10 @@
 #include "board.h"
+#include "bank.h"
+#include "cards.h"
+#include "utils.h"
+
+#include <algorithm>
+#include <random>
 
 void Board::initBoard() {
   // Initialize chance and chest cards

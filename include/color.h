@@ -2,7 +2,8 @@
 #define H_COLOR
 
 #include <string>
-#include <algorithm>
+
+using namespace std;
 
 enum Color {
   Purple,
@@ -15,4 +16,6 @@ enum Color {
   Blue
 };
 
+Color parseColor(string);
+string colorToString(Color);
 #endif

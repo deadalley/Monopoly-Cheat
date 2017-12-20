@@ -1,30 +1,18 @@
 #include "cards.h"
+#include "colorset.h"
+#include "utils.h"
+
+#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
 
 TitleDeed* Cards::deeds = (TitleDeed*) malloc(sizeof(TitleDeed)*N_DEEDS);
 Railroad* Cards::railroads = (Railroad*) malloc(sizeof(Railroad)*N_RAILROADS);
 Utility* Cards::utilities = (Utility*) malloc(sizeof(Utility)*N_UTILITIES);
 EventCard* Cards::chance = (EventCard*) malloc(sizeof(EventCard)*N_EVENT_CARDS);
 EventCard* Cards::chest = (EventCard*) malloc(sizeof(EventCard)*N_EVENT_CARDS);
-
-Color parseColor(string name) {
-  transform(name.begin(), name.end(), name.begin(), ::tolower);
-  if(name.compare("purple") == 0)
-    return Purple;
-  if(name.compare("cyan") == 0)
-    return Cyan;
-  if(name.compare("pink") == 0)
-    return Pink;
-  if(name.compare("orange") == 0)
-    return Orange;
-  if(name.compare("red") == 0)
-    return Red;
-  if(name.compare("yellow") == 0)
-    return Yellow;
-  if(name.compare("green") == 0)
-    return Green;
-  if(name.compare("blue") == 0)
-    return Blue;
-}
 
 void Cards::initCards() {
   Cards::inputTitleDeeds("cards/titledeeds.cards");
@@ -96,15 +84,6 @@ void Cards::inputTitleDeeds(string file_name) {
     newDeed.setId(i);
     deeds[i] = newDeed;
 
-    int j;
-    /*cout << ">> " << deeds[i].getId() << ": " << deeds[i].name << endl;
-    cout << "\tPrice: " << deeds[i].price << endl;
-    cout << "\tRent: " << endl;
-    cout << "\t";
-    for(j = 0; j < 6; j++)
-      cout << deeds[i].rent[j] << ", ";
-    cout << endl << "\tCost: " << deeds[i].house_cost << ", " << deeds[i].hotel_cost << endl;
-    cout << "\tMortgage: " << deeds[i].mortgage << endl;*/
     i++;
   }
   file.close();

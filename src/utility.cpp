@@ -2,5 +2,4 @@
 
 Utility::Utility(string name) : Card(name, 150, 10) {
   this->type = UtilityCard;
-  //multiplier = 4;
 }

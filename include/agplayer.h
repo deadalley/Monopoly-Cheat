@@ -8,7 +8,7 @@ class AGPlayer {
   friend class AGController;
   private:
     int winCount;
-    int buyingChance[28][3];       // Chance of buying property, 0 < b < 100
+    int buyingChance[28][3];   // Chance of buying property, 0 < b < 100
     int buildingChance[3];     // Chance of building house/hotel
     int payingJailChance[3];   // Chance to pay to leave jail
     int mortgageChance[3];     // Chance to mortgage something

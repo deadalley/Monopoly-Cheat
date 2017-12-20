@@ -1,0 +1,1802 @@
+300
+120
+Best: P116
+97
+Tennessee Avenue,Ventnor Avenue,B & O Railroad,Marvin Gardens,Electric Company,Virginia Avenue,Connecticut Avenue,New York Avenue,
+0,1,1,2,0,2,0,0,
+0
+98,19,60,95,22,44,68,0,71,57,27,37,87,76,44,75,90,64,38,28,70,52,41,7,86,44,74,58,85,14,83,430,0,37,72,9,84,63,56,34,48,7,95,10,57,16,12,4,87,54,97,72,62,30,38,13,76,12,92,25,68,43,17,81,358,0,91,25,20,2,89,59,26,97,23,92,83,47,2,79,12,96,7,87,32,56,50,14,57,63,81,79,70,69,37,84,27,465,1,
+Best: P117
+88
+Pennsylvania Railroad,Kentucky Avenue,Pacific Avenue,Baltic Avenue,Short Line Railroad,States Avenue,
+1,0,1,0,1,0,1,0,
+1
+80,19,57,74,54,44,44,37,80,68,26,52,69,87,31,77,48,84,46,40,84,26,52,32,58,43,85,64,80,52,36,233,1,51,41,17,71,47,68,28,32,32,58,13,42,62,23,9,67,26,62,73,76,57,40,38,68,14,47,55,67,70,18,45,339,1,94,50,56,12,54,77,47,54,23,68,73,23,24,70,37,58,12,74,37,52,49,9,38,70,87,77,63,36,46,55,17,281,1,
+Best: P119
+88
+Pacific Avenue,New York Avenue,Pennsylvania Railroad,States Avenue,Tennessee Avenue,Water Works,
+0,0,1,2,0,0,1,0,
+4
+65,27,50,73,40,60,62,22,57,52,45,68,67,85,45,59,70,58,55,31,63,30,41,44,66,33,73,80,92,59,63,250,0,62,42,28,59,44,59,52,41,38,50,16,54,57,39,22,58,59,71,62,68,43,57,26,71,18,50,63,52,50,21,62,336,1,76,45,35,28,49,48,43,64,17,55,69,33,16,71,38,74,10,92,28,42,60,13,46,70,66,58,58,43,35,49,38,299,0,
+Best: P117
+83
+Vermont Avenue,Illinois Avenue,Water Works,Indiana Avenue,B & O Railroad,Connecticut Avenue,St. James Place,
+0,2,0,1,2,0,0,0,
+3
+78,25,54,63,50,50,56,28,76,61,36,68,67,99,40,67,60,74,55,37,74,31,43,38,57,35,75,78,93,59,49,241,0,59,43,24,66,44,59,36,38,31,55,16,47,67,35,16,61,46,63,72,63,52,43,28,70,15,43,63,57,57,21,60,347,0,82,47,45,20,58,66,48,63,21,61,73,30,21,71,38,73,10,76,34,44,52,11,36,61,76,60,51,44,43,46,23,304,0,
+Best: P108
+84
+Vermont Avenue,Pennsylvania Railroad,Connecticut Avenue,Atlantic Avenue,Marvin Gardens,Water Works,Pennsylvania Avenue,Oriental Avenue,Virginia Avenue,Ventnor Avenue,Tennessee Avenue,
+0,3,1,1,0,3,1,0,
+9
+83,23,48,62,42,47,52,22,66,51,30,60,61,100,35,52,58,72,59,35,59,34,47,37,68,38,69,64,76,56,60,220,0,53,47,25,71,38,54,45,43,33,50,15,57,56,33,15,55,41,59,61,58,58,50,26,75,15,48,63,48,51,23,68,384,0,100,43,39,23,50,58,42,54,20,71,73,30,22,61,32,77,14,78,29,52,41,17,43,54,75,56,62,53,39,53,22,346,0,
+Best: P110
+86
+Indiana Avenue,Pacific Avenue,States Avenue,North Carolina Avenue,Vermont Avenue,Virginia Avenue,Short Line Railroad,
+0,1,2,0,1,0,2,0,
+9
+73,23,47,66,39,39,49,24,72,48,35,67,55,100,37,70,58,62,47,28,59,39,51,37,55,34,79,74,89,62,47,200,0,49,37,24,66,40,64,47,40,29,47,15,56,56,36,21,58,36,61,65,66,52,50,29,67,14,51,51,46,50,20,65,387,0,78,44,42,17,53,53,42,66,25,64,72,29,22,70,32,70,14,78,31,43,43,17,40,67,71,56,63,42,37,50,19,261,0,
+Best: P100
+89
+Park Place,Pennsylvania Railroad,Kentucky Avenue,Virginia Avenue,
+0,0,1,0,1,0,0,1,
+0
+81,28,52,61,44,49,48,20,80,57,37,71,59,100,41,65,57,69,56,33,55,31,47,41,69,43,83,78,86,62,56,225,0,44,47,21,62,37,62,44,45,28,46,16,56,47,30,16,59,41,68,58,52,53,52,27,72,13,46,55,62,44,22,59,368,0,74,40,41,17,64,53,44,63,22,70,81,30,21,61,39,65,14,67,28,48,52,14,39,54,69,52,62,38,36,44,24,310,0,
+Best: P119
+85
+Vermont Avenue,Oriental Avenue,Pacific Avenue,Mediterranean Avenue,Atlantic Avenue,States Avenue,
+1,2,1,0,0,1,1,0,
+4
+72,26,50,63,43,46,43,19,77,55,42,68,53,100,38,67,69,63,60,34,61,35,45,31,57,42,70,80,89,64,49,238,0,52,43,21,63,44,64,40,44,29,47,15,53,56,33,15,52,42,67,59,52,55,53,28,67,12,49,60,49,41,23,62,339,0,79,39,39,20,61,55,45,64,24,60,74,26,22,72,39,82,15,78,32,41,41,15,33,54,70,56,55,47,30,53,25,269,0,
+Best: P115
+93
+Illinois Avenue,New York Avenue,Kentucky Avenue,Pacific Avenue,North Carolina Avenue,Indiana Avenue,Short Line Railroad,Baltic Avenue,Tennessee Avenue,
+1,0,0,2,3,0,2,0,
+3
+62,28,48,64,34,51,49,18,77,59,46,74,64,86,32,75,67,64,64,28,59,40,46,32,61,43,63,78,83,48,50,270,0,52,39,19,57,49,66,43,46,23,51,15,46,53,31,14,62,48,60,54,53,49,45,28,79,12,46,57,52,38,23,60,421,0,76,44,42,19,67,63,36,57,22,55,72,32,25,64,30,65,14,58,28,47,44,13,36,72,71,62,49,42,33,47,22,356,0,
+Best: P109
+85
+Pennsylvania Railroad,Tennessee Avenue,Ventnor Avenue,Short Line Railroad,New York Avenue,B & O Railroad,
+0,0,0,2,0,1,0,0,
+0
+75,28,46,66,35,55,50,18,64,53,49,70,60,100,37,66,73,56,61,29,72,37,38,31,60,46,60,82,70,51,58,206,0,45,41,25,54,45,72,43,42,27,50,14,54,52,39,14,60,46,65,47,58,59,46,32,77,14,58,64,52,42,25,57,341,0,90,53,44,19,62,49,37,57,22,65,64,31,22,67,33,64,12,77,30,37,46,15,31,71,62,54,59,38,27,50,22,319,0,
+Best: P104
+82
+B & O Railroad,Mediterranean Avenue,St. James Place,Pacific Avenue,New York Avenue,North Carolina Avenue,St. Charles Place,Tennessee Avenue,Kentucky Avenue,
+1,0,1,3,1,0,2,0,
+0
+75,25,47,60,31,53,49,23,69,48,42,74,51,90,37,77,64,49,54,24,65,43,40,36,58,41,71,80,89,43,61,236,0,45,38,24,58,43,54,51,39,25,49,12,43,54,34,15,61,47,61,51,46,53,49,32,66,14,52,60,59,51,23,53,346,0,93,51,38,21,61,55,35,57,23,57,81,31,18,69,37,74,12,70,27,45,41,12,29,64,81,50,49,41,28,48,20,372,0,
+Best: P110
+84
+Connecticut Avenue,Ventnor Avenue,Vermont Avenue,Reading Railroad,Tennessee Avenue,Baltic Avenue,Oriental Avenue,Water Works,Atlantic Avenue,Kentucky Avenue,Illinois Avenue,Electric Company,New York Avenue,
+1,3,0,2,2,2,0,0,
+0
+82,22,42,57,32,54,52,18,61,44,40,65,57,100,37,74,67,63,53,26,57,41,35,33,56,45,66,75,73,39,56,220,0,49,41,24,65,39,74,54,42,30,42,13,45,52,34,16,68,44,65,45,46,63,47,31,61,13,55,64,50,41,21,49,317,0,71,52,41,19,62,53,42,65,24,62,70,35,21,74,32,64,13,73,24,39,46,12,32,63,75,48,53,41,26,45,19,390,0,
+Best: P114
+88
+Virginia Avenue,New York Avenue,Water Works,Electric Company,St. James Place,Baltic Avenue,Pennsylvania Railroad,Marvin Gardens,Tennessee Avenue,
+1,0,1,3,0,1,0,0,
+4
+69,24,40,50,38,54,59,19,73,53,43,70,57,100,35,90,67,51,44,25,63,35,47,37,51,36,78,73,77,44,60,209,0,45,38,23,59,46,72,49,37,26,52,14,39,52,34,13,69,46,64,43,52,67,54,35,69,12,51,57,54,42,20,47,307,0,80,47,39,21,54,49,37,59,20,53,66,31,18,86,34,68,11,74,26,45,45,13,37,67,69,43,53,42,27,53,19,304,0,
+Best: P109
+95
+Water Works,Mediterranean Avenue,Pennsylvania Avenue,Pacific Avenue,Electric Company,Vermont Avenue,Atlantic Avenue,Connecticut Avenue,Tennessee Avenue,Illinois Avenue,Oriental Avenue,Pennsylvania Railroad,B & O Railroad,Ventnor Avenue,Short Line Railroad,Park Place,
+1,3,0,1,1,2,2,1,
+13
+80,24,46,47,40,48,50,18,65,48,47,67,62,91,41,78,72,53,43,26,59,44,44,36,47,45,59,74,79,46,64,244,0,41,38,20,66,39,57,56,37,24,55,13,45,42,40,16,72,40,61,44,55,69,53,36,69,11,46,66,52,41,22,51,339,0,94,44,41,24,59,46,36,55,19,47,61,35,22,82,37,57,14,71,28,38,48,12,28,54,74,44,44,40,23,49,19,395,0,
+Best: P116
+89
+Pennsylvania Railroad,Marvin Gardens,Virginia Avenue,St. James Place,Reading Railroad,Water Works,
+0,0,1,1,0,1,0,0,
+4
+77,26,46,49,30,46,63,20,66,56,44,76,63,85,36,72,74,54,42,23,68,37,44,43,52,39,71,83,75,40,60,260,0,46,38,19,57,39,59,48,42,24,43,12,50,40,37,17,73,50,55,46,51,56,58,35,67,11,52,65,55,44,21,46,290,0,72,58,46,20,65,45,36,52,22,51,66,38,22,92,31,61,15,69,22,39,48,14,34,58,66,39,41,35,23,46,17,371,0,
+Best: P102
+88
+Virginia Avenue,Kentucky Avenue,North Carolina Avenue,Indiana Avenue,Vermont Avenue,Mediterranean Avenue,Illinois Avenue,St. Charles Place,
+1,1,2,0,3,0,1,0,
+5
+82,25,54,55,32,59,51,21,69,44,48,75,58,86,46,80,85,43,48,20,66,36,51,37,53,43,70,70,85,39,59,281,0,42,43,23,54,34,65,45,34,27,51,11,51,37,32,16,74,39,65,57,54,54,45,32,63,13,48,69,47,35,19,50,327,0,67,55,47,21,53,50,41,47,18,50,71,39,19,94,32,59,10,64,21,44,41,13,34,58,63,46,38,35,22,43,17,289,0,
+Best: P110
+91
+Virginia Avenue,Indiana Avenue,States Avenue,Baltic Avenue,Kentucky Avenue,Illinois Avenue,Park Place,
+1,0,2,0,3,0,0,1,
+0
+91,25,53,62,30,50,51,22,59,44,48,79,64,96,34,72,79,42,47,19,72,37,50,38,44,46,87,72,72,34,51,260,0,48,42,23,48,34,69,48,42,24,57,11,53,46,38,13,77,49,69,51,67,57,47,37,71,13,46,62,48,33,17,43,321,0,65,60,38,18,52,45,45,59,19,43,63,37,17,94,33,57,12,68,21,41,40,13,37,53,63,43,38,32,22,40,19,307,0,
+Best: P118
+85
+Short Line Railroad,Mediterranean Avenue,New York Avenue,Ventnor Avenue,Reading Railroad,Baltic Avenue,St. James Place,B & O Railroad,Marvin Gardens,Pennsylvania Railroad,Tennessee Avenue,Indiana Avenue,
+2,0,0,3,1,2,0,0,
+0
+84,24,48,64,35,49,42,19,73,44,51,75,72,89,32,79,76,48,46,18,65,40,51,35,53,52,72,81,69,38,59,264,0,54,38,23,57,40,72,49,35,26,49,9,44,47,36,14,81,42,57,55,51,63,54,41,55,13,53,63,46,36,13,41,313,0,78,65,34,19,68,38,39,44,15,41,61,33,20,84,33,72,15,72,21,39,42,14,29,55,57,48,45,34,20,34,14,248,0,
+Best: P117
+98
+Electric Company,New York Avenue,B & O Railroad,Connecticut Avenue,Atlantic Avenue,Short Line Railroad,Illinois Avenue,
+0,1,0,1,1,1,0,0,
+7
+80,25,43,56,38,49,42,20,72,47,55,77,73,94,41,74,69,49,49,20,66,37,60,38,47,41,69,83,60,42,56,245,0,49,45,22,63,44,64,50,40,27,57,9,50,48,37,17,69,49,56,55,53,59,47,37,58,11,57,60,43,33,17,53,308,0,81,74,44,21,63,50,43,50,15,50,64,29,16,72,33,77,15,72,20,37,38,14,38,52,70,48,40,33,18,42,17,296,0,
+Best: P119
+91
+Kentucky Avenue,Virginia Avenue,Reading Railroad,Illinois Avenue,Tennessee Avenue,St. Charles Place,Electric Company,Pennsylvania Avenue,Pacific Avenue,Ventnor Avenue,Short Line Railroad,Oriental Avenue,
+0,1,2,1,2,1,2,0,
+0
+90,26,41,53,32,54,45,20,81,48,54,71,70,73,32,77,85,49,59,20,66,30,48,34,60,43,81,76,77,37,54,278,0,54,36,22,51,38,80,51,36,24,57,10,39,46,32,16,88,54,61,55,51,59,48,35,64,12,49,67,48,39,15,45,298,0,70,71,40,18,58,43,48,52,18,40,71,32,13,86,29,65,14,57,19,36,40,11,32,48,72,51,43,36,18,37,19,293,0,
+Best: P119
+92
+Electric Company,Pennsylvania Railroad,Kentucky Avenue,Reading Railroad,Connecticut Avenue,Ventnor Avenue,Indiana Avenue,Oriental Avenue,Atlantic Avenue,Water Works,Marvin Gardens,Illinois Avenue,Pennsylvania Avenue,
+0,2,0,0,3,3,1,0,
+11
+90,26,41,53,32,54,45,20,81,48,54,71,70,73,32,77,85,49,59,20,66,30,48,34,60,43,81,76,77,37,54,278,0,54,36,22,51,38,80,51,36,24,57,10,39,46,32,16,88,54,61,55,51,59,48,35,64,12,49,67,48,39,15,45,298,0,70,71,40,18,58,43,48,52,18,40,71,32,13,86,29,65,14,57,19,36,40,11,32,48,72,51,43,36,18,37,19,293,0,
+Best: P108
+82
+Pennsylvania Railroad,B & O Railroad,Park Place,Electric Company,
+0,0,0,0,0,0,0,1,
+0
+86,26,42,52,34,57,44,20,86,59,62,78,67,78,33,70,93,54,59,22,64,27,48,36,61,39,73,74,67,41,50,316,0,50,38,18,51,43,72,46,37,23,64,10,39,49,33,13,87,46,63,57,52,53,56,40,59,13,49,64,41,37,14,37,329,0,71,58,35,20,64,44,46,58,16,40,81,26,13,78,24,72,16,60,16,36,40,13,34,50,74,45,45,31,15,38,19,327,0,
+Best: P108
+87
+New York Avenue,Pacific Avenue,Atlantic Avenue,B & O Railroad,Electric Company,Mediterranean Avenue,St. Charles Place,Short Line Railroad,Reading Railroad,Virginia Avenue,Pennsylvania Railroad,States Avenue,Park Place,
+1,0,3,1,0,1,1,1,
+5
+86,26,42,52,34,57,44,20,86,59,62,78,67,78,33,70,93,54,59,22,64,27,48,36,61,39,73,74,67,41,50,316,0,50,38,18,51,43,72,46,37,23,64,10,39,49,33,13,87,46,63,57,52,53,56,40,59,13,49,64,41,37,14,37,329,0,71,58,35,20,64,44,46,58,16,40,81,26,13,78,24,72,16,60,16,36,40,13,34,50,74,45,45,31,15,38,19,327,0,
+Best: P118
+90
+Electric Company,Illinois Avenue,Mediterranean Avenue,New York Avenue,Reading Railroad,Baltic Avenue,Indiana Avenue,Tennessee Avenue,States Avenue,Atlantic Avenue,
+2,0,1,2,2,1,0,0,
+6
+89,24,35,60,27,58,37,21,78,50,53,75,71,77,39,64,98,50,58,22,60,23,47,35,53,45,72,68,57,38,59,336,0,45,39,17,59,40,60,44,36,23,75,9,40,50,31,11,92,42,57,47,59,62,46,33,57,13,46,70,43,41,13,35,321,0,64,61,41,19,68,49,46,51,17,35,85,30,12,79,29,63,14,57,17,32,36,13,33,62,63,48,44,35,15,35,19,311,0,
+Best: P119
+89
+Kentucky Avenue,Pennsylvania Railroad,Pennsylvania Avenue,Oriental Avenue,States Avenue,Mediterranean Avenue,Connecticut Avenue,Pacific Avenue,Park Place,Boardwalk,North Carolina Avenue,Illinois Avenue,Short Line Railroad,B & O Railroad,Virginia Avenue,
+1,2,2,0,2,0,3,2,
+18
+92,28,40,60,28,60,31,20,80,45,63,69,64,85,38,56,85,52,62,21,57,30,44,33,52,47,78,82,53,34,61,379,0,51,44,19,52,38,59,44,39,20,79,9,39,47,26,11,77,48,70,48,44,57,62,40,58,13,45,65,35,32,12,41,351,0,64,59,35,18,55,40,51,48,14,35,96,29,11,71,21,74,13,61,13,30,33,11,38,50,77,46,42,37,16,34,17,289,0,
+Best: P113
+88
+Ventnor Avenue,Mediterranean Avenue,B & O Railroad,Boardwalk,Virginia Avenue,Atlantic Avenue,Connecticut Avenue,Pennsylvania Railroad,Kentucky Avenue,Marvin Gardens,Indiana Avenue,States Avenue,Illinois Avenue,
+1,1,2,0,3,3,0,1,
+13
+88,27,33,53,29,55,38,21,81,42,52,84,74,69,37,71,79,44,71,26,63,26,46,28,54,51,63,71,58,31,52,294,0,47,39,20,49,39,56,46,31,24,70,9,37,51,30,11,83,48,65,50,55,61,57,33,64,10,42,59,35,39,9,36,346,0,66,63,33,16,68,36,42,52,14,39,81,24,11,78,22,86,15,61,14,32,40,11,37,43,68,47,35,31,15,28,18,329,0,
+Best: P116
+86
+Ventnor Avenue,Kentucky Avenue,Atlantic Avenue,Electric Company,St. James Place,Water Works,Reading Railroad,Marvin Gardens,Connecticut Avenue,Virginia Avenue,Pennsylvania Railroad,Illinois Avenue,
+0,1,1,1,2,3,0,0,
+7
+87,29,34,48,29,54,34,18,65,40,55,85,70,65,34,65,89,51,69,24,60,26,44,28,50,52,71,71,56,35,57,292,0,54,36,20,57,39,60,46,31,20,62,8,40,47,28,9,85,43,60,42,59,53,51,32,64,13,41,60,38,42,10,38,416,0,58,75,30,15,55,34,37,57,13,35,87,23,10,85,23,69,12,64,14,34,35,12,30,46,77,40,39,35,16,34,20,333,0,
+Best: P110
+84
+Baltic Avenue,Pennsylvania Railroad,Mediterranean Avenue,New York Avenue,Tennessee Avenue,Connecticut Avenue,Atlantic Avenue,Ventnor Avenue,St. James Place,B & O Railroad,Vermont Avenue,
+2,2,0,3,0,2,0,0,
+4
+93,25,41,47,29,45,37,22,90,51,59,74,68,64,30,62,94,45,56,26,63,26,44,28,51,44,64,75,47,31,43,334,0,44,36,21,48,39,51,42,27,18,54,9,46,44,25,12,77,43,57,45,55,45,53,37,72,11,45,61,32,41,9,41,337,0,58,75,28,17,64,38,48,46,11,37,94,21,12,83,20,91,16,67,14,36,37,10,34,39,82,38,43,29,15,32,18,323,0,
+Best: P108
+85
+Connecticut Avenue,Illinois Avenue,Pacific Avenue,Ventnor Avenue,Virginia Avenue,North Carolina Avenue,Park Place,Kentucky Avenue,
+0,1,1,0,2,1,2,1,
+5
+84,27,38,46,29,53,31,17,70,41,67,99,65,69,31,63,94,42,57,24,59,25,41,31,48,50,72,73,57,27,42,321,0,49,35,21,47,31,60,39,32,17,60,8,40,38,32,11,87,42,66,45,64,50,56,33,59,12,43,55,30,41,8,34,319,0,54,59,34,18,60,39,36,58,11,35,91,22,12,75,23,88,16,73,11,28,39,11,30,40,77,34,40,30,13,30,19,275,0,
+Best: P101
+83
+Water Works,Ventnor Avenue,Connecticut Avenue,Virginia Avenue,Oriental Avenue,Atlantic Avenue,Kentucky Avenue,States Avenue,Marvin Gardens,Baltic Avenue,
+1,2,2,0,1,3,0,0,
+5
+81,25,40,48,29,49,40,20,67,49,57,75,54,77,27,70,95,43,53,24,70,30,42,32,49,52,67,76,59,32,39,386,0,55,32,23,49,36,50,42,33,18,55,8,49,50,32,11,93,50,67,49,55,51,46,31,55,10,45,53,30,39,8,31,344,0,52,66,31,21,56,36,47,64,10,33,81,25,10,73,21,84,16,67,12,30,38,9,36,43,69,36,39,28,11,31,18,302,0,
+Best: P97
+88
+Connecticut Avenue,New York Avenue,Short Line Railroad,Baltic Avenue,Pacific Avenue,B & O Railroad,Ventnor Avenue,
+1,1,0,1,0,1,1,0,
+1
+77,27,37,49,27,59,40,20,72,51,52,84,60,65,24,57,97,43,51,24,66,34,40,27,51,49,65,78,56,37,45,356,0,60,29,22,46,41,48,48,34,18,54,7,47,44,28,11,71,42,68,58,62,41,49,29,68,11,42,52,30,33,7,36,347,0,46,64,31,18,62,38,35,70,10,43,85,24,9,83,23,89,14,76,11,29,41,12,29,44,70,39,40,26,12,33,17,256,0,
+Best: P113
+85
+Kentucky Avenue,Pacific Avenue,Marvin Gardens,Pennsylvania Avenue,Electric Company,Illinois Avenue,Oriental Avenue,New York Avenue,Ventnor Avenue,Indiana Avenue,
+0,1,0,1,3,2,2,0,
+8
+89,22,39,46,21,54,39,16,71,43,53,74,58,81,23,60,97,48,59,20,60,36,43,30,40,44,62,76,46,32,39,315,0,64,30,23,53,40,42,49,28,15,50,6,43,43,34,11,74,44,75,49,58,46,54,28,69,11,36,54,31,32,6,30,385,0,44,65,33,17,62,39,34,64,8,35,100,28,9,85,25,92,16,78,12,33,33,11,33,53,69,41,36,22,9,29,15,255,0,
+Best: P115
+86
+St. Charles Place,Oriental Avenue,B & O Railroad,Pacific Avenue,Pennsylvania Avenue,Connecticut Avenue,Baltic Avenue,
+1,2,1,0,0,0,2,0,
+4
+89,23,41,43,22,49,45,17,77,48,50,77,53,61,24,58,84,46,54,23,65,31,37,27,37,47,69,72,48,34,33,323,0,52,30,24,63,33,43,47,29,13,52,7,44,40,30,11,76,45,71,47,62,41,55,26,72,11,31,48,31,35,6,35,333,0,43,68,32,19,55,39,34,67,8,35,99,26,7,74,23,87,18,77,12,32,32,12,26,46,78,41,40,27,8,24,17,276,0,
+Best: P114
+85
+Water Works,Pennsylvania Railroad,Illinois Avenue,Indiana Avenue,Reading Railroad,St. Charles Place,Baltic Avenue,Park Place,States Avenue,Mediterranean Avenue,Pennsylvania Avenue,Connecticut Avenue,Atlantic Avenue,
+2,1,2,0,2,1,1,1,
+1
+77,26,37,44,26,41,49,17,77,41,56,92,55,70,24,58,95,45,68,22,68,30,38,32,37,40,72,84,48,32,43,306,0,59,30,20,59,32,40,52,26,14,56,6,37,41,29,9,77,54,74,40,50,46,69,27,76,11,35,56,37,34,4,37,355,0,47,66,30,18,70,44,37,67,8,40,83,22,8,78,19,81,17,64,11,30,30,12,27,49,72,46,42,23,8,25,14,303,0,
+Best: P108
+85
+Oriental Avenue,St. Charles Place,B & O Railroad,Connecticut Avenue,Virginia Avenue,Indiana Avenue,Vermont Avenue,
+0,3,2,0,1,0,0,0,
+4
+94,29,47,45,23,48,42,19,83,44,49,90,50,61,25,63,100,46,59,25,73,35,35,33,36,47,70,87,38,29,42,289,0,63,26,21,47,30,39,44,24,15,47,5,47,35,26,9,70,44,79,34,54,56,57,27,65,11,33,61,34,28,4,33,350,0,49,64,29,18,54,34,36,56,9,44,100,25,7,81,19,82,16,75,11,32,26,10,27,38,68,44,40,20,7,22,15,286,0,
+Best: P2
+83
+Connecticut Avenue,New York Avenue,Mediterranean Avenue,Pennsylvania Railroad,Atlantic Avenue,Electric Company,St. Charles Place,Illinois Avenue,Indiana Avenue,
+1,1,1,1,2,1,0,0,
+4
+93,26,47,39,20,45,44,20,73,54,44,80,49,66,22,66,100,37,66,25,75,32,36,33,35,40,74,89,39,27,39,324,0,58,24,23,44,25,38,54,24,15,61,5,39,37,24,8,67,51,71,35,62,55,56,30,77,11,32,54,34,34,3,27,372,0,58,80,27,15,60,31,40,54,8,41,100,25,6,91,20,83,16,68,11,36,29,11,30,46,71,44,46,21,7,24,16,293,0,
+Best: P118
+80
+Pacific Avenue,Oriental Avenue,Illinois Avenue,St. Charles Place,Park Place,Mediterranean Avenue,Pennsylvania Avenue,B & O Railroad,Water Works,Virginia Avenue,Boardwalk,Indiana Avenue,Kentucky Avenue,
+1,1,2,0,3,0,2,2,
+0
+91,29,41,41,20,42,36,17,70,42,44,87,44,57,26,63,86,44,53,27,72,33,41,32,37,42,82,81,47,28,37,332,0,62,26,22,46,27,39,56,23,15,50,5,38,42,24,8,68,55,67,45,51,44,69,33,62,10,32,51,35,33,3,27,344,0,60,61,29,16,64,43,35,50,7,36,85,23,6,76,17,76,15,80,10,33,28,12,32,48,61,46,39,19,6,26,16,341,0,
+Best: P106
+86
+Kentucky Avenue,Virginia Avenue,Baltic Avenue,St. Charles Place,B & O Railroad,
+1,0,2,0,1,0,0,0,
+4
+77,27,45,39,18,48,39,19,77,46,46,82,49,68,25,62,84,41,64,21,73,35,34,32,42,47,62,83,45,22,42,288,0,71,27,24,45,29,37,59,22,14,45,5,41,42,25,8,58,55,81,35,64,39,62,32,72,9,29,54,30,34,1,30,359,0,62,72,31,17,67,44,35,52,7,43,97,24,5,67,20,71,16,76,9,33,25,9,35,48,68,51,40,18,4,26,12,289,0,
+Best: P119
+86
+New York Avenue,Water Works,St. James Place,Reading Railroad,Tennessee Avenue,Ventnor Avenue,Boardwalk,States Avenue,Virginia Avenue,
+0,0,2,3,0,1,0,1,
+0
+89,27,39,34,18,42,44,18,71,44,45,97,43,58,24,72,81,40,65,22,67,37,41,33,39,39,69,88,40,27,44,285,0,71,24,25,42,27,33,52,23,14,53,4,46,45,23,7,64,53,73,41,50,40,72,33,57,8,33,51,35,34,1,31,334,0,59,64,35,15,63,36,36,57,8,35,85,22,5,66,19,86,17,81,11,38,24,10,31,56,76,50,47,19,4,23,12,272,0,
+Best: P2
+79
+B & O Railroad,Baltic Avenue,Water Works,St. Charles Place,Pennsylvania Avenue,Pennsylvania Railroad,Connecticut Avenue,Park Place,Virginia Avenue,Pacific Avenue,Short Line Railroad,Reading Railroad,Mediterranean Avenue,Boardwalk,States Avenue,Electric Company,
+2,1,3,0,0,0,2,2,
+4
+75,25,46,39,21,44,47,21,69,50,52,92,40,59,28,71,79,44,66,21,80,36,35,31,38,38,64,96,41,27,41,288,0,72,26,23,37,27,38,59,21,12,47,4,42,49,20,9,65,53,74,45,47,42,61,28,55,9,30,53,32,32,0,26,413,0,53,60,28,16,60,46,43,52,8,40,87,24,5,84,18,71,19,83,11,34,23,11,39,57,76,49,36,17,3,25,10,282,0,
+Best: P102
+83
+Pennsylvania Railroad,Oriental Avenue,Baltic Avenue,Ventnor Avenue,Short Line Railroad,St. Charles Place,Pennsylvania Avenue,Indiana Avenue,Vermont Avenue,Water Works,Reading Railroad,Pacific Avenue,North Carolina Avenue,
+1,2,1,0,1,1,3,0,
+7
+79,23,46,35,17,40,50,17,78,52,51,90,38,62,27,74,69,42,65,17,69,33,39,29,41,39,67,92,38,22,45,262,0,64,26,26,45,27,36,66,17,13,48,5,43,40,21,7,77,46,70,40,54,43,52,25,56,9,29,43,29,31,0,31,376,0,58,59,32,14,66,40,37,55,7,47,91,20,4,92,18,90,17,80,9,32,23,10,35,63,68,46,43,16,3,27,10,284,0,
+Best: P2
+89
+St. Charles Place,Pennsylvania Railroad,Park Place,Connecticut Avenue,Illinois Avenue,Atlantic Avenue,Reading Railroad,Kentucky Avenue,St. James Place,Oriental Avenue,
+0,2,1,1,2,1,0,1,
+10
+84,26,51,38,19,37,47,18,80,50,54,100,39,56,26,64,66,49,56,22,72,33,34,28,40,33,56,93,40,25,40,266,0,73,27,25,46,29,39,70,17,12,52,4,47,50,20,7,70,52,71,40,48,39,50,24,48,9,32,52,33,29,0,24,342,0,59,51,29,13,54,43,36,48,6,47,85,20,4,99,19,84,17,90,10,37,24,10,34,65,68,40,40,15,2,29,11,325,0,
+Best: P2
+90
+Virginia Avenue,Marvin Gardens,Boardwalk,St. Charles Place,States Avenue,Illinois Avenue,Reading Railroad,Kentucky Avenue,Ventnor Avenue,Park Place,Baltic Avenue,Pennsylvania Avenue,Mediterranean Avenue,
+2,0,3,0,2,2,1,2,
+12
+84,26,51,38,19,37,47,18,80,50,54,100,39,56,26,64,66,49,56,22,72,33,34,28,40,33,56,93,40,25,40,266,0,73,27,25,46,29,39,70,17,12,52,4,47,50,20,7,70,52,71,40,48,39,50,24,48,9,32,52,33,29,0,24,342,0,59,51,29,13,54,43,36,48,6,47,85,20,4,99,19,84,17,90,10,37,24,10,34,65,68,40,40,15,2,29,11,325,0,
+Best: P2
+85
+Virginia Avenue,Illinois Avenue,Atlantic Avenue,Ventnor Avenue,B & O Railroad,Short Line Railroad,New York Avenue,
+0,0,1,1,1,2,0,0,
+7
+84,26,51,38,19,37,47,18,80,50,54,100,39,56,26,64,66,49,56,22,72,33,34,28,40,33,56,93,40,25,40,266,0,73,27,25,46,29,39,70,17,12,52,4,47,50,20,7,70,52,71,40,48,39,50,24,48,9,32,52,33,29,0,24,342,0,59,51,29,13,54,43,36,48,6,47,85,20,4,99,19,84,17,90,10,37,24,10,34,65,68,40,40,15,2,29,11,325,0,
+Best: P3
+92
+St. Charles Place,Electric Company,New York Avenue,Water Works,Virginia Avenue,Boardwalk,Tennessee Avenue,Kentucky Avenue,Connecticut Avenue,Illinois Avenue,
+0,1,2,2,2,0,0,1,
+4
+83,29,51,36,17,33,51,21,82,50,58,84,40,53,23,67,66,48,53,19,82,31,35,29,43,34,60,77,44,23,36,277,0,61,24,24,56,32,39,71,15,13,44,4,53,38,19,8,75,45,83,39,40,32,50,26,45,10,31,58,28,33,0,28,369,0,60,60,30,16,59,37,35,42,6,45,72,20,3,85,19,85,16,86,10,43,27,11,36,60,75,40,35,18,2,27,9,294,0,
+Best: P2
+86
+Connecticut Avenue,Pennsylvania Railroad,New York Avenue,Illinois Avenue,Mediterranean Avenue,B & O Railroad,Electric Company,Tennessee Avenue,Pacific Avenue,Atlantic Avenue,Reading Railroad,
+1,1,0,2,1,1,1,0,
+4
+95,23,43,34,19,38,51,19,77,46,61,91,44,53,27,65,57,54,49,21,89,28,35,26,43,29,57,94,43,20,38,235,0,57,28,25,44,33,41,70,18,12,53,4,43,42,17,8,80,51,71,37,50,38,52,22,39,9,31,57,35,30,0,25,340,0,62,63,32,16,54,41,40,40,6,50,75,22,3,95,21,74,16,80,9,41,28,9,35,63,70,34,39,17,1,23,10,355,0,
+Best: P2
+99
+Ventnor Avenue,States Avenue,Illinois Avenue,Kentucky Avenue,Tennessee Avenue,Pennsylvania Railroad,
+0,0,1,1,2,1,0,0,
+0
+95,23,43,34,19,38,51,19,77,46,61,91,44,53,27,65,57,54,49,21,89,28,35,26,43,29,57,94,43,20,38,235,0,57,28,25,44,33,41,70,18,12,53,4,43,42,17,8,80,51,71,37,50,38,52,22,39,9,31,57,35,30,0,25,340,0,62,63,32,16,54,41,40,40,6,50,75,22,3,95,21,74,16,80,9,41,28,9,35,63,70,34,39,17,1,23,10,355,0,
+Best: P3
+96
+Mediterranean Avenue,Connecticut Avenue,North Carolina Avenue,New York Avenue,Ventnor Avenue,Tennessee Avenue,Pennsylvania Avenue,Park Place,Oriental Avenue,St. Charles Place,Pacific Avenue,
+1,2,1,2,0,1,3,1,
+6
+100,22,47,32,17,35,58,17,71,49,58,76,40,48,27,62,49,57,50,21,93,29,38,27,36,35,57,78,43,17,34,202,0,52,22,25,49,28,45,76,16,9,44,3,41,41,17,7,70,45,66,41,41,34,40,26,40,9,24,56,36,34,0,23,292,0,64,63,29,14,44,35,40,34,6,50,89,23,3,85,23,85,16,90,7,48,26,9,38,73,73,38,37,15,1,24,10,369,0,
+Best: P3
+104
+North Carolina Avenue,Short Line Railroad,New York Avenue,Illinois Avenue,Connecticut Avenue,Baltic Avenue,Vermont Avenue,St. Charles Place,Tennessee Avenue,Pacific Avenue,Marvin Gardens,Pennsylvania Avenue,
+1,2,1,2,1,1,3,0,
+6
+100,22,47,32,17,35,58,17,71,49,58,76,40,48,27,62,49,57,50,21,93,29,38,27,36,35,57,78,43,17,34,202,0,52,22,25,49,28,45,76,16,9,44,3,41,41,17,7,70,45,66,41,41,34,40,26,40,9,24,56,36,34,0,23,292,0,64,63,29,14,44,35,40,34,6,50,89,23,3,85,23,85,16,90,7,48,26,9,38,73,73,38,37,15,1,24,10,369,0,
+Best: P2
+98
+B & O Railroad,States Avenue,St. Charles Place,Atlantic Avenue,Tennessee Avenue,New York Avenue,Mediterranean Avenue,Marvin Gardens,Kentucky Avenue,
+1,0,2,2,1,2,0,0,
+6
+100,24,51,38,14,40,49,14,72,50,49,68,37,53,26,57,47,54,49,18,100,27,31,29,41,34,54,78,36,16,33,231,0,55,27,25,44,29,47,76,15,11,43,3,36,37,18,7,78,46,62,36,34,33,39,24,42,8,26,54,33,28,0,22,328,0,72,66,27,13,48,38,40,40,5,48,100,24,3,78,23,81,15,87,8,45,22,8,32,59,68,40,40,13,0,25,9,340,0,
+Best: P2
+102
+Illinois Avenue,Mediterranean Avenue,Electric Company,Ventnor Avenue,Pennsylvania Railroad,Water Works,
+1,0,0,0,1,1,0,0,
+1
+100,24,51,38,14,40,49,14,72,50,49,68,37,53,26,57,47,54,49,18,100,27,31,29,41,34,54,78,36,16,33,231,0,55,27,25,44,29,47,76,15,11,43,3,36,37,18,7,78,46,62,36,34,33,39,24,42,8,26,54,33,28,0,22,328,0,72,66,27,13,48,38,40,40,5,48,100,24,3,78,23,81,15,87,8,45,22,8,32,59,68,40,40,13,0,25,9,340,0,
+Best: P3
+91
+Vermont Avenue,Tennessee Avenue,B & O Railroad,Pennsylvania Avenue,Illinois Avenue,Kentucky Avenue,Reading Railroad,Connecticut Avenue,Pacific Avenue,Oriental Avenue,Marvin Gardens,
+0,3,0,1,2,1,2,0,
+8
+92,19,47,32,14,41,46,13,67,47,48,77,43,46,23,60,53,47,47,20,100,26,33,31,40,32,56,77,38,18,38,258,0,53,25,24,44,33,40,66,14,10,42,3,29,37,19,8,70,50,61,32,35,28,44,29,36,7,26,45,30,28,0,19,289,0,83,67,24,12,44,34,33,36,5,50,100,20,3,76,25,90,14,80,8,40,24,8,34,50,72,47,39,13,0,28,10,334,0,
+Best: P3
+101
+Pennsylvania Railroad,New York Avenue,Tennessee Avenue,Ventnor Avenue,North Carolina Avenue,Baltic Avenue,Electric Company,Reading Railroad,Park Place,Boardwalk,Vermont Avenue,Kentucky Avenue,
+1,1,0,2,1,1,1,2,
+6
+92,19,47,32,14,41,46,13,67,47,48,77,43,46,23,60,53,47,47,20,100,26,33,31,40,32,56,77,38,18,38,258,0,53,25,24,44,33,40,66,14,10,42,3,29,37,19,8,70,50,61,32,35,28,44,29,36,7,26,45,30,28,0,19,289,0,83,67,24,12,44,34,33,36,5,50,100,20,3,76,25,90,14,80,8,40,24,8,34,50,72,47,39,13,0,28,10,334,0,
+Best: P3
+104
+St. Charles Place,Virginia Avenue,New York Avenue,Baltic Avenue,States Avenue,Illinois Avenue,Short Line Railroad,Pacific Avenue,Water Works,Park Place,Oriental Avenue,Electric Company,Pennsylvania Railroad,Kentucky Avenue,Connecticut Avenue,Tennessee Avenue,Boardwalk,
+1,2,3,2,2,0,1,2,
+5
+92,19,47,32,14,41,46,13,67,47,48,77,43,46,23,60,53,47,47,20,100,26,33,31,40,32,56,77,38,18,38,258,0,53,25,24,44,33,40,66,14,10,42,3,29,37,19,8,70,50,61,32,35,28,44,29,36,7,26,45,30,28,0,19,289,0,83,67,24,12,44,34,33,36,5,50,100,20,3,76,25,90,14,80,8,40,24,8,34,50,72,47,39,13,0,28,10,334,0,
+Best: P2
+104
+Oriental Avenue,Short Line Railroad,B & O Railroad,Mediterranean Avenue,Vermont Avenue,
+1,2,0,0,0,0,0,0,
+0
+100,18,54,32,12,35,51,15,64,44,50,91,43,39,21,61,63,44,46,21,96,23,31,27,43,27,49,82,44,18,37,312,0,50,23,21,46,32,43,67,14,8,42,3,28,44,20,9,70,50,54,32,39,28,45,32,41,7,24,40,30,24,0,19,283,0,74,58,22,12,43,32,26,33,4,50,100,19,3,76,25,82,14,79,8,36,24,7,31,51,57,45,41,14,0,21,11,291,0,
+Best: P2
+100
+Connecticut Avenue,Pennsylvania Railroad,New York Avenue,Atlantic Avenue,Electric Company,B & O Railroad,Baltic Avenue,Short Line Railroad,Ventnor Avenue,Oriental Avenue,Tennessee Avenue,Reading Railroad,Pennsylvania Avenue,Pacific Avenue,
+1,2,0,2,0,2,2,0,
+8
+100,18,54,32,12,35,51,15,64,44,50,91,43,39,21,61,63,44,46,21,96,23,31,27,43,27,49,82,44,18,37,312,0,50,23,21,46,32,43,67,14,8,42,3,28,44,20,9,70,50,54,32,39,28,45,32,41,7,24,40,30,24,0,19,283,0,74,58,22,12,43,32,26,33,4,50,100,19,3,76,25,82,14,79,8,36,24,7,31,51,57,45,41,14,0,21,11,291,0,
+Best: P3
+99
+Mediterranean Avenue,Illinois Avenue,Pennsylvania Avenue,Oriental Avenue,Kentucky Avenue,Pacific Avenue,Pennsylvania Railroad,Electric Company,
+1,1,0,0,2,0,2,0,
+2
+100,21,51,36,12,35,46,14,78,37,49,86,46,47,23,57,67,46,41,19,100,22,36,27,38,23,47,82,36,17,33,274,0,52,26,21,45,25,46,76,16,9,38,3,29,43,19,8,75,58,47,32,35,25,46,30,43,8,24,41,25,23,0,21,249,0,90,65,24,12,42,40,28,28,4,45,100,19,3,72,23,77,14,79,7,41,20,6,26,46,57,42,37,12,0,23,11,272,0,
+Best: P3
+101
+Pennsylvania Avenue,Pennsylvania Railroad,Pacific Avenue,Water Works,Baltic Avenue,Virginia Avenue,St. Charles Place,North Carolina Avenue,Vermont Avenue,Atlantic Avenue,B & O Railroad,Marvin Gardens,
+1,1,2,0,0,2,3,0,
+4
+100,21,51,36,12,35,46,14,78,37,49,86,46,47,23,57,67,46,41,19,100,22,36,27,38,23,47,82,36,17,33,274,0,52,26,21,45,25,46,76,16,9,38,3,29,43,19,8,75,58,47,32,35,25,46,30,43,8,24,41,25,23,0,21,249,0,90,65,24,12,42,40,28,28,4,45,100,19,3,72,23,77,14,79,7,41,20,6,26,46,57,42,37,12,0,23,11,272,0,
+Best: P3
+100
+Pennsylvania Railroad,Pacific Avenue,Vermont Avenue,Tennessee Avenue,Ventnor Avenue,Pennsylvania Avenue,St. James Place,Kentucky Avenue,Indiana Avenue,Oriental Avenue,North Carolina Avenue,Mediterranean Avenue,Water Works,Baltic Avenue,New York Avenue,Connecticut Avenue,Boardwalk,
+2,3,0,3,2,1,3,1,
+5
+100,21,51,36,12,35,46,14,78,37,49,86,46,47,23,57,67,46,41,19,100,22,36,27,38,23,47,82,36,17,33,274,0,52,26,21,45,25,46,76,16,9,38,3,29,43,19,8,75,58,47,32,35,25,46,30,43,8,24,41,25,23,0,21,249,0,90,65,24,12,42,40,28,28,4,45,100,19,3,72,23,77,14,79,7,41,20,6,26,46,57,42,37,12,0,23,11,272,0,
+Best: P3
+100
+Pacific Avenue,Baltic Avenue,Connecticut Avenue,Ventnor Avenue,Mediterranean Avenue,B & O Railroad,Virginia Avenue,Reading Railroad,Atlantic Avenue,Pennsylvania Avenue,Short Line Railroad,
+2,1,1,0,0,2,2,0,
+9
+100,21,51,36,12,35,46,14,78,37,49,86,46,47,23,57,67,46,41,19,100,22,36,27,38,23,47,82,36,17,33,274,0,52,26,21,45,25,46,76,16,9,38,3,29,43,19,8,75,58,47,32,35,25,46,30,43,8,24,41,25,23,0,21,249,0,90,65,24,12,42,40,28,28,4,45,100,19,3,72,23,77,14,79,7,41,20,6,26,46,57,42,37,12,0,23,11,272,0,
+Best: P2
+105
+Pennsylvania Railroad,B & O Railroad,Pennsylvania Avenue,States Avenue,Virginia Avenue,St. Charles Place,
+0,0,3,0,0,0,1,0,
+4
+100,23,49,34,11,28,54,15,63,38,53,82,43,53,24,68,62,42,49,20,100,23,37,28,43,19,55,81,36,19,31,283,0,48,22,21,51,24,49,76,15,7,39,3,26,42,20,7,70,60,44,30,31,22,40,25,43,7,22,43,28,23,0,19,253,0,72,59,19,11,35,33,31,29,3,54,100,19,3,74,22,63,12,76,7,48,21,5,21,52,54,34,40,10,0,23,10,298,0,
+Best: P2
+107
+B & O Railroad,Pacific Avenue,Ventnor Avenue,Pennsylvania Avenue,New York Avenue,North Carolina Avenue,
+0,0,0,1,0,1,3,0,
+0
+100,23,49,34,11,28,54,15,63,38,53,82,43,53,24,68,62,42,49,20,100,23,37,28,43,19,55,81,36,19,31,283,0,48,22,21,51,24,49,76,15,7,39,3,26,42,20,7,70,60,44,30,31,22,40,25,43,7,22,43,28,23,0,19,253,0,72,59,19,11,35,33,31,29,3,54,100,19,3,74,22,63,12,76,7,48,21,5,21,52,54,34,40,10,0,23,10,298,0,
+Best: P2
+92
+Oriental Avenue,Pacific Avenue,Mediterranean Avenue,Tennessee Avenue,Illinois Avenue,Virginia Avenue,St. Charles Place,Reading Railroad,Pennsylvania Avenue,
+1,1,2,1,1,0,2,0,
+7
+100,23,49,34,11,28,54,15,63,38,53,82,43,53,24,68,62,42,49,20,100,23,37,28,43,19,55,81,36,19,31,283,0,48,22,21,51,24,49,76,15,7,39,3,26,42,20,7,70,60,44,30,31,22,40,25,43,7,22,43,28,23,0,19,253,0,72,59,19,11,35,33,31,29,3,54,100,19,3,74,22,63,12,76,7,48,21,5,21,52,54,34,40,10,0,23,10,298,0,
+Best: P2
+104
+Electric Company,Kentucky Avenue,Vermont Avenue,Water Works,Connecticut Avenue,North Carolina Avenue,
+0,2,0,0,1,0,1,0,
+0
+100,23,49,34,11,28,54,15,63,38,53,82,43,53,24,68,62,42,49,20,100,23,37,28,43,19,55,81,36,19,31,283,0,48,22,21,51,24,49,76,15,7,39,3,26,42,20,7,70,60,44,30,31,22,40,25,43,7,22,43,28,23,0,19,253,0,72,59,19,11,35,33,31,29,3,54,100,19,3,74,22,63,12,76,7,48,21,5,21,52,54,34,40,10,0,23,10,298,0,
+Best: P3
+104
+B & O Railroad,Park Place,Illinois Avenue,Pacific Avenue,Pennsylvania Railroad,Electric Company,Virginia Avenue,Short Line Railroad,Baltic Avenue,St. James Place,Boardwalk,Kentucky Avenue,Tennessee Avenue,Atlantic Avenue,New York Avenue,
+1,0,1,3,2,1,1,2,
+5
+100,20,55,32,12,33,46,15,49,36,46,77,37,56,21,67,65,33,53,19,93,22,38,26,47,19,43,83,37,19,30,286,0,50,25,26,48,27,49,79,14,7,37,3,30,51,19,6,75,56,48,30,36,19,36,26,40,5,24,47,28,22,0,16,261,0,82,67,19,9,39,30,33,27,3,53,83,17,3,61,21,66,11,91,6,48,17,5,17,57,54,35,36,10,0,21,9,263,0,
+Best: P3
+101
+B & O Railroad,Baltic Avenue,Pacific Avenue,Tennessee Avenue,Atlantic Avenue,Vermont Avenue,Pennsylvania Avenue,
+1,1,0,1,0,1,2,0,
+6
+100,20,55,32,12,33,46,15,49,36,46,77,37,56,21,67,65,33,53,19,93,22,38,26,47,19,43,83,37,19,30,286,0,50,25,26,48,27,49,79,14,7,37,3,30,51,19,6,75,56,48,30,36,19,36,26,40,5,24,47,28,22,0,16,261,0,82,67,19,9,39,30,33,27,3,53,83,17,3,61,21,66,11,91,6,48,17,5,17,57,54,35,36,10,0,21,9,263,0,
+Best: P2
+107
+Marvin Gardens,St. Charles Place,Pacific Avenue,New York Avenue,Mediterranean Avenue,Vermont Avenue,Tennessee Avenue,Pennsylvania Avenue,Baltic Avenue,Reading Railroad,Ventnor Avenue,Park Place,
+2,1,1,2,0,2,2,1,
+11
+100,20,64,32,12,35,47,14,53,41,46,84,41,59,21,75,63,43,61,20,91,19,35,30,44,20,50,96,33,19,31,273,0,46,26,20,44,29,56,65,12,5,33,3,33,45,20,6,73,61,39,30,39,19,39,28,35,5,25,51,31,25,0,19,235,0,88,70,17,9,35,27,31,26,3,47,81,17,3,60,24,63,9,93,5,41,18,5,17,52,52,35,32,11,0,18,6,309,0,
+Best: P3
+106
+New York Avenue,Mediterranean Avenue,Electric Company,Illinois Avenue,Water Works,Short Line Railroad,
+1,0,0,1,1,0,0,0,
+0
+90,20,60,31,12,31,52,14,56,33,52,75,42,60,23,67,60,36,58,17,92,17,38,29,42,20,52,93,32,19,28,242,0,53,25,24,51,30,53,76,14,6,36,3,34,43,20,6,71,51,45,28,36,22,38,30,39,5,23,45,26,21,0,14,210,0,77,63,16,8,35,25,35,29,3,43,70,15,3,60,21,63,10,86,5,42,16,5,16,52,46,30,36,9,0,21,6,254,0,
+Best: P2
+106
+Electric Company,Ventnor Avenue,New York Avenue,Tennessee Avenue,Indiana Avenue,Pacific Avenue,Pennsylvania Avenue,Illinois Avenue,Mediterranean Avenue,Pennsylvania Railroad,Water Works,Connecticut Avenue,Atlantic Avenue,Marvin Gardens,
+1,1,0,2,2,3,2,0,
+8
+100,22,71,28,10,28,45,15,47,33,54,70,36,57,20,64,65,44,58,21,92,18,31,32,46,18,56,87,28,20,24,269,0,53,28,19,48,31,51,69,14,5,30,3,32,48,22,6,79,49,42,30,40,21,43,27,38,5,26,53,27,24,0,15,217,0,75,74,15,7,38,28,36,26,3,40,66,14,3,58,23,69,9,93,5,46,16,5,15,46,55,37,29,9,0,17,5,244,0,
+Best: P3
+99
+Pennsylvania Railroad,Kentucky Avenue,Pennsylvania Avenue,B & O Railroad,Oriental Avenue,Short Line Railroad,Illinois Avenue,St. James Place,Reading Railroad,St. Charles Place,Water Works,Connecticut Avenue,
+0,2,1,1,2,0,1,0,
+0
+86,18,72,25,10,30,42,16,50,33,53,71,41,59,19,69,66,35,61,16,100,17,35,26,43,20,56,94,29,19,27,265,0,54,29,24,49,26,49,77,12,5,34,3,36,50,18,7,64,51,40,29,40,18,42,29,35,5,26,50,26,25,0,13,206,0,65,63,15,6,40,26,39,27,3,42,71,14,3,67,25,63,8,82,5,39,15,5,15,44,50,35,32,8,0,18,4,263,0,
+Best: P3
+108
+Pacific Avenue,Pennsylvania Railroad,Baltic Avenue,B & O Railroad,Virginia Avenue,Tennessee Avenue,Reading Railroad,Pennsylvania Avenue,Mediterranean Avenue,Ventnor Avenue,Illinois Avenue,New York Avenue,Kentucky Avenue,Water Works,Boardwalk,Connecticut Avenue,Marvin Gardens,States Avenue,Park Place,
+2,1,2,2,2,2,2,2,
+9
+86,18,72,25,10,30,42,16,50,33,53,71,41,59,19,69,66,35,61,16,100,17,35,26,43,20,56,94,29,19,27,265,0,54,29,24,49,26,49,77,12,5,34,3,36,50,18,7,64,51,40,29,40,18,42,29,35,5,26,50,26,25,0,13,206,0,65,63,15,6,40,26,39,27,3,42,71,14,3,67,25,63,8,82,5,39,15,5,15,44,50,35,32,8,0,18,4,263,0,
+Best: P2
+107
+Pennsylvania Railroad,Short Line Railroad,Electric Company,States Avenue,Boardwalk,Baltic Avenue,Ventnor Avenue,Pennsylvania Avenue,
+1,0,1,0,0,1,1,1,
+6
+98,21,71,27,10,33,45,16,48,32,56,78,41,68,17,57,62,43,62,16,100,15,39,28,49,19,62,97,27,16,25,296,0,61,31,27,47,25,45,84,11,5,26,3,35,49,19,6,71,53,37,28,44,21,37,25,40,4,26,45,24,24,0,11,195,0,66,75,16,6,44,30,39,29,3,47,63,12,3,59,29,71,9,93,5,43,15,5,16,44,55,40,29,9,0,16,2,276,0,
+Best: P3
+111
+Connecticut Avenue,Mediterranean Avenue,Tennessee Avenue,Illinois Avenue,New York Avenue,Pacific Avenue,Kentucky Avenue,Pennsylvania Avenue,Short Line Railroad,Reading Railroad,Electric Company,North Carolina Avenue,
+1,1,0,2,2,0,3,0,
+2
+83,21,70,28,10,30,42,17,55,33,53,83,36,64,21,70,65,34,70,17,92,15,39,31,47,21,54,100,24,15,23,243,0,56,32,25,42,27,48,89,12,6,27,3,30,46,19,6,76,57,33,26,47,17,39,28,35,4,30,42,22,24,0,13,176,0,62,79,13,7,38,24,39,25,3,49,61,15,3,66,27,67,9,89,5,36,14,6,15,41,51,39,32,9,0,18,3,290,0,
+Best: P2
+100
+Baltic Avenue,Virginia Avenue,Water Works,Electric Company,Pacific Avenue,Illinois Avenue,Short Line Railroad,Ventnor Avenue,Pennsylvania Railroad,Marvin Gardens,
+1,0,1,0,1,2,1,0,
+5
+77,20,79,30,11,33,37,15,56,34,59,80,38,57,22,62,71,35,71,14,100,17,43,25,43,21,57,95,28,15,27,303,0,55,29,30,41,27,41,94,10,4,29,3,36,49,22,6,82,50,30,23,52,21,43,27,36,4,32,48,26,24,0,13,168,0,73,84,13,6,40,24,40,26,3,50,58,14,3,65,28,64,8,100,5,42,15,4,17,44,58,43,31,10,0,15,2,246,0,
+Best: P3
+100
+Tennessee Avenue,New York Avenue,Virginia Avenue,Kentucky Avenue,Mediterranean Avenue,Illinois Avenue,Electric Company,Pennsylvania Avenue,
+1,0,1,2,2,0,1,0,
+2
+81,23,81,31,9,28,38,17,58,33,48,74,32,68,21,58,62,34,61,17,100,18,36,32,45,22,47,86,28,16,23,292,0,54,32,27,46,29,47,100,11,5,24,3,36,54,23,7,78,58,35,21,53,21,39,28,32,4,30,44,24,24,0,14,170,0,66,82,13,6,35,23,44,25,3,42,59,13,3,73,25,74,7,89,5,40,14,5,16,38,61,47,35,8,0,17,2,254,0,
+Best: P3
+110
+States Avenue,Atlantic Avenue,Pennsylvania Railroad,St. Charles Place,Oriental Avenue,Water Works,
+0,1,2,0,0,1,0,0,
+0
+81,23,81,31,9,28,38,17,58,33,48,74,32,68,21,58,62,34,61,17,100,18,36,32,45,22,47,86,28,16,23,292,0,54,32,27,46,29,47,100,11,5,24,3,36,54,23,7,78,58,35,21,53,21,39,28,32,4,30,44,24,24,0,14,170,0,66,82,13,6,35,23,44,25,3,42,59,13,3,73,25,74,7,89,5,40,14,5,16,38,61,47,35,8,0,17,2,254,0,
+Best: P2
+110
+Illinois Avenue,New York Avenue,States Avenue,Vermont Avenue,B & O Railroad,Mediterranean Avenue,Ventnor Avenue,Virginia Avenue,
+1,1,2,1,1,1,0,0,
+0
+83,24,86,25,10,29,35,14,63,34,41,68,35,67,17,59,65,39,67,16,100,18,34,27,48,19,49,96,27,13,24,363,0,62,31,27,52,28,38,84,11,4,29,3,37,49,24,7,84,53,30,19,62,20,47,25,38,4,26,48,26,28,0,13,146,0,61,86,13,5,31,22,51,20,3,50,62,11,3,83,24,63,8,100,5,38,14,4,13,35,56,51,36,9,0,16,1,256,0,
+Best: P2
+107
+Electric Company,Illinois Avenue,Reading Railroad,New York Avenue,Indiana Avenue,Short Line Railroad,St. Charles Place,Mediterranean Avenue,
+1,0,1,1,2,0,0,0,
+3
+83,24,86,25,10,29,35,14,63,34,41,68,35,67,17,59,65,39,67,16,100,18,34,27,48,19,49,96,27,13,24,363,0,62,31,27,52,28,38,84,11,4,29,3,37,49,24,7,84,53,30,19,62,20,47,25,38,4,26,48,26,28,0,13,146,0,61,86,13,5,31,22,51,20,3,50,62,11,3,83,24,63,8,100,5,38,14,4,13,35,56,51,36,9,0,16,1,256,0,
+Best: P2
+108
+Illinois Avenue,Baltic Avenue,New York Avenue,Pacific Avenue,Park Place,Atlantic Avenue,Virginia Avenue,Vermont Avenue,Marvin Gardens,Oriental Avenue,
+1,2,1,1,1,2,1,1,
+0
+83,24,86,25,10,29,35,14,63,34,41,68,35,67,17,59,65,39,67,16,100,18,34,27,48,19,49,96,27,13,24,363,0,62,31,27,52,28,38,84,11,4,29,3,37,49,24,7,84,53,30,19,62,20,47,25,38,4,26,48,26,28,0,13,146,0,61,86,13,5,31,22,51,20,3,50,62,11,3,83,24,63,8,100,5,38,14,4,13,35,56,51,36,9,0,16,1,256,0,
+Best: P3
+113
+New York Avenue,Mediterranean Avenue,
+1,0,0,1,0,0,0,0,
+6
+72,23,84,29,10,28,39,12,64,35,45,70,32,59,19,54,72,44,69,17,97,19,36,26,50,21,48,98,26,11,25,379,0,51,32,22,43,24,33,88,11,4,30,3,42,52,25,7,100,50,31,16,63,23,49,24,36,4,26,48,31,27,0,13,144,0,55,93,13,6,32,21,50,22,3,48,61,10,3,73,20,58,7,85,4,43,12,4,12,32,56,62,31,7,0,12,0,261,0,
+Best: P2
+109
+Pacific Avenue,Pennsylvania Avenue,Short Line Railroad,Indiana Avenue,Marvin Gardens,Park Place,
+0,0,0,0,1,1,2,1,
+8
+79,22,81,27,11,31,40,11,65,30,46,63,34,66,20,56,76,47,61,14,88,19,38,29,42,23,55,100,29,12,23,396,0,52,33,23,45,24,36,87,10,5,30,3,34,45,21,6,98,50,27,15,70,24,53,27,35,4,25,55,29,25,0,13,147,0,56,93,15,6,30,24,50,21,3,49,57,11,3,85,24,64,7,100,3,44,14,4,11,28,64,55,32,8,0,13,0,296,0,
+Best: P3
+111
+B & O Railroad,Pennsylvania Avenue,Short Line Railroad,Mediterranean Avenue,Water Works,
+1,0,0,0,0,0,1,0,
+1
+79,23,94,24,9,33,37,12,56,32,45,67,38,56,20,47,84,48,72,16,93,21,39,26,49,20,44,100,30,12,24,379,0,54,32,21,37,27,36,98,9,4,27,3,40,51,21,5,100,46,30,15,67,23,47,29,36,4,24,47,33,22,0,14,142,0,59,99,15,5,31,25,43,21,3,52,67,10,3,91,19,59,7,100,3,40,13,4,9,30,65,66,30,7,0,13,0,286,0,
+Best: P3
+107
+Reading Railroad,Short Line Railroad,B & O Railroad,Boardwalk,Mediterranean Avenue,Ventnor Avenue,Atlantic Avenue,
+1,0,0,0,0,2,0,1,
+4
+79,23,94,24,9,33,37,12,56,32,45,67,38,56,20,47,84,48,72,16,93,21,39,26,49,20,44,100,30,12,24,379,0,54,32,21,37,27,36,98,9,4,27,3,40,51,21,5,100,46,30,15,67,23,47,29,36,4,24,47,33,22,0,14,142,0,59,99,15,5,31,25,43,21,3,52,67,10,3,91,19,59,7,100,3,40,13,4,9,30,65,66,30,7,0,13,0,286,0,
+Best: P3
+105
+Virginia Avenue,Pennsylvania Avenue,Reading Railroad,Pacific Avenue,Electric Company,St. Charles Place,Short Line Railroad,Indiana Avenue,Tennessee Avenue,States Avenue,Kentucky Avenue,Boardwalk,Park Place,
+0,0,3,1,2,0,2,2,
+6
+79,23,94,24,9,33,37,12,56,32,45,67,38,56,20,47,84,48,72,16,93,21,39,26,49,20,44,100,30,12,24,379,0,54,32,21,37,27,36,98,9,4,27,3,40,51,21,5,100,46,30,15,67,23,47,29,36,4,24,47,33,22,0,14,142,0,59,99,15,5,31,25,43,21,3,52,67,10,3,91,19,59,7,100,3,40,13,4,9,30,65,66,30,7,0,13,0,286,0,
+Best: P2
+105
+New York Avenue,Pacific Avenue,St. Charles Place,B & O Railroad,Tennessee Avenue,Pennsylvania Railroad,Oriental Avenue,Atlantic Avenue,Mediterranean Avenue,Vermont Avenue,Water Works,Kentucky Avenue,
+1,2,1,2,1,1,1,0,
+0
+83,24,96,22,8,36,33,10,51,26,45,58,35,67,19,52,75,48,72,17,100,22,40,27,49,21,44,98,23,11,25,329,0,52,33,18,39,23,30,94,9,3,24,3,42,58,20,5,92,44,33,16,53,21,54,27,35,4,24,53,34,21,0,11,135,0,63,90,15,4,33,25,46,22,3,56,66,9,3,100,21,55,7,100,3,35,12,4,10,31,76,59,32,6,0,12,0,344,0,
+Best: P3
+111
+Mediterranean Avenue,Baltic Avenue,Connecticut Avenue,Illinois Avenue,Electric Company,Pennsylvania Railroad,Ventnor Avenue,Pennsylvania Avenue,Atlantic Avenue,Water Works,
+2,1,0,0,1,2,1,0,
+0
+70,24,81,20,7,34,39,10,54,27,45,53,34,65,21,53,88,49,83,18,90,20,37,23,52,21,45,100,23,12,22,357,0,59,36,21,37,28,31,100,9,3,24,3,38,47,18,6,100,50,30,13,66,24,43,28,34,4,21,49,36,23,0,13,124,0,58,97,13,4,35,26,43,21,3,52,59,10,3,82,19,55,7,85,3,36,12,4,8,32,78,71,35,6,0,12,0,274,0,
+Best: P2
+110
+Baltic Avenue,New York Avenue,Illinois Avenue,Short Line Railroad,Marvin Gardens,Tennessee Avenue,B & O Railroad,States Avenue,St. Charles Place,North Carolina Avenue,Pennsylvania Railroad,
+1,0,2,2,1,1,1,0,
+6
+75,22,90,24,8,35,32,11,54,26,47,61,29,68,17,57,92,51,86,15,83,21,33,22,52,24,49,100,23,11,19,367,0,48,37,17,37,22,30,91,8,3,27,3,34,57,21,5,84,40,26,14,67,25,42,29,38,4,25,49,36,22,0,12,130,0,58,81,13,4,39,29,37,22,3,52,63,8,3,88,23,61,8,89,3,40,11,4,10,33,69,67,37,5,0,10,0,290,0,
+Best: P3
+111
+Pennsylvania Avenue,Mediterranean Avenue,B & O Railroad,Tennessee Avenue,Water Works,Reading Railroad,Atlantic Avenue,St. James Place,
+1,0,0,2,0,1,1,0,
+6
+63,25,83,19,7,30,39,11,48,22,46,66,34,69,18,52,84,47,75,18,86,18,35,24,50,21,45,89,25,10,21,311,0,46,41,19,36,23,29,92,9,3,29,3,38,50,21,5,100,41,31,11,67,22,37,31,36,4,20,43,36,18,0,10,128,0,58,95,15,4,31,23,41,19,3,60,68,8,3,93,21,62,8,89,3,42,10,4,10,30,74,64,33,4,0,11,0,267,0,
+Best: P3
+108
+Tennessee Avenue,Atlantic Avenue,Virginia Avenue,Pennsylvania Railroad,Connecticut Avenue,Oriental Avenue,
+0,2,1,1,0,1,0,0,
+2
+63,25,83,19,7,30,39,11,48,22,46,66,34,69,18,52,84,47,75,18,86,18,35,24,50,21,45,89,25,10,21,311,0,46,41,19,36,23,29,92,9,3,29,3,38,50,21,5,100,41,31,11,67,22,37,31,36,4,20,43,36,18,0,10,128,0,58,95,15,4,31,23,41,19,3,60,68,8,3,93,21,62,8,89,3,42,10,4,10,30,74,64,33,4,0,11,0,267,0,
+Best: P2
+107
+St. Charles Place,Illinois Avenue,Short Line Railroad,Pennsylvania Railroad,Ventnor Avenue,Oriental Avenue,Water Works,Vermont Avenue,
+0,2,1,0,1,1,0,0,
+1
+70,24,83,20,7,33,36,11,44,21,50,67,29,61,18,59,100,53,80,18,79,15,29,23,60,21,37,84,28,8,19,370,0,50,44,19,36,24,24,99,8,3,29,3,41,58,23,4,100,36,31,12,57,21,37,30,35,4,24,41,35,19,0,9,108,0,58,94,15,4,33,26,38,21,3,57,58,7,3,94,18,57,8,91,3,39,9,4,8,32,67,59,39,3,0,10,0,294,0,
+Best: P2
+109
+New York Avenue,States Avenue,Baltic Avenue,Ventnor Avenue,Pennsylvania Railroad,Tennessee Avenue,Connecticut Avenue,
+1,1,1,2,0,1,0,0,
+4
+70,24,83,20,7,33,36,11,44,21,50,67,29,61,18,59,100,53,80,18,79,15,29,23,60,21,37,84,28,8,19,370,0,50,44,19,36,24,24,99,8,3,29,3,41,58,23,4,100,36,31,12,57,21,37,30,35,4,24,41,35,19,0,9,108,0,58,94,15,4,33,26,38,21,3,57,58,7,3,94,18,57,8,91,3,39,9,4,8,32,67,59,39,3,0,10,0,294,0,
+Best: P2
+113
+Connecticut Avenue,Pennsylvania Railroad,Pacific Avenue,Pennsylvania Avenue,Marvin Gardens,Atlantic Avenue,Vermont Avenue,
+0,2,0,0,0,2,2,0,
+1
+70,24,83,20,7,33,36,11,44,21,50,67,29,61,18,59,100,53,80,18,79,15,29,23,60,21,37,84,28,8,19,370,0,50,44,19,36,24,24,99,8,3,29,3,41,58,23,4,100,36,31,12,57,21,37,30,35,4,24,41,35,19,0,9,108,0,58,94,15,4,33,26,38,21,3,57,58,7,3,94,18,57,8,91,3,39,9,4,8,32,67,59,39,3,0,10,0,294,0,
+Best: P2
+112
+States Avenue,New York Avenue,B & O Railroad,Pennsylvania Railroad,Baltic Avenue,St. James Place,Oriental Avenue,
+1,1,1,2,0,0,0,0,
+6
+70,24,83,20,7,33,36,11,44,21,50,67,29,61,18,59,100,53,80,18,79,15,29,23,60,21,37,84,28,8,19,370,0,50,44,19,36,24,24,99,8,3,29,3,41,58,23,4,100,36,31,12,57,21,37,30,35,4,24,41,35,19,0,9,108,0,58,94,15,4,33,26,38,21,3,57,58,7,3,94,18,57,8,91,3,39,9,4,8,32,67,59,39,3,0,10,0,294,0,
+Best: P2
+109
+Oriental Avenue,Illinois Avenue,Electric Company,Tennessee Avenue,Pacific Avenue,New York Avenue,Baltic Avenue,Ventnor Avenue,
+1,1,0,2,1,1,1,0,
+4
+70,24,83,20,7,33,36,11,44,21,50,67,29,61,18,59,100,53,80,18,79,15,29,23,60,21,37,84,28,8,19,370,0,50,44,19,36,24,24,99,8,3,29,3,41,58,23,4,100,36,31,12,57,21,37,30,35,4,24,41,35,19,0,9,108,0,58,94,15,4,33,26,38,21,3,57,58,7,3,94,18,57,8,91,3,39,9,4,8,32,67,59,39,3,0,10,0,294,0,
+Best: P3
+108
+Kentucky Avenue,Tennessee Avenue,Short Line Railroad,Baltic Avenue,Pennsylvania Avenue,Virginia Avenue,States Avenue,St. Charles Place,Illinois Avenue,Pennsylvania Railroad,
+1,0,3,1,2,0,1,0,
+3
+80,25,74,22,7,35,32,9,46,19,54,58,32,64,21,50,100,54,85,15,74,15,33,20,64,18,37,74,29,7,18,392,0,44,45,19,37,18,25,98,7,3,26,3,32,50,27,5,89,36,28,12,54,19,40,31,33,5,23,40,33,16,0,9,118,0,52,80,17,4,27,26,32,24,3,61,51,8,3,77,16,56,7,100,3,40,7,3,9,30,70,69,41,3,0,8,0,240,0,
+Best: P3
+111
+Baltic Avenue,St. James Place,B & O Railroad,Atlantic Avenue,Oriental Avenue,States Avenue,St. Charles Place,Boardwalk,
+1,1,2,1,0,1,0,1,
+6
+80,25,74,22,7,35,32,9,46,19,54,58,32,64,21,50,100,54,85,15,74,15,33,20,64,18,37,74,29,7,18,392,0,44,45,19,37,18,25,98,7,3,26,3,32,50,27,5,89,36,28,12,54,19,40,31,33,5,23,40,33,16,0,9,118,0,52,80,17,4,27,26,32,24,3,61,51,8,3,77,16,56,7,100,3,40,7,3,9,30,70,69,41,3,0,8,0,240,0,
+Best: P2
+103
+Illinois Avenue,Oriental Avenue,States Avenue,Park Place,Kentucky Avenue,Connecticut Avenue,Pennsylvania Railroad,Electric Company,Indiana Avenue,
+0,2,1,0,3,0,0,1,
+4
+78,26,80,18,7,34,32,11,51,16,54,61,30,67,17,57,100,63,77,14,81,17,34,20,63,17,34,72,27,6,18,415,0,41,48,20,37,23,22,88,6,3,23,3,36,52,28,4,81,40,30,12,58,20,40,25,29,4,25,36,33,14,0,7,129,0,62,91,17,4,32,22,29,22,3,52,55,9,3,74,15,52,7,85,3,40,9,3,9,33,71,72,38,3,0,8,0,233,0,
+Best: P3
+103
+Tennessee Avenue,Marvin Gardens,Electric Company,Short Line Railroad,Mediterranean Avenue,Atlantic Avenue,Pennsylvania Avenue,Virginia Avenue,Vermont Avenue,Ventnor Avenue,Water Works,Illinois Avenue,Pennsylvania Railroad,Oriental Avenue,
+1,2,1,1,1,3,1,0,
+4
+81,22,73,22,6,37,34,10,42,15,60,57,34,68,21,47,100,57,92,12,70,14,35,18,62,14,39,67,25,6,19,342,0,42,43,19,37,23,25,86,5,3,26,3,29,57,31,4,81,33,28,11,50,20,36,26,33,4,24,33,37,13,0,8,125,0,52,89,19,4,29,27,28,24,3,62,55,8,3,69,17,55,6,100,3,43,7,3,10,34,61,77,44,3,0,7,0,205,0,
+Best: P3
+112
+Tennessee Avenue,Ventnor Avenue,Water Works,Short Line Railroad,B & O Railroad,Baltic Avenue,Reading Railroad,Atlantic Avenue,St. Charles Place,Mediterranean Avenue,Kentucky Avenue,
+2,0,1,1,1,2,0,0,
+2
+81,22,73,22,6,37,34,10,42,15,60,57,34,68,21,47,100,57,92,12,70,14,35,18,62,14,39,67,25,6,19,342,0,42,43,19,37,23,25,86,5,3,26,3,29,57,31,4,81,33,28,11,50,20,36,26,33,4,24,33,37,13,0,8,125,0,52,89,19,4,29,27,28,24,3,62,55,8,3,69,17,55,6,100,3,43,7,3,10,34,61,77,44,3,0,7,0,205,0,
+Best: P3
+107
+Ventnor Avenue,Baltic Avenue,St. Charles Place,Atlantic Avenue,Pennsylvania Railroad,Kentucky Avenue,Reading Railroad,
+1,0,1,0,1,2,0,0,
+0
+81,22,73,22,6,37,34,10,42,15,60,57,34,68,21,47,100,57,92,12,70,14,35,18,62,14,39,67,25,6,19,342,0,42,43,19,37,23,25,86,5,3,26,3,29,57,31,4,81,33,28,11,50,20,36,26,33,4,24,33,37,13,0,8,125,0,52,89,19,4,29,27,28,24,3,62,55,8,3,69,17,55,6,100,3,43,7,3,10,34,61,77,44,3,0,7,0,205,0,
+Best: P2
+110
+Illinois Avenue,Pacific Avenue,Connecticut Avenue,Park Place,Oriental Avenue,B & O Railroad,Baltic Avenue,Tennessee Avenue,Ventnor Avenue,Pennsylvania Avenue,
+1,2,0,1,1,1,2,1,
+6
+77,25,79,19,6,31,31,11,46,15,65,68,39,79,18,40,100,64,84,15,73,14,38,17,63,14,39,68,26,4,19,404,0,41,40,17,35,19,26,99,5,3,25,3,32,49,27,3,78,33,26,12,56,21,40,29,38,4,21,37,40,13,0,5,132,0,59,93,22,3,26,26,25,24,3,64,57,8,3,60,17,62,5,100,3,44,7,3,8,30,73,74,39,3,0,6,0,188,0,
+Best: P2
+109
+Ventnor Avenue,Baltic Avenue,Connecticut Avenue,Pacific Avenue,Illinois Avenue,Kentucky Avenue,Vermont Avenue,St. James Place,
+1,2,0,1,2,1,1,0,
+4
+77,25,79,19,6,31,31,11,46,15,65,68,39,79,18,40,100,64,84,15,73,14,38,17,63,14,39,68,26,4,19,404,0,41,40,17,35,19,26,99,5,3,25,3,32,49,27,3,78,33,26,12,56,21,40,29,38,4,21,37,40,13,0,5,132,0,59,93,22,3,26,26,25,24,3,64,57,8,3,60,17,62,5,100,3,44,7,3,8,30,73,74,39,3,0,6,0,188,0,
+Best: P3
+105
+Baltic Avenue,Atlantic Avenue,New York Avenue,B & O Railroad,Illinois Avenue,Tennessee Avenue,Pacific Avenue,
+1,0,0,2,1,1,1,0,
+3
+83,22,70,23,7,35,27,10,39,15,66,57,31,86,16,47,96,58,92,12,68,14,33,17,53,15,40,72,22,3,16,362,0,43,36,17,38,19,21,100,5,3,25,3,26,59,25,3,81,32,31,10,56,20,39,24,44,4,17,38,41,12,0,5,118,0,66,90,20,3,31,21,27,24,3,69,60,6,3,70,17,64,5,86,3,45,7,3,8,32,78,77,47,3,0,5,0,206,0,
+Best: P3
+107
+Tennessee Avenue,North Carolina Avenue,Ventnor Avenue,B & O Railroad,Pennsylvania Avenue,Park Place,Pacific Avenue,St. Charles Place,Virginia Avenue,
+0,0,2,1,0,1,3,1,
+4
+83,22,70,23,7,35,27,10,39,15,66,57,31,86,16,47,96,58,92,12,68,14,33,17,53,15,40,72,22,3,16,362,0,43,36,17,38,19,21,100,5,3,25,3,26,59,25,3,81,32,31,10,56,20,39,24,44,4,17,38,41,12,0,5,118,0,66,90,20,3,31,21,27,24,3,69,60,6,3,70,17,64,5,86,3,45,7,3,8,32,78,77,47,3,0,5,0,206,0,
+Best: P2
+111
+Baltic Avenue,Connecticut Avenue,Mediterranean Avenue,Marvin Gardens,New York Avenue,Atlantic Avenue,St. Charles Place,Illinois Avenue,Reading Railroad,Boardwalk,Pennsylvania Avenue,Tennessee Avenue,
+2,1,1,2,1,2,1,1,
+13
+76,21,69,22,6,40,27,9,38,14,61,64,31,97,15,44,85,50,75,13,68,12,34,16,48,16,39,83,21,1,14,383,0,38,36,21,34,17,23,98,5,3,28,3,27,55,22,3,88,27,29,11,50,18,35,29,41,4,15,33,43,13,0,5,123,0,69,90,23,3,31,24,29,24,3,66,50,6,3,76,18,71,5,97,3,47,6,3,8,32,75,77,51,3,0,5,0,205,0,
+Best: P2
+108
+Pacific Avenue,B & O Railroad,Electric Company,New York Avenue,Tennessee Avenue,Virginia Avenue,St. Charles Place,Short Line Railroad,
+0,0,2,2,0,0,1,0,
+0
+76,21,69,22,6,40,27,9,38,14,61,64,31,97,15,44,85,50,75,13,68,12,34,16,48,16,39,83,21,1,14,383,0,38,36,21,34,17,23,98,5,3,28,3,27,55,22,3,88,27,29,11,50,18,35,29,41,4,15,33,43,13,0,5,123,0,69,90,23,3,31,24,29,24,3,66,50,6,3,76,18,71,5,97,3,47,6,3,8,32,75,77,51,3,0,5,0,205,0,
+Best: P3
+112
+New York Avenue,Short Line Railroad,Pacific Avenue,Virginia Avenue,Marvin Gardens,Atlantic Avenue,Pennsylvania Avenue,
+0,0,1,1,0,2,2,0,
+1
+82,19,64,25,5,39,27,9,35,11,59,60,31,94,15,43,86,54,81,12,67,11,34,17,45,17,46,72,17,0,13,417,0,42,42,18,39,14,25,100,5,3,24,3,25,63,23,3,77,28,30,11,49,19,37,23,43,3,16,34,46,11,0,4,118,0,58,83,21,3,32,26,30,21,3,74,49,6,3,73,18,59,4,97,3,41,7,3,8,35,72,76,41,3,0,4,0,192,0,
+Best: P2
+108
+Virginia Avenue,Baltic Avenue,Park Place,St. James Place,Oriental Avenue,St. Charles Place,Marvin Gardens,Boardwalk,Kentucky Avenue,
+1,1,2,1,1,1,0,2,
+9
+70,19,75,26,5,35,28,8,34,10,68,63,31,100,16,43,93,57,70,14,62,10,31,17,42,14,41,75,18,0,12,360,0,42,44,16,40,14,22,100,5,3,24,3,28,65,25,3,89,24,33,10,52,18,36,29,47,3,15,38,43,12,0,3,122,0,54,77,19,3,32,28,25,25,3,74,53,6,3,67,20,56,4,96,3,38,5,3,7,34,77,81,41,3,0,3,0,198,0,
+Best: P2
+113
+Short Line Railroad,Connecticut Avenue,Illinois Avenue,Water Works,New York Avenue,Reading Railroad,Pacific Avenue,Vermont Avenue,Pennsylvania Avenue,
+0,2,0,1,1,0,2,0,
+4
+70,19,75,26,5,35,28,8,34,10,68,63,31,100,16,43,93,57,70,14,62,10,31,17,42,14,41,75,18,0,12,360,0,42,44,16,40,14,22,100,5,3,24,3,28,65,25,3,89,24,33,10,52,18,36,29,47,3,15,38,43,12,0,3,122,0,54,77,19,3,32,28,25,25,3,74,53,6,3,67,20,56,4,96,3,38,5,3,7,34,77,81,41,3,0,3,0,198,0,
+Best: P3
+111
+Illinois Avenue,North Carolina Avenue,Ventnor Avenue,Pacific Avenue,St. Charles Place,Pennsylvania Avenue,Water Works,Vermont Avenue,
+0,1,1,0,1,1,3,0,
+6
+60,18,80,26,5,36,30,7,37,9,64,56,32,83,16,43,95,56,71,13,65,11,30,14,45,15,42,72,15,0,11,407,0,41,39,15,31,17,20,97,6,3,25,3,28,59,25,3,77,25,34,9,60,15,33,33,43,3,12,40,37,11,0,1,122,0,52,79,23,3,26,29,29,24,3,72,47,6,3,77,16,63,3,97,3,40,5,3,7,31,83,78,40,3,0,2,0,212,0,
+Best: P3
+114
+B & O Railroad,Ventnor Avenue,New York Avenue,Tennessee Avenue,Short Line Railroad,St. Charles Place,Marvin Gardens,St. James Place,Virginia Avenue,
+0,0,2,3,0,2,0,0,
+8
+60,18,80,26,5,36,30,7,37,9,64,56,32,83,16,43,95,56,71,13,65,11,30,14,45,15,42,72,15,0,11,407,0,41,39,15,31,17,20,97,6,3,25,3,28,59,25,3,77,25,34,9,60,15,33,33,43,3,12,40,37,11,0,1,122,0,52,79,23,3,26,29,29,24,3,72,47,6,3,77,16,63,3,97,3,40,5,3,7,31,83,78,40,3,0,2,0,212,0,
+Best: P2
+107
+Illinois Avenue,Ventnor Avenue,States Avenue,Vermont Avenue,St. James Place,
+0,1,1,1,1,1,0,0,
+0
+59,20,73,24,5,31,33,8,35,8,56,48,28,100,15,47,92,63,68,16,67,9,26,13,51,13,42,65,13,0,11,438,0,46,41,13,33,16,19,98,5,3,22,3,26,64,23,3,76,21,35,7,47,14,32,29,50,3,12,40,39,9,0,1,131,0,59,75,21,3,28,34,25,26,3,73,47,5,3,73,19,63,3,100,3,42,5,3,6,26,93,90,38,3,0,0,0,176,0,
+Best: P2
+108
+Pennsylvania Railroad,Ventnor Avenue,Short Line Railroad,Mediterranean Avenue,Pacific Avenue,St. Charles Place,Illinois Avenue,Connecticut Avenue,Virginia Avenue,Park Place,Atlantic Avenue,
+1,1,2,0,1,2,1,1,
+8
+59,20,73,24,5,31,33,8,35,8,56,48,28,100,15,47,92,63,68,16,67,9,26,13,51,13,42,65,13,0,11,438,0,46,41,13,33,16,19,98,5,3,22,3,26,64,23,3,76,21,35,7,47,14,32,29,50,3,12,40,39,9,0,1,131,0,59,75,21,3,28,34,25,26,3,73,47,5,3,73,19,63,3,100,3,42,5,3,6,26,93,90,38,3,0,0,0,176,0,
+Best: P2
+110
+Short Line Railroad,B & O Railroad,Tennessee Avenue,States Avenue,Pacific Avenue,Park Place,Illinois Avenue,St. Charles Place,North Carolina Avenue,St. James Place,Indiana Avenue,New York Avenue,Mediterranean Avenue,Kentucky Avenue,
+1,0,2,3,3,0,2,1,
+12
+59,20,73,24,5,31,33,8,35,8,56,48,28,100,15,47,92,63,68,16,67,9,26,13,51,13,42,65,13,0,11,438,0,46,41,13,33,16,19,98,5,3,22,3,26,64,23,3,76,21,35,7,47,14,32,29,50,3,12,40,39,9,0,1,131,0,59,75,21,3,28,34,25,26,3,73,47,5,3,73,19,63,3,100,3,42,5,3,6,26,93,90,38,3,0,0,0,176,0,
+Best: P3
+110
+Electric Company,Mediterranean Avenue,St. Charles Place,Tennessee Avenue,Short Line Railroad,Oriental Avenue,Baltic Avenue,States Avenue,Virginia Avenue,
+2,1,3,1,0,0,0,0,
+6
+60,21,70,23,4,30,34,7,36,7,51,46,30,100,14,49,98,70,70,13,54,9,26,11,42,13,40,54,14,0,10,405,0,52,35,13,37,16,19,94,4,3,20,3,21,71,22,3,85,23,32,8,43,11,31,26,54,3,14,40,33,9,0,0,140,0,61,80,19,3,29,39,26,25,3,71,49,4,3,77,21,75,3,100,3,42,4,3,6,30,84,100,37,3,0,0,0,206,0,
+Best: P2
+107
+Baltic Avenue,States Avenue,Atlantic Avenue,B & O Railroad,Virginia Avenue,Short Line Railroad,Mediterranean Avenue,Ventnor Avenue,Electric Company,New York Avenue,Oriental Avenue,Reading Railroad,
+2,1,2,1,0,2,0,0,
+9
+61,21,61,25,4,28,38,8,33,7,49,44,28,93,14,52,81,74,76,14,52,8,24,11,40,11,36,53,12,0,8,450,0,45,38,13,35,18,17,100,3,3,21,3,21,60,20,3,85,21,37,7,52,12,28,28,44,3,14,39,39,10,0,0,145,0,65,85,19,3,25,39,21,26,3,77,54,5,3,80,18,77,3,100,3,41,3,3,6,29,91,89,39,3,0,0,0,215,0,
+Best: P3
+114
+Electric Company,Pacific Avenue,Baltic Avenue,St. Charles Place,Illinois Avenue,Water Works,Mediterranean Avenue,Oriental Avenue,Atlantic Avenue,St. James Place,Ventnor Avenue,
+2,1,1,1,1,2,1,0,
+12
+59,18,72,28,5,31,40,8,36,7,51,50,29,100,13,56,95,77,66,15,51,9,28,10,44,13,33,60,12,0,9,486,0,50,35,14,41,15,15,98,3,3,17,3,20,69,23,3,92,22,36,7,48,11,26,23,43,3,12,35,32,10,0,0,161,0,57,79,19,3,29,43,25,22,3,70,52,4,3,67,17,84,3,85,3,43,3,3,5,30,87,100,38,3,0,0,0,191,0,
+Best: P2
+106
+New York Avenue,Water Works,Marvin Gardens,Virginia Avenue,States Avenue,Pennsylvania Railroad,
+0,0,2,1,0,1,0,0,
+4
+64,20,72,27,4,30,39,9,37,8,55,52,25,96,13,52,75,86,65,14,56,7,27,11,36,11,30,59,13,0,8,538,0,42,41,12,40,17,15,100,3,3,17,3,20,56,21,3,75,20,34,6,44,11,29,25,49,3,15,40,30,9,0,0,143,0,54,86,17,3,26,40,26,23,3,66,46,4,3,76,16,72,3,100,3,44,3,3,5,27,93,86,37,3,0,0,0,219,0,
+Best: P2
+106
+States Avenue,Ventnor Avenue,North Carolina Avenue,Short Line Railroad,B & O Railroad,Pacific Avenue,Tennessee Avenue,Vermont Avenue,Pennsylvania Avenue,Mediterranean Avenue,St. Charles Place,St. James Place,Connecticut Avenue,New York Avenue,
+1,2,2,3,0,1,3,0,
+6
+64,20,72,27,4,30,39,9,37,8,55,52,25,96,13,52,75,86,65,14,56,7,27,11,36,11,30,59,13,0,8,538,0,42,41,12,40,17,15,100,3,3,17,3,20,56,21,3,75,20,34,6,44,11,29,25,49,3,15,40,30,9,0,0,143,0,54,86,17,3,26,40,26,23,3,66,46,4,3,76,16,72,3,100,3,44,3,3,5,27,93,86,37,3,0,0,0,219,0,
+Best: P2
+113
+Tennessee Avenue,B & O Railroad,States Avenue,Short Line Railroad,Pacific Avenue,Connecticut Avenue,Virginia Avenue,Vermont Avenue,Electric Company,Ventnor Avenue,St. Charles Place,Illinois Avenue,
+0,2,3,1,1,1,1,0,
+2
+64,20,72,27,4,30,39,9,37,8,55,52,25,96,13,52,75,86,65,14,56,7,27,11,36,11,30,59,13,0,8,538,0,42,41,12,40,17,15,100,3,3,17,3,20,56,21,3,75,20,34,6,44,11,29,25,49,3,15,40,30,9,0,0,143,0,54,86,17,3,26,40,26,23,3,66,46,4,3,76,16,72,3,100,3,44,3,3,5,27,93,86,37,3,0,0,0,219,0,
+Best: P2
+109
+St. Charles Place,B & O Railroad,Pacific Avenue,Electric Company,Ventnor Avenue,Pennsylvania Avenue,Vermont Avenue,
+0,1,1,0,0,1,2,0,
+4
+64,20,72,27,4,30,39,9,37,8,55,52,25,96,13,52,75,86,65,14,56,7,27,11,36,11,30,59,13,0,8,538,0,42,41,12,40,17,15,100,3,3,17,3,20,56,21,3,75,20,34,6,44,11,29,25,49,3,15,40,30,9,0,0,143,0,54,86,17,3,26,40,26,23,3,66,46,4,3,76,16,72,3,100,3,44,3,3,5,27,93,86,37,3,0,0,0,219,0,
+Best: P2
+111
+Ventnor Avenue,St. Charles Place,Electric Company,Pennsylvania Avenue,New York Avenue,Illinois Avenue,Reading Railroad,States Avenue,Kentucky Avenue,Marvin Gardens,
+0,0,2,1,2,2,1,0,
+9
+64,20,72,27,4,30,39,9,37,8,55,52,25,96,13,52,75,86,65,14,56,7,27,11,36,11,30,59,13,0,8,538,0,42,41,12,40,17,15,100,3,3,17,3,20,56,21,3,75,20,34,6,44,11,29,25,49,3,15,40,30,9,0,0,143,0,54,86,17,3,26,40,26,23,3,66,46,4,3,76,16,72,3,100,3,44,3,3,5,27,93,86,37,3,0,0,0,219,0,
+Best: P2
+111
+St. Charles Place,New York Avenue,Illinois Avenue,Mediterranean Avenue,Electric Company,Ventnor Avenue,B & O Railroad,Baltic Avenue,States Avenue,Marvin Gardens,St. James Place,North Carolina Avenue,
+2,0,2,2,1,2,1,0,
+8
+64,20,72,27,4,30,39,9,37,8,55,52,25,96,13,52,75,86,65,14,56,7,27,11,36,11,30,59,13,0,8,538,0,42,41,12,40,17,15,100,3,3,17,3,20,56,21,3,75,20,34,6,44,11,29,25,49,3,15,40,30,9,0,0,143,0,54,86,17,3,26,40,26,23,3,66,46,4,3,76,16,72,3,100,3,44,3,3,5,27,93,86,37,3,0,0,0,219,0,
+Best: P2
+111
+New York Avenue,Mediterranean Avenue,Short Line Railroad,Connecticut Avenue,Atlantic Avenue,Baltic Avenue,Illinois Avenue,Ventnor Avenue,B & O Railroad,St. Charles Place,Pennsylvania Avenue,Electric Company,Pennsylvania Railroad,
+2,1,1,1,1,2,1,0,
+6
+64,20,72,27,4,30,39,9,37,8,55,52,25,96,13,52,75,86,65,14,56,7,27,11,36,11,30,59,13,0,8,538,0,42,41,12,40,17,15,100,3,3,17,3,20,56,21,3,75,20,34,6,44,11,29,25,49,3,15,40,30,9,0,0,143,0,54,86,17,3,26,40,26,23,3,66,46,4,3,76,16,72,3,100,3,44,3,3,5,27,93,86,37,3,0,0,0,219,0,
+Best: P3
+111
+States Avenue,New York Avenue,B & O Railroad,Baltic Avenue,Electric Company,Oriental Avenue,Mediterranean Avenue,Ventnor Avenue,
+2,1,1,1,0,1,0,0,
+7
+62,17,79,25,3,27,40,9,34,7,50,51,24,97,15,52,72,89,78,14,57,6,26,11,38,11,32,52,14,0,6,532,0,36,51,11,32,17,14,100,3,3,16,3,20,59,22,3,84,15,40,5,49,11,28,23,46,3,12,46,31,8,0,0,115,0,59,89,18,3,22,40,25,22,3,78,43,4,3,76,18,65,3,100,3,42,3,3,5,27,100,94,32,3,0,0,0,216,0,
+Best: P2
+110
+Connecticut Avenue,Virginia Avenue,B & O Railroad,Ventnor Avenue,Pennsylvania Railroad,New York Avenue,Baltic Avenue,Oriental Avenue,Mediterranean Avenue,Reading Railroad,Boardwalk,Electric Company,North Carolina Avenue,
+2,2,1,1,0,1,1,1,
+9
+55,21,68,24,3,29,34,9,31,7,57,55,28,100,14,59,70,90,66,12,63,5,23,10,42,12,30,58,12,0,6,572,0,35,48,12,32,20,15,91,3,3,18,3,20,48,22,3,80,15,35,5,40,10,30,24,43,3,15,46,26,7,0,0,132,0,53,95,19,3,24,39,22,25,3,69,45,4,3,71,18,61,3,100,3,40,3,3,5,28,96,93,30,3,0,0,0,208,0,
+Best: P3
+110
+Marvin Gardens,Mediterranean Avenue,Short Line Railroad,Pennsylvania Railroad,Water Works,
+1,0,0,0,0,1,0,0,
+2
+57,17,83,26,3,32,36,8,36,7,45,53,24,100,12,60,82,94,72,15,61,5,26,9,42,10,28,58,12,0,6,590,0,36,45,13,36,19,16,84,3,3,17,3,18,57,20,3,80,14,38,4,48,10,28,26,39,3,14,45,27,8,0,0,126,0,60,84,17,3,22,37,22,22,3,77,43,4,3,71,19,67,3,95,3,41,3,3,5,27,100,79,30,3,0,0,0,222,0,
+Best: P2
+110
+Tennessee Avenue,Atlantic Avenue,Short Line Railroad,Electric Company,Virginia Avenue,Illinois Avenue,States Avenue,Pacific Avenue,New York Avenue,B & O Railroad,
+0,0,2,2,1,1,1,0,
+6
+63,16,74,24,3,29,40,9,36,6,50,49,30,99,15,65,74,85,68,11,68,4,26,10,44,10,26,56,12,0,6,511,0,30,48,11,38,16,16,75,3,3,15,3,17,53,19,3,78,13,34,4,48,11,25,28,37,3,13,41,29,6,0,0,117,0,62,88,17,3,25,37,23,25,3,73,48,4,3,77,17,56,3,96,3,35,3,3,5,30,96,89,26,3,0,0,0,242,0,
+Best: P9
+104
+Pacific Avenue,Mediterranean Avenue,Ventnor Avenue,Atlantic Avenue,Virginia Avenue,New York Avenue,B & O Railroad,States Avenue,Pennsylvania Avenue,
+1,0,2,1,0,2,2,0,
+2
+60,15,76,25,3,29,39,8,33,6,56,50,22,100,16,51,81,71,72,12,73,4,23,8,38,11,31,50,12,0,5,578,0,28,47,12,39,16,15,74,3,3,14,3,20,48,24,3,68,16,36,4,47,10,28,26,39,3,14,37,30,6,0,0,106,0,67,97,14,3,26,42,24,26,3,75,39,3,3,60,19,55,3,100,3,38,3,3,5,28,77,81,26,3,0,0,0,253,0,
+Best: P3
+105
+States Avenue,Pennsylvania Avenue,B & O Railroad,Mediterranean Avenue,Short Line Railroad,St. Charles Place,Baltic Avenue,Pacific Avenue,
+2,0,2,0,0,0,2,0,
+16
+48,15,66,25,3,31,32,7,29,5,56,57,24,100,16,52,86,79,60,13,72,4,28,10,44,12,30,54,10,0,4,557,0,28,40,11,39,19,15,89,3,3,14,3,15,50,19,3,60,17,40,4,38,9,25,22,35,3,10,43,26,6,0,0,104,0,69,84,17,3,22,38,20,24,3,78,32,3,3,77,18,65,3,100,3,35,3,3,6,26,90,85,31,3,0,0,0,253,0,
+Best: P2
+110
+Electric Company,B & O Railroad,Mediterranean Avenue,Kentucky Avenue,Ventnor Avenue,Vermont Avenue,Baltic Avenue,New York Avenue,Pennsylvania Avenue,St. Charles Place,Tennessee Avenue,
+2,1,1,2,1,1,1,0,
+10
+50,12,70,23,3,32,40,7,36,5,63,58,22,95,17,46,77,77,63,11,66,4,27,10,43,12,30,49,12,0,4,563,0,31,45,11,34,16,16,74,3,3,17,3,17,44,21,3,67,17,35,4,40,8,28,23,39,3,12,41,30,6,0,0,120,0,70,77,17,3,21,39,20,26,3,71,39,3,3,69,17,64,3,82,3,36,3,3,4,30,88,83,26,3,0,0,0,273,0,
+Best: P2
+115
+Atlantic Avenue,Electric Company,Mediterranean Avenue,Short Line Railroad,Tennessee Avenue,New York Avenue,Ventnor Avenue,Pennsylvania Railroad,Pennsylvania Avenue,North Carolina Avenue,Oriental Avenue,
+1,1,0,2,0,2,2,0,
+8
+50,12,70,23,3,32,40,7,36,5,63,58,22,95,17,46,77,77,63,11,66,4,27,10,43,12,30,49,12,0,4,563,0,31,45,11,34,16,16,74,3,3,17,3,17,44,21,3,67,17,35,4,40,8,28,23,39,3,12,41,30,6,0,0,120,0,70,77,17,3,21,39,20,26,3,71,39,3,3,69,17,64,3,82,3,36,3,3,4,30,88,83,26,3,0,0,0,273,0,
+Best: P3
+111
+Atlantic Avenue,Tennessee Avenue,States Avenue,St. Charles Place,B & O Railroad,Pennsylvania Avenue,Virginia Avenue,
+0,0,3,1,0,1,1,0,
+3
+58,12,76,29,3,29,34,5,38,6,54,51,26,100,19,52,93,66,61,10,65,4,22,11,42,12,32,52,13,0,4,631,0,31,52,10,39,15,18,75,3,3,13,3,14,43,17,3,61,14,32,4,44,8,25,20,37,3,12,46,31,6,0,0,132,0,75,74,15,3,19,35,19,27,3,70,37,3,3,74,18,73,3,85,3,33,3,3,4,28,93,79,23,3,0,0,0,291,0,
+Best: P2
+110
+Illinois Avenue,New York Avenue,Mediterranean Avenue,Atlantic Avenue,St. James Place,Ventnor Avenue,Boardwalk,Baltic Avenue,Connecticut Avenue,B & O Railroad,Pacific Avenue,Tennessee Avenue,St. Charles Place,Pennsylvania Railroad,
+2,1,1,3,1,2,1,1,
+5
+50,12,74,29,3,29,38,5,37,4,52,52,23,100,17,54,94,71,65,9,68,5,25,9,46,11,33,49,12,0,4,543,0,32,47,9,37,17,17,81,3,3,17,3,15,43,20,3,59,17,32,4,37,9,22,20,37,3,11,40,32,6,0,0,109,0,75,66,14,3,22,35,17,25,3,69,42,3,3,70,18,70,3,76,3,36,3,3,4,33,78,70,22,3,0,0,0,307,0,
+Best: P2
+107
+Tennessee Avenue,Illinois Avenue,Marvin Gardens,Pennsylvania Avenue,Pacific Avenue,Park Place,Vermont Avenue,
+0,1,0,1,1,1,2,1,
+3
+50,12,74,29,3,29,38,5,37,4,52,52,23,100,17,54,94,71,65,9,68,5,25,9,46,11,33,49,12,0,4,543,0,32,47,9,37,17,17,81,3,3,17,3,15,43,20,3,59,17,32,4,37,9,22,20,37,3,11,40,32,6,0,0,109,0,75,66,14,3,22,35,17,25,3,69,42,3,3,70,18,70,3,76,3,36,3,3,4,33,78,70,22,3,0,0,0,307,0,
+Best: P3
+108
+Pennsylvania Railroad,Reading Railroad,Tennessee Avenue,Ventnor Avenue,Atlantic Avenue,Virginia Avenue,Boardwalk,St. James Place,New York Avenue,Water Works,Oriental Avenue,
+0,1,1,3,0,2,0,1,
+4
+41,12,82,24,3,27,35,5,36,4,54,56,26,97,20,51,83,61,57,8,73,4,25,10,46,12,28,45,11,0,3,478,0,32,47,10,33,15,16,81,3,3,15,3,16,48,19,3,60,13,28,4,37,8,21,20,40,3,9,40,27,5,0,0,96,0,78,80,15,3,20,39,15,21,3,63,37,3,3,75,17,78,3,69,3,37,3,3,3,27,76,63,23,3,0,0,0,335,0,
+Best: P3
+111
+Short Line Railroad,B & O Railroad,Pennsylvania Railroad,St. Charles Place,Boardwalk,
+0,0,1,0,0,0,0,1,
+2
+41,12,82,24,3,27,35,5,36,4,54,56,26,97,20,51,83,61,57,8,73,4,25,10,46,12,28,45,11,0,3,478,0,32,47,10,33,15,16,81,3,3,15,3,16,48,19,3,60,13,28,4,37,8,21,20,40,3,9,40,27,5,0,0,96,0,78,80,15,3,20,39,15,21,3,63,37,3,3,75,17,78,3,69,3,37,3,3,3,27,76,63,23,3,0,0,0,335,0,
+Best: P2
+108
+Ventnor Avenue,Pennsylvania Avenue,Indiana Avenue,Baltic Avenue,Tennessee Avenue,St. Charles Place,Connecticut Avenue,Virginia Avenue,Atlantic Avenue,Kentucky Avenue,
+1,1,2,1,2,2,1,0,
+10
+43,10,74,24,3,30,38,5,40,4,59,61,24,100,20,54,71,69,51,9,82,5,23,10,51,10,30,45,11,0,1,432,0,31,49,8,38,17,15,76,3,3,15,3,18,48,22,3,59,15,33,4,39,8,20,20,36,3,9,39,22,5,0,0,94,0,67,89,14,3,22,37,16,20,3,61,36,3,3,69,19,82,3,81,3,35,3,3,3,26,83,51,20,3,0,0,0,303,0,
+Best: P2
+108
+Tennessee Avenue,Pacific Avenue,Boardwalk,Kentucky Avenue,Illinois Avenue,Atlantic Avenue,Oriental Avenue,St. James Place,
+0,1,0,2,2,1,1,1,
+3
+43,10,74,24,3,30,38,5,40,4,59,61,24,100,20,54,71,69,51,9,82,5,23,10,51,10,30,45,11,0,1,432,0,31,49,8,38,17,15,76,3,3,15,3,18,48,22,3,59,15,33,4,39,8,20,20,36,3,9,39,22,5,0,0,94,0,67,89,14,3,22,37,16,20,3,61,36,3,3,69,19,82,3,81,3,35,3,3,3,26,83,51,20,3,0,0,0,303,0,
+Best: P2
+107
+Pennsylvania Avenue,Pacific Avenue,Ventnor Avenue,Oriental Avenue,Short Line Railroad,States Avenue,Atlantic Avenue,St. James Place,North Carolina Avenue,Vermont Avenue,
+0,2,1,1,0,2,3,0,
+6
+43,10,74,24,3,30,38,5,40,4,59,61,24,100,20,54,71,69,51,9,82,5,23,10,51,10,30,45,11,0,1,432,0,31,49,8,38,17,15,76,3,3,15,3,18,48,22,3,59,15,33,4,39,8,20,20,36,3,9,39,22,5,0,0,94,0,67,89,14,3,22,37,16,20,3,61,36,3,3,69,19,82,3,81,3,35,3,3,3,26,83,51,20,3,0,0,0,303,0,
+Best: P2
+108
+Oriental Avenue,Baltic Avenue,Indiana Avenue,St. James Place,Park Place,
+1,1,0,1,1,0,0,1,
+4
+43,10,74,24,3,30,38,5,40,4,59,61,24,100,20,54,71,69,51,9,82,5,23,10,51,10,30,45,11,0,1,432,0,31,49,8,38,17,15,76,3,3,15,3,18,48,22,3,59,15,33,4,39,8,20,20,36,3,9,39,22,5,0,0,94,0,67,89,14,3,22,37,16,20,3,61,36,3,3,69,19,82,3,81,3,35,3,3,3,26,83,51,20,3,0,0,0,303,0,
+Best: P7
+108
+Mediterranean Avenue,Atlantic Avenue,Pennsylvania Avenue,Indiana Avenue,Marvin Gardens,Water Works,
+1,0,0,0,1,2,1,0,
+6
+42,8,67,27,3,29,39,6,44,3,59,62,29,87,20,58,67,66,45,7,85,4,20,10,50,9,31,39,9,0,0,418,0,30,47,7,35,15,13,70,3,3,13,3,15,41,22,3,63,16,39,3,37,6,17,19,32,3,8,32,21,3,0,0,75,0,69,92,15,3,23,31,14,18,3,68,41,3,3,75,17,83,3,74,3,36,3,3,3,23,94,50,20,3,0,0,0,342,0,
+Best: P2
+107
+B & O Railroad,New York Avenue,Park Place,
+0,0,0,1,0,0,0,1,
+0
+42,10,78,27,3,32,33,6,44,3,58,68,22,100,21,64,67,64,54,7,95,4,20,10,46,8,29,45,8,0,0,361,0,26,51,8,33,18,16,80,3,3,14,3,18,49,20,3,54,14,35,3,40,6,16,16,39,3,8,40,24,3,0,0,92,0,67,100,15,3,25,29,13,17,3,72,38,3,3,78,18,80,3,75,3,34,3,3,3,26,89,49,18,3,0,0,0,341,0,
+Best: P2
+107
+Tennessee Avenue,Short Line Railroad,Baltic Avenue,Illinois Avenue,Atlantic Avenue,Connecticut Avenue,St. James Place,
+1,1,0,2,1,1,0,0,
+5
+42,10,78,27,3,32,33,6,44,3,58,68,22,100,21,64,67,64,54,7,95,4,20,10,46,8,29,45,8,0,0,361,0,26,51,8,33,18,16,80,3,3,14,3,18,49,20,3,54,14,35,3,40,6,16,16,39,3,8,40,24,3,0,0,92,0,67,100,15,3,25,29,13,17,3,72,38,3,3,78,18,80,3,75,3,34,3,3,3,26,89,49,18,3,0,0,0,341,0,
+Best: P2
+110
+Baltic Avenue,Tennessee Avenue,Oriental Avenue,St. Charles Place,
+1,1,1,1,0,0,0,0,
+1
+42,10,78,27,3,32,33,6,44,3,58,68,22,100,21,64,67,64,54,7,95,4,20,10,46,8,29,45,8,0,0,361,0,26,51,8,33,18,16,80,3,3,14,3,18,49,20,3,54,14,35,3,40,6,16,16,39,3,8,40,24,3,0,0,92,0,67,100,15,3,25,29,13,17,3,72,38,3,3,78,18,80,3,75,3,34,3,3,3,26,89,49,18,3,0,0,0,341,0,
+Best: P2
+110
+Connecticut Avenue,New York Avenue,Baltic Avenue,B & O Railroad,Tennessee Avenue,Indiana Avenue,Pacific Avenue,Short Line Railroad,Pennsylvania Avenue,Reading Railroad,Vermont Avenue,
+1,2,0,2,1,0,2,0,
+6
+42,10,78,27,3,32,33,6,44,3,58,68,22,100,21,64,67,64,54,7,95,4,20,10,46,8,29,45,8,0,0,361,0,26,51,8,33,18,16,80,3,3,14,3,18,49,20,3,54,14,35,3,40,6,16,16,39,3,8,40,24,3,0,0,92,0,67,100,15,3,25,29,13,17,3,72,38,3,3,78,18,80,3,75,3,34,3,3,3,26,89,49,18,3,0,0,0,341,0,
+Best: P2
+112
+Illinois Avenue,New York Avenue,Atlantic Avenue,Boardwalk,St. Charles Place,St. James Place,Pennsylvania Avenue,Tennessee Avenue,Water Works,Virginia Avenue,Ventnor Avenue,
+0,0,2,3,1,2,1,1,
+8
+42,10,78,27,3,32,33,6,44,3,58,68,22,100,21,64,67,64,54,7,95,4,20,10,46,8,29,45,8,0,0,361,0,26,51,8,33,18,16,80,3,3,14,3,18,49,20,3,54,14,35,3,40,6,16,16,39,3,8,40,24,3,0,0,92,0,67,100,15,3,25,29,13,17,3,72,38,3,3,78,18,80,3,75,3,34,3,3,3,26,89,49,18,3,0,0,0,341,0,
+Best: P2
+113
+Baltic Avenue,Electric Company,Ventnor Avenue,Mediterranean Avenue,Connecticut Avenue,States Avenue,Short Line Railroad,New York Avenue,Pacific Avenue,Oriental Avenue,Atlantic Avenue,
+2,2,1,1,0,2,1,0,
+10
+42,10,78,27,3,32,33,6,44,3,58,68,22,100,21,64,67,64,54,7,95,4,20,10,46,8,29,45,8,0,0,361,0,26,51,8,33,18,16,80,3,3,14,3,18,49,20,3,54,14,35,3,40,6,16,16,39,3,8,40,24,3,0,0,92,0,67,100,15,3,25,29,13,17,3,72,38,3,3,78,18,80,3,75,3,34,3,3,3,26,89,49,18,3,0,0,0,341,0,
+Best: P3
+112
+Electric Company,Pennsylvania Railroad,St. Charles Place,Tennessee Avenue,Pennsylvania Avenue,Virginia Avenue,Boardwalk,New York Avenue,
+0,0,2,2,0,0,1,1,
+7
+46,10,89,25,3,28,34,4,37,3,54,67,21,88,20,60,61,69,49,6,90,3,22,8,42,6,31,44,6,0,0,387,0,24,62,8,36,17,17,90,3,3,13,3,17,50,20,3,59,12,32,3,37,5,16,15,36,3,9,35,26,2,0,0,86,0,66,86,17,3,24,24,12,17,3,64,34,3,3,79,15,79,3,82,3,28,3,3,3,26,94,47,18,3,0,0,0,357,0,
+Best: P2
+110
+Illinois Avenue,Mediterranean Avenue,Pennsylvania Railroad,B & O Railroad,Short Line Railroad,New York Avenue,Tennessee Avenue,Pacific Avenue,
+1,0,0,2,1,0,1,0,
+3
+47,10,95,28,3,30,36,5,42,3,58,70,24,91,22,66,66,73,53,7,100,3,21,9,50,6,28,45,6,0,0,336,0,24,53,7,34,17,16,77,3,3,13,3,15,47,21,3,55,12,31,3,38,5,16,15,37,3,7,38,26,2,0,0,82,0,58,84,14,3,27,29,10,20,3,75,40,3,3,75,15,90,3,76,3,26,3,3,3,25,100,53,21,3,0,0,0,345,0,
+Best: P2
+112
+Short Line Railroad,B & O Railroad,New York Avenue,Virginia Avenue,Pennsylvania Avenue,Pennsylvania Railroad,Electric Company,
+0,0,1,1,0,0,1,0,
+0
+47,10,95,28,3,30,36,5,42,3,58,70,24,91,22,66,66,73,53,7,100,3,21,9,50,6,28,45,6,0,0,336,0,24,53,7,34,17,16,77,3,3,13,3,15,47,21,3,55,12,31,3,38,5,16,15,37,3,7,38,26,2,0,0,82,0,58,84,14,3,27,29,10,20,3,75,40,3,3,75,15,90,3,76,3,26,3,3,3,25,100,53,21,3,0,0,0,345,0,
+Best: P3
+104
+Baltic Avenue,New York Avenue,Boardwalk,Indiana Avenue,Connecticut Avenue,Atlantic Avenue,
+1,1,0,1,1,1,0,1,
+3
+54,11,100,24,3,33,33,4,38,3,56,63,20,85,21,61,63,73,58,6,92,3,18,8,41,5,30,42,6,0,0,358,0,22,52,7,36,17,14,89,3,3,14,3,14,42,19,3,50,13,35,3,37,5,13,16,31,3,7,40,25,1,0,0,83,0,61,83,13,3,27,26,10,19,3,76,41,3,3,90,14,78,3,77,3,25,3,3,3,24,84,46,18,3,0,0,0,312,0,
+Best: P3
+111
+Tennessee Avenue,Short Line Railroad,Illinois Avenue,Vermont Avenue,Virginia Avenue,Oriental Avenue,Atlantic Avenue,States Avenue,Pennsylvania Railroad,
+0,2,2,1,1,1,0,0,
+4
+54,11,100,24,3,33,33,4,38,3,56,63,20,85,21,61,63,73,58,6,92,3,18,8,41,5,30,42,6,0,0,358,0,22,52,7,36,17,14,89,3,3,14,3,14,42,19,3,50,13,35,3,37,5,13,16,31,3,7,40,25,1,0,0,83,0,61,83,13,3,27,26,10,19,3,76,41,3,3,90,14,78,3,77,3,25,3,3,3,24,84,46,18,3,0,0,0,312,0,
+Best: P3
+108
+Pacific Avenue,Pennsylvania Railroad,B & O Railroad,Mediterranean Avenue,Marvin Gardens,Reading Railroad,
+1,0,0,0,0,1,1,0,
+0
+54,11,100,24,3,33,33,4,38,3,56,63,20,85,21,61,63,73,58,6,92,3,18,8,41,5,30,42,6,0,0,358,0,22,52,7,36,17,14,89,3,3,14,3,14,42,19,3,50,13,35,3,37,5,13,16,31,3,7,40,25,1,0,0,83,0,61,83,13,3,27,26,10,19,3,76,41,3,3,90,14,78,3,77,3,25,3,3,3,24,84,46,18,3,0,0,0,312,0,
+Best: P3
+114
+St. Charles Place,Ventnor Avenue,Pennsylvania Avenue,Mediterranean Avenue,Water Works,Electric Company,Oriental Avenue,St. James Place,Park Place,
+1,1,1,1,0,1,1,1,
+8
+54,11,100,24,3,33,33,4,38,3,56,63,20,85,21,61,63,73,58,6,92,3,18,8,41,5,30,42,6,0,0,358,0,22,52,7,36,17,14,89,3,3,14,3,14,42,19,3,50,13,35,3,37,5,13,16,31,3,7,40,25,1,0,0,83,0,61,83,13,3,27,26,10,19,3,76,41,3,3,90,14,78,3,77,3,25,3,3,3,24,84,46,18,3,0,0,0,312,0,
+Best: P3
+112
+B & O Railroad,Short Line Railroad,Virginia Avenue,Mediterranean Avenue,Park Place,States Avenue,
+1,0,2,0,0,0,0,1,
+10
+54,11,100,24,3,33,33,4,38,3,56,63,20,85,21,61,63,73,58,6,92,3,18,8,41,5,30,42,6,0,0,358,0,22,52,7,36,17,14,89,3,3,14,3,14,42,19,3,50,13,35,3,37,5,13,16,31,3,7,40,25,1,0,0,83,0,61,83,13,3,27,26,10,19,3,76,41,3,3,90,14,78,3,77,3,25,3,3,3,24,84,46,18,3,0,0,0,312,0,
+Best: P2
+111
+Pacific Avenue,New York Avenue,Indiana Avenue,Marvin Gardens,States Avenue,Connecticut Avenue,Boardwalk,Water Works,
+0,1,1,1,1,1,1,1,
+1
+60,10,100,26,3,30,29,4,33,3,52,77,20,86,21,56,66,66,48,6,84,3,20,6,41,5,27,46,5,0,0,329,0,24,55,6,34,14,15,92,3,3,13,3,13,48,20,3,50,12,29,3,36,4,15,17,34,3,7,48,23,0,0,0,87,0,69,76,13,3,28,26,10,23,3,72,34,3,3,86,11,74,3,80,3,22,3,3,3,20,79,40,20,3,0,0,0,320,0,
+Best: P3
+110
+Tennessee Avenue,Illinois Avenue,B & O Railroad,Short Line Railroad,Reading Railroad,North Carolina Avenue,New York Avenue,St. Charles Place,Oriental Avenue,Atlantic Avenue,Pennsylvania Avenue,
+0,1,1,2,1,1,2,0,
+7
+51,9,89,28,3,28,26,4,32,3,62,71,22,78,22,60,62,64,49,5,77,3,18,7,47,5,29,42,5,0,0,291,0,22,60,7,33,17,14,100,3,3,14,3,12,41,21,3,57,10,29,3,31,4,15,14,35,3,7,45,22,0,0,0,90,0,56,88,14,3,29,25,9,18,3,64,40,3,3,80,12,72,3,70,3,26,3,3,3,19,87,39,21,3,0,0,0,341,0,
+Best: P2
+108
+Baltic Avenue,Pacific Avenue,Connecticut Avenue,Illinois Avenue,Oriental Avenue,
+1,2,0,0,1,0,1,0,
+5
+52,10,100,29,3,30,26,4,34,3,52,66,19,71,19,58,72,75,42,6,72,3,21,5,50,5,24,45,5,0,0,341,0,25,66,7,31,15,16,100,3,3,14,3,12,41,20,3,49,12,25,3,34,3,16,16,32,3,7,46,22,0,0,0,79,0,53,75,14,3,24,24,10,18,3,74,43,3,3,81,11,80,3,77,3,24,3,3,3,20,84,37,18,3,0,0,0,293,0,
+Best: P2
+109
+Illinois Avenue,Connecticut Avenue,New York Avenue,Baltic Avenue,Tennessee Avenue,Pacific Avenue,Pennsylvania Avenue,St. Charles Place,Boardwalk,
+1,1,1,2,1,0,2,1,
+7
+52,10,100,29,3,30,26,4,34,3,52,66,19,71,19,58,72,75,42,6,72,3,21,5,50,5,24,45,5,0,0,341,0,25,66,7,31,15,16,100,3,3,14,3,12,41,20,3,49,12,25,3,34,3,16,16,32,3,7,46,22,0,0,0,79,0,53,75,14,3,24,24,10,18,3,74,43,3,3,81,11,80,3,77,3,24,3,3,3,20,84,37,18,3,0,0,0,293,0,
+Best: P2
+114
+Pennsylvania Railroad,Ventnor Avenue,Short Line Railroad,Virginia Avenue,
+0,0,1,0,0,1,0,0,
+0
+52,10,100,29,3,30,26,4,34,3,52,66,19,71,19,58,72,75,42,6,72,3,21,5,50,5,24,45,5,0,0,341,0,25,66,7,31,15,16,100,3,3,14,3,12,41,20,3,49,12,25,3,34,3,16,16,32,3,7,46,22,0,0,0,79,0,53,75,14,3,24,24,10,18,3,74,43,3,3,81,11,80,3,77,3,24,3,3,3,20,84,37,18,3,0,0,0,293,0,
+Best: P1
+115
+Mediterranean Avenue,Ventnor Avenue,Baltic Avenue,Oriental Avenue,Marvin Gardens,Boardwalk,
+2,1,0,0,0,2,0,1,
+5
+45,11,100,34,3,30,20,3,31,3,59,67,19,62,21,56,57,80,34,6,75,3,17,5,52,6,23,44,4,0,0,312,0,30,60,8,26,12,14,100,3,3,12,3,12,40,20,3,53,11,24,3,39,3,18,14,35,3,6,42,19,0,0,0,72,0,53,65,13,3,25,26,10,18,3,69,40,3,3,84,10,90,3,66,3,20,3,3,3,16,88,36,21,3,0,0,0,299,0,
+Best: P3
+110
+Connecticut Avenue,Atlantic Avenue,Short Line Railroad,Pennsylvania Railroad,Tennessee Avenue,Illinois Avenue,B & O Railroad,Oriental Avenue,Virginia Avenue,Ventnor Avenue,Electric Company,New York Avenue,St. Charles Place,Baltic Avenue,Water Works,States Avenue,Mediterranean Avenue,
+2,2,3,2,1,2,0,0,
+12
+54,10,95,27,3,25,23,3,31,3,63,61,19,70,22,68,62,76,36,5,80,3,18,4,54,5,26,50,4,0,0,271,0,26,58,6,27,12,13,93,3,3,11,3,12,36,21,3,45,11,21,3,43,3,14,14,35,3,5,49,24,0,0,0,63,0,51,63,15,3,27,21,10,18,3,65,40,3,3,74,9,88,3,62,3,23,3,3,3,17,78,37,17,3,0,0,0,320,0,
+Best: P3
+112
+New York Avenue,Illinois Avenue,Oriental Avenue,Pennsylvania Railroad,Ventnor Avenue,Baltic Avenue,Connecticut Avenue,North Carolina Avenue,Short Line Railroad,Electric Company,Virginia Avenue,Pennsylvania Avenue,
+1,2,1,1,1,1,2,0,
+8
+54,10,95,27,3,25,23,3,31,3,63,61,19,70,22,68,62,76,36,5,80,3,18,4,54,5,26,50,4,0,0,271,0,26,58,6,27,12,13,93,3,3,11,3,12,36,21,3,45,11,21,3,43,3,14,14,35,3,5,49,24,0,0,0,63,0,51,63,15,3,27,21,10,18,3,65,40,3,3,74,9,88,3,62,3,23,3,3,3,17,78,37,17,3,0,0,0,320,0,
+Best: P2
+110
+Mediterranean Avenue,Virginia Avenue,Baltic Avenue,B & O Railroad,Boardwalk,Pennsylvania Avenue,Pacific Avenue,
+2,0,1,0,0,0,2,1,
+7
+59,11,100,25,3,25,21,3,32,3,70,61,21,64,20,63,60,86,39,6,71,3,19,4,57,6,27,57,2,0,0,283,0,22,64,6,28,12,12,88,3,3,12,3,11,35,21,3,43,9,20,3,43,3,13,12,33,3,5,53,21,0,0,0,59,0,47,69,16,3,27,19,11,16,3,55,33,3,3,89,10,78,3,69,3,21,3,3,3,18,81,34,19,3,0,0,0,343,0,
+Best: P3
+112
+Short Line Railroad,Virginia Avenue,Tennessee Avenue,Pennsylvania Railroad,Boardwalk,Electric Company,Oriental Avenue,St. Charles Place,
+0,1,2,1,0,0,0,1,
+2
+55,10,84,24,3,23,23,3,31,3,57,60,22,69,24,62,58,85,40,5,66,3,20,4,62,5,27,46,2,0,0,271,0,27,60,7,28,13,12,92,3,3,10,3,12,30,24,3,42,11,22,3,43,3,11,11,38,3,5,47,20,0,0,0,64,0,48,60,14,3,26,20,11,18,3,64,31,3,3,72,9,89,3,70,3,22,3,3,3,15,69,30,19,3,0,0,0,284,0,
+Best: P3
+113
+B & O Railroad,St. Charles Place,Pennsylvania Avenue,Tennessee Avenue,Vermont Avenue,Electric Company,Ventnor Avenue,Oriental Avenue,
+0,2,1,1,0,1,1,0,
+2
+55,10,84,24,3,23,23,3,31,3,57,60,22,69,24,62,58,85,40,5,66,3,20,4,62,5,27,46,2,0,0,271,0,27,60,7,28,13,12,92,3,3,10,3,12,30,24,3,42,11,22,3,43,3,11,11,38,3,5,47,20,0,0,0,64,0,48,60,14,3,26,20,11,18,3,64,31,3,3,72,9,89,3,70,3,22,3,3,3,15,69,30,19,3,0,0,0,284,0,
+Best: P3
+108
+St. Charles Place,Tennessee Avenue,Mediterranean Avenue,Ventnor Avenue,Short Line Railroad,B & O Railroad,Oriental Avenue,New York Avenue,
+1,1,1,2,0,1,0,0,
+3
+55,10,84,24,3,23,23,3,31,3,57,60,22,69,24,62,58,85,40,5,66,3,20,4,62,5,27,46,2,0,0,271,0,27,60,7,28,13,12,92,3,3,10,3,12,30,24,3,42,11,22,3,43,3,11,11,38,3,5,47,20,0,0,0,64,0,48,60,14,3,26,20,11,18,3,64,31,3,3,72,9,89,3,70,3,22,3,3,3,15,69,30,19,3,0,0,0,284,0,
+Best: P3
+112
+Tennessee Avenue,B & O Railroad,St. Charles Place,Short Line Railroad,Water Works,Atlantic Avenue,Illinois Avenue,Marvin Gardens,
+0,0,1,1,1,2,0,0,
+2
+55,10,84,24,3,23,23,3,31,3,57,60,22,69,24,62,58,85,40,5,66,3,20,4,62,5,27,46,2,0,0,271,0,27,60,7,28,13,12,92,3,3,10,3,12,30,24,3,42,11,22,3,43,3,11,11,38,3,5,47,20,0,0,0,64,0,48,60,14,3,26,20,11,18,3,64,31,3,3,72,9,89,3,70,3,22,3,3,3,15,69,30,19,3,0,0,0,284,0,
+Best: P3
+109
+New York Avenue,Illinois Avenue,Mediterranean Avenue,Pacific Avenue,Park Place,Short Line Railroad,
+1,0,0,1,1,0,1,1,
+0
+55,10,84,24,3,23,23,3,31,3,57,60,22,69,24,62,58,85,40,5,66,3,20,4,62,5,27,46,2,0,0,271,0,27,60,7,28,13,12,92,3,3,10,3,12,30,24,3,42,11,22,3,43,3,11,11,38,3,5,47,20,0,0,0,64,0,48,60,14,3,26,20,11,18,3,64,31,3,3,72,9,89,3,70,3,22,3,3,3,15,69,30,19,3,0,0,0,284,0,
+Best: P2
+112
+Virginia Avenue,Ventnor Avenue,Pacific Avenue,Kentucky Avenue,Mediterranean Avenue,Electric Company,
+1,0,1,0,1,1,1,0,
+2
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+106
+Oriental Avenue,Electric Company,Pacific Avenue,Mediterranean Avenue,New York Avenue,Pennsylvania Avenue,B & O Railroad,Marvin Gardens,Short Line Railroad,Kentucky Avenue,St. Charles Place,Water Works,
+1,1,1,1,1,1,2,0,
+8
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+112
+Illinois Avenue,Pacific Avenue,B & O Railroad,Connecticut Avenue,Baltic Avenue,Atlantic Avenue,Marvin Gardens,
+1,1,0,0,1,2,1,0,
+0
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+115
+Ventnor Avenue,Tennessee Avenue,New York Avenue,Illinois Avenue,Mediterranean Avenue,Virginia Avenue,Short Line Railroad,
+1,0,1,2,1,1,0,0,
+10
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+112
+Marvin Gardens,Baltic Avenue,St. James Place,Pennsylvania Avenue,Pennsylvania Railroad,States Avenue,Boardwalk,Virginia Avenue,
+1,0,2,1,0,1,1,1,
+1
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+110
+Atlantic Avenue,Illinois Avenue,St. James Place,B & O Railroad,Pacific Avenue,Tennessee Avenue,States Avenue,New York Avenue,Electric Company,St. Charles Place,Indiana Avenue,Park Place,Boardwalk,Short Line Railroad,Vermont Avenue,
+0,1,2,3,2,1,1,2,
+10
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+110
+Ventnor Avenue,Illinois Avenue,New York Avenue,States Avenue,Pennsylvania Avenue,Kentucky Avenue,
+0,0,1,1,2,1,1,0,
+6
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+109
+Tennessee Avenue,St. Charles Place,Illinois Avenue,Atlantic Avenue,Marvin Gardens,
+0,0,1,1,1,2,0,0,
+4
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P2
+109
+B & O Railroad,Ventnor Avenue,Mediterranean Avenue,Tennessee Avenue,Pennsylvania Avenue,Short Line Railroad,Indiana Avenue,
+1,0,0,1,1,1,1,0,
+6
+48,11,98,25,3,24,19,3,30,3,45,65,25,63,24,62,60,76,37,5,74,3,20,5,64,4,24,47,0,0,0,270,0,26,61,8,29,11,13,80,3,3,9,3,12,33,22,3,38,10,24,3,42,3,11,10,34,3,4,45,21,0,0,0,59,0,49,64,17,3,25,19,10,18,3,64,27,3,3,71,8,100,3,79,3,23,3,3,3,13,56,27,19,3,0,0,0,289,0,
+Best: P3
+110
+Ventnor Avenue,Park Place,Virginia Avenue,Connecticut Avenue,Oriental Avenue,Electric Company,St. Charles Place,
+0,2,2,0,0,1,0,1,
+3
+50,10,82,24,3,23,21,3,26,3,47,59,27,63,22,70,66,77,38,4,70,3,20,5,60,3,23,43,0,0,0,288,0,25,55,7,30,11,12,80,3,3,8,3,12,37,23,3,31,10,20,3,43,3,11,11,35,3,4,39,19,0,0,0,62,0,54,64,18,3,20,23,9,17,3,71,26,3,3,74,7,93,3,64,3,22,3,3,3,13,50,22,22,3,0,0,0,291,0,
+Best: P2
+113
+Mediterranean Avenue,Baltic Avenue,New York Avenue,Short Line Railroad,Pacific Avenue,Connecticut Avenue,North Carolina Avenue,Oriental Avenue,Boardwalk,
+2,2,0,1,0,0,2,1,
+3
+46,11,86,24,3,22,19,3,28,3,41,59,28,57,24,59,59,65,41,4,63,3,18,5,60,3,24,49,0,0,0,265,0,22,57,7,32,10,10,68,3,3,9,3,13,32,23,3,31,9,24,3,41,3,11,9,39,3,4,45,23,0,0,0,57,0,50,74,18,3,23,23,10,17,3,71,26,3,3,78,7,84,3,80,3,21,3,3,3,12,51,26,17,3,0,0,0,269,0,
+Best: P2
+111
+Tennessee Avenue,Connecticut Avenue,Illinois Avenue,Pennsylvania Avenue,New York Avenue,St. Charles Place,Atlantic Avenue,
+0,1,1,2,1,1,1,0,
+0
+46,11,86,24,3,22,19,3,28,3,41,59,28,57,24,59,59,65,41,4,63,3,18,5,60,3,24,49,0,0,0,265,0,22,57,7,32,10,10,68,3,3,9,3,13,32,23,3,31,9,24,3,41,3,11,9,39,3,4,45,23,0,0,0,57,0,50,74,18,3,23,23,10,17,3,71,26,3,3,78,7,84,3,80,3,21,3,3,3,12,51,26,17,3,0,0,0,269,0,
+Best: P1
+109
+Ventnor Avenue,Atlantic Avenue,Water Works,Virginia Avenue,Park Place,Indiana Avenue,Kentucky Avenue,
+0,0,1,0,2,2,0,1,
+7
+40,9,74,23,3,24,21,3,29,3,44,61,25,54,26,56,62,74,41,4,64,3,17,4,52,3,24,46,0,0,0,284,0,21,60,6,36,8,9,77,3,3,10,3,13,33,25,3,25,7,26,3,40,3,11,8,39,3,3,42,20,0,0,0,51,0,44,78,15,3,20,26,9,18,3,68,26,3,3,67,6,91,3,83,3,21,3,3,3,13,54,24,16,3,0,0,0,276,0,
+Best: P2
+112
+Ventnor Avenue,New York Avenue,B & O Railroad,Short Line Railroad,Park Place,Atlantic Avenue,Kentucky Avenue,
+0,0,0,1,1,2,0,1,
+0
+43,10,69,26,3,20,23,3,30,3,47,51,29,48,24,50,55,61,41,4,68,3,18,3,63,3,26,43,0,0,0,298,0,18,58,5,29,8,9,75,3,3,9,3,12,29,25,3,24,9,26,3,35,3,12,8,44,3,3,44,19,0,0,0,52,0,47,68,16,3,21,27,10,19,3,72,29,3,3,79,7,94,3,92,3,22,3,3,3,13,54,26,16,3,0,0,0,250,0,
+Best: P2
+113
+Ventnor Avenue,Park Place,New York Avenue,Virginia Avenue,Short Line Railroad,Baltic Avenue,St. Charles Place,Pacific Avenue,Mediterranean Avenue,B & O Railroad,Oriental Avenue,Water Works,North Carolina Avenue,
+2,1,2,1,0,1,2,1,
+1
+43,10,69,26,3,20,23,3,30,3,47,51,29,48,24,50,55,61,41,4,68,3,18,3,63,3,26,43,0,0,0,298,0,18,58,5,29,8,9,75,3,3,9,3,12,29,25,3,24,9,26,3,35,3,12,8,44,3,3,44,19,0,0,0,52,0,47,68,16,3,21,27,10,19,3,72,29,3,3,79,7,94,3,92,3,22,3,3,3,13,54,26,16,3,0,0,0,250,0,
+Best: P2
+112
+Marvin Gardens,Tennessee Avenue,Water Works,Electric Company,Pennsylvania Avenue,States Avenue,
+0,0,1,1,0,1,1,0,
+1
+43,10,69,26,3,20,23,3,30,3,47,51,29,48,24,50,55,61,41,4,68,3,18,3,63,3,26,43,0,0,0,298,0,18,58,5,29,8,9,75,3,3,9,3,12,29,25,3,24,9,26,3,35,3,12,8,44,3,3,44,19,0,0,0,52,0,47,68,16,3,21,27,10,19,3,72,29,3,3,79,7,94,3,92,3,22,3,3,3,13,54,26,16,3,0,0,0,250,0,
+Best: P3
+108
+Virginia Avenue,Illinois Avenue,B & O Railroad,Pennsylvania Avenue,Baltic Avenue,States Avenue,Boardwalk,
+1,0,2,0,1,0,1,1,
+4
+44,9,61,26,3,21,23,3,29,3,44,55,31,51,23,50,66,53,43,4,74,3,19,3,65,3,26,38,0,0,0,306,0,19,64,6,35,8,9,77,3,3,8,3,12,28,26,3,20,8,24,3,42,3,11,8,42,3,3,42,20,0,0,0,44,0,53,58,16,3,21,23,9,19,3,68,23,3,3,66,5,81,3,96,3,19,3,3,3,13,47,25,17,3,0,0,0,226,0,
+Best: P3
+111
+Illinois Avenue,Tennessee Avenue,Virginia Avenue,Short Line Railroad,St. James Place,
+0,0,1,2,1,0,0,0,
+2
+44,9,61,26,3,21,23,3,29,3,44,55,31,51,23,50,66,53,43,4,74,3,19,3,65,3,26,38,0,0,0,306,0,19,64,6,35,8,9,77,3,3,8,3,12,28,26,3,20,8,24,3,42,3,11,8,42,3,3,42,20,0,0,0,44,0,53,58,16,3,21,23,9,19,3,68,23,3,3,66,5,81,3,96,3,19,3,3,3,13,47,25,17,3,0,0,0,226,0,
+Best: P2
+113
+Oriental Avenue,New York Avenue,Mediterranean Avenue,Virginia Avenue,Ventnor Avenue,Illinois Avenue,Tennessee Avenue,Pennsylvania Avenue,Atlantic Avenue,Reading Railroad,
+1,1,1,2,1,2,1,0,
+0
+42,9,58,30,3,19,20,3,24,3,48,57,34,43,23,48,65,58,44,4,62,3,19,3,69,3,28,37,0,0,0,296,0,15,76,4,38,8,8,83,3,3,7,3,11,23,29,3,20,7,25,3,41,3,10,8,37,3,3,45,19,0,0,0,41,0,62,53,14,3,25,24,8,17,3,65,27,3,3,64,5,83,3,95,3,18,3,3,3,11,43,30,17,3,0,0,0,215,0,
+Best: P2
+112
+Tennessee Avenue,Pennsylvania Avenue,Virginia Avenue,Reading Railroad,
+0,0,1,1,0,0,1,0,
+6
+42,9,58,30,3,19,20,3,24,3,48,57,34,43,23,48,65,58,44,4,62,3,19,3,69,3,28,37,0,0,0,296,0,15,76,4,38,8,8,83,3,3,7,3,11,23,29,3,20,7,25,3,41,3,10,8,37,3,3,45,19,0,0,0,41,0,62,53,14,3,25,24,8,17,3,65,27,3,3,64,5,83,3,95,3,18,3,3,3,11,43,30,17,3,0,0,0,215,0,
+Best: P2
+111
+B & O Railroad,Pacific Avenue,Mediterranean Avenue,Connecticut Avenue,New York Avenue,Virginia Avenue,Kentucky Avenue,Boardwalk,Pennsylvania Railroad,Short Line Railroad,
+1,1,1,1,1,0,1,1,
+6
+42,9,58,30,3,19,20,3,24,3,48,57,34,43,23,48,65,58,44,4,62,3,19,3,69,3,28,37,0,0,0,296,0,15,76,4,38,8,8,83,3,3,7,3,11,23,29,3,20,7,25,3,41,3,10,8,37,3,3,45,19,0,0,0,41,0,62,53,14,3,25,24,8,17,3,65,27,3,3,64,5,83,3,95,3,18,3,3,3,11,43,30,17,3,0,0,0,215,0,
+Best: P3
+112
+Illinois Avenue,Oriental Avenue,St. Charles Place,Mediterranean Avenue,States Avenue,Pennsylvania Avenue,
+1,1,2,0,1,0,1,0,
+2
+37,9,58,26,3,18,21,3,26,3,47,59,36,38,23,57,70,63,44,4,67,3,20,3,66,3,28,39,0,0,0,291,0,16,90,4,33,9,8,82,3,3,7,3,10,21,32,3,23,7,23,3,37,3,10,7,30,3,3,48,17,0,0,0,41,0,60,59,14,3,23,23,9,16,3,69,23,3,3,77,4,79,3,87,3,15,3,3,3,9,41,32,16,3,0,0,0,261,0,
+Best: P3
+108
+Mediterranean Avenue,Electric Company,Tennessee Avenue,
+1,0,0,1,0,0,0,0,
+1
+37,9,58,26,3,18,21,3,26,3,47,59,36,38,23,57,70,63,44,4,67,3,20,3,66,3,28,39,0,0,0,291,0,16,90,4,33,9,8,82,3,3,7,3,10,21,32,3,23,7,23,3,37,3,10,7,30,3,3,48,17,0,0,0,41,0,60,59,14,3,23,23,9,16,3,69,23,3,3,77,4,79,3,87,3,15,3,3,3,9,41,32,16,3,0,0,0,261,0,
+Best: P3
+114
+New York Avenue,B & O Railroad,Connecticut Avenue,Tennessee Avenue,Pacific Avenue,Vermont Avenue,Virginia Avenue,Water Works,
+0,2,1,2,0,0,1,0,
+4
+37,9,58,26,3,18,21,3,26,3,47,59,36,38,23,57,70,63,44,4,67,3,20,3,66,3,28,39,0,0,0,291,0,16,90,4,33,9,8,82,3,3,7,3,10,21,32,3,23,7,23,3,37,3,10,7,30,3,3,48,17,0,0,0,41,0,60,59,14,3,23,23,9,16,3,69,23,3,3,77,4,79,3,87,3,15,3,3,3,9,41,32,16,3,0,0,0,261,0,
+Best: P2
+110
+Pacific Avenue,Tennessee Avenue,Illinois Avenue,Mediterranean Avenue,Connecticut Avenue,Pennsylvania Railroad,St. James Place,New York Avenue,Kentucky Avenue,Water Works,
+1,1,0,3,2,0,1,0,
+6
+36,10,47,26,3,15,21,3,26,3,53,57,33,38,21,51,61,64,47,3,64,3,20,3,77,3,31,34,0,0,0,306,0,15,97,4,34,8,6,84,3,3,6,3,8,23,27,3,26,6,21,3,42,3,10,7,35,3,3,46,19,0,0,0,39,0,54,60,14,3,26,23,8,14,3,78,26,3,3,71,4,69,3,80,3,16,3,3,3,8,42,28,19,3,0,0,0,232,0,
+Best: P3
+112
+Ventnor Avenue,New York Avenue,Mediterranean Avenue,Short Line Railroad,Baltic Avenue,
+2,0,0,1,0,1,0,0,
+2
+31,9,48,27,3,18,24,3,22,3,52,56,29,32,19,46,62,64,46,3,57,3,21,3,66,3,32,38,0,0,0,283,0,16,86,3,38,8,7,87,3,3,6,3,8,20,30,3,24,6,24,3,35,3,9,6,30,3,3,51,16,0,0,0,42,0,66,58,16,3,26,26,9,14,3,83,23,3,3,73,4,63,3,93,3,16,3,3,3,8,44,30,17,3,0,0,0,265,0,
+Best: P3
+110
+Illinois Avenue,Oriental Avenue,Pacific Avenue,Pennsylvania Avenue,Baltic Avenue,Water Works,New York Avenue,B & O Railroad,
+1,1,0,1,1,0,2,0,
+4
+31,9,48,27,3,18,24,3,22,3,52,56,29,32,19,46,62,64,46,3,57,3,21,3,66,3,32,38,0,0,0,283,0,16,86,3,38,8,7,87,3,3,6,3,8,20,30,3,24,6,24,3,35,3,9,6,30,3,3,51,16,0,0,0,42,0,66,58,16,3,26,26,9,14,3,83,23,3,3,73,4,63,3,93,3,16,3,3,3,8,44,30,17,3,0,0,0,265,0,
+Best: P2
+110
+Tennessee Avenue,Illinois Avenue,Baltic Avenue,B & O Railroad,Atlantic Avenue,Pennsylvania Railroad,Connecticut Avenue,
+1,1,0,1,1,1,0,0,
+0
+32,8,52,24,3,16,24,3,18,3,61,57,31,30,21,46,67,57,45,3,59,3,18,3,68,3,28,30,0,0,0,236,0,18,81,3,36,9,6,93,3,3,6,3,8,21,31,3,25,6,28,3,37,3,10,5,26,3,3,45,16,0,0,0,36,0,60,69,14,3,23,24,9,14,3,72,22,3,3,81,4,73,3,88,3,18,3,3,3,7,48,23,16,3,0,0,0,267,0,
+Best: P2
+110
+Tennessee Avenue,B & O Railroad,Mediterranean Avenue,Atlantic Avenue,Connecticut Avenue,St. Charles Place,Baltic Avenue,
+2,1,1,1,0,1,0,0,
+5
+32,8,52,24,3,16,24,3,18,3,61,57,31,30,21,46,67,57,45,3,59,3,18,3,68,3,28,30,0,0,0,236,0,18,81,3,36,9,6,93,3,3,6,3,8,21,31,3,25,6,28,3,37,3,10,5,26,3,3,45,16,0,0,0,36,0,60,69,14,3,23,24,9,14,3,72,22,3,3,81,4,73,3,88,3,18,3,3,3,7,48,23,16,3,0,0,0,267,0,
+Best: P3
+112
+Tennessee Avenue,Mediterranean Avenue,States Avenue,Pacific Avenue,Virginia Avenue,
+1,0,2,1,0,0,1,0,
+9
+30,8,56,26,3,17,27,3,18,3,50,52,31,30,17,42,70,48,47,3,53,3,18,3,60,3,28,32,0,0,0,237,0,20,77,3,33,7,7,81,3,3,6,3,7,21,29,3,20,6,22,3,41,3,9,6,22,3,3,48,16,0,0,0,35,0,57,71,15,3,22,26,8,12,3,90,25,3,3,75,4,67,3,84,3,19,3,3,3,7,54,24,14,3,0,0,0,264,0,
+Best: P3
+109
+Electric Company,Virginia Avenue,St. Charles Place,Pacific Avenue,Pennsylvania Avenue,St. James Place,Oriental Avenue,Atlantic Avenue,Marvin Gardens,
+0,1,2,1,0,2,2,0,
+4
+30,8,56,26,3,17,27,3,18,3,50,52,31,30,17,42,70,48,47,3,53,3,18,3,60,3,28,32,0,0,0,237,0,20,77,3,33,7,7,81,3,3,6,3,7,21,29,3,20,6,22,3,41,3,9,6,22,3,3,48,16,0,0,0,35,0,57,71,15,3,22,26,8,12,3,90,25,3,3,75,4,67,3,84,3,19,3,3,3,7,54,24,14,3,0,0,0,264,0,
+Best: P2
+110
+Tennessee Avenue,North Carolina Avenue,Short Line Railroad,Illinois Avenue,Vermont Avenue,Water Works,Atlantic Avenue,
+0,1,0,1,1,1,1,0,
+0
+35,6,50,25,3,19,30,3,15,3,60,50,31,25,19,35,70,51,48,3,49,3,17,3,53,3,32,33,0,0,0,227,0,16,74,3,36,7,7,77,3,3,6,3,8,18,32,3,20,7,25,3,45,3,10,6,26,3,3,50,14,0,0,0,32,0,52,71,13,3,20,22,9,10,3,94,25,3,3,74,4,67,3,88,3,19,3,3,3,6,53,23,13,3,0,0,0,255,0,
+Best: P2
+110
+Tennessee Avenue,Baltic Avenue,B & O Railroad,Short Line Railroad,St. Charles Place,Park Place,
+1,0,1,1,0,0,0,1,
+8
+35,6,50,25,3,19,30,3,15,3,60,50,31,25,19,35,70,51,48,3,49,3,17,3,53,3,32,33,0,0,0,227,0,16,74,3,36,7,7,77,3,3,6,3,8,18,32,3,20,7,25,3,45,3,10,6,26,3,3,50,14,0,0,0,32,0,52,71,13,3,20,22,9,10,3,94,25,3,3,74,4,67,3,88,3,19,3,3,3,6,53,23,13,3,0,0,0,255,0,
+Best: P2
+111
+Tennessee Avenue,New York Avenue,Electric Company,Pennsylvania Avenue,Virginia Avenue,Baltic Avenue,Connecticut Avenue,
+1,1,1,2,0,0,1,0,
+0
+35,6,50,25,3,19,30,3,15,3,60,50,31,25,19,35,70,51,48,3,49,3,17,3,53,3,32,33,0,0,0,227,0,16,74,3,36,7,7,77,3,3,6,3,8,18,32,3,20,7,25,3,45,3,10,6,26,3,3,50,14,0,0,0,32,0,52,71,13,3,20,22,9,10,3,94,25,3,3,74,4,67,3,88,3,19,3,3,3,6,53,23,13,3,0,0,0,255,0,
+Best: P2
+113
+St. Charles Place,Virginia Avenue,Marvin Gardens,Mediterranean Avenue,Short Line Railroad,Tennessee Avenue,B & O Railroad,Boardwalk,
+1,0,2,1,0,1,0,1,
+4
+35,6,50,25,3,19,30,3,15,3,60,50,31,25,19,35,70,51,48,3,49,3,17,3,53,3,32,33,0,0,0,227,0,16,74,3,36,7,7,77,3,3,6,3,8,18,32,3,20,7,25,3,45,3,10,6,26,3,3,50,14,0,0,0,32,0,52,71,13,3,20,22,9,10,3,94,25,3,3,74,4,67,3,88,3,19,3,3,3,6,53,23,13,3,0,0,0,255,0,
+Best: P3
+113
+St. Charles Place,Ventnor Avenue,B & O Railroad,Pennsylvania Railroad,Marvin Gardens,
+0,0,1,0,0,2,0,0,
+3
+39,7,53,24,3,17,33,3,16,3,54,48,36,25,16,34,78,48,51,3,52,3,18,3,50,3,35,28,0,0,0,232,0,14,73,3,31,5,7,81,3,3,5,3,7,17,32,3,21,5,26,3,48,3,11,5,21,3,3,42,14,0,0,0,37,0,52,80,14,3,18,23,9,10,3,79,27,3,3,70,4,72,3,84,3,18,3,3,3,5,54,27,13,3,0,0,0,246,0,
+Best: P3
+114
+Baltic Avenue,North Carolina Avenue,Illinois Avenue,Boardwalk,Marvin Gardens,St. James Place,Pennsylvania Railroad,
+1,0,0,1,1,1,1,1,
+6
+39,7,53,24,3,17,33,3,16,3,54,48,36,25,16,34,78,48,51,3,52,3,18,3,50,3,35,28,0,0,0,232,0,14,73,3,31,5,7,81,3,3,5,3,7,17,32,3,21,5,26,3,48,3,11,5,21,3,3,42,14,0,0,0,37,0,52,80,14,3,18,23,9,10,3,79,27,3,3,70,4,72,3,84,3,18,3,3,3,5,54,27,13,3,0,0,0,246,0,
+Best: P2
+111
+Atlantic Avenue,Ventnor Avenue,Virginia Avenue,Connecticut Avenue,New York Avenue,
+0,1,1,1,0,2,0,0,
+0
+42,6,51,25,3,16,36,3,13,3,56,56,32,26,16,28,75,59,54,3,55,3,14,3,53,3,40,33,0,0,0,219,0,16,75,3,27,4,6,76,3,3,5,3,7,17,34,3,20,5,26,3,43,3,11,5,20,3,3,43,14,0,0,0,34,0,58,70,13,3,18,22,9,9,3,84,31,3,3,62,4,60,3,88,3,17,3,3,3,5,59,27,13,3,0,0,0,218,0,
+Best: P2
+106
+Electric Company,Pacific Avenue,Oriental Avenue,Indiana Avenue,Pennsylvania Avenue,
+0,1,0,0,1,0,2,0,
+0
+42,6,51,25,3,16,36,3,13,3,56,56,32,26,16,28,75,59,54,3,55,3,14,3,53,3,40,33,0,0,0,219,0,16,75,3,27,4,6,76,3,3,5,3,7,17,34,3,20,5,26,3,43,3,11,5,20,3,3,43,14,0,0,0,34,0,58,70,13,3,18,22,9,9,3,84,31,3,3,62,4,60,3,88,3,17,3,3,3,5,59,27,13,3,0,0,0,218,0,
+Best: P5
+109
+B & O Railroad,Pennsylvania Railroad,Pennsylvania Avenue,New York Avenue,Connecticut Avenue,
+0,1,0,1,0,0,1,0,
+0
+41,4,54,24,3,15,35,3,16,3,47,58,32,30,17,24,74,65,43,3,59,3,16,3,55,3,43,31,0,0,0,181,0,16,77,3,27,4,4,76,3,3,4,3,5,16,33,3,18,5,25,3,38,3,12,4,23,3,3,38,14,0,0,0,32,0,51,62,10,3,18,22,9,10,3,77,32,3,3,63,4,61,3,85,3,16,3,3,3,5,55,24,12,3,0,0,0,196,0,
+Best: P2
+112
+Kentucky Avenue,Pacific Avenue,States Avenue,St. Charles Place,Virginia Avenue,Electric Company,
+0,0,3,0,1,0,1,0,
+9
+36,4,50,22,3,15,32,3,12,3,49,49,34,24,18,25,71,53,51,3,49,3,17,3,52,3,36,33,0,0,0,214,0,17,86,3,27,4,5,71,3,3,4,3,7,16,32,3,18,6,22,3,37,3,12,4,23,3,3,42,12,0,0,0,32,0,51,71,11,3,17,21,9,8,3,72,27,3,3,70,4,61,3,77,3,15,3,3,3,5,64,28,10,3,0,0,0,213,0,
+Best: P3
+112
+Tennessee Avenue,Mediterranean Avenue,B & O Railroad,Baltic Avenue,Short Line Railroad,Marvin Gardens,Electric Company,
+2,0,0,1,0,1,0,0,
+0
+33,4,49,19,3,16,29,3,12,3,47,46,40,24,17,25,84,50,46,3,60,3,19,3,47,3,40,34,0,0,0,252,0,16,99,3,27,4,4,66,3,3,4,3,7,15,34,3,16,5,20,3,42,3,11,5,20,3,3,44,14,0,0,0,36,0,51,63,11,3,20,22,8,8,3,83,32,3,3,57,3,58,3,83,3,16,3,3,3,4,62,24,10,3,0,0,0,173,0,
+Best: P3
+110
+Electric Company,Pacific Avenue,Short Line Railroad,Mediterranean Avenue,Connecticut Avenue,Pennsylvania Avenue,Pennsylvania Railroad,
+1,1,0,0,0,0,2,0,
+2
+33,4,49,19,3,16,29,3,12,3,47,46,40,24,17,25,84,50,46,3,60,3,19,3,47,3,40,34,0,0,0,252,0,16,99,3,27,4,4,66,3,3,4,3,7,15,34,3,16,5,20,3,42,3,11,5,20,3,3,44,14,0,0,0,36,0,51,63,11,3,20,22,8,8,3,83,32,3,3,57,3,58,3,83,3,16,3,3,3,4,62,24,10,3,0,0,0,173,0,
+Best: P2
+110
+Illinois Avenue,Pacific Avenue,Pennsylvania Railroad,St. Charles Place,Baltic Avenue,Virginia Avenue,St. James Place,
+1,0,2,1,1,0,1,0,
+2
+29,5,54,22,3,17,28,3,10,3,43,51,40,28,18,20,89,52,50,3,57,3,19,3,41,3,42,28,0,0,0,234,0,14,81,3,23,4,4,65,3,3,4,3,6,17,37,3,17,6,23,3,43,3,9,4,17,3,3,34,13,0,0,0,28,0,51,77,13,3,17,22,7,8,3,78,31,3,3,54,3,61,3,100,3,15,3,3,3,3,65,21,9,3,0,0,0,206,0,
+Best: P3
+110
+St. Charles Place,Marvin Gardens,Mediterranean Avenue,Illinois Avenue,Atlantic Avenue,Pacific Avenue,Park Place,B & O Railroad,Oriental Avenue,North Carolina Avenue,
+1,1,1,0,1,2,2,1,
+11
+33,4,48,19,3,14,30,3,12,3,49,46,42,23,15,20,97,55,53,3,56,3,17,3,48,3,41,29,0,0,0,218,0,17,80,3,23,4,4,58,3,3,4,3,6,14,35,3,16,5,18,3,46,3,9,4,20,3,3,35,13,0,0,0,35,0,44,71,12,3,15,25,7,9,3,86,33,3,3,61,3,62,3,82,3,15,3,3,3,3,62,23,9,3,0,0,0,209,0,
+Best: P2
+111
+Mediterranean Avenue,Indiana Avenue,Tennessee Avenue,North Carolina Avenue,Water Works,Oriental Avenue,B & O Railroad,Pennsylvania Avenue,Kentucky Avenue,Park Place,
+1,1,0,1,2,0,2,1,
+6
+29,3,59,22,3,15,28,3,10,3,53,52,41,24,17,20,86,61,45,3,60,3,21,3,44,3,38,32,0,0,0,235,0,15,82,3,21,4,5,63,3,3,4,3,6,15,33,3,15,5,18,3,40,3,10,4,15,3,3,38,12,0,0,0,27,0,45,72,11,3,15,22,8,7,3,86,35,3,3,51,3,59,3,96,3,17,3,3,3,3,67,24,10,3,0,0,0,186,0,
+Best: P3
+115
+B & O Railroad,Pacific Avenue,Connecticut Avenue,Short Line Railroad,St. James Place,Illinois Avenue,North Carolina Avenue,Water Works,Baltic Avenue,Virginia Avenue,Indiana Avenue,
+1,1,1,1,2,0,2,0,
+9
+27,3,52,21,3,12,25,3,10,3,44,42,39,25,15,18,100,60,48,3,59,3,22,3,52,3,34,32,0,0,0,246,0,16,77,3,25,3,4,68,3,3,4,3,6,15,32,3,13,5,19,3,43,3,8,4,17,3,3,35,12,0,0,0,29,0,44,67,12,3,16,23,6,9,3,83,38,3,3,49,3,68,3,93,3,17,3,3,3,3,59,20,9,3,0,0,0,198,0,
+Best: P3
+107
+Tennessee Avenue,Baltic Avenue,Connecticut Avenue,Indiana Avenue,St. Charles Place,Pennsylvania Railroad,Kentucky Avenue,Virginia Avenue,Boardwalk,
+1,1,2,1,2,0,0,1,
+7
+27,3,52,21,3,12,25,3,10,3,44,42,39,25,15,18,100,60,48,3,59,3,22,3,52,3,34,32,0,0,0,246,0,16,77,3,25,3,4,68,3,3,4,3,6,15,32,3,13,5,19,3,43,3,8,4,17,3,3,35,12,0,0,0,29,0,44,67,12,3,16,23,6,9,3,83,38,3,3,49,3,68,3,93,3,17,3,3,3,3,59,20,9,3,0,0,0,198,0,
+Best: P3
+113
+Pacific Avenue,Mediterranean Avenue,St. Charles Place,Virginia Avenue,B & O Railroad,Connecticut Avenue,New York Avenue,Short Line Railroad,St. James Place,Pennsylvania Avenue,Indiana Avenue,Oriental Avenue,
+1,2,2,2,1,0,2,0,
+6
+27,3,52,21,3,12,25,3,10,3,44,42,39,25,15,18,100,60,48,3,59,3,22,3,52,3,34,32,0,0,0,246,0,16,77,3,25,3,4,68,3,3,4,3,6,15,32,3,13,5,19,3,43,3,8,4,17,3,3,35,12,0,0,0,29,0,44,67,12,3,16,23,6,9,3,83,38,3,3,49,3,68,3,93,3,17,3,3,3,3,59,20,9,3,0,0,0,198,0,
+Best: P2
+107
+Pacific Avenue,New York Avenue,Tennessee Avenue,B & O Railroad,Illinois Avenue,Indiana Avenue,Electric Company,Park Place,
+0,0,0,2,2,0,1,1,
+2
+26,3,43,21,3,9,23,3,9,3,46,45,41,25,13,19,100,53,48,3,58,3,24,3,45,3,35,33,0,0,0,286,0,13,71,3,26,3,4,57,3,3,4,3,6,18,27,3,9,6,17,3,41,3,7,4,15,3,3,35,12,0,0,0,29,0,50,59,11,3,15,21,4,10,3,86,37,3,3,45,3,65,3,87,3,18,3,3,3,3,62,20,7,3,0,0,0,177,0,
+Best: P2
+113
+Tennessee Avenue,Ventnor Avenue,Pacific Avenue,Baltic Avenue,New York Avenue,Connecticut Avenue,St. James Place,Atlantic Avenue,North Carolina Avenue,States Avenue,Oriental Avenue,B & O Railroad,
+1,2,1,3,0,2,2,0,
+4
+26,3,43,21,3,9,23,3,9,3,46,45,41,25,13,19,100,53,48,3,58,3,24,3,45,3,35,33,0,0,0,286,0,13,71,3,26,3,4,57,3,3,4,3,6,18,27,3,9,6,17,3,41,3,7,4,15,3,3,35,12,0,0,0,29,0,50,59,11,3,15,21,4,10,3,86,37,3,3,45,3,65,3,87,3,18,3,3,3,3,62,20,7,3,0,0,0,177,0,
+Best: P3
+111
+Baltic Avenue,B & O Railroad,Reading Railroad,Illinois Avenue,Marvin Gardens,
+1,0,0,0,1,1,0,0,
+4
+28,3,39,20,3,8,23,3,9,3,40,50,39,23,11,15,96,51,45,3,70,3,19,3,51,3,33,31,0,0,0,303,0,13,75,3,26,3,4,52,3,3,4,3,5,18,23,3,10,5,21,3,42,3,8,4,14,3,3,29,11,0,0,0,22,0,51,56,10,3,14,18,4,10,3,74,41,3,3,47,3,58,3,89,3,19,3,3,3,3,71,20,6,3,0,0,0,204,0,
+Best: P3
+114
+New York Avenue,Pacific Avenue,Baltic Avenue,Tennessee Avenue,Illinois Avenue,Oriental Avenue,St. Charles Place,Virginia Avenue,Indiana Avenue,
+1,1,2,2,2,0,1,0,
+4
+28,3,39,20,3,8,23,3,9,3,40,50,39,23,11,15,96,51,45,3,70,3,19,3,51,3,33,31,0,0,0,303,0,13,75,3,26,3,4,52,3,3,4,3,5,18,23,3,10,5,21,3,42,3,8,4,14,3,3,29,11,0,0,0,22,0,51,56,10,3,14,18,4,10,3,74,41,3,3,47,3,58,3,89,3,19,3,3,3,3,71,20,6,3,0,0,0,204,0,
+Best: P2
+113
+Marvin Gardens,Mediterranean Avenue,Baltic Avenue,New York Avenue,B & O Railroad,Short Line Railroad,Pennsylvania Avenue,St. James Place,Electric Company,Kentucky Avenue,
+2,0,0,2,1,1,1,0,
+10
+31,3,43,21,3,7,25,3,7,3,46,45,38,23,13,13,92,50,55,3,67,3,18,3,47,3,36,31,0,0,0,348,0,13,74,3,24,3,4,49,3,3,3,3,5,16,24,3,9,4,20,3,37,3,7,4,13,3,3,29,13,0,0,0,20,0,55,55,11,3,11,17,3,11,3,82,40,3,3,40,3,66,3,87,3,16,3,3,3,3,68,22,5,3,0,0,0,211,0,
+Best: P2
+112
+New York Avenue,Pacific Avenue,Vermont Avenue,Pennsylvania Avenue,Short Line Railroad,Virginia Avenue,Electric Company,
+0,1,1,1,0,0,2,0,
+5
+31,3,43,21,3,7,25,3,7,3,46,45,38,23,13,13,92,50,55,3,67,3,18,3,47,3,36,31,0,0,0,348,0,13,74,3,24,3,4,49,3,3,3,3,5,16,24,3,9,4,20,3,37,3,7,4,13,3,3,29,13,0,0,0,20,0,55,55,11,3,11,17,3,11,3,82,40,3,3,40,3,66,3,87,3,16,3,3,3,3,68,22,5,3,0,0,0,211,0,
+Best: P3
+106
+Ventnor Avenue,Tennessee Avenue,Oriental Avenue,St. Charles Place,B & O Railroad,Electric Company,Pacific Avenue,Mediterranean Avenue,
+1,1,1,1,0,1,1,0,
+3
+32,3,44,19,3,6,24,3,6,3,42,48,35,26,12,13,84,47,49,3,60,3,17,3,45,3,34,26,0,0,0,323,0,12,71,3,20,3,4,52,3,3,3,3,5,14,27,3,10,4,18,3,35,3,8,4,12,3,3,32,14,0,0,0,21,0,63,49,11,3,13,16,3,9,3,86,37,3,3,43,3,64,3,78,3,15,3,3,3,3,62,22,6,3,0,0,0,234,0,
+Best: P2
+116
+Pacific Avenue,Mediterranean Avenue,Tennessee Avenue,Connecticut Avenue,Electric Company,
+1,1,0,1,0,0,1,0,
+3
+28,3,46,18,3,6,25,3,5,3,40,41,34,26,12,11,99,46,48,3,65,3,16,3,48,3,31,31,0,0,0,321,0,12,62,3,22,3,3,53,3,3,3,3,5,13,29,3,8,5,17,3,37,3,6,4,11,3,3,33,11,0,0,0,20,0,51,46,12,3,13,16,3,9,3,84,41,3,3,39,3,64,3,71,3,16,3,3,3,3,58,20,6,3,0,0,0,253,0,
+Best: P3
+115
+Tennessee Avenue,Short Line Railroad,Illinois Avenue,Pacific Avenue,St. Charles Place,North Carolina Avenue,Boardwalk,Vermont Avenue,Oriental Avenue,States Avenue,
+0,2,2,1,1,0,2,1,
+3
+26,3,43,17,3,5,27,3,5,3,40,40,35,23,12,11,89,52,43,3,70,3,14,3,40,3,36,31,0,0,0,363,0,12,71,3,23,3,3,51,3,3,3,3,5,11,32,3,8,4,17,3,36,3,8,4,11,3,3,36,13,0,0,0,22,0,51,54,12,3,13,15,3,9,3,86,39,3,3,43,3,56,3,70,3,14,3,3,3,3,66,22,5,3,0,0,0,272,0,
+Best: P3
+116
+Pacific Avenue,B & O Railroad,States Avenue,Baltic Avenue,Boardwalk,Tennessee Avenue,Park Place,Pennsylvania Avenue,Illinois Avenue,Water Works,
+1,0,1,1,1,0,2,2,
+2
+26,3,43,17,3,5,27,3,5,3,40,40,35,23,12,11,89,52,43,3,70,3,14,3,40,3,36,31,0,0,0,363,0,12,71,3,23,3,3,51,3,3,3,3,5,11,32,3,8,4,17,3,36,3,8,4,11,3,3,36,13,0,0,0,22,0,51,54,12,3,13,15,3,9,3,86,39,3,3,43,3,56,3,70,3,14,3,3,3,3,66,22,5,3,0,0,0,272,0,
+Best: P2
+108
+Tennessee Avenue,States Avenue,Connecticut Avenue,Atlantic Avenue,New York Avenue,Boardwalk,
+0,1,1,2,0,1,0,1,
+9
+28,3,46,14,3,4,26,3,5,3,37,35,35,21,12,10,91,58,48,3,77,3,13,3,43,3,31,28,0,0,0,329,0,10,69,3,21,3,3,50,3,3,3,3,5,13,34,3,7,4,15,3,39,3,6,4,11,3,3,37,11,0,0,0,21,0,53,61,10,3,12,15,3,8,3,77,31,3,3,36,3,54,3,83,3,14,3,3,3,3,65,25,5,3,0,0,0,308,0,
+Best: P2
+111
+Pacific Avenue,St. Charles Place,Tennessee Avenue,B & O Railroad,Connecticut Avenue,Pennsylvania Railroad,St. James Place,Atlantic Avenue,
+0,1,1,2,0,1,1,0,
+4
+28,3,46,14,3,4,26,3,5,3,37,35,35,21,12,10,91,58,48,3,77,3,13,3,43,3,31,28,0,0,0,329,0,10,69,3,21,3,3,50,3,3,3,3,5,13,34,3,7,4,15,3,39,3,6,4,11,3,3,37,11,0,0,0,21,0,53,61,10,3,12,15,3,8,3,77,31,3,3,36,3,54,3,83,3,14,3,3,3,3,65,25,5,3,0,0,0,308,0,
+Best: P2
+115
+B & O Railroad,New York Avenue,States Avenue,Electric Company,St. Charles Place,Pennsylvania Avenue,
+0,0,2,1,0,0,1,0,
+1
+28,3,46,14,3,4,26,3,5,3,37,35,35,21,12,10,91,58,48,3,77,3,13,3,43,3,31,28,0,0,0,329,0,10,69,3,21,3,3,50,3,3,3,3,5,13,34,3,7,4,15,3,39,3,6,4,11,3,3,37,11,0,0,0,21,0,53,61,10,3,12,15,3,8,3,77,31,3,3,36,3,54,3,83,3,14,3,3,3,3,65,25,5,3,0,0,0,308,0,
+Best: P2
+110
+New York Avenue,Tennessee Avenue,Oriental Avenue,B & O Railroad,Pennsylvania Avenue,Electric Company,
+0,1,0,2,0,0,1,0,
+0
+28,3,46,14,3,4,26,3,5,3,37,35,35,21,12,10,91,58,48,3,77,3,13,3,43,3,31,28,0,0,0,329,0,10,69,3,21,3,3,50,3,3,3,3,5,13,34,3,7,4,15,3,39,3,6,4,11,3,3,37,11,0,0,0,21,0,53,61,10,3,12,15,3,8,3,77,31,3,3,36,3,54,3,83,3,14,3,3,3,3,65,25,5,3,0,0,0,308,0,
+Best: P2
+106
+Illinois Avenue,Virginia Avenue,Mediterranean Avenue,North Carolina Avenue,Ventnor Avenue,Electric Company,
+1,0,1,0,1,1,1,0,
+4
+28,3,46,14,3,4,26,3,5,3,37,35,35,21,12,10,91,58,48,3,77,3,13,3,43,3,31,28,0,0,0,329,0,10,69,3,21,3,3,50,3,3,3,3,5,13,34,3,7,4,15,3,39,3,6,4,11,3,3,37,11,0,0,0,21,0,53,61,10,3,12,15,3,8,3,77,31,3,3,36,3,54,3,83,3,14,3,3,3,3,65,25,5,3,0,0,0,308,0,
+Best: P1
+112
+Ventnor Avenue,B & O Railroad,Reading Railroad,Short Line Railroad,Illinois Avenue,New York Avenue,Electric Company,Virginia Avenue,
+0,0,1,1,1,1,0,0,
+0
+24,3,50,11,3,4,25,3,5,3,35,42,35,20,13,9,94,54,45,3,92,3,12,3,42,3,29,29,0,0,0,315,0,8,69,3,19,3,3,38,3,3,3,3,5,11,33,3,6,4,14,3,36,3,7,3,10,3,3,39,10,0,0,0,16,0,44,59,11,3,11,15,3,9,3,83,26,3,3,42,3,56,3,87,3,13,3,3,3,3,64,25,5,3,0,0,0,290,0,
+Best: P2
+112
+Pacific Avenue,Baltic Avenue,Short Line Railroad,Mediterranean Avenue,
+2,0,0,0,0,0,1,0,
+4
+29,3,48,13,3,4,26,3,4,3,33,34,40,23,13,9,100,58,42,3,81,3,13,3,39,3,27,25,0,0,0,318,0,8,61,3,22,3,3,42,3,3,3,3,6,11,30,3,7,4,13,3,31,3,7,3,11,3,3,43,9,0,0,0,19,0,48,65,9,3,11,14,3,9,3,84,26,3,3,37,3,54,3,77,3,12,3,3,3,3,66,26,5,3,0,0,0,293,0,
+Best: P2
+112
+Baltic Avenue,B & O Railroad,Pacific Avenue,Marvin Gardens,Boardwalk,St. Charles Place,Water Works,Indiana Avenue,
+1,0,1,0,1,1,1,1,
+7
+29,3,48,13,3,4,26,3,4,3,33,34,40,23,13,9,100,58,42,3,81,3,13,3,39,3,27,25,0,0,0,318,0,8,61,3,22,3,3,42,3,3,3,3,6,11,30,3,7,4,13,3,31,3,7,3,11,3,3,43,9,0,0,0,19,0,48,65,9,3,11,14,3,9,3,84,26,3,3,37,3,54,3,77,3,12,3,3,3,3,66,26,5,3,0,0,0,293,0,
+Best: P2
+111
+Oriental Avenue,Baltic Avenue,Pennsylvania Avenue,St. James Place,Kentucky Avenue,Tennessee Avenue,St. Charles Place,Indiana Avenue,
+1,1,1,2,2,0,1,0,
+4
+29,3,48,13,3,4,26,3,4,3,33,34,40,23,13,9,100,58,42,3,81,3,13,3,39,3,27,25,0,0,0,318,0,8,61,3,22,3,3,42,3,3,3,3,6,11,30,3,7,4,13,3,31,3,7,3,11,3,3,43,9,0,0,0,19,0,48,65,9,3,11,14,3,9,3,84,26,3,3,37,3,54,3,77,3,12,3,3,3,3,66,26,5,3,0,0,0,293,0,
+Best: P3
+113
+Ventnor Avenue,Baltic Avenue,Pacific Avenue,New York Avenue,Pennsylvania Avenue,Virginia Avenue,Connecticut Avenue,Water Works,
+1,1,1,1,0,1,2,0,
+8
+28,3,44,13,3,3,24,3,4,3,33,33,36,23,14,9,98,66,40,3,86,3,13,3,33,3,25,28,0,0,0,247,0,8,59,3,20,3,3,44,3,3,3,3,5,9,27,3,6,3,12,3,29,3,6,3,10,3,3,38,10,0,0,0,16,0,48,68,9,3,12,13,3,9,3,75,23,3,3,33,3,56,3,71,3,13,3,3,3,3,66,23,4,3,0,0,0,319,0,
+Best: P2
+111
+New York Avenue,Pennsylvania Avenue,Mediterranean Avenue,St. Charles Place,Vermont Avenue,Boardwalk,Oriental Avenue,
+1,2,1,1,0,0,1,1,
+9
+27,3,46,12,3,3,26,3,4,3,36,36,40,26,13,9,92,69,38,3,78,3,13,3,39,3,23,24,0,0,0,242,0,7,64,3,19,3,3,42,3,3,3,3,5,11,29,3,7,3,13,3,29,3,6,3,11,3,3,36,10,0,0,0,18,0,47,65,9,3,11,15,3,9,3,73,23,3,3,39,3,60,3,83,3,11,3,3,3,3,58,25,5,3,0,0,0,339,0,
+Best: P3
+113
+Tennessee Avenue,St. Charles Place,Connecticut Avenue,Virginia Avenue,Indiana Avenue,
+0,1,2,1,1,0,0,0,
+1
+28,3,40,13,3,3,26,3,3,3,34,31,37,26,12,9,100,66,44,3,72,3,13,3,38,3,27,27,0,0,0,207,0,8,58,3,16,3,3,37,3,3,3,3,5,12,31,3,6,3,13,3,28,3,5,3,11,3,3,32,11,0,0,0,15,0,51,67,8,3,10,14,3,9,3,66,24,3,3,40,3,55,3,76,3,11,3,3,3,3,66,24,4,3,0,0,0,365,0,
+Best: P3
+112
+Ventnor Avenue,Mediterranean Avenue,Baltic Avenue,Tennessee Avenue,Pacific Avenue,Electric Company,Oriental Avenue,Pennsylvania Railroad,Water Works,Indiana Avenue,
+2,1,0,1,1,1,1,0,
+6
+28,3,40,13,3,3,26,3,3,3,34,31,37,26,12,9,100,66,44,3,72,3,13,3,38,3,27,27,0,0,0,207,0,8,58,3,16,3,3,37,3,3,3,3,5,12,31,3,6,3,13,3,28,3,5,3,11,3,3,32,11,0,0,0,15,0,51,67,8,3,10,14,3,9,3,66,24,3,3,40,3,55,3,76,3,11,3,3,3,3,66,24,4,3,0,0,0,365,0,
+Best: P3
+111
+Virginia Avenue,Pacific Avenue,Ventnor Avenue,New York Avenue,Pennsylvania Avenue,Boardwalk,Connecticut Avenue,Vermont Avenue,
+0,2,1,1,0,1,2,1,
+9
+28,3,40,13,3,3,26,3,3,3,34,31,37,26,12,9,100,66,44,3,72,3,13,3,38,3,27,27,0,0,0,207,0,8,58,3,16,3,3,37,3,3,3,3,5,12,31,3,6,3,13,3,28,3,5,3,11,3,3,32,11,0,0,0,15,0,51,67,8,3,10,14,3,9,3,66,24,3,3,40,3,55,3,76,3,11,3,3,3,3,66,24,4,3,0,0,0,365,0,
+Best: P1
+108
+Connecticut Avenue,Ventnor Avenue,Baltic Avenue,Pacific Avenue,B & O Railroad,Virginia Avenue,North Carolina Avenue,Mediterranean Avenue,Electric Company,Short Line Railroad,Kentucky Avenue,
+2,1,1,0,1,1,2,0,
+0
+27,3,42,13,3,3,26,3,3,3,35,27,32,29,13,8,91,70,37,3,74,3,10,3,32,3,22,28,0,0,0,199,0,9,63,3,17,3,3,38,3,3,3,3,4,11,34,3,5,3,13,3,28,3,4,3,11,3,3,34,11,0,0,0,12,0,47,71,7,3,10,13,3,9,3,65,22,3,3,41,3,57,3,71,3,9,3,3,3,3,59,23,4,3,0,0,0,339,0,
+Best: P3
+111
+Baltic Avenue,Tennessee Avenue,Illinois Avenue,Ventnor Avenue,Mediterranean Avenue,Vermont Avenue,Short Line Railroad,
+2,1,0,1,1,1,0,0,
+4
+25,3,38,13,3,3,25,3,3,3,35,26,38,24,13,9,91,63,41,3,84,3,10,3,33,3,28,29,0,0,0,219,0,9,59,3,16,3,3,37,3,3,3,3,4,11,35,3,5,3,14,3,24,3,4,3,11,3,3,38,11,0,0,0,13,0,55,73,7,3,10,12,3,10,3,61,26,3,3,35,3,63,3,70,3,10,3,3,3,3,53,26,4,3,0,0,0,380,0,
+Best: P2
+106
+Electric Company,Virginia Avenue,Pennsylvania Avenue,Reading Railroad,Atlantic Avenue,
+0,0,1,0,0,1,1,0,
+1
+27,3,41,13,3,3,27,3,3,3,37,23,37,26,11,7,99,75,48,3,78,3,10,3,38,3,30,31,0,0,0,213,0,8,72,3,14,3,3,37,3,3,3,3,4,11,28,3,4,3,11,3,29,3,4,3,11,3,3,39,9,0,0,0,10,0,51,72,6,3,12,12,3,11,3,62,28,3,3,36,3,62,3,86,3,9,3,3,3,3,47,26,4,3,0,0,0,417,0,
+Best: P2
+112
+B & O Railroad,Park Place,Vermont Avenue,St. James Place,
+0,1,0,1,0,0,0,1,
+3
+27,3,41,13,3,3,27,3,3,3,37,23,37,26,11,7,99,75,48,3,78,3,10,3,38,3,30,31,0,0,0,213,0,8,72,3,14,3,3,37,3,3,3,3,4,11,28,3,4,3,11,3,29,3,4,3,11,3,3,39,9,0,0,0,10,0,51,72,6,3,12,12,3,11,3,62,28,3,3,36,3,62,3,86,3,9,3,3,3,3,47,26,4,3,0,0,0,417,0,
+Best: P2
+110
+Pacific Avenue,Pennsylvania Avenue,B & O Railroad,Mediterranean Avenue,Virginia Avenue,North Carolina Avenue,Indiana Avenue,
+1,0,1,0,1,0,3,0,
+4
+27,3,41,13,3,3,27,3,3,3,37,23,37,26,11,7,99,75,48,3,78,3,10,3,38,3,30,31,0,0,0,213,0,8,72,3,14,3,3,37,3,3,3,3,4,11,28,3,4,3,11,3,29,3,4,3,11,3,3,39,9,0,0,0,10,0,51,72,6,3,12,12,3,11,3,62,28,3,3,36,3,62,3,86,3,9,3,3,3,3,47,26,4,3,0,0,0,417,0,
+Best: P2
+111
+Tennessee Avenue,Baltic Avenue,B & O Railroad,Pacific Avenue,Kentucky Avenue,Mediterranean Avenue,Vermont Avenue,St. James Place,Ventnor Avenue,
+2,1,0,2,1,1,1,0,
+2
+27,3,41,13,3,3,27,3,3,3,37,23,37,26,11,7,99,75,48,3,78,3,10,3,38,3,30,31,0,0,0,213,0,8,72,3,14,3,3,37,3,3,3,3,4,11,28,3,4,3,11,3,29,3,4,3,11,3,3,39,9,0,0,0,10,0,51,72,6,3,12,12,3,11,3,62,28,3,3,36,3,62,3,86,3,9,3,3,3,3,47,26,4,3,0,0,0,417,0,
+Best: P1
+113
+B & O Railroad,Pacific Avenue,Illinois Avenue,Ventnor Avenue,Electric Company,
+0,0,0,0,1,1,1,0,
+0
+28,3,40,14,3,3,24,3,3,3,34,22,40,24,10,8,96,81,46,3,74,3,9,3,42,3,24,26,0,0,0,222,0,7,66,3,14,3,3,34,3,3,3,3,3,11,29,3,4,3,11,3,26,3,3,3,10,3,3,43,8,0,0,0,9,0,48,66,5,3,11,11,3,9,3,60,29,3,3,30,3,63,3,98,3,9,3,3,3,3,48,29,3,3,0,0,0,392,0,
+Best: P3
+112
+Mediterranean Avenue,Tennessee Avenue,Illinois Avenue,Marvin Gardens,Pennsylvania Avenue,Pennsylvania Railroad,Connecticut Avenue,St. Charles Place,
+1,1,1,1,1,1,1,0,
+3
+29,3,40,15,3,3,25,3,3,3,37,22,32,27,10,8,86,77,49,3,81,3,10,3,37,3,24,27,0,0,0,182,0,6,68,3,13,3,3,32,3,3,3,3,3,10,26,3,3,3,12,3,24,3,3,3,9,3,3,45,8,0,0,0,11,0,52,72,5,3,12,10,3,8,3,65,26,3,3,29,3,63,3,97,3,8,3,3,3,3,41,24,4,3,0,0,0,374,0,
+Best: P2
+110
+Tennessee Avenue,Baltic Avenue,
+1,0,0,1,0,0,0,0,
+3
+31,3,33,14,3,3,24,3,3,3,35,23,30,29,10,6,93,69,56,3,78,3,10,3,46,3,26,25,0,0,0,186,0,6,78,3,13,3,3,37,3,3,3,3,3,11,29,3,3,3,12,3,23,3,3,3,10,3,3,48,9,0,0,0,7,0,49,75,4,3,12,10,3,12,3,61,30,3,3,35,3,66,3,100,3,7,3,3,3,3,46,22,3,3,0,0,0,402,0,
+Best: P3
+113
+Short Line Railroad,New York Avenue,Boardwalk,Virginia Avenue,
+0,0,1,1,0,0,0,1,
+2
+31,3,39,12,3,3,22,3,3,3,32,23,32,31,11,7,93,77,58,3,76,3,11,3,47,3,22,27,0,0,0,156,0,7,67,3,13,3,3,36,3,3,3,3,3,10,28,3,3,3,11,3,25,3,3,3,9,3,3,51,8,0,0,0,8,0,48,80,5,3,13,11,3,11,3,59,27,3,3,32,3,72,3,92,3,6,3,3,3,3,47,23,3,3,0,0,0,442,0,
+Best: P2
+109
+Tennessee Avenue,Vermont Avenue,New York Avenue,Reading Railroad,Illinois Avenue,B & O Railroad,Mediterranean Avenue,Connecticut Avenue,Park Place,
+1,2,0,2,1,0,0,1,
+2
+27,3,37,14,3,3,25,3,3,3,33,21,26,26,10,6,90,76,50,3,81,3,9,3,44,3,25,25,0,0,0,160,0,6,82,3,12,3,3,37,3,3,3,3,3,9,30,3,3,3,12,3,27,3,3,3,9,3,3,55,7,0,0,0,7,0,51,86,4,3,11,9,3,12,3,58,31,3,3,32,3,76,3,100,3,5,3,3,3,3,40,19,3,3,0,0,0,472,0,
+Best: P3
+113
+Ventnor Avenue,New York Avenue,Indiana Avenue,Short Line Railroad,St. Charles Place,Pennsylvania Avenue,Boardwalk,Tennessee Avenue,Baltic Avenue,B & O Railroad,
+1,0,1,2,1,1,1,1,
+7
+32,3,44,15,3,3,25,3,3,3,29,24,29,29,11,5,87,67,59,3,86,3,12,3,49,3,25,28,0,0,0,148,0,6,67,3,13,3,3,35,3,3,3,3,3,9,30,3,3,3,11,3,29,3,3,3,9,3,3,54,8,0,0,0,6,0,42,91,4,3,13,10,3,11,3,56,31,3,3,36,3,78,3,100,3,5,3,3,3,3,43,21,3,3,0,0,0,493,0,
+Best: P3
+115
+Baltic Avenue,Pacific Avenue,States Avenue,New York Avenue,Atlantic Avenue,Virginia Avenue,Electric Company,
+1,0,2,1,0,1,1,0,
+7
+32,3,44,15,3,3,25,3,3,3,29,24,29,29,11,5,87,67,59,3,86,3,12,3,49,3,25,28,0,0,0,148,0,6,67,3,13,3,3,35,3,3,3,3,3,9,30,3,3,3,11,3,29,3,3,3,9,3,3,54,8,0,0,0,6,0,42,91,4,3,13,10,3,11,3,56,31,3,3,36,3,78,3,100,3,5,3,3,3,3,43,21,3,3,0,0,0,493,0,
+Best: P2
+114
+Pacific Avenue,Connecticut Avenue,Tennessee Avenue,B & O Railroad,States Avenue,St. Charles Place,Boardwalk,
+0,1,2,1,0,0,1,1,
+3
+27,3,49,13,3,3,26,3,3,3,31,22,29,33,10,5,83,67,50,3,89,3,9,3,54,3,25,30,0,0,0,149,0,5,63,3,13,3,3,33,3,3,3,3,3,10,29,3,3,3,9,3,29,3,3,3,8,3,3,55,7,0,0,0,6,0,42,94,4,3,12,8,3,10,3,48,33,3,3,34,3,79,3,87,3,4,3,3,3,3,44,18,3,3,0,0,0,474,0,
+Best: P3
+115
+Tennessee Avenue,St. James Place,Virginia Avenue,Reading Railroad,
+0,0,1,2,0,0,0,0,
+3
+26,3,51,15,3,3,24,3,3,3,28,23,28,33,10,6,94,77,61,3,82,3,9,3,47,3,22,30,0,0,0,159,0,5,65,3,14,3,3,35,3,3,3,3,3,8,32,3,3,3,11,3,33,3,3,3,9,3,3,55,8,0,0,0,6,0,40,81,4,3,12,9,3,10,3,45,29,3,3,32,3,83,3,100,3,3,3,3,3,3,39,19,3,3,0,0,0,468,0,
+Best: P5
+111
+Mediterranean Avenue,Ventnor Avenue,Pacific Avenue,Short Line Railroad,Marvin Gardens,Reading Railroad,
+1,0,0,0,0,2,1,0,
+2
+24,3,50,14,3,3,22,3,3,3,28,21,25,35,10,5,81,80,56,3,91,3,8,3,46,3,30,34,0,0,0,152,0,5,78,3,13,3,3,36,3,3,3,3,3,10,33,3,3,3,9,3,32,3,3,3,8,3,3,48,5,0,0,0,5,0,41,88,4,3,12,8,3,11,3,47,30,3,3,37,3,80,3,95,3,3,3,3,3,3,48,22,3,3,0,0,0,548,0,
+Best: P2
+111
+Marvin Gardens,Pacific Avenue,Reading Railroad,Water Works,North Carolina Avenue,Ventnor Avenue,Illinois Avenue,New York Avenue,
+0,0,0,1,1,2,2,0,
+0
+21,3,52,12,3,3,24,3,3,3,32,17,23,37,9,5,92,68,60,3,90,3,8,3,49,3,28,34,0,0,0,131,0,4,60,3,15,3,3,36,3,3,3,3,3,9,32,3,3,3,9,3,38,3,3,3,9,3,3,53,6,0,0,0,4,0,36,98,3,3,13,7,3,9,3,45,28,3,3,35,3,88,3,95,3,3,3,3,3,3,49,22,3,3,0,0,0,549,0,
+Best: P1
+112
+Ventnor Avenue,Tennessee Avenue,Reading Railroad,North Carolina Avenue,
+0,0,0,1,0,1,1,0,
+0
+26,3,45,12,3,3,24,3,3,3,25,20,26,38,8,5,89,77,56,3,92,3,7,3,44,3,22,30,0,0,0,125,0,3,58,3,15,3,3,32,3,3,3,3,3,10,31,3,3,3,10,3,36,3,3,3,8,3,3,44,5,0,0,0,3,0,43,100,3,3,11,9,3,9,3,47,26,3,3,29,3,89,3,100,3,3,3,3,3,3,40,19,3,3,0,0,0,503,0,
+Best: P2
+111
+Illinois Avenue,Pacific Avenue,Ventnor Avenue,Mediterranean Avenue,Kentucky Avenue,
+1,0,0,0,2,1,1,0,
+5
+23,3,48,13,3,3,22,3,3,3,31,15,28,37,9,5,80,72,57,3,82,3,7,3,47,3,28,36,0,0,0,147,0,3,58,3,13,3,3,29,3,3,3,3,3,9,33,3,3,3,9,3,36,3,3,3,8,3,3,46,4,0,0,0,3,0,39,98,3,3,11,8,3,9,3,51,26,3,3,32,3,82,3,94,3,3,3,3,3,3,41,23,3,3,0,0,0,494,0,
+Best: P2
+114
+Mediterranean Avenue,Tennessee Avenue,New York Avenue,Short Line Railroad,
+1,0,0,2,0,0,0,0,
+4
+23,3,48,13,3,3,22,3,3,3,31,15,28,37,9,5,80,72,57,3,82,3,7,3,47,3,28,36,0,0,0,147,0,3,58,3,13,3,3,29,3,3,3,3,3,9,33,3,3,3,9,3,36,3,3,3,8,3,3,46,4,0,0,0,3,0,39,98,3,3,11,8,3,9,3,51,26,3,3,32,3,82,3,94,3,3,3,3,3,3,41,23,3,3,0,0,0,494,0,
+Best: P3
+112
+Pacific Avenue,Connecticut Avenue,Virginia Avenue,New York Avenue,Oriental Avenue,Water Works,
+0,2,1,1,0,0,1,0,
+2
+20,3,38,12,3,3,20,3,3,3,34,16,22,33,9,4,86,61,66,3,100,3,6,3,41,3,23,37,0,0,0,122,0,3,59,3,13,3,3,31,3,3,3,3,3,8,28,3,3,3,9,3,33,3,3,3,6,3,3,52,4,0,0,0,1,0,35,100,3,3,10,9,3,7,3,49,29,3,3,36,3,70,3,89,3,3,3,3,3,3,34,24,3,3,0,0,0,500,0,
+Best: P2
+111
+Mediterranean Avenue,Illinois Avenue,Pacific Avenue,Marvin Gardens,
+1,0,0,0,1,1,1,0,
+0
+24,3,49,11,3,3,22,3,3,3,30,14,29,31,8,4,94,65,65,3,93,3,6,3,40,3,25,37,0,0,0,120,0,3,55,3,15,3,3,34,3,3,3,3,3,8,34,3,3,3,10,3,32,3,3,3,7,3,3,42,4,0,0,0,2,0,42,92,3,3,11,8,3,7,3,51,25,3,3,29,3,67,3,96,3,3,3,3,3,3,42,23,3,3,0,0,0,437,0,
+Best: P2
+110
+B & O Railroad,New York Avenue,St. James Place,Oriental Avenue,Boardwalk,Illinois Avenue,Mediterranean Avenue,Pennsylvania Avenue,
+1,1,0,2,1,0,1,1,
+7
+24,3,49,11,3,3,22,3,3,3,30,14,29,31,8,4,94,65,65,3,93,3,6,3,40,3,25,37,0,0,0,120,0,3,55,3,15,3,3,34,3,3,3,3,3,8,34,3,3,3,10,3,32,3,3,3,7,3,3,42,4,0,0,0,2,0,42,92,3,3,11,8,3,7,3,51,25,3,3,29,3,67,3,96,3,3,3,3,3,3,42,23,3,3,0,0,0,437,0,
+Best: P3
+115
+Baltic Avenue,Atlantic Avenue,B & O Railroad,Short Line Railroad,Ventnor Avenue,Tennessee Avenue,Connecticut Avenue,Illinois Avenue,Mediterranean Avenue,Vermont Avenue,Electric Company,
+2,2,0,1,1,2,0,0,
+11
+26,3,51,11,3,3,20,3,3,3,29,13,25,28,6,4,89,62,53,3,89,3,5,3,37,3,24,44,0,0,0,105,0,3,61,3,16,3,3,31,3,3,3,3,3,8,32,3,3,3,10,3,29,3,3,3,6,3,3,40,4,0,0,0,1,0,35,88,3,3,9,7,3,6,3,49,29,3,3,30,3,60,3,100,3,3,3,3,3,3,40,24,3,3,0,0,0,479,0,
+Best: P3
+111
+Connecticut Avenue,Mediterranean Avenue,Oriental Avenue,Illinois Avenue,Park Place,
+1,2,0,0,1,0,0,1,
+3
+26,3,51,11,3,3,20,3,3,3,29,13,25,28,6,4,89,62,53,3,89,3,5,3,37,3,24,44,0,0,0,105,0,3,61,3,16,3,3,31,3,3,3,3,3,8,32,3,3,3,10,3,29,3,3,3,6,3,3,40,4,0,0,0,1,0,35,88,3,3,9,7,3,6,3,49,29,3,3,30,3,60,3,100,3,3,3,3,3,3,40,24,3,3,0,0,0,479,0,
+Best: P7
+106
+Ventnor Avenue,Marvin Gardens,Tennessee Avenue,Illinois Avenue,Indiana Avenue,States Avenue,Electric Company,
+0,0,1,1,2,2,0,0,
+0
+23,3,53,13,3,3,20,3,3,3,30,16,25,28,5,4,78,61,60,3,83,3,5,3,41,3,22,35,0,0,0,97,0,3,53,3,13,3,3,32,3,3,3,3,3,9,30,3,3,3,9,3,30,3,3,3,6,3,3,44,3,0,0,0,0,0,32,97,3,3,8,8,3,6,3,53,21,3,3,33,3,66,3,100,3,3,3,3,3,3,44,22,3,3,0,0,0,417,0,
+Best: P2
+111
+New York Avenue,Pacific Avenue,Kentucky Avenue,Illinois Avenue,Reading Railroad,St. James Place,St. Charles Place,Indiana Avenue,
+0,0,1,2,3,0,1,0,
+3
+21,3,47,10,3,3,18,3,3,3,32,15,23,28,5,4,93,68,59,3,75,3,5,3,40,3,26,40,0,0,0,102,0,3,60,3,13,3,3,31,3,3,3,3,3,9,27,3,3,3,9,3,27,3,3,3,6,3,3,37,3,0,0,0,0,0,31,89,3,3,10,8,3,6,3,61,21,3,3,33,3,67,3,95,3,3,3,3,3,3,47,20,3,3,0,0,0,381,0,
+Best: P2
+111
+New York Avenue,Vermont Avenue,
+0,1,0,1,0,0,0,0,
+0
+21,3,47,10,3,3,18,3,3,3,32,15,23,28,5,4,93,68,59,3,75,3,5,3,40,3,26,40,0,0,0,102,0,3,60,3,13,3,3,31,3,3,3,3,3,9,27,3,3,3,9,3,27,3,3,3,6,3,3,37,3,0,0,0,0,0,31,89,3,3,10,8,3,6,3,61,21,3,3,33,3,67,3,95,3,3,3,3,3,3,47,20,3,3,0,0,0,381,0,
+Best: P2
+113
+B & O Railroad,Tennessee Avenue,Pennsylvania Avenue,
+0,0,0,1,0,0,1,0,
+0
+21,3,47,10,3,3,18,3,3,3,32,15,23,28,5,4,93,68,59,3,75,3,5,3,40,3,26,40,0,0,0,102,0,3,60,3,13,3,3,31,3,3,3,3,3,9,27,3,3,3,9,3,27,3,3,3,6,3,3,37,3,0,0,0,0,0,31,89,3,3,10,8,3,6,3,61,21,3,3,33,3,67,3,95,3,3,3,3,3,3,47,20,3,3,0,0,0,381,0,
+Best: P2
+111
+Baltic Avenue,Tennessee Avenue,Ventnor Avenue,Kentucky Avenue,
+1,0,0,1,1,1,0,0,
+7
+21,3,47,10,3,3,18,3,3,3,32,15,23,28,5,4,93,68,59,3,75,3,5,3,40,3,26,40,0,0,0,102,0,3,60,3,13,3,3,31,3,3,3,3,3,9,27,3,3,3,9,3,27,3,3,3,6,3,3,37,3,0,0,0,0,0,31,89,3,3,10,8,3,6,3,61,21,3,3,33,3,67,3,95,3,3,3,3,3,3,47,20,3,3,0,0,0,381,0,
+Best: P2
+113
+Pacific Avenue,Short Line Railroad,Atlantic Avenue,States Avenue,
+0,0,1,0,0,1,1,0,
+0
+21,3,47,10,3,3,18,3,3,3,32,15,23,28,5,4,93,68,59,3,75,3,5,3,40,3,26,40,0,0,0,102,0,3,60,3,13,3,3,31,3,3,3,3,3,9,27,3,3,3,9,3,27,3,3,3,6,3,3,37,3,0,0,0,0,0,31,89,3,3,10,8,3,6,3,61,21,3,3,33,3,67,3,95,3,3,3,3,3,3,47,20,3,3,0,0,0,381,0,
+Best: P3
+112
+St. Charles Place,Connecticut Avenue,Mediterranean Avenue,
+1,1,1,0,0,0,0,0,
+4
+19,3,56,9,3,3,15,3,3,3,36,17,25,26,4,3,92,66,57,3,69,3,5,3,36,3,26,43,0,0,0,91,0,3,65,3,15,3,3,30,3,3,3,3,3,7,24,3,3,3,7,3,22,3,3,3,5,3,3,35,3,0,0,0,0,0,28,72,3,3,10,7,3,5,3,58,18,3,3,37,3,69,3,84,3,3,3,3,3,3,48,21,3,3,0,0,0,364,0,
+Best: P1
+113
+Ventnor Avenue,Mediterranean Avenue,New York Avenue,North Carolina Avenue,Connecticut Avenue,Kentucky Avenue,Boardwalk,Water Works,
+1,1,0,1,1,1,1,1,
+4
+19,3,59,10,3,3,15,3,3,3,34,17,20,24,4,3,73,66,61,3,69,3,5,3,39,3,32,42,0,0,0,84,0,3,59,3,12,3,3,29,3,3,3,3,3,9,23,3,3,3,8,3,23,3,3,3,5,3,3,41,3,0,0,0,0,0,32,82,3,3,10,6,3,6,3,71,16,3,3,33,3,74,3,91,3,3,3,3,3,3,40,22,3,3,0,0,0,320,0,
+Best: P3
+112
+Baltic Avenue,Mediterranean Avenue,Water Works,Oriental Avenue,Marvin Gardens,Pennsylvania Railroad,
+2,1,0,0,0,1,0,0,
+5
+17,3,60,9,3,3,16,3,3,3,37,19,23,25,4,3,72,71,55,3,65,3,4,3,42,3,26,37,0,0,0,96,0,3,62,3,14,3,3,26,3,3,3,3,3,9,24,3,3,3,8,3,22,3,3,3,4,3,3,33,3,0,0,0,0,0,33,69,3,3,10,5,3,5,3,71,17,3,3,36,3,73,3,76,3,3,3,3,3,3,51,20,3,3,0,0,0,389,0,
+Best: P2
+111
+Illinois Avenue,Kentucky Avenue,Mediterranean Avenue,Baltic Avenue,Connecticut Avenue,New York Avenue,St. James Place,
+2,1,0,2,2,0,0,0,
+6
+15,3,66,8,3,3,15,3,3,3,36,20,20,21,4,3,84,72,55,3,70,3,4,3,32,3,28,41,0,0,0,93,0,3,72,3,11,3,3,25,3,3,3,3,3,8,21,3,3,3,7,3,23,3,3,3,4,3,3,37,3,0,0,0,0,0,37,80,3,3,9,6,3,5,3,69,15,3,3,37,3,80,3,93,3,3,3,3,3,3,42,19,3,3,0,0,0,413,0,
+Best: P2
+112
+B & O Railroad,New York Avenue,Illinois Avenue,Boardwalk,Ventnor Avenue,
+0,0,0,1,1,1,0,1,
+0
+15,3,66,8,3,3,15,3,3,3,36,20,20,21,4,3,84,72,55,3,70,3,4,3,32,3,28,41,0,0,0,93,0,3,72,3,11,3,3,25,3,3,3,3,3,8,21,3,3,3,7,3,23,3,3,3,4,3,3,37,3,0,0,0,0,0,37,80,3,3,9,6,3,5,3,69,15,3,3,37,3,80,3,93,3,3,3,3,3,3,42,19,3,3,0,0,0,413,0,
+Best: P1
+114
+Mediterranean Avenue,Tennessee Avenue,Atlantic Avenue,North Carolina Avenue,Baltic Avenue,
+2,0,0,1,0,1,1,0,
+5
+17,3,63,7,3,3,15,3,3,3,35,21,22,26,4,3,72,65,53,3,64,3,4,3,26,3,29,34,0,0,0,105,0,3,69,3,12,3,3,25,3,3,3,3,3,7,20,3,3,3,6,3,23,3,3,3,4,3,3,36,3,0,0,0,0,0,34,71,3,3,8,5,3,5,3,80,16,3,3,35,3,80,3,87,3,3,3,3,3,3,45,19,3,3,0,0,0,410,0,
+Best: P3
+111
+B & O Railroad,Oriental Avenue,Pacific Avenue,Reading Railroad,Connecticut Avenue,North Carolina Avenue,Tennessee Avenue,Mediterranean Avenue,St. James Place,Illinois Avenue,
+1,2,0,2,1,0,2,0,
+8
+17,3,77,7,3,3,16,3,3,3,36,21,19,24,4,3,85,75,48,3,63,3,4,3,33,3,26,43,0,0,0,87,0,3,66,3,10,3,3,20,3,3,3,3,3,7,16,3,3,3,5,3,23,3,3,3,4,3,3,36,3,0,0,0,0,0,35,63,3,3,8,5,3,6,3,67,16,3,3,42,3,76,3,98,3,3,3,3,3,3,39,19,3,3,0,0,0,383,0,
+Best: P2
+114
+New York Avenue,Mediterranean Avenue,Oriental Avenue,Virginia Avenue,Reading Railroad,Atlantic Avenue,States Avenue,
+1,1,2,1,0,1,0,0,
+1
+17,3,81,7,3,3,13,3,3,3,38,20,22,23,4,3,92,83,55,3,67,3,5,3,28,3,22,37,0,0,0,82,0,3,70,3,10,3,3,22,3,3,3,3,3,7,15,3,3,3,4,3,21,3,3,3,4,3,3,30,3,0,0,0,0,0,42,70,3,3,7,6,3,5,3,70,16,3,3,40,3,87,3,100,3,3,3,3,3,3,44,18,3,3,0,0,0,440,0,
+Best: P1
+113
+St. Charles Place,Connecticut Avenue,Short Line Railroad,Electric Company,Illinois Avenue,Park Place,
+0,1,1,0,1,0,0,1,
+0
+18,3,73,7,3,3,16,3,3,3,36,17,19,24,4,3,100,77,50,3,68,3,4,3,24,3,22,33,0,0,0,76,0,3,68,3,9,3,3,22,3,3,3,3,3,6,14,3,3,3,4,3,21,3,3,3,4,3,3,30,3,0,0,0,0,0,34,68,3,3,7,5,3,5,3,76,16,3,3,40,3,95,3,96,3,3,3,3,3,3,43,17,3,3,0,0,0,384,0,
+Best: P2
+113
+Illinois Avenue,Pacific Avenue,Tennessee Avenue,Boardwalk,Baltic Avenue,Indiana Avenue,Virginia Avenue,
+1,0,1,1,2,0,1,1,
+2
+17,3,78,7,3,3,14,3,3,3,32,17,22,26,4,3,100,75,59,3,59,3,3,3,29,3,19,34,0,0,0,87,0,3,61,3,10,3,3,19,3,3,3,3,3,5,15,3,3,3,4,3,24,3,3,3,4,3,3,34,3,0,0,0,0,0,34,75,3,3,8,5,3,6,3,73,15,3,3,40,3,100,3,100,3,3,3,3,3,3,46,16,3,3,0,0,0,436,0,
+Best: P2
+113
+Tennessee Avenue,Illinois Avenue,Pacific Avenue,Mediterranean Avenue,B & O Railroad,Electric Company,Virginia Avenue,Indiana Avenue,
+1,0,1,1,2,0,1,0,
+3
+17,3,78,7,3,3,14,3,3,3,32,17,22,26,4,3,100,75,59,3,59,3,3,3,29,3,19,34,0,0,0,87,0,3,61,3,10,3,3,19,3,3,3,3,3,5,15,3,3,3,4,3,24,3,3,3,4,3,3,34,3,0,0,0,0,0,34,75,3,3,8,5,3,6,3,73,15,3,3,40,3,100,3,100,3,3,3,3,3,3,46,16,3,3,0,0,0,436,0,
+Best: P2
+111
+Illinois Avenue,Ventnor Avenue,Reading Railroad,B & O Railroad,New York Avenue,Baltic Avenue,Pacific Avenue,Mediterranean Avenue,
+2,0,0,1,1,1,1,0,
+4
+17,3,78,7,3,3,14,3,3,3,32,17,22,26,4,3,100,75,59,3,59,3,3,3,29,3,19,34,0,0,0,87,0,3,61,3,10,3,3,19,3,3,3,3,3,5,15,3,3,3,4,3,24,3,3,3,4,3,3,34,3,0,0,0,0,0,34,75,3,3,8,5,3,6,3,73,15,3,3,40,3,100,3,100,3,3,3,3,3,3,46,16,3,3,0,0,0,436,0,
+Best: P2
+109
+Pacific Avenue,St. Charles Place,Tennessee Avenue,Ventnor Avenue,Indiana Avenue,B & O Railroad,Oriental Avenue,Park Place,Short Line Railroad,Vermont Avenue,
+0,2,1,1,1,1,1,1,
+1
+17,3,78,7,3,3,14,3,3,3,32,17,22,26,4,3,100,75,59,3,59,3,3,3,29,3,19,34,0,0,0,87,0,3,61,3,10,3,3,19,3,3,3,3,3,5,15,3,3,3,4,3,24,3,3,3,4,3,3,34,3,0,0,0,0,0,34,75,3,3,8,5,3,6,3,73,15,3,3,40,3,100,3,100,3,3,3,3,3,3,46,16,3,3,0,0,0,436,0,
+Best: P2
+115
+Baltic Avenue,Atlantic Avenue,Boardwalk,Water Works,
+1,0,0,0,0,1,0,1,
+3
+17,3,78,7,3,3,14,3,3,3,32,17,22,26,4,3,100,75,59,3,59,3,3,3,29,3,19,34,0,0,0,87,0,3,61,3,10,3,3,19,3,3,3,3,3,5,15,3,3,3,4,3,24,3,3,3,4,3,3,34,3,0,0,0,0,0,34,75,3,3,8,5,3,6,3,73,15,3,3,40,3,100,3,100,3,3,3,3,3,3,46,16,3,3,0,0,0,436,0,
+Best: P3
+111
+B & O Railroad,Pacific Avenue,Tennessee Avenue,New York Avenue,Kentucky Avenue,
+0,0,0,2,1,0,1,0,
+1
+14,3,82,8,3,3,17,3,3,3,36,16,23,24,3,3,100,68,64,3,49,3,3,3,29,3,16,36,0,0,0,84,0,3,63,3,10,3,3,18,3,3,3,3,3,4,14,3,3,3,3,3,22,3,3,3,4,3,3,32,3,0,0,0,0,0,38,69,3,3,6,4,3,5,3,73,16,3,3,44,3,97,3,100,3,3,3,3,3,3,37,15,3,3,0,0,0,476,0,
+Best: P2
+112
+Ventnor Avenue,Tennessee Avenue,Pacific Avenue,Boardwalk,Connecticut Avenue,Mediterranean Avenue,
+1,1,0,1,0,1,1,1,
+1
+13,3,89,7,3,3,17,3,3,3,31,16,20,23,3,3,100,82,61,3,54,3,3,3,26,3,17,37,0,0,0,80,0,3,58,3,9,3,3,19,3,3,3,3,3,4,14,3,3,3,3,3,21,3,3,3,3,3,3,30,3,0,0,0,0,0,39,62,3,3,6,5,3,6,3,69,13,3,3,39,3,83,3,100,3,3,3,3,3,3,40,17,3,3,0,0,0,392,0,
+Best: P3
+113
+Tennessee Avenue,Mediterranean Avenue,Ventnor Avenue,Pacific Avenue,Short Line Railroad,B & O Railroad,St. Charles Place,Boardwalk,
+1,0,1,1,0,1,1,1,
+6
+12,3,81,7,3,3,18,3,3,3,34,17,22,26,3,3,100,69,54,3,55,3,3,3,29,3,16,41,0,0,0,82,0,3,66,3,9,3,3,17,3,3,3,3,3,5,13,3,3,3,3,3,18,3,3,3,3,3,3,28,3,0,0,0,0,0,43,75,3,3,5,4,3,6,3,65,16,3,3,40,3,99,3,100,3,3,3,3,3,3,38,16,3,3,0,0,0,455,0,
+Best: P2
+113
+Atlantic Avenue,Indiana Avenue,Baltic Avenue,B & O Railroad,Pacific Avenue,Mediterranean Avenue,Virginia Avenue,Short Line Railroad,
+2,0,1,0,1,1,1,0,
+6
+11,3,86,7,3,3,18,3,3,3,33,18,20,26,3,3,100,79,65,3,60,3,3,3,23,3,17,40,0,0,0,70,0,3,66,3,9,3,3,19,3,3,3,3,3,4,12,3,3,3,3,3,19,3,3,3,3,3,3,30,3,0,0,0,0,0,47,76,3,3,5,4,3,6,3,66,13,3,3,43,3,85,3,96,3,3,3,3,3,3,44,17,3,3,0,0,0,439,0,
+Best: P3
+113
+North Carolina Avenue,Mediterranean Avenue,Ventnor Avenue,Baltic Avenue,New York Avenue,B & O Railroad,Tennessee Avenue,Illinois Avenue,Short Line Railroad,Electric Company,St. Charles Place,Pennsylvania Railroad,Connecticut Avenue,Reading Railroad,Kentucky Avenue,
+2,1,1,2,2,1,1,0,
+9
+13,3,84,7,3,3,21,3,3,3,31,16,20,25,3,3,100,80,55,3,63,3,3,3,29,3,16,44,0,0,0,75,0,3,72,3,10,3,3,18,3,3,3,3,3,4,11,3,3,3,3,3,17,3,3,3,3,3,3,33,3,0,0,0,0,0,51,67,3,3,6,4,3,5,3,56,12,3,3,45,3,100,3,100,3,3,3,3,3,3,41,18,3,3,0,0,0,482,0,
+Best: P2
+116
+Mediterranean Avenue,Illinois Avenue,Indiana Avenue,Pennsylvania Railroad,North Carolina Avenue,Connecticut Avenue,Virginia Avenue,
+1,1,1,0,2,0,1,0,
+5
+10,3,91,7,3,3,22,3,3,3,31,19,18,25,3,3,99,72,53,3,63,3,3,3,24,3,16,38,0,0,0,82,0,3,71,3,9,3,3,17,3,3,3,3,3,4,10,3,3,3,3,3,17,3,3,3,3,3,3,28,3,0,0,0,0,0,45,60,3,3,5,4,3,5,3,60,11,3,3,38,3,89,3,91,3,3,3,3,3,3,39,18,3,3,0,0,0,482,0,
+Best: P1
+115
+B & O Railroad,Pacific Avenue,Short Line Railroad,Baltic Avenue,Illinois Avenue,St. Charles Place,New York Avenue,Boardwalk,
+1,0,1,1,1,0,1,1,
+6
+12,3,76,6,3,3,18,3,3,3,29,16,20,24,3,3,99,68,62,3,58,3,3,3,28,3,15,39,0,0,0,81,0,3,84,3,8,3,3,18,3,3,3,3,3,4,14,3,3,3,3,3,17,3,3,3,3,3,3,31,3,0,0,0,0,0,48,69,3,3,5,4,3,5,3,62,10,3,3,48,3,86,3,93,3,3,3,3,3,3,41,18,3,3,0,0,0,518,0,
+Best: P3
+112
+Reading Railroad,Baltic Avenue,Tennessee Avenue,Virginia Avenue,St. Charles Place,
+1,0,2,1,0,0,0,0,
+0
+12,3,84,6,3,3,17,3,3,3,32,18,21,28,3,3,89,73,63,3,59,3,3,3,22,3,13,39,0,0,0,64,0,3,80,3,7,3,3,18,3,3,3,3,3,4,12,3,3,3,3,3,18,3,3,3,3,3,3,30,3,0,0,0,0,0,55,70,3,3,6,4,3,6,3,52,10,3,3,53,3,80,3,92,3,3,3,3,3,3,39,19,3,3,0,0,0,500,0,
+Best: P2
+111
+New York Avenue,Connecticut Avenue,Tennessee Avenue,Illinois Avenue,Electric Company,
+0,1,0,2,1,0,0,0,
+3
+10,3,82,5,3,3,22,3,3,3,25,20,17,23,3,3,100,77,70,3,59,3,3,3,25,3,13,31,0,0,0,72,0,3,89,3,8,3,3,19,3,3,3,3,3,4,12,3,3,3,3,3,14,3,3,3,3,3,3,30,3,0,0,0,0,0,53,55,3,3,6,4,3,5,3,53,9,3,3,51,3,81,3,99,3,3,3,3,3,3,39,19,3,3,0,0,0,479,0,
+Best: P3
+112
+Water Works,Mediterranean Avenue,Ventnor Avenue,Vermont Avenue,Indiana Avenue,Short Line Railroad,Electric Company,
+1,1,0,0,1,1,0,0,
+0
+11,3,80,5,3,3,17,3,3,3,32,21,18,26,3,3,83,65,63,3,67,3,3,3,23,3,12,31,0,0,0,67,0,3,72,3,6,3,3,21,3,3,3,3,3,4,12,3,3,3,3,3,16,3,3,3,3,3,3,33,3,0,0,0,0,0,49,57,3,3,6,4,3,5,3,51,9,3,3,46,3,83,3,82,3,3,3,3,3,3,44,22,3,3,0,0,0,542,0,
+Best: P2
+110
+Tennessee Avenue,B & O Railroad,Pacific Avenue,Baltic Avenue,Atlantic Avenue,Short Line Railroad,Water Works,
+1,0,0,1,0,1,1,0,
+5
+11,3,83,6,3,3,20,3,3,3,25,23,17,20,3,3,84,82,69,3,57,3,3,3,27,3,13,33,0,0,0,75,0,3,81,3,7,3,3,23,3,3,3,3,3,4,13,3,3,3,3,3,13,3,3,3,3,3,3,32,3,0,0,0,0,0,53,49,3,3,6,4,3,5,3,58,8,3,3,54,3,92,3,91,3,3,3,3,3,3,44,20,3,3,0,0,0,555,0,
+Best: P3
+112
+Vermont Avenue,Illinois Avenue,Ventnor Avenue,Pacific Avenue,Tennessee Avenue,St. James Place,Short Line Railroad,
+0,1,0,2,1,1,1,0,
+4
+12,3,92,5,3,3,20,3,3,3,29,22,20,24,3,3,87,71,70,3,53,3,3,3,26,3,13,31,0,0,0,65,0,3,69,3,5,3,3,24,3,3,3,3,3,5,11,3,3,3,3,3,13,3,3,3,3,3,3,34,3,0,0,0,0,0,57,51,3,3,6,4,3,5,3,61,8,3,3,52,3,90,3,79,3,3,3,3,3,3,38,23,3,3,0,0,0,624,0,

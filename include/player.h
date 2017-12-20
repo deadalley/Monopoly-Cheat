@@ -2,11 +2,13 @@
 #define H_PLAYER
 
 #include <string>
+#include <vector>
 
 #include "agplayer.h"
-#include "board.h"
 #include "wallet.h"
 #include "colorset.h"
+#include "eventcard.h"
+#include "board.h"
 
 using namespace std;
 

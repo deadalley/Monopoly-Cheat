@@ -26,6 +26,7 @@ class Card {
 
     Card();
     Card(string, int, int);
+    
     int getId();
     CardType getType();
 

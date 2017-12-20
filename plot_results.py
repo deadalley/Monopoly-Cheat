@@ -89,10 +89,9 @@ def plotResult(feat, stage, opt):
     plt.clf()
 
     plt.xlabel('Generation')
+    plt.gca().set_ylim([0,100])
+    plt.ylabel('Chance (%)')
 
-    if feat.split(" ")[1] == 'Chance':
-        plt.gca().set_ylim([0,100])
-        plt.ylabel('Chance (%)')
     if feat == 'Minimum Balance':
         plt.gca().set_ylim([0,500])
         plt.ylabel('Amount ($)')
@@ -103,6 +102,8 @@ def plotResult(feat, stage, opt):
     if feat == 'Buying Chance':
         for key, value in properties.items():
             plt.clf()
+            plt.gca().set_ylim([0,100])
+            plt.ylabel('Chance (%)')
             plt.plot(features[feat][value][stage])
             plt.title(key + " - " + feat + " (" + stages[stage] + ")" + "\n" +\
                       "(" + str(N_GENERATIONS) + " generations, " + str(N_PLAYERS) +" players)")
@@ -220,6 +221,7 @@ for gen in range(0, N_GENERATIONS):
 for k in range(0, 3):
     for key in features:
         plotResult(key, k, 'save')
+        #wait = input("PRESS ENTER TO CONTINUE.")
 # Plot win count
 plotWinCount('save')
 # Plot properties histogram

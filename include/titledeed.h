@@ -4,8 +4,6 @@
 #include "card.h"
 #include "color.h"
 
-using namespace std;
-
 class TitleDeed : public Card {
   public:
     Color color;

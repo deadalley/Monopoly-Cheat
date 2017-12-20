@@ -1,5 +1,5 @@
 #include "bank.h"
-#include "gamecontroller.h"
+#include "utils.h"
 
 void Bank::initBank() {
   Balance.setBalance(INIT_BALANCE);

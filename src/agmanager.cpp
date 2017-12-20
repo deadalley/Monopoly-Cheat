@@ -1,15 +1,27 @@
 #include "agmanager.h"
+#include "utils.h"
+#include "game.h"
+#include "color.h"
+
+#include <algorithm>
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
 
 vector<AGPlayer*> AGManager::players;
 int AGManager::generation = 0;
 
 void AGManager::initPlayers() {
+  // Initialize players (individuals)
   int i;
   for(i = 0; i < MAX_PLAYERS; i++) {
     AGPlayer *p = new AGPlayer(i);
     players.push_back(p);
   }
 
+  // Set random starting chances for each player
   int stage, chance, j;
   for(stage = 0; stage < 3; stage++) {
     for(i = 0; i < MAX_PLAYERS; i++) {
@@ -37,6 +49,7 @@ void AGManager::initPlayers() {
       p->setMinimumCards(chance);
     }
   }
+  // Log initial conditions
   logInitPlayers();
 }
 
@@ -76,17 +89,20 @@ void AGManager::logInitPlayers() {
 }
 
 void AGManager::runAG() {
-  cout << MAX_PLAYERS << endl;
-  //logResults(NULL);
-  /*for(generation = 1; generation <= N_GENERATIONS; generation++) {
+  // Run Y games for N_GENERATIONS
+  for(generation = 1; generation <= N_GENERATIONS; generation++) {
+    // Simulate generation and get generation's best
     AGPlayer *best = simulateGeneration();
-    //logResults();
+    // Log features for the best of generation
     logBestFeatures(best);
+    // Rest win count for best
     best->resetWinCount();
     //cin.get();
+    // Cross features
     crossover(best);
+    // Mutate
     mutate(best);
-  }*/
+  }
 }
 
 void AGManager::logBestFeatures(AGPlayer *best) {
@@ -152,111 +168,59 @@ void AGManager::logBestFeatures(AGPlayer *best) {
   file.close();
 }
 
-
-void AGManager::logResults() {
-  ofstream file;
-
-  //ofstream **files = (ofstream**)malloc(sizeof(ofstream*)*6);
-/*
-  int k;
-  for(k = 0; k < 6; k++) {
-    ofstream *f = new ofstream();
-
-    string name = "results/feat" + to_string(k+1) + ".txt";
-    f->open(name, ios::app);
-
-    if(!f)
-      cerr << "Unable to open file " << name << endl;
-
-    files[k] = f;
-    *files[k] << "#" << generation << endl;
-  }
-*/
-  file.open("results/results.log", ios::app);
-
-
-  if(!file)
-    cerr << "Unable to open file results.log" << endl;
-
-  file << "#" << generation << endl;
-
-  int i, stage, chance;
-
-  for(i = 0; i < MAX_PLAYERS; i++) {
-    AGPlayer *p = players[i];
-    //for(k = 0; k < 6; k++)
-      //*files[k] << p->getId() << ",";
-
-    file << "P" << p->getId()+1 << endl;
-
-    for(stage = 0; stage < 3; stage++) {
-      p->setStage(stage);
-
-      //*files[0] << p->getBuyingChance() << ",";
-      //file << p->getBuyingChance() << ",";
-      //*files[1] << p->getBuildingChance() << ",";
-      file << p->getBuildingChance() << ",";
-      //*files[2] << p->getPayingJailChance() << ",";
-      file << p->getPayingJailChance() << ",";
-      //file << p->getMortgageChance() << ",";
-      //*files[3] << p->getTradingChance() << ",";
-      file << p->getTradingChance() << ",";
-      //*files[4] << p->getMinimumBalance() << ",";
-      file << p->getMinimumBalance() << ",";
-      //*files[5] << p->getMinimumCards() << ",";
-      file << p->getMinimumCards() << ",";
-    }
-    file << endl;
-  }/*
-  for(k = 0; k < 6; k++) {
-    *files[k] << endl;
-    files[k]->close();
-    delete files[k];
-  }
-  free(files);*/
-  file.close();
-}
-
 AGPlayer* AGManager::simulateGeneration() {
   if(_VERBOSE)
     cout << "========= ****GENERATION**** =========" << endl;
-  // Iterate players and create games
+  /* Iterate players and create games
+   * Games are created as a combination between players
+   * Given 5 players playing rounds of 3 players, the possible combinations are
+   * 1, 2, 3; 1, 3, 4; 1, 4, 5; 2, 3, 4; 2, 4, 5; 3, 4, 5
+   */
+
+  // Iterate players
   vector<AGPlayer*>::iterator first_it;
   for(first_it = players.begin(); first_it != players.end()-PLAYERS_PER_ROUND+1; first_it++) {
 
     vector<AGPlayer*>::iterator second_it;
     for(second_it = first_it + 1; second_it != (players.end()-PLAYERS_PER_ROUND+2); second_it++) {
 
+      // Create vector of players for current game
       vector<AGPlayer*> roundPlayers(second_it, second_it+(PLAYERS_PER_ROUND-1));
       roundPlayers.push_back(*first_it);
 
+      // Sort players
       sort(roundPlayers.begin(), roundPlayers.end(), [](AGPlayer *p1, AGPlayer *p2) {
         return p1->getId() < p2->getId();
       });
 
+      // Print players in current game
       int i;
       if(_VERBOSE) {
-        cout << "========= STARTING ROUND FOR =========" << endl;
+        cout << "========= STARTING GAME FOR ==========" << endl;
         for(i = 0; i < roundPlayers.size(); i++){
           cout << "\tPlayer " << roundPlayers[i]->getId() << endl;
         }
         cout << "======================================" << endl;
       }
 
+      // Create new game and run it
       Game *newGame = new Game();
       newGame->N_PLAYERS = PLAYERS_PER_ROUND;
       newGame->agController.setPlayers(&roundPlayers)  ;
       newGame->initGame();
       newGame->runGame();
 
+      // Check if there is a winner
       if(!newGame->checkWinner()) {
         if(_VERBOSE) {
           cout << "\tThere were no winners!" << endl;
           cout << "======================================" << endl;
         }
+        // Run again if no winner found (# of rounds exceeded maximum)
         newGame->runGame();
       }
 
+      // Get winner, increase win count and get properties owned
       AGPlayer *winner = newGame->getWinner();
       if(_VERBOSE)
         cout << "\tWINNER: Player " << winner->getId() + 1 << endl;
@@ -279,6 +243,7 @@ AGPlayer* AGManager::simulateGeneration() {
   }
   if(_VERBOSE)
     cout << "\tBest of #" << generation << ": Player " << best->getId() + 1 << endl;
+
   return best;
 }
 
@@ -295,6 +260,7 @@ void AGManager::crossover(AGPlayer *best) {
       (*it)->setStage(stage);
       best->setStage(stage);
 
+      // Cross features with features from best player
       int j;
       for(j = 0; j < N_DEEDS+N_UTILITIES+N_RAILROADS; j++) {
         newPlayer->setBuyingChance(j,min(100,crossFeature((*it)->getBuyingChance(j), best->getBuyingChance(j))));
@@ -308,7 +274,6 @@ void AGManager::crossover(AGPlayer *best) {
     }
 
     players.at((*it)->getId()) = newPlayer;
-
   }
 }
 
@@ -326,6 +291,10 @@ void AGManager::mutate(AGPlayer *best) {
         continue;
       p->setStage(stage);
 
+      /* Given a mutation rate MUTATION, a certain feature f can be mutate to
+       * [1-MUTATION/100 * f, 1+MUTATION/100 * f]
+       * If f = 80, mutated f can be [72, 88] for MUTATION = 10
+       */
       int j;
       for(j = 0; j < N_DEEDS+N_UTILITIES+N_RAILROADS; j++) {
         chance = rand() % (2*MUTATION+1) - MUTATION;

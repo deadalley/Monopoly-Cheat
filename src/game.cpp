@@ -1,15 +1,13 @@
 #include "game.h"
-
-#include <iostream>
-#include <stdlib.h>
-#include <time.h>
-#include <stack>
-
 #include "player.h"
 #include "cards.h"
 #include "eventcard.h"
+#include "utils.h"
+
+#include <iostream>
 
 Game::~Game() {
+  // Disown utilites after end of game
   int i;
   for(i = 0; i < N_UTILITIES; i++)
     Cards::utilities[i].owner = -1;
@@ -33,6 +31,7 @@ void Game::checkIntegrity(int k) {
     players[i] = 0;
   }
 
+  // Check total money amount integrity
   v += bank.Balance.getBalance();
   if(v != INIT_BALANCE) {
     cerr << "ERROR: Amount of money has changed! (" << k << ")" << endl;
@@ -78,6 +77,7 @@ void Game::initGame() {
 }
 
 bool Game::checkWinner() {
+  // If exactly one player is not broke, return true
   int i, b = 0;
   for(i = 0; i < N_PLAYERS; i++) {
     Player *p = gameController.getPlayer(i);
@@ -88,24 +88,11 @@ bool Game::checkWinner() {
 }
 
 void Game::checkGameStage(int k) {
-  /*int ownedProperties = 0;
-  int totalProperties = N_DEEDS + N_RAILROADS + N_UTILITIES;
-  int playersBroke = 0;
-
-  int i;
-  for(i = 0; i < N_DEEDS; i++) {
-    if(Cards::deeds[i].owner != -1)
-      ownedProperties++;
-  }
-  for(i = 0; i < N_RAILROADS; i++) {
-    if(Cards::railroads[i].owner != -1)
-      ownedProperties++;
-  }
-  for(i = 0; i < N_UTILITIES; i++) {
-    if(Cards::utilities[i].owner != -1)
-      ownedProperties++;
-  }*/
-
+  /* STAGE CHANGE CONDITIONS
+   * EARLY GAME: # rounds less than 3 times # of players
+   * MIDDLE GAME: # rounds less than 10 times # of players
+   * LATE GAME: else
+   */
   if(k <= N_PLAYERS * 3)
     agController.setGameStage(EARLY_GAME);
 
@@ -116,6 +103,8 @@ void Game::checkGameStage(int k) {
 }
 
 AGPlayer* Game::getWinner() {
+  // Pre-condition: must be only one player not broke
+  // Return winner
   int i;
   for(i = 0; i < N_PLAYERS; i++) {
     Player *p = gameController.getPlayer(i);
@@ -128,12 +117,16 @@ void Game::runGame() {
   int k = 0;
   while(k < N_TURNS) {
     try {
+      // Change stage
       checkGameStage(k);
 
+      // Process turn for current player
       gameController.processTurn();
 
+      // Check game integrity after player turn
       checkIntegrity(k);
 
+      // Check if there is a winner
       if(checkWinner()) {
         if(_VERBOSE)
           cout << "\tGAME ENDED (" << k << ")" << endl;

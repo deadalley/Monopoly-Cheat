@@ -3,8 +3,8 @@
 
 #include <string>
 #include <vector>
-#include <iostream>
-#include <locale>
+
+#include "color.h"
 #include "titledeed.h"
 
 using namespace std;

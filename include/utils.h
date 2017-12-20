@@ -59,6 +59,4 @@
 #define N_UTILITIES 2
 #define N_EVENT_CARDS 17
 
-using namespace std;
-
 #endif

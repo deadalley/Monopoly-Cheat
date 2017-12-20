@@ -1,13 +1,13 @@
 #ifndef H_AGCONTROLLER
 #define H_AGCONTROLLER
 
-#include <iostream>
 #include <vector>
+
 #include "agplayer.h"
 
 using namespace std;
 
-#define N_TURNS 300
+#define N_TURNS 300     // Max turns. If no winner found, game is to be discarded
 #define EARLY_GAME 0
 #define MID_GAME 1
 #define LATE_GAME 2

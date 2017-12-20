@@ -1,5 +1,11 @@
 #include "wallet.h"
 #include "bank.h"
+#include "utils.h"
+
+#include <algorithm>
+#include <iostream>
+
+using namespace std;
 
 Wallet::Wallet() {
   balance = 0;
@@ -18,7 +24,7 @@ void Wallet::deposit(int value) {
 }
 
 bool Wallet::deduct(int value) {
-  // Check if there are enough bills to deduct
+  // Check if there is enough credit to deduct
   if(value > balance) {
     if(_VERBOSE)
       cout << "Cannot deduct " << value << ". Not enough credit." << endl;

@@ -1,6 +1,10 @@
 #include "gamecontroller.h"
-#include "player.h"
-#include "agcontroller.h"
+#include "bank.h"
+#include "utils.h"
+
+#include <iostream>
+
+using namespace std;
 
 void GameController::initGameController(AGController *agController, int n_players) {
   int i;
@@ -98,10 +102,12 @@ void GameController::receiveFromAll(Player *player, int value) {
 }
 
 void GameController::processTurn() {
+  // Get current turn player
   Player *player = players.at(activePlayer);
 
   if(_VERBOSE)
     cout << "=== Started turn for " << player->getName() << endl;
+  // Check if player is broke
   if(player->isBroke) {
     if(_VERBOSE)
       cout << "\t" << player->getName() << " is broke! " << endl;
@@ -112,6 +118,7 @@ void GameController::processTurn() {
     return;
   }
 
+  // Print balance and position
   if(_VERBOSE) {
     cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
     cout << "\tIs at position " << player->getPosition() << endl;
@@ -126,6 +133,7 @@ void GameController::processTurn() {
 
   // Check if player is in jail
   if(player->inJail) {
+    // Increase rounds in jail
     player->roundsInJail++;
     if(_VERBOSE)
       cout << "\t" << player->getName() << " is " << player->roundsInJail << " rounds in Jail! (oh no)" << endl;
@@ -143,6 +151,7 @@ void GameController::processTurn() {
         cout << "\t" << player->getName() << " has Jail Card and left jail" << endl;
       player->hasJailCard = false;
       player->inJail = false;
+      player->roundsInJail = false;
     }
 
     // Leave if paid before rolling doubles
@@ -168,7 +177,7 @@ void GameController::processTurn() {
     }
 
     else {
-      // Update new active player
+      // Update new active player - skip turn
       GameController::activePlayer++;
       GameController::sequenceOfTurns = 0;
       if (GameController::activePlayer >= GameController::players.size())
@@ -189,6 +198,7 @@ void GameController::processTurn() {
     cout << "\tStepped on tile of type " << tile->getType() << endl;
   player->stepOnTile(tile);
 
+  // Check if player is broke again
   if(player->isBroke) {
     if(_VERBOSE)
       cout << "\t" << player->getName() << " is broke! " << endl;
@@ -205,9 +215,11 @@ void GameController::processTurn() {
   // Try to build after turn is processed
   player->tryToBuild();
 
+  // Get balance again
   if(_VERBOSE)
     cout << "\t" << player->getName() << " has $" << player->wallet.getBalance() << endl;
 
+  // If rolled doubles, play again
   if(die1 == die2) {
     GameController::sequenceOfTurns++;
     // Check if player has rolled doubles three times in a row
@@ -218,6 +230,7 @@ void GameController::processTurn() {
     }
     else return;
   }
+
   // Update new active player
   GameController::activePlayer++;
   GameController::sequenceOfTurns = 0;

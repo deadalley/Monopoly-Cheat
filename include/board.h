@@ -1,16 +1,10 @@
 #ifndef H_BOARD
 #define H_BOARD
 
-#include <stdlib.h>
-#include <string>
 #include <stack>
 #include <vector>
-#include <algorithm>
-#include <random>
 
-#include "bank.h"
 #include "card.h"
-#include "cards.h"
 #include "eventcard.h"
 
 using namespace std;

@@ -1,18 +1,12 @@
 #ifndef H_CARDS
 #define H_CARDS
 
-#include <stdlib.h>
-#include <fstream>
 #include <string>
 
-#include "utils.h"
+#include "eventcard.h"
 #include "titledeed.h"
 #include "railroad.h"
 #include "utility.h"
-#include "eventcard.h"
-#include "colorset.h"
-
-using namespace std;
 
 class Cards {
   private:
